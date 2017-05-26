@@ -907,9 +907,13 @@ figure {
   overflow: hidden;
 
   & > a {
-    border: none !important;
+    border: none;
     display: block;
     width: 100%;
+
+    &:hover, &:focus {
+      border: none;
+    }
 
     img {
       display: block;

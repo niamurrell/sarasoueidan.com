@@ -20,11 +20,25 @@ ul.educational-tools__list {
 	padding: 1em;
 
 	img {
-		border: 5px solid #eee;
+		
 	}
 
 	figure {
 		text-align: left;
+		overflow: visible;
+
+		& > a {
+			display: block;
+			border: 5px solid #eee;
+			transition: all .2s ease-out;
+
+			&:hover, &:focus {
+				border: 5px solid #fff;
+				-ms-transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				transform: scale(1.05);
+			}
+		}
 	}
 
 	figcaption {
@@ -32,4 +46,6 @@ ul.educational-tools__list {
 		padding: 1em 0;
 		color: #111;
 	}
+
+	
 }

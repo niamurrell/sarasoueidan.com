@@ -267,6 +267,9 @@
 
     @supports (background-blend-mode: multiply) {
       background-color: #888;
+      -ms-transform: scale(1.2); // to hide the blurred border effect created by the blur filter
+      -webkit-transform: scale(1.2); // to hide the blurred border effect created by the blur filter
+      transform: scale(1.2); // to hide the blurred border effect created by the blur filter
       filter: grayscale(85%) blur(3px);
       background-blend-mode: multiply;
       background-size: cover;

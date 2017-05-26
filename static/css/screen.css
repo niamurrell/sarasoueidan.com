@@ -800,6 +800,9 @@ a.availability-indicator-wrapper {
     @supports (background-blend-mode: multiply) {
       .future-conferences .conference::before {
         background-color: #888;
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
         filter: grayscale(85%) blur(3px);
         background-blend-mode: multiply;
         background-size: cover;
@@ -819,13 +822,19 @@ a.availability-indicator-wrapper {
 .upcoming-workshops__heading {
   font-family: "Quicksand", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg); }
 
 .upcoming-workshops__list {
   list-style: none;
   padding: 0;
   background: #eee;
-  padding: 0.1em .5em; }
+  padding: 0.1em .5em;
+  -ms-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg); }
 
 .upcoming-workshops__item {
   padding: 1em;
@@ -1538,10 +1547,18 @@ ul.educational-tools__list {
   margin-bottom: 4em;
   background: #f7f7f7;
   padding: 1em; }
-  .educational-tools__item img {
-    border: 5px solid #eee; }
   .educational-tools__item figure {
-    text-align: left; }
+    text-align: left;
+    overflow: visible; }
+    .educational-tools__item figure > a {
+      display: block;
+      border: 5px solid #eee;
+      transition: all .2s ease-out; }
+      .educational-tools__item figure > a:hover, .educational-tools__item figure > a:focus {
+        border: 5px solid #fff;
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05); }
   .educational-tools__item figcaption {
     font-style: normal;
     padding: 1em 0;
@@ -1894,9 +1911,11 @@ figure {
   text-align: center;
   overflow: hidden; }
   figure > a {
-    border: none !important;
+    border: none;
     display: block;
     width: 100%; }
+    figure > a:hover, figure > a:focus {
+      border: none; }
     figure > a img {
       display: block;
       margin: 0; }
