@@ -9,7 +9,7 @@ weight = "-1"
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p class="size-2x">
+                <p class="workshops__intro">
                     Want to level up your or your team’s front-end development skills, but are overwhelmed by the sheer amount of resources on different topics and don’t have enough time to read the never-ending amount of articles &amp; books available? Want to get up and running fast, learning the most recent and relevant skills to get the job done? I can help.
                 </p>
             </div>
@@ -19,7 +19,7 @@ weight = "-1"
                 </p> 
             </section>
             <section class="col-6 col--right">
-                <h2 class="mt0 upcoming-workshops__heading">Upcoming Workshops:</h2>
+                <h2 class="upcoming-workshops__heading">Upcoming Workshops:</h2>
                 <ul class="upcoming-workshops__list">
 					<li class="upcoming-workshops__item">
 						<strong>The SVG Coffee Cup</strong> @ <a href="https://smashingconf.com">SmashingConf</a>. 

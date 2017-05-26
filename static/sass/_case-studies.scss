@@ -117,20 +117,18 @@
   text-align: center;
   max-width: 1000px;
   margin: 0 auto 2em;
-  font-family: $serif;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 1.2em;
 }
 
 .case-study__thumb {
   display: block;
   padding: 1em .5em;
-  // background: #fff;
   width: 100%;
   margin-bottom: 2em;
   border: none;
   color: inherit;
   font-size: calc(1em + .25vw);
-  // box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 
   &:hover, &:focus {
     border: none;

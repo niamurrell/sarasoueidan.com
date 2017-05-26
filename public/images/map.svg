@@ -2,14 +2,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: block;" viewBox="0 0 1100 700" preserveAspectRatio="xMidYMid meet" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" id="map">
 	<!-- <defs> -->
 		<style>
-			.land
-			{
-				fill: #ffffff;
+			.land {
+				fill: #f5f5f5;
 				fill-opacity: 1;
 				stroke: #666;
 				stroke-opacity: 1;
 				stroke-width: 0.5;
 			}
+
 			#LB, #DE, #ES, #IT, #US, #NL, #AU, #GB { fill: #D2273A; }
 			.location { fill: #D2273A; }
 			#LB { fill: #D2273A;}

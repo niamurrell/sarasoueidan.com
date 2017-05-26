@@ -1,9 +1,24 @@
+.homepage {
+	h2, .h2 {
+		font-weight: 600;
+	}
+
+	h1, .h1 {
+		font-weight: 600;
+	}
+}
+
 .homepage__welcome {
 	text-align: center;
 
+	h2 {
+		margin-bottom: .25em;
+	}
+
 	p {
-		font-size: 1.5em;
+		font-size: 1.3em;
 		margin: 0 0 1.5em;
+		font-weight: 300;
 	}
 }
 
@@ -23,9 +38,9 @@
 
 	.homepage__photo {
 		width: 100%;
-		-ms-transform: rotate(-3deg);
-		-webkit-transform: rotate(-3deg);
-		transform: rotate(-3deg);
+		// -ms-transform: rotate(-3deg);
+		// -webkit-transform: rotate(-3deg);
+		// transform: rotate(-3deg);
 	}
 
 
@@ -34,6 +49,8 @@
 	.card {
 		padding: 1.5em 1em .5em;
 		font-size: 1.1em;
+		background: #fff;
+		color: #111;
 	}
 
 	.cards-col {
@@ -86,35 +103,11 @@
 	}
 
 
-	.card.red {
-		background: $red;
-	}
-	.card.black {
-		background: #111;
-		color: #fff;
-	}
-
-	.card.white {
-		background: #fff;
-		color: #111;
-	}
-	.card.grey {
-		background: #f8f8f8;
-		color: #000;
-	}
-
 	.card blockquote {
 		font-size: .9em;
 		border: none;
 		font-family: Quicksand;
 		font-weight: 400;
-	}
-
-	.card.red blockquote {
-		color: #fff;
-	}
-	.card.white blockquote {
-		color: #000;
 	}
 
 }

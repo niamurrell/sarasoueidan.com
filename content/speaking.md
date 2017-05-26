@@ -747,25 +747,23 @@ weight = "-2"
 </div>
 </div>
 
-<div class="full-width">
+<div class="full-width grey">
     <div class="container">
         <div class="row clearfix">
-            <div class="col-12">
-                <h2 id="podcasts">Podcasts</h2>
-            </div>
-            <div class="col-8">
-                <ul>
-                    <li>[AR] <a href="http://www.codervoice.com/episodes/61348-episode-18-sara-soueidan-and-front-end-web-development">Coder Voice</a> (صوت المبرمج) with Hassan Kanj.</li>
-                    <li><a href="http://www.beingfreelance.com/podcast-season-3/net-awards-developer-of-the-year-sara-soueidan-freelance-story">Being Freelance</a> with Steve Folland.</li>
-                    <li><a href="http://www.fullstackradio.com/47">FullStack Radio, Episode 47</a>.</li>
-                    <li><a href="http://thewebplatform.libsyn.com/58-scalable-vector-graphics">The Web Platform, Episode 58</a>.</li>
-                    <li><a href="http://creativecodingpodcast.com/56-vectors-and-pixels-with-sara-soueidan-mariko-kosaka/">Creative Coding, Episode 56</a>.</li>
-                    <li><a href="http://thewebplatform.libsyn.com/58-scalable-vector-graphics">The Web Platform, Episode 58</a>.</li>
-                    <li><a href="http://hanselminutes.com/477/getting-started-with-svg-with-sara-soueidan">Hanselminutes, Show #477</a> with Scott Hanselman.</li>
-                    <li><a href="http://workingdraft.de/219/">The Working Draft, Revision 219</a> (Recorded during btconf Duesseldorf.)</li>
-                    <li><a href="http://5by5.tv/webahead/81">The Web Ahead, Episode 81</a> with Jen Simmons.</li>
-                    <li><a href="http://shoptalkshow.com/episodes/129-sara-soueidan">ShopTalk Show, Episode 129</a> with Chris Coyier and Dave Rupert.</li>
-                    <li><a href="http://unfinished.bz/78">Unfinished Business, Episode 78: "Beirut by Bus"</a> with Andrew Clarke. (<a href="http://unfinished.bz/78">Direct Link</a>).</li>
+            <div class="col-7 col--center">
+            <h2 class="podcasts__heading" id="podcasts">Podcasts</h2>
+                <ul class="podcasts__list">
+                    <li class="podcasts__item">[AR] <a href="http://www.codervoice.com/episodes/61348-episode-18-sara-soueidan-and-front-end-web-development">Coder Voice</a> (صوت المبرمج) with Hassan Kanj.</li>
+                    <li class="podcasts__item"><a href="http://www.beingfreelance.com/podcast-season-3/net-awards-developer-of-the-year-sara-soueidan-freelance-story">Being Freelance</a> with Steve Folland.</li>
+                    <li class="podcasts__item"><a href="http://www.fullstackradio.com/47">FullStack Radio, Episode 47</a>.</li>
+                    <li class="podcasts__item"><a href="http://thewebplatform.libsyn.com/58-scalable-vector-graphics">The Web Platform, Episode 58</a>.</li>
+                    <li class="podcasts__item"><a href="http://creativecodingpodcast.com/56-vectors-and-pixels-with-sara-soueidan-mariko-kosaka/">Creative Coding, Episode 56</a>.</li>
+                    <li class="podcasts__item"><a href="http://thewebplatform.libsyn.com/58-scalable-vector-graphics">The Web Platform, Episode 58</a>.</li>
+                    <li class="podcasts__item"><a href="http://hanselminutes.com/477/getting-started-with-svg-with-sara-soueidan">Hanselminutes, Show #477</a> with Scott Hanselman.</li>
+                    <li class="podcasts__item"><a href="http://workingdraft.de/219/">The Working Draft, Revision 219</a> (Recorded during btconf Duesseldorf.)</li>
+                    <li class="podcasts__item"><a href="http://5by5.tv/webahead/81">The Web Ahead, Episode 81</a> with Jen Simmons.</li>
+                    <li class="podcasts__item"><a href="http://shoptalkshow.com/episodes/129-sara-soueidan">ShopTalk Show, Episode 129</a> with Chris Coyier and Dave Rupert.</li>
+                    <li class="podcasts__item"><a href="http://unfinished.bz/78">Unfinished Business, Episode 78: "Beirut by Bus"</a> with Andrew Clarke. (<a href="http://unfinished.bz/78">Direct Link</a>).</li>
                 </ul>
             </div>
         </div>

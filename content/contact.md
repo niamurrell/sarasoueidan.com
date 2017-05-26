@@ -14,7 +14,7 @@ weight = "-5"
 			<div class="col-12 center">
 				<br>
 				<br>
-				<p class="h1 color--red">contact@sarasoueidan.com</p>
+				<p class="contact__email-address">contact@sarasoueidan.com</p>
 			</div>
 			<div class="col-6">
 				<h3>Client Work</h3>

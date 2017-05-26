@@ -1,18 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: block;" viewBox="0 0 1100 700" preserveAspectRatio="xMidYMid meet" xmlns:amcharts="http://amcharts.com/ammap" xmlns:xlink="http://www.w3.org/1999/xlink" id="map">
-	<!-- <defs> -->
 		<style>
-			.land
-			{
-				fill: #ffffff;
+			.land {
+				fill: #f8f8f8;
 				fill-opacity: 1;
 				stroke: #666;
 				stroke-opacity: 1;
 				stroke-width: 0.5;
 			}
-			#LB, #DE, #ES, #IT, #US, #NL, #AU, #GB { fill: #D2273A; }
-			.location { fill: #D2273A; }
-			#LB { fill: #D2273A;}
+
+			#LB, 
+			#DE, 
+			#ES, 
+			#IT, 
+			#US, 
+			#NL, 
+			#AU, 
+			#GB { 
+				fill: #D2273A; 
+			}
+
+			.location { 
+				fill: #D2273A; 
+			}
+
+			#LB { 
+				fill: #D2273A;
+			}
 		</style>
 
 		<amcharts:ammap projection="mercator" leftLongitude="-169.522279" topLatitude="83.646363" rightLongitude="190.122401" bottomLatitude="-55.621433"></amcharts:ammap>

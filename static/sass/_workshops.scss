@@ -1,11 +1,29 @@
+.workshops__intro {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 // workshops index page, list of upcoming workshops
 .upcoming-workshops__heading {
 	font-family: $sans-serif;
 	text-transform: uppercase;
 	font-size: 1.5em;
+	margin-top: 2em;
 	-ms-transform: rotate(3deg);
 	-webkit-transform: rotate(3deg);
 	transform: rotate(3deg);
+
+
+	@media all and (max-width: 1024px) {
+		margin-top: 3em;
+	}
+
+	@media all and (max-width: 640px) {
+		margin-top: 1em;
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 }
 
 
@@ -17,6 +35,13 @@
 	-ms-transform: rotate(3deg);
 	-webkit-transform: rotate(3deg);
 	transform: rotate(3deg);
+
+
+	@media all and (max-width: 640px) {
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 }
 
 
@@ -53,6 +78,7 @@
 	list-style: none;
 	padding: 0;
 }
+
 
 .workshops__item {
 	margin-bottom: 2em;
