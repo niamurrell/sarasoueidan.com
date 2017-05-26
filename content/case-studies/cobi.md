@@ -1,6 +1,6 @@
 +++
 projectPreviewImage = "cobi_bike.png"
-projectDescription = "The COBI Connect landing page & Web app UI"
+projectDescription = "Based in Germany, COBI is a startup revolutionizing cycling by connecting your bicycle to your smartphone. They hired me to build the landing page for their COBI Connect services, as well as the Web interface for their membership-only profile settings pages."
 
 clientLogo = "cobi-logo.png"
 clientName = "COBI"

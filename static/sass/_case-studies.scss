@@ -123,32 +123,75 @@
 
 .case-study__thumb {
   display: block;
-  padding: 1em .5em;
+  padding: 1.5em 3vw 0;
   width: 100%;
   margin-bottom: 2em;
   border: none;
+  overflow: hidden;
   color: inherit;
   font-size: calc(1em + .25vw);
+  background-color: #f8f8f8;
+
 
   &:hover, &:focus {
     border: none;
+    color: inherit;
+
+    figcaption{
+      -ms-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
   }
 
   h2 {
     margin: 0;
   }
 
+  figure {
+    // border-bottom: 5px solid #111;
+  }
+
   img {
-    width: auto;
+    width: 40%;
+    float: left;
     max-width: 100%;
     display: block;
+    transition: all .2s ease-out;
+
+    @media all and (max-width: 768px) {
+      width: 100%;
+      float: none;
+      margin-bottom: 1em;
+    }
   }
 
   figcaption {
-    background: #111;
-    color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 1em 0;
-    font-family: Merriweather, serif;
+    font-style: normal;
+    color: inherit;
+    font-weight: 600;
+    font-family: $serif;
+    transition: all .2s ease-out;
+
+    width: 50%;
+    float: right;
+
+    @media all and (max-width: 768px) {
+      width: 100%;
+      float: none;
+    }
+
+    h3 {
+      margin-top: .5em;
+      font-size: 2.25em;
+    }
+
+    p {
+      font-family: $sans-serif;
+      font-weight: 400;
+      font-size: 1.25em;
+    }
   }
 }

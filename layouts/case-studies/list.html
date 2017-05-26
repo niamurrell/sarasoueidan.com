@@ -13,14 +13,16 @@
 
                 {{ range .Pages }}  
 
-                <div class="col-6">
+                <div class="col-12">
                     <a href="{{.RelPermalink}}"  class="case-study__thumb">
                         <figure>
                             <img src="../images/case-studies/previews/{{ .Params.ProjectPreviewImage }}" alt="">
+                        
+                            <figcaption>
+                               <h3> {{ .Params.ClientName }} </h3>
+                               <p> {{ .Params.ProjectDescription }}</p>
+                            </figcaption>
                         </figure>
-                        <figcaption>
-                            {{ .Params.ProjectDescription }}
-                        </figcaption>
                     </a>
                 </div> 
 

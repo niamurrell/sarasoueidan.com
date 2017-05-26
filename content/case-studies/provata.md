@@ -1,6 +1,6 @@
 +++
 projectPreviewImage = "provata_health.png"
-projectDescription = "The Provata Health marketing Web site."
+projectDescription = "A returning client, I’ve worked with Provata—a US-based health company—more than four times, building and expanding their marketing Web site, as well as building the graphical user interface for one of the company’s internal Web application."
 
 clientLogo = "provata-health-logo.svg"
 clientName = "Provata"
