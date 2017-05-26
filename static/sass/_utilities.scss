@@ -1,3 +1,40 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.slash {
+  color: $red;
+  font-weight: bold;
+
+  .main-footer & {
+    margin: 0 10px;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bar {
+  background-color: #333;
+  color: #fff;
+  padding: .5em;
+}
+
+.underlined {
+  padding: .25em 0;
+  border-bottom: 5px solid;
+}
+
 .green {
   color: $green !important;
 }

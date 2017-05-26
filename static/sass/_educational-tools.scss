@@ -1,0 +1,35 @@
+.educational-tools__heading {
+	margin-top: 1em;
+	font-family: $sans-serif;
+	text-transform: uppercase;
+	color: #888;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+ul.educational-tools__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.educational-tools__item {
+	padding: 0;
+	margin-bottom: 4em;
+	background: #f7f7f7;
+	padding: 1em;
+
+	img {
+		border: 5px solid #eee;
+	}
+
+	figure {
+		text-align: left;
+	}
+
+	figcaption {
+		font-style: normal;
+		padding: 1em 0;
+		color: #111;
+	}
+}

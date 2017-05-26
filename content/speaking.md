@@ -13,7 +13,7 @@ weight = "-2"
             <li class="nav--bar__item"><a href="#upcoming-talks">Upcoming Talks</a></li>
             <li class="nav--bar__item"><a href="#past-appearances">Past Appearances</a></li>
             <li class="nav--bar__item"><a href="#podcasts">Podcasts</a></li>
-            <li class="nav--bar__item"><a href="#request">Request A Talk</a></li>
+            <li class="nav--bar__item"><a href="../request-a-talk">Request A Talk</a></li>
             <li class="nav--bar__item"><a href="../press-kit/">Press Kit</a></li>
         </ul>
     </div>
@@ -28,7 +28,7 @@ weight = "-2"
                 </p>
                 <ul class="future-conferences clearfix" id="upcoming-talks">
                     
-                    <li class="conference" data-workshop="true">
+                    <li class="conference nyc" data-workshop="true">
                         <header class="conference__header">
                             <p class="conference__type">Talk <span>+</span> Workshop</p>
                             <p class="conference__date">
@@ -52,7 +52,7 @@ weight = "-2"
                         </footer>
                     </li>
 
-                     <li class="conference" data-workshop="true">
+                     <li class="conference joburg" data-workshop="true">
                         <header class="conference__header">
                             <p class="conference__type">Talk <span>+</span> Workshop</p>
                             <p class="conference__date">
@@ -76,7 +76,7 @@ weight = "-2"
                         </footer>
                     </li>
 
-                    <li class="conference" data-workshop="true">
+                    <li class="conference toronto" data-workshop="true">
                         <header class="conference__header">
                             <p class="conference__type">Talk</p>
                             <p class="conference__date">
@@ -100,7 +100,7 @@ weight = "-2"
                         </footer>
                     </li>
 
-                    <li class="conference">
+                    <li class="conference amsterdam">
                         <header class="conference__header">
                             <p class="conference__type keynote">Master of Ceremonies (Host)</p>
                             <p class="conference__date">
@@ -121,7 +121,7 @@ weight = "-2"
                             </ul>
                         </footer>
                     </li>
-                    <li class="conference" data-workshop="true">
+                    <li class="conference braga" data-workshop="true">
                         <header class="conference__header">
                             <p class="conference__type">Talk <span>+</span> Workshop</p>
                             <p class="conference__date">
@@ -146,7 +146,7 @@ weight = "-2"
                     </li>
 
                     <div class="conference conference-cta">
-                        <a href="#request">
+                        <a href="../request-a-talk">
                             <span class="h2">Want me to speak at your event?</span>
                             <span class="h3">Invite me to!</span>
                         </a>
@@ -189,7 +189,6 @@ weight = "-2"
         <div class="row">
             <section class="col-12">
                 <ul class="past-conferences">
-                    
                     <li class="conference">
                         <header class="conference__header">
                             <p class="conference__type">Talk</p>
@@ -199,7 +198,7 @@ weight = "-2"
                             </p>
                             <p class="conference__location">Manchester, UK</p>
                             <p class="conference__name">
-                                <a href="http://2017.upfrontconf.com/">Up Front</a>
+                                Up Front
                             </p>
                             
                         </header>
@@ -221,7 +220,7 @@ weight = "-2"
                             </p>
                             <p class="conference__location">New York City, USA</p>
                             <p class="conference__name">
-                                <a href="http://www.generateconf.com/">Generate Conf</a>
+                                Generate Conf
                             </p>
                             
                         </header>
@@ -772,56 +771,5 @@ weight = "-2"
         </div>
     </div>
 </div>
-<div class="full-width">
-    <div class="clearfix container">
-        <div class="row">
-            <div class="col-12">
-                <h2 id="request">Want me to speak at your event?</h2>
-            </div>
-        </div>
-    </div>
-    <div class="full-width">
-        <div class="clearfix container">
-        <div class="col-8">
-
-                <p>
-                    I <em>love</em> speaking about Web standards, particularly SVG and CSS. I love talking not only about the what and why, but specifically the <em>how</em> technologies are used, from the basics all the way to using them to solve common design problems. And if you’re familiar with my talks, you know I like to cram in as much information as possible, so the audience can take away as many benefits as possible.
-                </p>
-                <p>
-                    Thank you for considering to invite me to speak at your event. I would love to do it. Please read the following information before you send me your invitation:
-                </p>
-            </div>
-        </div>
-        <div class="full-width">
-            <div class="clearfix container">
-                <div class="col-7">
-                    <h4>What you should know</h4>
-                    <p>
-                        I require flight, ground transportation and accommodation to be covered, as well as meals for the entire duration of the conference, plus an honorarium. I’m a freelancer—not backed by any company, so spending time traveling is something I can’t afford to do all the time. I also expect all expenses to be taken care of up front, not reimbursed. 
-                    </p>
-                    <p>
-                        That being said, My fee is open to negotiation, especially for non-profit, community-driven events. If you would like me to create and deliver a new talk, then I expect to be paid for the extra time that goes into making it. I also sometimes waive my fee for smaller events in exchange for covering one or two extra nights in the hotel. (It’s a good chance to experience whatever city I’m in.) In the case I give a talk for free (i.e. minus the fee), I expect the talk to be available for free to everyone.
-                    </p>
-                    <hr>
-                    <p> 
-                        I’m fortunate enough and grateful to be in demand, so the sooner you get in touch regarding your request, the better. Confirmed events are listed at the top of this page. I also have other unannounced speaking engagements and workshop requests, so please <a href="mailto:contact@sarasoueidan.com">send me an email</a> to check for availability for your event’s dates.
-                    </p>
-                    <p>
-                        It also helps if you can provide me with some information about your event:  what kind of talk topic you’d like me to give, what kind of audience will attend (mostly designers, mostly developers, etc.) so I can cater my talk accordingly (my talks are usually very technical), how many attendees would attend, how many tracks the conference has, and whether you’ve invited other speakers whose talk topics might overlap with mine. I also love to experience whatever city I’m in, so any additional information about what makes that city special or what you lost the most about it would be awesome. 
-                    </p>
-                    <p>
-                        Knowing where the event is held is of uttermost importance because, given that I live in Lebanon, I need to apply for visas to visit most countries, so I usually take that into account when planning my conference engagements. If your event is held in the US, AU and UK, then the process will be smoother, hopefully. My US visa is valid for a few years to come, so for conferences in the US, I don’t have to currently apply for a new visa.
-                    </p>
-                    <p>
-                        I’ve spoken at conferences around Europe, US, AU and in the UK. Though not always particularly smooth, the process has been successful for the most part of it. If I do need to apply for a visa to speak at your conference, please note that I will need you to provide me with some basic paperwork for the application—such as an invitation letter. Some applications also require flights and accommodation to be booked in advance. If this information hasn’t put you off, then please feel free to get in touch!
-                    </p>
-                    <p>
-                        <a href="mailto:contact@sarasoueidan.com" class="button button--full">Invite Me To Speak At Your Event</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
 
 

@@ -4,9 +4,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     // runSequence = require('run-sequence'),
     imagemin = require('gulp-imagemin'), // todo: SVGO usage inside imagemin https://github.com/sindresorhus/gulp-imagemin
-    cache = require('gulp-cache') ,// to not optimize images that have been already optimized
+    cache = require('gulp-cache') ;// to not optimize images that have been already optimized
 
-    babel = require('gulp-babel'); // todo: set up babel when I set up js tasks
+    // babel = require('gulp-babel'); // todo: set up babel when I set up js tasks
 
 
 // `default` because when you have a task named default, 

@@ -10,23 +10,20 @@ weight = ""
 
 <div class="full-width">
 	<div class="container clearfix">
-		<div class="row">
-		<div class="col-12">
-			<br><br>
-			<h1 class="h0">PRESS KIT</h1>
+		<div class="col-12 center">
+			<h1 class="h0">Press Kit</h1>
 			<p>
-					The following information is provided as a copy-and-paste resource for media publishers and conference organizers. 
+				The following information is provided as a copy-and-paste resource for media publishers and conference organizers. 
 					<br>
-					Please feel free to use it as-is without checking with me first. If you have additional questions, you can <a href="mailto:contact@sarasoueidan.com">contact me directly</a>. 
+				Please feel free to use it as-is without checking with me first. If you have additional questions, you can <a href="mailto:contact@sarasoueidan.com">contact me directly</a>. 
 			</p>
 		</div>
-</div>
-</div>
+	</div>
 </div>
 
 <div class="full-width">
 	<div class="container clearfix">
-		<div class="row lined">
+		<div class="row">
 			<div class="col-5">
 				<h2>Speaker Information:</h2>
 				<table class="minimal">

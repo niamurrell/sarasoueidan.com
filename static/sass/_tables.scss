@@ -1,0 +1,95 @@
+
+table {
+  max-width: 100%;
+}
+
+table.main {
+  width: 100%;
+  padding: 0;
+  font-size: .9em;
+  color: #111;
+
+  td {
+    padding: .75em 1em;
+
+    &:first-of-type, &:first-of-type a {
+      font-weight: bold;
+    }
+  }
+
+  tr:nth-of-type(odd) {
+    background-color: #fff;
+  }
+  tr:nth-of-type(even) {
+    background-color: #eee;
+  }
+  tr:first-of-type {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+// only borders, no colors or anything. As seen in Press kit page
+table.minimal {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    padding: .5em .75em;
+    border: 1px solid #ddd;
+
+    &:first-of-type {
+      font-weight: bold;
+    }
+  }
+}
+
+// as seen in the hire me page, hints showing what each color in the availability table means
+table.hints {
+  margin-top: 30px;
+  font-size: 14px;
+
+  td:first-of-type {
+    width: 20px;
+    height: 20px;
+  }
+  td:last-of-type {
+    padding-left: 5px;
+  }
+}
+
+
+
+
+table.cagematch {
+  border: 1px solid #eee;
+  table-layout: fixed;
+  margin: 1.5em 0;
+
+  td {
+    padding: 1em;
+    width: 50%;
+    color: white;
+  }
+}
+.th {
+    background-color: #222;
+    font-weight: bold;
+  }
+td.win {
+  background-color: darken($green, 10%);
+  font-weight: 400;
+}
+td.lose {
+  background-color: tomato;
+  font-weight: 400;
+}
+td.average {
+  background-color: #FCA602;
+  font-weight: 400;
+}
+
+td.win code, td.lose code, td.average code {
+  color: #222;
+}

@@ -1,0 +1,299 @@
+/*------------------------------------*\
+    CONFERENCES
+\*------------------------------------*/
+
+.past-conferences, .future-conferences {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.conference {
+  padding: calc(10px + 1vw);
+  background-color: #fff;
+  color: #111;
+  text-align: left;
+  position: relative;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+  margin: 0;
+  border: 1px solid #eee;
+
+  .future-conferences & {
+
+    .conference__links {
+      display: none;
+    }
+  }
+
+  .past-conferences & {
+    margin-bottom: 2em;
+    font-size: .9em;
+  }
+
+  // the last item containing the invite call to action
+  &.conference-cta {
+    padding: 0;
+    background: $red;
+    border-color: $red;
+
+    a {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      min-height: 350px;
+      border: none;
+      background: $red;
+      color: #fff;
+      padding: calc(10px + 1vw);
+      font-family: $serif;
+      transition: all .2s linear;
+
+      @supports (background-blend-mode: multiply) {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 50%;
+        background-image: url('../images/me--speaking.jpg');
+        background-blend-mode: multiply;
+      }
+
+      span {
+        display: block;
+        font-weight: bold;
+      }
+
+      &:hover, &:focus {
+        color: #fff;
+        background-color: darken($red, 7%);
+      }
+
+      &:active {
+        color: #eee;
+        background-color: darken($red, 15%);
+      }
+    }
+  }
+
+}
+
+@media (min-width: 640px){
+  .conference {
+    float: left;
+    font-size: .9em;
+    width: 50%;
+    min-height: 350px;
+
+    .past-conferences & {
+      width: 50%;
+      min-height: auto;
+    }
+  }
+}
+
+@media (min-width: 1024px){
+  .conference {
+    .past-conferences & {
+      width: 33.33%;
+      min-height: auto;
+    }
+  }
+}
+
+@media (min-width: 1300px){
+  .conference {
+    .past-conferences & {
+      width: 25%;
+      min-height: auto;
+    }
+  }
+}
+
+
+.conference__date {
+  display: block;
+  width: 100%;
+  font-size: 2.75em;
+  margin: 0;
+  font-weight: 700;
+
+  .past-conferences & {
+    font-size: .8em;
+    color: #888;
+    font-weight: 400;
+    margin-top: 1em;
+  }
+}
+
+.conference__month-and-year {
+  font-size: .4em;
+
+  .past-conferences & {
+    font-size: 1em;
+  }
+}
+
+
+.conference__links {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    li {
+      margin: 0;
+      text-align: center;
+      font-size: .9em;
+      float: left;
+
+      span {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: inherit;
+        color: #ccc;
+        padding: .5em 1em;
+        color: rgba(0,0,0, 0.2);
+        text-shadow: 0px 0px 1px #eee;
+      }
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-bottom: none;
+        padding: .5em 1em;
+        color: $red;
+        font-weight: 400;
+
+
+        &:hover, &:focus {
+          background-color: $red;
+        }
+      }
+
+      &:nth-of-type(1) {
+
+        a {
+          background-color: $red;
+          color: #fff;
+        }
+      }
+
+      &:nth-of-type(2) {
+        a {
+          background-color: #f8f8f8;
+        }
+      }
+    }
+  }
+}
+
+
+.conference__type { // talk, workshop, etc. label above conf date
+  font-weight: 400;
+  color: $red;
+  font-size: .8em;
+  margin-top: 1em;
+  margin-bottom: -0.5em;
+  background: #111;
+  padding: 0 1em;
+  color: #fff;
+  display: inline-block;
+
+  span {
+    color: #999;
+  }
+}
+
+.conference__name {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: $red;
+  font-family: $sans-serif;
+  color: #fff;
+
+  .past-conferences & {
+    margin-top: 0;
+    color: #000;
+    font-size: 1.3em;
+  }
+}
+
+.conference__location {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin: 0;
+  color: #fff;
+
+  .past-conferences & {
+    color: #111;
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+// The background images for future conferences
+
+.future-conferences .conference {
+
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #111;
+
+    @supports (background-blend-mode: multiply) {
+      background-color: #888;
+      filter: grayscale(85%) blur(3px);
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  
+  @supports (background-blend-mode: multiply) {
+    &.joburg::before {
+      background-image: url('../images/cities/joburg.jpg');
+    }
+
+    &.nyc::before {
+      background-image: url('../images/cities/nyc.jpg');
+    }
+
+    &.toronto::before {
+      background-image: url('../images/cities/toronto.jpg');
+    }
+
+    &.amsterdam::before {
+      background-image: url('../images/cities/amsterdam.jpg');
+    }
+
+    &.braga::before {
+      background-image: url('../images/cities/braga.jpg');
+    }
+  }
+  
+}
