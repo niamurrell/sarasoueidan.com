@@ -1,15 +1,16 @@
 .homepage {
 	h2, .h2 {
-		font-weight: 600;
+		// font-weight: 600;
 	}
 
 	h1, .h1 {
-		font-weight: 600;
+		// font-weight: 600;
 	}
 }
 
 .homepage__welcome {
 	text-align: center;
+	// color: #fff;
 
 	h2 {
 		margin-bottom: .25em;
@@ -23,8 +24,14 @@
 }
 
 .homepage__intro {
-	font-size: 1.25em;
+	font-size: 1.2em;
 	padding-top: 2em;
+	max-width: 500px;
+	// color: #fff;
+
+	@media all and (max-width: 1024px) {
+		// color: #111;
+	}
 }
 
 .homepage__photo-container { // photo of me
@@ -38,9 +45,9 @@
 
 	.homepage__photo {
 		width: 100%;
-		// -ms-transform: rotate(-3deg);
-		// -webkit-transform: rotate(-3deg);
-		// transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		-webkit-transform: rotate(-3deg);
+		transform: rotate(-3deg);
 	}
 
 
@@ -49,8 +56,8 @@
 	.card {
 		padding: 1.5em 1em .5em;
 		font-size: 1.1em;
-		background: #fff;
-		color: #111;
+		background: $red;
+		color: #fff;
 	}
 
 	.cards-col {
@@ -77,12 +84,13 @@
 	}
 
 	.award-card {
-		padding-top: 75px;
+		padding-top: 130px;
 		overflow: hidden;
 
 		@media all and (max-width: 1024px) {
 			max-width: 400px;
 			margin: 0 auto;
+			padding-top: 75px;
 		}
 	}
 

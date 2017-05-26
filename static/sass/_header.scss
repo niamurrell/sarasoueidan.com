@@ -3,7 +3,7 @@
 	margin-bottom: 2em;
 	position: relative;
 	z-index: 1;
-	// background-image: linear-gradient(#eee, #fff);
+	background-image: linear-gradient(#eee, #fff);
 
 	.homepage & {
 		margin-bottom: 1em;
@@ -92,4 +92,8 @@ a.availability-indicator-wrapper {
 	font-size: calc(.75em + .2vw);
 	font-family: $sans-serif;
 	font-weight: 400;
+
+	.homepage & {
+		// color: #fff;
+	}
 }

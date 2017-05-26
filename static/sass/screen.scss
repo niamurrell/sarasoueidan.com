@@ -7,6 +7,7 @@ $apple:      #40A73E;
 $yellow:     #FFE400;
 $orange-red: #E44C3C;
 $red:        #D2273A; 
+// $red:        #EB0066;  // pink
 $pink:       #EB0066;
 
 $gutter: 1em;
@@ -67,23 +68,51 @@ body {
   font-family: $sans-serif;
   line-height: 1.7;
   color: #111;
+  background: #fff;
   position: relative;
   overflow-x: hidden;
-  z-index: 1;
-  background-color: #fff;
   font-size: calc(14px + .3vw);
   font-weight: 400;
 
   &.homepage {
-    // background: url('data:image/jpeg;base64,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');
-    background-size: cover;
-    background: linear-gradient(to bottom, #000, #000 50%, $red 50%);
-    background-color: $red;
-    // background-image: url('../images/sara-1.jpg');
-    // background-size: 100% auto;
-    // background-repeat: no-repeat;
-    // background-position: left top;
-    color: #fff;
+    // background-size: cover;
+    // background: linear-gradient(to bottom, #0e0e0e, #0e0e0e 38%, darken($red, 10%) 75%, $red);
+    // color: #fff;
+    // background-color: #111;
+    // padding: 1em;
+
+    &::before {
+      // content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 95vh;
+      min-height: 400px;
+      background-color: #000;
+      // background: url('../images/textures/black_denim.png');
+      background-size: 70px 70px;
+      transform: rotate(-12deg) scale(1.5);
+      // background: linear-gradient(90deg, #000, #000 50%,  #fff);
+      // filter: blur(2px);
+      // background-blend-mode: multiply;
+      // background-image: url('../images/netmag-photoshoot/grinning.png');
+      // background-size: 100% auto;
+      // background-repeat: no-repeat;
+      
+
+      @media all and (max-width: 1024px) {
+        // background-image: url('../images/netmag-photoshoot/grinning--medium.png');
+      }
+
+      @media all and (max-width: 640px) {
+        // background-image: url('../images/netmag-photoshoot/grinning--tall.png');
+      }
+
+      @media all and (max-width: 768px) {
+        transform: none;
+      }
+    }
   }
 }
 
@@ -333,16 +362,16 @@ a {
     border-bottom: 2px solid $red;
   }
 
-  .homepage & {
+  // .homepage & {
 
-    border-bottom: 2px solid #fff;
+  //   border-bottom: 2px solid #fff;
 
-    &:hover, &:active {
-      color: #fff;
-      border-bottom: 2px solid #fff;
-    }
+  //   &:hover, &:active {
+  //     color: #fff;
+  //     border-bottom: 2px solid #fff;
+  //   }
 
-  }
+  // }
 
   &:not(.button):focus {
     background-color: $yellow !important;

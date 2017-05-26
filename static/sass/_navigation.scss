@@ -62,9 +62,10 @@
         transition: color .15s linear;
         border-bottom: 1px solid #ccc;
 
-        .homepage & {
-          border-bottom: 1px solid #444;
-        }
+        // .homepage & {
+        //   border-bottom: 1px solid #444;
+        //   color: #fff;
+        // }
 
         color: inherit;
         transition: color .2s linear;
@@ -137,7 +138,7 @@
         z-index: 10;
         top: 1em;
         right: 3.5em;
-        border: none;
+        border: none !important;
         background: $red;
         color: #fff;
         padding: .5em 1em;
@@ -168,7 +169,7 @@
 
     .menu-close-button {
       display: none;
-      border: none;
+      border: none !important;
       color: #fff;
       padding: 0;
       width: 40px;

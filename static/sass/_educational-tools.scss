@@ -32,11 +32,15 @@ ul.educational-tools__list {
 			border: 5px solid #eee;
 			transition: all .2s ease-out;
 
+			-ms-transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			transform: scale(1.05);
+
 			&:hover, &:focus {
 				border: 5px solid #fff;
-				-ms-transform: scale(1.05);
-				-webkit-transform: scale(1.05);
-				transform: scale(1.05);
+				-ms-transform: scale(1.075);
+				-webkit-transform: scale(1.075);
+				transform: scale(1.075);
 			}
 		}
 	}

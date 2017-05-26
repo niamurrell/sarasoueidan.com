@@ -321,7 +321,8 @@
   padding: 1.5em 0;
   margin-bottom: 2em;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  background-image: linear-gradient(#eee, #fff); }
   .homepage .main-header {
     margin-bottom: 1em; }
 
@@ -439,8 +440,6 @@ a.availability-indicator-wrapper {
     border-bottom: 1px solid #ccc;
     color: inherit;
     transition: color .2s linear; }
-    .homepage .main-nav__item a {
-      border-bottom: 1px solid #444; }
     .main-nav__item a:hover {
       border-width: 1px !important; }
   .main-nav__item:hover a, .main-nav__item:focus a, .main-nav__item:active a {
@@ -487,7 +486,7 @@ a.availability-indicator-wrapper {
       z-index: 10;
       top: 1em;
       right: 3.5em;
-      border: none;
+      border: none !important;
       background: #D2273A;
       color: #fff;
       padding: .5em 1em; } }
@@ -511,7 +510,7 @@ a.availability-indicator-wrapper {
 
 .menu-close-button {
   display: none;
-  border: none;
+  border: none !important;
   color: #fff;
   padding: 0;
   width: 40px;
@@ -942,12 +941,6 @@ a.availability-indicator-wrapper {
     font-weight: normal;
     text-transform: uppercase; }
 
-.homepage h2, .homepage .h2 {
-  font-weight: 600; }
-
-.homepage h1, .homepage .h1 {
-  font-weight: 600; }
-
 .homepage__welcome {
   text-align: center; }
   .homepage__welcome h2 {
@@ -958,8 +951,9 @@ a.availability-indicator-wrapper {
     font-weight: 300; }
 
 .homepage__intro {
-  font-size: 1.25em;
-  padding-top: 2em; }
+  font-size: 1.2em;
+  padding-top: 2em;
+  max-width: 500px; }
 
 .homepage__photo-container {
   display: block; }
@@ -969,13 +963,16 @@ a.availability-indicator-wrapper {
       margin: 0 auto 2em; } }
 
 .homepage__photo {
-  width: 100%; }
+  width: 100%;
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
 
 .homepage .card {
   padding: 1.5em 1em .5em;
   font-size: 1.1em;
-  background: #fff;
-  color: #111; }
+  background: #D2273A;
+  color: #fff; }
 
 .homepage .cards-col {
   margin-top: -5vw;
@@ -996,12 +993,13 @@ a.availability-indicator-wrapper {
     max-width: 600px; } }
 
 .homepage .award-card {
-  padding-top: 75px;
+  padding-top: 130px;
   overflow: hidden; }
   @media all and (max-width: 1024px) {
     .homepage .award-card {
       max-width: 400px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding-top: 75px; } }
 
 .homepage .award__figure {
   width: 40%;
@@ -1342,17 +1340,24 @@ body {
   font-family: "Quicksand", Arial, sans-serif;
   line-height: 1.7;
   color: #111;
+  background: #fff;
   position: relative;
   overflow-x: hidden;
-  z-index: 1;
-  background-color: #fff;
   font-size: calc(14px + .3vw);
   font-weight: 400; }
-  body.homepage {
-    background-size: cover;
-    background: linear-gradient(to bottom, #000, #000 50%, #D2273A 50%);
-    background-color: #D2273A;
-    color: #fff; }
+  body.homepage::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 95vh;
+    min-height: 400px;
+    background-color: #000;
+    background-size: 70px 70px;
+    transform: rotate(-12deg) scale(1.5); }
+    @media all and (max-width: 768px) {
+      body.homepage::before {
+        transform: none; } }
 
 .contact__email-address {
   color: #D2273A;
@@ -1487,11 +1492,6 @@ a {
   a:hover, a:active {
     color: #D2273A;
     border-bottom: 2px solid #D2273A; }
-  .homepage a {
-    border-bottom: 2px solid #fff; }
-    .homepage a:hover, .homepage a:active {
-      color: #fff;
-      border-bottom: 2px solid #fff; }
   a:not(.button):focus {
     background-color: #FFE400 !important;
     color: black !important; }
@@ -1600,12 +1600,15 @@ ul.educational-tools__list {
     .educational-tools__item figure > a {
       display: block;
       border: 5px solid #eee;
-      transition: all .2s ease-out; }
+      transition: all .2s ease-out;
+      -ms-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05); }
       .educational-tools__item figure > a:hover, .educational-tools__item figure > a:focus {
         border: 5px solid #fff;
-        -ms-transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05); }
+        -ms-transform: scale(1.075);
+        -webkit-transform: scale(1.075);
+        transform: scale(1.075); }
   .educational-tools__item figcaption {
     font-style: normal;
     padding: 1em 0;
