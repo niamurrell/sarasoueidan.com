@@ -1,0 +1,26 @@
+---
+layout: default
+title: Drafts &ndash; Sara Soueidan &ndash; Freelance Front-end Web Developer
+name: writing
+---
+<div class="full-width writing">
+<div class="wrapper clearfix">
+<section class="main clearfix writing-container" role="main">
+<ul class="articles-list">
+{% for post in site.posts %}
+<li>
+{% if post.tags contains 'draft' %}
+<a class="post-title" href="{{ post.url }}">{{ post.title }} <span class="subtitle">{{ post.subtitle }}</span></a>
+
+<span class="post-meta"><time>{{ post.date | date: "%B %-d, %Y" }}</time> {% if post.external %} &mdash; <span class="post-host">{{ post.external.host }}</span> {% endif %}</span>
+
+<p class="post-excerpt">
+{{ post.excerpt }}
+</p>
+{% endif %}
+</li>
+{% endfor %}
+</ul>
+</div>
+</section>
+</div>

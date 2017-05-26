@@ -1,0 +1,111 @@
+@media screen and (max-width:71.875em) {/*1150px/16px*/
+  html {
+    font-size: 90%;
+  }
+}
+@media screen and (max-width:64em) {/*1050/16px*/
+  body .one .bsa_it_ad .bsa_it_i { 
+    padding: 0; 
+    float: none;
+    clear: both;
+    margin: 0 0 5px 0; 
+  }
+
+  .post-wrapper figure {
+    width: 100% !important;
+    left: 0 !Important;
+  }
+  .pull-quote {
+    position: static;
+    margin: .5em 0 .5em .5em;
+  }
+
+}
+@media screen and (max-width:61.25em) {/*980/16px*/
+  html {
+    font-size: 80%;
+  }
+   .intro {
+    position: static;
+    height: 300px;
+  }
+
+  .pushed-down{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:44em) {
+  
+  .logo {
+    float: none;
+    display: inline-block;
+  }
+ 
+  .main-header {
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  .main-nav {
+    background-color: #000; color: #eee;
+    text-align: center;
+    width: 100%;
+    transition: all .3s ease;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden; // android 2.3
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    ul {
+      margin: 0;
+      display: block;
+      text-align: center;
+      border-top: 1px solid #222;
+
+      li {
+        border-right: 1px solid #222;
+        width: 25%;
+
+        &:last-child {
+          width: 50%;
+        }
+        
+        a {
+          padding: .8em .5em;
+        }
+        a:hover, a:active, &:focus, a.active{
+          background-color: #111;
+          color: #fff;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .footer-nav, .copyright {
+    float: none;
+    display: block; 
+  }
+}
+
+@media screen and (max-width:34.375em) {/*550*/
+  .hero {
+    display: none;
+  }
+  .pull-quote {
+    display: none;
+  }
+  .estimated-reading-time {
+    float: none;
+    display: block;
+  }
+}
+
+
+

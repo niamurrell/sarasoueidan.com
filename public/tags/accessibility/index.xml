@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accessibility on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/accessibility/</link>
+    <description>Recent content in Accessibility on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building a fully-accessible help tooltip</title>
+      <link>https://sarasoueidan.com/2017/01/24/accessible-tooltips/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2017/01/24/accessible-tooltips/</guid>
+      <description>Today is one of those days that started out with a Google search for yet another accessibility question/concern. I’m working on a new project for my client Provata and part of that project is to build a sweet and seemingly simple help tooltip which explains to the reader/user what the Framingham calculator is. The tooltip is triggered by a small help icon like the one shown in the top right corner of this screenshot:</description>
+    </item>
+    
+    <item>
+      <title>Animated SVG vs GIF [CAGEMATCH]</title>
+      <link>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</guid>
+      <description>SVG can do much more than display static images. Its animation capabilities are one of its most powerful features, giving it a distinctive advantage over all other image formats. They are one of many reasons that make SVG images better than raster images, including GIFs. But this, of course, only applies to images that are good candidates for SVG, such as:
+ Logos, non-complex, vector-based illustrations, user interface controls,  infographics, and icons.</description>
+    </item>
+    
+    <item>
+      <title>Art-Directing an SVG Embedded Using &amp;lt;object&amp;gt;</title>
+      <link>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</guid>
+      <description>I have recently finished a front-end development project for Provata Health — a US-based health and wellness company specializing in health promotion and behavior change science. As part of their marketing website, I worked on an infographic that showcases the three major health results one can achieve by following their health program. The graphic is a perfect candidate for SVG and you’ll see why throughout this article. But even though almost all of the graphics on the site were vector (which made the entire project exciting to me), I want to focus on this particular graphic and how and why I made the development choices I made while embedding it.</description>
+    </item>
+    
+  </channel>
+</rss>

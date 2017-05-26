@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/css/</link>
+    <description>Recent content in Css on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SVG Style Inheritance and the ‘Flash Of Unstyled SVG’</title>
+      <link>https://sarasoueidan.com/2016/03/01/svg-style-inheritance-and-FOUSVG/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2016/03/01/svg-style-inheritance-and-FOUSVG/</guid>
+      <description>There are too few things not to like about SVG, and I don’t mean the things that browsers cause by incomplete or lack of certain features or buggy implementations. Yet you might sometimes get some unpredictable results that might frustrate you when working with SVG, if you don’t know the details of how certain features should behave and what to expect from them, as per the specifications. SVG presentation attributes come with a bit of their own behavior which might sometimes surprise you.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs. SVG: The Final Round(up)</title>
+      <link>https://sarasoueidan.com/2015/09/16/css-vs-svg-the-final-roundup/</link>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/09/16/css-vs-svg-the-final-roundup/</guid>
+      <description>This is the last article in the series of article comparing common CSS techniques to their SVG counterparts. This article is a roundup of several CSS and SVG solutions, as opposed to being an article comparing one solution that can be achieved using either CSS and SVG. There are already a bunch of excellent articles out there that cover the details for each of these solutions, so we will get an overview of each solution and link to those articles for each section as we go.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs. SVG: Shapes and Arbitrarily-Shaped UI Components</title>
+      <link>https://sarasoueidan.com/2015/09/01/css-vs-svg-arbitrarily-shaped-ui-components/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/09/01/css-vs-svg-arbitrarily-shaped-ui-components/</guid>
+      <description>This post is the third in the series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both.In this article, we are going to go over techniques for creating arbitrarily-shaped UI components using CSS properties and SVG’s capabilities, and a mix of both! Specifically, we will be talking about how to create circular menus, as these are the perfect example of usable non-rectangular UI elements.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs SVG: Styling Checkboxes and Radio Buttons</title>
+      <link>https://sarasoueidan.com/2015/08/26/css-vs-svg-styling-checkboxes-and-radio-buttons/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/08/26/css-vs-svg-styling-checkboxes-and-radio-buttons/</guid>
+      <description>This post is the second in the series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both. In this article, we’re going to look into ways to style checkboxes and radio buttons using both CSS and SVG. You will learn how you can create animated checkboxes using SVG&#39;s line drawing capabilities. </description>
+    </item>
+    
+    <item>
+      <title>Building A Circular Navigation with CSS Clip Paths</title>
+      <link>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</link>
+      <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</guid>
+      <description>The CSS clip-path property is one of the most underused and yet most interesting properties in CSS. It can be used in conjunction with CSS Shapes to create interesting layouts, and can be taken to the extreme to create some incredibly impressive layouts and animations like the Species in Pieces project. While exploring the creation of arbitrarily-shaped UI components using CSS and SVG, it occurred to me that the clip-path property, when combined with SVG paths, can be used to create circular menus fairly easily, especially considering the (expected) browser behaviour when handling pointer events on clipped regions as per the specification.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs. SVG: Graphical Text Effects</title>
+      <link>https://sarasoueidan.com/2015/07/31/css-vs-svg-graphical-text/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/31/css-vs-svg-graphical-text/</guid>
+      <description>This post is the first in a series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both. Since I am biased to SVG, this series is really intended to prove that SVG — because of its nature as both an image and a document format — is simply better than CSS when it comes to solving certain design problems on the web.</description>
+    </item>
+    
+    <item>
+      <title>Styling the Contents of SVG &amp;lt;use&amp;gt; with CSS</title>
+      <link>https://sarasoueidan.com/2015/07/16/styling-svg-use-with-css/</link>
+      <pubDate>Thu, 16 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/16/styling-svg-use-with-css/</guid>
+      <description>An in-depth article on how to style the contents of the SVG &amp;lt;use&amp;gt; element and overcome some challenges it brings. We get into where the contents are cloned (the shadow DOM!), what limitations that brings up and how to work around them by taking advantage of the CSS cascade and using CSS Variables to get full control over the content while providing fallback for non-supporting browsers. </description>
+    </item>
+    
+    <item>
+      <title>An Introduction To Graphical Effects in CSS</title>
+      <link>https://sarasoueidan.com/2015/04/29/css-graphics/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/04/29/css-graphics/</guid>
+      <description>In this article, we will take a deep introduction into CSS’s graphical effects—specifically, CSS Filters and Compositing and Blending capabilities. We will go over the properties for each, their different values, and usage examples and some of the graphial effects that can be created using nothing but a few lines of CSS. </description>
+    </item>
+    
+    <item>
+      <title>A Primer To Background Positioning In CSS</title>
+      <link>https://sarasoueidan.com/2015/03/24/css-background-positioning/</link>
+      <pubDate>Tue, 24 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/03/24/css-background-positioning/</guid>
+      <description>An article in which we take a deep dive into CSS’s background positioning properties with visual explanations and examples. Did you know that the CSS background-position property accepts edge offset values? That is, you can position a background image relative to any edge—not just top and left—and specify the offset relative to that edge using a length value. In this article, we will learn all about that, and more. </description>
+    </item>
+    
+    <item>
+      <title>Extending the Color Cascade with the CSS currentColor Variable</title>
+      <link>https://sarasoueidan.com/2015/02/24/currentcolor/</link>
+      <pubDate>Tue, 24 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/02/24/currentcolor/</guid>
+      <description>If you use Sass or LESS, then you probably already use variables in your style sheets and know how useful they are. If you don’t use a preprocessor, then you might be curious what the fuss is all about and why variables are so popular and how they can be useful. In this article, we’re going to get an overview of why variables are useful, and get acquainted with one particular variable: currentColor.</description>
+    </item>
+    
+    <item>
+      <title>I Wrote A CSS &lt;del&gt;Book&lt;/del&gt; Reference.</title>
+      <link>https://sarasoueidan.com/2015/02/04/codrops-css-reference/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/02/04/codrops-css-reference/</guid>
+      <description>Yesterday, we finally released a long-awaited project over at Codrops: Codrops&#39; new CSS Reference, authored by yours truly. Even though I wrote a post over at Codrops introducing the reference and its features, I want to share a little bit more about my experience writing it.
+Please note that as of January 2016, I am no longer the maintainer of the Codrops CSS Reference. Thus, unlike my usual highly-technical blog posts, this is a (possibly-boring, but short!</description>
+    </item>
+    
+    <item>
+      <title>Compositing And Blending In CSS</title>
+      <link>https://sarasoueidan.com/2015/01/27/compositing-and-blending-in-css/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/27/compositing-and-blending-in-css/</guid>
+      <description>If you&amp;rsquo;re a designer, then you&amp;rsquo;ve probably already come across blending effects some time or the other. Blending is one of the most frequently used effects in graphic and print design. You can add texture to text by blending it with its textured backdrop, create an illusion of merged images by blending these images together, and create a wide range of colorful effects that would not be possible without that fine level of color blending control.</description>
+    </item>
+    
+    <item>
+      <title>Using The CSS :target Selector To Create JavaScript-less UI Effects</title>
+      <link>https://sarasoueidan.com/2015/01/24/css-target-uses/</link>
+      <pubDate>Sat, 24 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/24/css-target-uses/</guid>
+      <description>You may or may not have used the :target selector before; and you may or may not have used it to show and hide elements without having to resort to JavaScript to handle this event for you. This article I wrote for the Adobe Dreamweaver team blog, serves as a short introduction to the :target selector, showing how you can use it to create JavaScript-less UI effects—for example, overlays, modals, etc.</description>
+    </item>
+    
+    <item>
+      <title>Styling and Animating SVGs with CSS</title>
+      <link>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</guid>
+      <description>CSS can be used to style and animate scalable vector graphics, much like it is used to style and animate HTML elements. In this article I wrote for Smashing Magazine, which is a modified transcript of a talk I recently gave at CSSconf EU and From the Front, I’ll go over the prerequisites and techniques for working with CSS in SVG. </description>
+    </item>
+    
+    <item>
+      <title>Making SVGs Responsive With CSS</title>
+      <link>https://sarasoueidan.com/2014/08/19/responsive-svgs/</link>
+      <pubDate>Tue, 19 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/08/19/responsive-svgs/</guid>
+      <description>An article on how to make embedded SVGs cross-browser responsive. We&#39;re going to cover embedding techniques, how to apply the &#34;Padding Hack&#34; and how to use inline media queries to make SVGs adaptive. </description>
+    </item>
+    
+    <item>
+      <title>Clipping in CSS and SVG — The &lt;code&gt;clip-path&lt;/code&gt; Property and &lt;code&gt;&amp;lt;clipPath&amp;gt;&lt;/code&gt; Element</title>
+      <link>https://sarasoueidan.com/2014/07/08/css-svg-clipping/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/07/08/css-svg-clipping/</guid>
+      <description>CSS and SVG have a lot in common. A lot of the features that we have in CSS today were imported from SVG. One of these features is the Clipping operation. Both CSS and SVG allow us to &#34;clip&#34; elements into custom non-rectangular shapes. In this article we will go over the clipping techniques in both CSS and SVG, covering everything you need to know to get started.
+Please note that the demos in this article may not work in your browser.</description>
+    </item>
+    
+    <item>
+      <title>Everything You Need To Know About The CSS &lt;code&gt;will-change&lt;/code&gt; Property</title>
+      <link>https://sarasoueidan.com/2014/06/10/css-will-change-property/</link>
+      <pubDate>Tue, 10 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/06/10/css-will-change-property/</guid>
+      <description>What the title says! I wrote this article for the Opera Developers&#39; blog, and it literally contains everything you need to know about the new CSS will-change property, including but not limited to: how to use it, when to use it, when not to use it, performance considerations, and more. </description>
+    </item>
+    
+    <item>
+      <title>Moving Forward With CSS Shapes</title>
+      <link>https://sarasoueidan.com/2014/05/05/moving-forward-with-css-shapes/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/05/05/moving-forward-with-css-shapes/</guid>
+      <description>Following up with the CSS Shapes 101 article, I share a list of great resources to learn more about CSS Shapes, including tutorials, examples, and developer tools. </description>
+    </item>
+    
+    <item>
+      <title>CSS Shapes 101</title>
+      <link>https://sarasoueidan.com/2014/04/29/css-shapes-101/</link>
+      <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/04/29/css-shapes-101/</guid>
+      <description>In this article, you&#39;ll learn everything you need to know to get started using CSS Shapes today. We will cover all the prerequisites: establishing a coordinate system, conditions for elements to be eligible for shapes, and more, then moving on to the properties used, their values and how each one affects the shape created, with lots of visual explanations and examples. </description>
+    </item>
+    
+    <item>
+      <title>CSS Regions Matter</title>
+      <link>https://sarasoueidan.com/2014/02/15/css-regions-matter/</link>
+      <pubDate>Sat, 15 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/02/15/css-regions-matter/</guid>
+      <description>I wrote this article before the news came out that Google decided to pull Regions out of Blink, which, in my opinion, is a big loss for the web community. So, even though the content of the article may go in vain, I think it&amp;rsquo;s still worth sharing why I think CSS Regions mattered, and wish they weren&amp;rsquo;t ditched like that. I hope you guys like it anyway.
+Disclaimer In no way is this article meant as an attack on Mr.</description>
+    </item>
+    
+    <item>
+      <title>Animating CSS Shapes with CSS Animations and Transitions</title>
+      <link>https://sarasoueidan.com/2014/01/14/animating-css-shapes/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/01/14/animating-css-shapes/</guid>
+      <description>Today we&#39;re going to be talking about animating CSS shapes with CSS animations. We&#39;ll be creating very basic &#34;shape-shifting&#34; layouts of sort. There are also many considerations to take when animating CSS shapes, so we&#39;ll go over all points in this article. This is the third article in a series of articles I&amp;rsquo;m writing about CSS shapes, so in this article I&amp;rsquo;m assuming you have a basic understanding of how CSS shapes are created.</description>
+    </item>
+    
+    <item>
+      <title>Using CSS Regions With CSS Shapes For A Better Reading Experience</title>
+      <link>https://sarasoueidan.com/2013/12/05/css-regions-with-shapes-for-readability/</link>
+      <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/12/05/css-regions-with-shapes-for-readability/</guid>
+      <description>Using CSS shapes we can flow our content in non-rectangular areas. And sometimes we want to be able to flow our content into multiple custom-shaped areas inside an element. If you&#39;ve read my previous article, you already know that this can be done with CSS Shapes, by using an image with alpha transparency with multiple shapes defined in it, and letting the browser extract the content&#39;s float areas from it. As appealing as this may sound and as creative as we can get with our shapes, flowing the text into multiple areas can easily make our content almost completely unreadable.</description>
+    </item>
+    
+    <item>
+      <title>Techniques For Creating Textured Text</title>
+      <link>https://sarasoueidan.com/2013/12/02/textured-text-techniques/</link>
+      <pubDate>Mon, 02 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/12/02/textured-text-techniques/</guid>
+      <description>For too long, we&#39;ve resorted to graphics editors to create images of text that has nice effects such as creative fills or that blends with its background in a nice subtle way. We used those images as a replacement for text on our pages, which made that text unaccessible and un-selectable.. But with all the advances in web design today, we can now create textured text effects using CSS, using SVG, and using HTML5 Canvas.</description>
+    </item>
+    
+    <item>
+      <title>Techniques For Responsive Typography</title>
+      <link>https://sarasoueidan.com/2013/11/11/responsive-typography-techniques/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/11/responsive-typography-techniques/</guid>
+      <description>Text is the most important part of a website. Did you know that are several ways to make text responsive? Be it big headlines or body copy, the article will cover all those techniques, serving as an ultimate reference for making text responsive. We will cover accessibility, media queries, viewport units, and much more. </description>
+    </item>
+    
+    <item>
+      <title>CSS Overlay Techniques</title>
+      <link>https://sarasoueidan.com/2013/11/07/css-overlay-techniques/</link>
+      <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/07/css-overlay-techniques/</guid>
+      <description>Overlays can sometimes be annoying, but also undoubtedly have their useful use cases. There are different approaches to creating overlays, some of them work better than others, and some of them come with gotchas that you need to be aware of, including performance implications. In HTML5, we also get a native way to create modals with less hassle and less code. In this article, we will cover all of that. </description>
+    </item>
+    
+    <item>
+      <title>Creating Non-Rectangular Layouts With CSS Shapes</title>
+      <link>https://sarasoueidan.com/2013/11/05/css-shapes/</link>
+      <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/05/css-shapes/</guid>
+      <description>Today we can create all kinds of shapes with CSS using CSS transforms, but all these shapes do not affect the flow of the content inside or around them. That is, if you create a triangle or a trapezoid with CSS, for example, the shape created does not define or affect the way the text inside it flows, or the way inline text around it does.
+With the introduction of CSS Shapes into the web, wrapping content in custom non-rectangular shapes, and recreating print designs and layouts on the web becomes a piece of cake!</description>
+    </item>
+    
+    <item>
+      <title>Navicon Transformicons: Animated Navigation Icons with CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</guid>
+      <description>The following is a collaboration post between Bennett Feely and I. After seeing Bennett&#39;s impressive animated navigation icon transformations (or &#34;Navicon Transformicons&#34;) pens on Codepen, I asked him if he would like to write a tutorial on how he did them as a guest post on my blog. He kindly approved. And as he doesn&#39;t have a lot of free time to work the article, we decided to collaborate on it.</description>
+    </item>
+    
+    <item>
+      <title>Draggable Metro App Showcase</title>
+      <link>https://sarasoueidan.com/2013/08/20/draggable-metro-app-showcase/</link>
+      <pubDate>Tue, 20 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/08/20/draggable-metro-app-showcase/</guid>
+      <description>Today I&#39;d like to share with you an interactive and touch-optimized metro app showcase concept for showcasing a metro (probably a Windows Phone) app screenshot. The screenshot will be draggable and swipable, and you&#39;ll have a couple of extra options to view how the app would look like in a mobile phone frame.
+Please note that this demo works only in browsers that support the Javascript objects and APIs used. I provided a couple of polyfills but the demo will only work in browsers that these polyfills provide fallback for.</description>
+    </item>
+    
+    <item>
+      <title>Building A Circular Navigation With CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/08/09/circular-navigation/</link>
+      <pubDate>Fri, 09 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/08/09/circular-navigation/</guid>
+      <description>In this article, we will learn how to apply CSS transforms to fake a &#34;slice&#34; shape, creating a circular navigation using nothing but CSS (and some maths!). The article includes an interactive demo that explains visually and step by step how the technique works and the shapes are created. </description>
+    </item>
+    
+    <item>
+      <title>S Gallery: A Responsive jQuery Gallery Plugin with CSS3 Animations</title>
+      <link>https://sarasoueidan.com/2013/07/12/s-gallery/</link>
+      <pubDate>Fri, 12 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/07/12/s-gallery/</guid>
+      <description>Today I&#39;m going to share with you a gallery plugin I built (yeah, like the world needs another gallery plugin, right?) after having stumbled upon SONY&#39;s products gallery while I was browsing their website a while ago. Their products&#39; image gallery is a simple one, but two things grabbed my attention about the gallery: It&#39;s made with Flash when it can totally be created with HTML, CSS3 and Javascript. It has a neat feature: exiting the slideshow mode back to the grid view mode, the last image which was active in the slideshow mode &#34;</description>
+    </item>
+    
+    <item>
+      <title>Creative Add/Remove Effects for List Items with CSS3 Animations</title>
+      <link>https://sarasoueidan.com/2013/06/27/creative-list-effects/</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/06/27/creative-list-effects/</guid>
+      <description>It&#39;s not enough to bring animations and visual transitions to an interface, they should serve a purpose and goal, and this goal should be improving the user&#39;s experience.  Transitions [&amp;hellip;] provide the grease that smoothes out what happens in the interface. Without transitional effects the user can be left to wonder what just occurred.
+ In today&amp;rsquo;s tutorial, we&amp;rsquo;ll be creating some creative animations and transitions for adding and removing items from a list, inspired by the concept from Pasquale D&amp;rsquo;Silva&amp;rsquo;s article on Medium.</description>
+    </item>
+    
+    <item>
+      <title>Horizontal Portfolio Layout with CSS3 Animations and jQuery</title>
+      <link>https://sarasoueidan.com/2013/06/15/horizontal-portfolio-layout/</link>
+      <pubDate>Sat, 15 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/06/15/horizontal-portfolio-layout/</guid>
+      <description>In this tutorial today we&#39;re going to create a horizontal portfolio layout with cool hover effects inspired by those on Guillaume Tomasi&#39;s personal website. The website is made in Flash, so I thought it would be nice to recreate the flash hover effect of the portfolio items using CSS3 animations and transitions, and some jQuery to replicate the image pan effect on hover.
+I&#39;ve also added a simple falling down effect on scroll, where the portfolio items fall down as soon as they enter the visible area of the viewport.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Windows-8-like animations with CSS3 and jQuery</title>
+      <link>https://sarasoueidan.com/2013/02/11/windows8-animations/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/02/11/windows8-animations/</guid>
+      <description>I have recently realized that CSS3 3D transforms have been out there for quite a long time now and yet I haven&#39;t experimented with them yet. I have also been using Windows 8 for a while now, and the first thing that struck me as impressive about it was the transitions and animations built into the dashboard, so I thought it would be really cool if my first experiment with CSS 3D transforms would be to recreate those animations and effects.</description>
+    </item>
+    
+  </channel>
+</rss>

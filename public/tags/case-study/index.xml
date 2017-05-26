@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Study on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/case-study/</link>
+    <description>Recent content in Case Study on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/case-study/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Art-Directing an SVG Embedded Using &amp;lt;object&amp;gt;</title>
+      <link>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</guid>
+      <description>I have recently finished a front-end development project for Provata Health — a US-based health and wellness company specializing in health promotion and behavior change science. As part of their marketing website, I worked on an infographic that showcases the three major health results one can achieve by following their health program. The graphic is a perfect candidate for SVG and you’ll see why throughout this article. But even though almost all of the graphics on the site were vector (which made the entire project exciting to me), I want to focus on this particular graphic and how and why I made the development choices I made while embedding it.</description>
+    </item>
+    
+  </channel>
+</rss>

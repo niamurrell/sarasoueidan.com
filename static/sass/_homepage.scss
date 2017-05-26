@@ -1,0 +1,127 @@
+.homepage__welcome {
+	text-align: center;
+
+	p {
+		font-size: 1.5em;
+		margin: 0 0 1.5em;
+	}
+}
+
+.homepage__intro {
+	font-size: 1.25em;
+	padding-top: 2em;
+}
+
+.homepage__photo-container { // photo of me
+	display: block; 
+
+	@media all and (max-width: 1024px) {
+		max-width: 600px;
+		margin: 0 auto 2em;
+	} 
+}
+
+	.homepage__photo {
+		width: 100%;
+		-ms-transform: rotate(-3deg);
+		-webkit-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+	}
+
+
+
+.homepage {
+	.card {
+		padding: 1.5em 1em .5em;
+		font-size: 1.1em;
+	}
+
+	.cards-col {
+		margin-top: -5vw;
+		-ms-transform: rotate(3deg);
+		-webkit-transform: rotate(3deg);
+		transform: rotate(3deg);
+	}
+
+	@media all and (max-width: 1230px) {
+		.cards-col {
+			margin-top: 1em;
+		}
+	}
+	
+	@media all and (max-width: 1024px) {
+		.cards-col {
+			margin-top: 2em;
+			-ms-transform: rotate(0deg);
+			-webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+			max-width: 600px;
+		}
+	}
+
+	.award-card {
+		padding-top: 75px;
+		overflow: hidden;
+
+		@media all and (max-width: 1024px) {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+	}
+
+	.award__figure {
+		width: 40%;
+		float: left;
+
+		img {
+			max-width: 250px; 
+			width: 100%;
+		}
+	}
+	.award__info {
+		width: 60%;
+		float: right;
+		font-size: .75em;
+		padding-left: 1em;
+	}
+
+
+	.card.red {
+		background: $red;
+	}
+	.card.black {
+		background: #111;
+		color: #fff;
+	}
+
+	.card.white {
+		background: #fff;
+		color: #111;
+	}
+	.card.grey {
+		background: #f8f8f8;
+		color: #000;
+	}
+
+	.card blockquote {
+		font-size: .9em;
+		border: none;
+		font-family: Quicksand;
+		font-weight: 400;
+	}
+
+	.card.red blockquote {
+		color: #fff;
+	}
+	.card.white blockquote {
+		color: #000;
+	}
+
+}
+
+.homepage__smb-photo {
+	width: 100%; 
+	position: relative; 
+	left: -80px;
+	margin-top: 1em;
+}

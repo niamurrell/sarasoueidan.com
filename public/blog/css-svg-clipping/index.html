@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Clipping in CSS and SVG — The &lt;code&gt;clip-path&lt;/code&gt; Property and &lt;code&gt;&amp;lt;clipPath&amp;gt;&lt;/code&gt; Element 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jul 8, 2014</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">19</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    <p class="size-2x">CSS and SVG have a lot in common. A lot of the features that we have in CSS today were imported from SVG. One of these features is the <em><strong>Clipping</strong></em> operation. Both CSS and SVG allow us to "clip" elements into custom non-rectangular shapes. In this article we will go over the clipping techniques in both CSS and SVG, covering everything you need to know to get started.</p>
+
+<p class="note warning">
+    Please note that the demos in this article may not work in your browser. You should check <a href="https://github.com/awgreenblatt/css-graphics">this compatibility table</a> out for more information.<strong> You don't <em>need</em> to view the live demos to follow up with the article.</strong> Not all clipping features are implemented and some features may be buggy. The purpose of this article is to go over how clipping works in CSS and SVG, and serves as a reference for when these features are fully implemented.  I'm  also not including any vendor prefixes in the code samples here, but they are included in the live demos.
+</p>
+
+<h2 class="deeplink" id="clipping">What is clipping?</h2>
+
+<p>Clipping is a graphical operation that allows you to fully or partially hide portions of an element. <strong>The clipped element can be any container or graphics element.</strong> The portions of the element that are shown or hidden are determined by a <em>clipping path</em>.</p>
+
+<figure>
+    <img src="../../images/clipping-illustration.svg" alt="">
+</figure>
+
+<p>A <strong>clipping path</strong> defines a region where everything on the &ldquo;inside&rdquo; of this region is allowed to show through but everything on the outside is &ldquo;clipped out&rdquo; and does not appear on the canvas. This region is known as the <em>clipping region</em>. Any parts of the element that lie outside of a clipping region are not drawn. This includes any content, background, borders, text decoration, outline and visible scrolling mechanism of the element to which the clipping path is applied, and those of its descendants.</p>
+
+<blockquote class="pull-quote">
+    The clipped element can be any container or graphics element.
+</blockquote>
+
+<p>A clipping path is conceptually equivalent to a custom viewport for the element it applies to. It influences what parts of the element are rendered on the screen, but it does <em>not</em> affect the element&rsquo;s inherent geometry&mdash;the element will affect the flow around it as it normally would, and every other element on the page will still see and treat the element as if it were still rectangular, even if it&rsquo;s clipped to a non-rectangular shape. If you want to change the way the content around the element flows and have it respond to the defined shape of the clip path, you can use the <a href="http://www.w3.org/TR/css-shapes/">CSS Shapes</a> properties. If you want to learn more about how to do that, you can check <a href="http://alistapart.com/article/css-shapes-101">the</a> <a href="http://sarasoueidan.com/blog/css-shapes/">articles</a> I wrote about this topic.</p>
+
+<h2 class="deeplink" id="clip-path">Clipping in CSS &ndash; The <code>clip-path</code> Property</h2>
+
+<p>The <code>clip-path</code> property is part of the CSS <a href="http://www.w3.org/TR/2014/WD-css-masking-1-20140213/">Masking Module</a>. The clipping operation has been a part of SVG since 2000, and has moved into the CSS Masking module so that it now allows clipping HTML elements as well as SVG elements.</p>
+
+<p>The <code>clip-path</code> property is used to specify a clipping path that is to be applied to an element.  Using <code>clip-path</code>, you can apply an SVG <code>&lt;clipPath&gt;</code> to an element by referencing that path in the property value. You can also define a clipping path using one of the <strong><a href="http://dev.w3.org/csswg/css-shapes-2/#ltbasic-shapegt">basic shapes</a></strong> defined in the CSS Shapes module. These shapes can be created using <strong>shape functions</strong>. The shape functions available are <code>polygon()</code>, <code>circle()</code>, <code>inset()</code> (used to define inset rectangles), and <code>ellipse()</code>.</p>
+
+<p>Applying a clipping path to an element using the <code>clip-path</code> property is very simple and straightforward:</p>
+
+<pre class="brush:css">
+/* Referencing an SVG clipPath */
+.element {
+    clip-path: url(#svgClipPathID);
+}
+
+/* Using a CSS basic shape function */
+.element {
+    clip-path: polygon(...); /* or one of the other shape functions */
+}
+</pre>
+
+<p>For example, if we were to define a polygonal clipping path using the <code>polygon()</code> function, and then apply it to an image, the code would look like the following:</p>
+
+<pre class="brush:css">
+img {
+    clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
+}
+</pre>
+
+<p>The result of applying the above line of CSS to an image would look like the following:</p>
+
+<figure>
+    <img src="../../images/clipping-example-1.png" alt="">
+</figure>
+
+<p><a href="{{ site.url }}/demos/css-svg-clipping/html-img-clipped-with-css/index.html" class="button">View Live Demo</a></p>
+
+<p>The basic shape functions allow us to create a limited number of shapes; the most complex of these shapes is a polygon. If you want to use a more complex shape that looks like more than just a group of connected straight lines, you can use the SVG <code>&lt;clipPath&gt;</code> element. As the name <code>&lt;clipPath&gt;</code> implies, you can clip to any arbitrary path. This means that you can use the <code>&lt;path&gt;</code> element to create any arbitrary path and use that as a clipping path.</p>
+
+<p>In our second example, we&rsquo;re going to define and use an SVG <code>clipPath</code>. The code for the clip path looks like the following:</p>
+
+<pre class="brush:html;">
+&lt;svg height="0" width="0"&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="svgPath"&gt;
+            &lt;path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M215,100.3c97.8-32.6,90.5-71.9,336-77.6
+        c92.4-2.1,98.1,81.6,121.8,116.4c101.7,149.9,53.5,155.9,14.7,178c-96.4,54.9,5.4,269-257,115.1c-57-33.5-203,46.3-263.7,20.1
+        c-33.5-14.5-132.5-45.5-95-111.1C125.9,246.6,98.6,139.1,215,100.3z"/&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>And this is how the clipping path looks like; it is just a simple path with no fill and a black stroke.</p>
+
+<figure>
+    <img src="../../images/the-svg-clippath.png" alt="">
+</figure>
+
+<p>We&rsquo;ll be talking more about SVG <code>&lt;clipPath&gt;</code> in the next section. But for now, we&rsquo;re just going to reference it and apply it to the image we have.</p>
+
+<pre class="brush:css">
+img {
+    clip-path: url(#svgPath);
+}
+</pre>
+
+<p>And the result would look like the following:</p>
+
+<figure>
+    <img src="../../images/clipping-example-2.png" alt="">
+</figure>
+
+<p><a href="{{ site.url }}/demos/css-svg-clipping/html-img-clipped-with-css-svg-clippath/index.html" class="button">View Live Demo</a></p>
+
+<p>Indeed, the <code>&lt;clipPath&gt;</code> element can contain any number of basic shapes (<code>&lt;rect&gt;</code>, <code>&lt;circle&gt;</code>, etc.), <code>&lt;path&gt;</code> elements, or even <code>&lt;text&gt;</code> elements.</p>
+
+<p>If you specify a piece of <code>&lt;text&gt;</code> inside a <code>&lt;clipPath&gt;</code>, that text will be used as a clipping path. Whatever&rsquo;s under the text will be visible &ldquo;through&rdquo; it, and anything outside the text area will not be rendered.</p>
+
+<p>Note here that you can clip <em>anything</em> to the text. This opens a door for a lot of possibilities and effects. You can use animated images (such as GIFs) or even videos, and then clip them to some text of your choice. The sky is the limit here.</p>
+
+<p>The following is an example of a piece of text used as a clipping path.</p>
+
+<pre class="brush:html">
+&lt;svg height="0" width="0"&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="svgTextPath"&gt;
+            &lt;text x="0" y="300" textLength="800px" lengthAdjust="spacing" font-family="Vollkorn" font-size="230px" font-weight="700" font-style="italic"&gt; Blossom &lt;/text&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>The cool thing about SVG <code>&lt;text&gt;</code> is that it can be displayed using a custom font, just like HTML text can. In this example I&rsquo;m using the <a href="http://www.google.com/fonts/specimen/Vollkorn">Vollkorn font</a> from Google Web Fonts. I&rsquo;ve set the width of the text to be the same as the width of the image, using the <code>textLength</code> attribute, and positioned the text using the <code>x</code> and <code>y</code> coordinates. Note here that the <code>x</code> and <code>y</code> coordinates determine the position of the bottom left corner of the text (where the bottom stands for the baseline of the text).</p>
+
+<p>The result of applying the above text clip path to the image looks like so:</p>
+
+<figure>
+    <img src="../../images/clipping-example-3.png" alt="">
+</figure>
+
+<p><a href="{{ site.url }}/demos/css-svg-clipping/html-img-clipped-with-css-svg-clippath-text/index.html" class="button">View Live Demo</a></p>
+
+<p>And as we mentioned, you can also use multiple basic shapes inside <code>&lt;clipPath&gt;</code>. We&rsquo;ll dig into <code>&lt;clipPath&gt;</code> and its contents in the next section, so, for now, we&rsquo;ll keep it simple. In this example I&rsquo;m using multiple <code>&lt;circle&gt;</code>s, each with a different size and position.</p>
+
+<pre class="brush:html">
+&lt;svg height="0" width="0"&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="svgPath"&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="50" cy="50" r="40" /&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="193.949" cy="235" r="74.576"/&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="426.576" cy="108.305" r="47.034"/&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="346.915" cy="255.763" r="43.644"/&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="255.39" cy="82.882" r="35.17"/&gt;
+            &lt;!-- more circles... --&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>The image will show through these circles combined, but will not be rendered outside them.</p>
+
+<figure>
+    <img src="../../images/clipping-example-4.png" alt="">
+</figure>
+
+<p><a href="{{ site.url }}/demos/css-svg-clipping/html-img-clipped-with-css-svg-clippath-multiple-shapes/index.html" class="button">View Live Demo</a></p>
+
+<p>As we mentioned at the beginning of this article, you can apply clip paths using the <code>clip-path</code> property to SVG elements too. In all of the above examples, the clipping paths were applied to an HTML <code>&lt;img&gt;</code>. In the following example, a clipping path is applied to the root <code>&lt;svg&gt;</code> element. The same cherry blossoms image we used above is now part of the SVG, referenced using the <code>&lt;image&gt;</code> element.</p>
+
+<p>The <code>&lt;image&gt;</code> element in SVG is used to include a graphic that can be either an entire SVG or a raster image. If it&rsquo;s an SVG you&rsquo;re referencing in <code>&lt;image&gt;</code>, the <code>width</code> and <code>height</code> attributes will be used to establish the viewport of that SVG. If you&rsquo;re referencing a raster image (which is what we&rsquo;re doing here), the image will be scaled to fit in the specified <code>width</code> and <code>height</code>. So I made sure the aspect ratio of the <code>width</code> and <code>height</code> attribute match the aspect ratio of the image I&rsquo;m using, to prevent it from being distorted.</p>
+
+<p>When you create an <code>&lt;svg&gt;</code> document, you establish its viewport by specifying the width
+and height of the <code>&lt;svg&gt;</code> element. Anything drawn outside the limits of the viewport will be clipped out and will not be displayed. You can establish a new custom viewport of your own with the <code>&lt;clipPath&gt;</code> element.</p>
+
+<pre class="brush:html">
+&lt;svg height="500" width="800"&gt;
+    &lt;image xlink:href="flowers.jpg" x="0" y="0" width="800" height="500"/&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="theSVGPath"&gt;
+            &lt;rect x="0" y="0" stroke="#000000" stroke-miterlimit="10" width="108" height="500"/&gt;
+            &lt;rect x="121.5" y="25.5" stroke="#000000" stroke-miterlimit="10" width="55" height="455"/&gt;
+            &lt;rect x="192.5" y="9.5" stroke="#000000" stroke-miterlimit="10" width="60" height="484"/&gt;
+            &lt;rect x="271.5" y="44.5" stroke="#000000" stroke-miterlimit="10" width="63" height="416"/&gt;
+            &lt;rect x="349.5" y="25.5" stroke="#000000" stroke-miterlimit="10" width="208" height="447"/&gt;
+            &lt;rect x="574.5" y="44.5" stroke="#000000" stroke-miterlimit="10" width="60" height="446"/&gt;
+            &lt;rect x="644.5" y="9.5" stroke="#000000" stroke-miterlimit="10" width="68" height="471"/&gt;
+            &lt;rect x="736.5" y="18.5" stroke="#000000" stroke-miterlimit="10" width="49" height="462"/&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>Using <code>clip-path</code>, we&rsquo;re going to apply the <code>clipPath</code> to the <code>&lt;svg&gt;</code>:</p>
+
+<pre class="brush:css">
+svg {
+    clip-path: url(#theSVGPath);
+}
+</pre>
+
+<p><figure>
+    <img src="../../images/clipping-example-5.png" alt="">
+</figure>
+<a href="{{ site.url }}/demos/css-svg-clipping/svg-image-clipped-with-css/index.html" class="button">View Live Demo</a></p>
+
+<p>More examples applying a clipping path to an SVG element in the <code>&lt;clipPath&gt;</code> section below.</p>
+
+<h3 class="deeplink" id="reference-box">A Clipping Path's Reference Box</h3>
+
+<p>In addition to the clipping path itself, you can define a <em>reference box</em> in the <code>clip-path</code> property when the clipping path applied is a <code>&lt;basic-shape&gt;</code>; that is, a clipping path created using one of the basic shape functions. The reference box is hence only specified for CSS shapes used as clip paths, not for SVG <code>&lt;clipPath&gt;</code>s. For an SVG <code>&lt;clipPath&gt;</code>, the reference box is the border box of an HTML element.</p>
+
+<p>So a reference box is specified for a <code>&lt;basic-shape&gt;</code> clip path. If the element being clipped is an HTML element, the reference box can be one of the four basic box model boxes: <code>margin-box</code>, <code>border-box</code>, <code>padding-box</code>, or <code>content-box</code>. Each of these is self-explanatory.</p>
+
+<p>If the <code>&lt;basic-shape&gt;</code> clip path is applied to an SVG element, the reference box can be set to one of three keyword values:</p>
+
+<ul>
+<li>fill-box &ndash; uses the object bounding box as the reference.</li>
+<li>stroke-box &ndash; uses the stroke bounding box as the reference.</li>
+<li>view-box &ndash; uses the uses the nearest SVG viewport as the reference box if no <code>viewBox</code> is specified. If a <code>viewBox</code> is indeed specified, then the coordinate system is established by the origin and dimensions specified by the <code>viewBox</code>.</li>
+</ul>
+
+<p>If you set any of the CSS box model boxes as a reference box for an SVG element, the <code>fill-box</code> will be used. And if you use one of the SVG reference boxes on an HTML element, the <code>border-box</code> will be used.</p>
+
+<pre class="brush:css">
+.element {
+    clip-path: polygon(...) padding-box;
+}
+</pre>
+
+<p>If <em>only</em> a reference box is specified in the <code>clip-path</code> property&mdash;that is, no basic shape is defined&mdash;the browser uses the edges of the specified box, including any corner shaping (e.g. defined by the <code>border-radius</code> property), as clipping path.</p>
+
+<p>For example, using the following snippet, the element will be clipped to the rounded corners specified by <code>border-radius</code>:</p>
+
+<pre class="brush:css">
+.el {
+    clip-path: border-box;
+    border-radius: 25%;
+}
+</pre>
+
+<p class="note">Note that at the time of writing of this article, specifying a reference box in the `clip-path` property doesn't work in Webkit because it's not yet implemented.</p>
+
+<h3 class="deeplink" id="clip-path-notes"><code>clip-path</code> Notes: Stacking Contexts, Pointer Events and Animations</h3>
+
+<p>It is important to know that any value other than the default <code>none</code> for the <code>clip-path</code> property results in the creation of a stacking context on the element the same way the <code>opacity</code> property does.</p>
+
+<blockquote class="pull-quote">
+    Any value other than the default `none` for the `clip-path` property results in the creation of a stacking context on the element.
+</blockquote>
+
+<p>Furthermore, according to the Masking specification, <strong>pointer events must not be dispatched on the clipped-out (non-visible) regions of a shape</strong>. This means that the element should not respond to pointer events outside the remaining visible area.</p>
+
+<p>A clipping path can also be animated. If the clipping path used is an SVG <code>&lt;clipPath&gt;</code>, it can be animated by including an animation inside it (See next section for details). If the cipping path is a basic shape created using a basic shape function, it can be animated using CSS animations and transitions. For details on how to animate a shape created using a shape function, check out the <a href="http://sarasoueidan.com/blog/animating-css-shapes">Animating CSS Shapes with CSS Animations and Transitions</a> article I wrote a while back.</p>
+
+<h2 class="deeplink" id="svg-clippath-element">Clipping in SVG &ndash; The <code>&lt;clipPath&gt;</code> Element</h2>
+
+<p>In SVG, the <code>clipPath</code> element is used to define a clipping path to clip elements. If you don&rsquo;t want to use CSS to apply the clipping path to an element, you can do it in SVG using the <code>clip-path</code> presentation attribute.</p>
+
+<p class="note">
+Have you seen/read my "Styling and Animating Scalable Vector Graphics with CSS" slides? If not, you may want to have a look at them for more information about SVG presentation attributes and CSS properties used to style SVG elements. You can check them out <a href="https://docs.google.com/presentation/d/1Iuvf3saPCJepVJBDNNDSmSsA0_rwtRYehSmmSSLYFVQ/pub?start=false&loop=false&delayms=3000#slide=id.p">here</a>.
+</p>
+
+<pre class="brush:html">
+&lt;svg&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="myClippingPath"&gt;
+            &lt;!-- ... --&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+    &lt;!-- the element you want to apply the clipPath to can be any SVG element --&gt;
+    &lt;g id="my-graphic" clip-path="url(#myClippingPath)"&gt;
+        &lt;!-- ... --&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+
+<h3 class="deeplink" id="contents-of-clippath">Contents Of a <code>&lt;clipPath&gt;</code></h3>
+
+<p>We mentioned earlier that an SVG <code>clipPath</code> can contain any number of basic shapes, arbitrary <code>&lt;path&gt;</code>s, and/or <code>&lt;text&gt;</code> elements. It can even contain more than that, and this is where it can get interesting.</p>
+
+<p>The <code>&lt;clipPath&gt;</code> content can be descriptive (<code>&lt;title&gt;</code>, <code>&lt;desc&gt;</code>, <code>&lt;metadata&gt;</code>). It can also be a shape (<code>&lt;circle&gt;</code>, <code>&lt;ellipse&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;path&gt;</code>, <code>&lt;polygon&gt;</code>, <code>&lt;polyline&gt;</code>, <code>&lt;rect&gt;</code>) or a <code>&lt;text&gt;</code>. A <code>&lt;clipPath&gt;</code> can also contain a <code>&lt;use&gt;</code> element or a <code>&lt;script&gt;</code>. Note that <code>&lt;use&gt;</code> in <code>&lt;clipPath&gt;</code> can only reference the simple SVG shapes mentioned above&mdash;it cannot be used to reference groups inside <code>&lt;clipPath&gt;</code>, for example; that simply won&rsquo;t work.</p>
+
+<p>And last but not least, a <code>&lt;clipPath&gt;</code> can contain an <strong>animation</strong> using <code>&lt;animate&gt;</code>, <code>&lt;animateColor&gt;</code>, <code>&lt;animateMotion&gt;</code>, <code>&lt;animateTransform&gt;</code>, or <code>&lt;set&gt;</code>. This opens a door for a lot of creativity, as you can imagine.</p>
+
+<p>To demonstrate, I&rsquo;m just going to add a simple animation to the demo using multiple <code>&lt;circle&gt;</code>s as a clipping path. Every <code>&lt;circle&gt;</code> will get an animation. Because I want to keep it simple, I&rsquo;m just gonna use the same animation on all of the circles. You can create fancier effects using different effects and playing with animation delays, of course. But, since this is a 101 article, I&rsquo;m gonna stay on the simple side. The code with the animations look like so:</p>
+
+<pre class="brush:html">
+&lt;svg height="0" width="0"&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="svgPath"&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="50" cy="50" r="40"&gt;
+                        &lt;animate
+                            attributeName="r"
+                            attributeType="XML"
+                            from="0" to="250"
+                            begin="0s" dur="3s"
+                            fill="freeze"
+                            repeatCount="indefinite"/&gt;
+                    &lt;/circle&gt;
+            &lt;circle stroke="#000000" stroke-miterlimit="10" cx="193.949" cy="235" r="74.576"&gt;
+                &lt;animate
+                    attributeName="r"
+                    attributeType="XML"
+                    from="0" to="250"
+                    begin="0s" dur="3s"
+                    fill="freeze"
+                    repeatCount="indefinite"/&gt;
+            &lt;/circle&gt;
+            &lt;!-- ... --&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>The animation specified for each circle will animate the size of the circle&mdash;more specifically, its radius (<code>r</code>)&mdash;over the course of three seconds, from <code>0</code> to <code>250</code> pixels. I&rsquo;ve also set the animation to repeat indefinitely.</p>
+
+<p>Click on the following button to view the live demo. But before you do, note that there is a bug (see bug details <a href="https://code.google.com/p/chromium/issues/detail?id=391604">here</a>), so the demo may not work for you if you&rsquo;re on Chrome or Safari. For now, I recommend using Firefox to see the working live demo, until the bug has been fixed.</p>
+
+<p><a href="{{ site.url }}/demos/css-svg-clipping/html-img-clipped-with-css-svg-clippath-animated/index.html" class="button">View Animated clipPath Demo Live</a></p>
+
+<p>Note that the content of a <code>&lt;clipPath&gt;</code> also cannot involve groups (<code>&lt;g&gt;</code>s). For example, if we were to add a group element to the demo that uses multiple circles as a clipping path, the demo will no longer work&mdash;the clipping path will no longer be applied to the image.</p>
+
+<pre class="brush:html">
+&lt;svg height="0" width="0"&gt;
+    &lt;defs&gt;
+        &lt;clipPath id="svgPath"&gt; &lt;!-- WILL NOT WORK --&gt;
+            &lt;g&gt; &lt;!-- WILL NOT WORK --&gt;
+                &lt;circle stroke="#000000" stroke-miterlimit="10" cx="193.949" cy="235" r="74.576"/&gt;
+                &lt;circle stroke="#000000" stroke-miterlimit="10" cx="426.576" cy="108.305" r="47.034"/&gt;
+                &lt;!-- ... --&gt;
+            &lt;/g&gt;
+        &lt;/clipPath&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<h3 class="deeplink" id="clippathunits">The <code>clipPathUnits</code> Attribute</h3>
+
+<p>The <code>&lt;clipPath&gt;</code> element can have several attributes, including <code>id</code>, <code>class</code>, <code>transform</code>s, and <a href="http://www.w3.org/TR/2011/REC-SVG11-20110816/intro.html#TermPresentationAttribute">presentation attributes</a> like <code>fill</code> and <code>stroke</code>, among <a href="http://www.w3.org/TR/2011/REC-SVG11-20110816/styling.html#SVGStylingProperties">many others</a>. But the one attribute that stands out, and that is particularly useful, is the <code>clipPathUnits</code> attribute.</p>
+
+<p><blockquote class="pull-quote">
+    The <code>clipPathUnits</code> attribute is used to specify a coordinate system for the contents of the <code>&lt;clipPath&gt;</code>.
+</blockquote>
+The <code>clipPathUnits</code> attribute is used to specify a coordinate system for the contents of the <code>&lt;clipPath&gt;</code>. It takes one of two values: <code>objectBoundingBox</code> or <code>userSpaceOnUse</code>. The default value is <code>userSpaceOnUse</code>.</p>
+
+<pre class="brush:html">
+clipPathUnits = "userSpaceOnUse | objectBoundingBox"
+</pre>
+
+<dl>
+    <dt>userSpaceOnUse</dt>
+    <dd>
+        The contents of the <code>clipPath</code> represent values in the current <em><strong>user coordinate system</strong></em> in place at the time when the <code>clipPath</code> element is referenced (i.e., the user coordinate system for the element referencing the <code>clipPath</code> element via the <code>clip-path</code> property).
+        <p>
+            The current <strong>user coordinate system</strong> (a.k.a <em><strong>local coordinate system</strong></em>) is the coordinate system that is currently active and which is used to define how coordinates and lengths are located and computed. The user coordinate system for an HTML element with an associated CSS box model is different from that of an SVG element with no such box model.
+        </p>
+        <p>
+            For elements that have an associated CSS layout box, the current user coordinate system has its origin at the top left corner of a reference box and one unit equals one CSS pixel. The viewport for resolving percentage values is defined by the width and height of the reference box. I'm sure you're already familiar with this. So if you have a <code>&lt;clipPath&gt;</code> containing a <code>&lt;circle&gt;</code> whose center is positioned at <code>cx = "100"</code> and <code>cy = "100"</code>, the center will be positioned 100 pixels to the left and 100 pixels down inside the boundaries of the reference box.
+        </p>
+        <p>
+            If the element is an SVG element and thus does not have an associated CSS layout box, the current user coordinate system has its origin at the top left corner of the element's <strong>nearest viewport</strong>. In most cases, the nearest viewport is the viewport established by the width and height of the closest <code>&lt;svg&gt;</code> ancestor. If you're not nesting <code>&lt;svg&gt;</code>s, it's simply the viewport you establish on the root <code>&lt;svg&gt;</code>.
+        </p>
+        <p>
+            Note that the coordinate system on an SVG element can be modified using the <code>viewBox</code> attribute, among other attributes which may contribute to changing the coordinate system. However, that's outside the scope of this article. So in this article I'm going to work under the assumption that no <code>viewBox</code> is modified, and hence the browser will use the default coordinate system with the origin at the top left corner, and dimensions equal to the dimensions of the <code>&lt;svg&gt;</code>.
+        </p>
+    </dd>
+    <dt>objectBoundingBox</dt>
+    <dd>
+        The coordinate system has its origin at the top left corner of the <strong><em>bounding box</em></strong> of the element to which the clipping path applies to and the same width and height of this bounding box. A bounding box is the object bounding box for all SVG elements (it contains only an element's geometric shape) and the border box for HTML elements with an associated box model.
+        <p>
+            This value is particularly useful for SVG elements because it allows you to apply the clip path to the boundaries of the element itself, not the coordinate system on use. To demonstrate, here is an image showing the result of applying the clip path to an image inside an SVG canvas using <code>userSpaceOnUse</code> versus <code>objectBoundingBox</code>. The grey border represents the border of the <code>&lt;svg&gt;</code> element where the viewport is set. For the image on the right, I've added a grey border around the clipped image just to show the boundaries of the bounding box.
+        </p>
+        <figure>
+            <img src="../../images/clippathunits.png" alt="">
+            <figcaption>The result of applying the <code>clipPath</code> to an image inside the SVG canvas using <code>userSpaceOnUse</code> (left) and <code>objectBoundingBox</code> (right). </figcaption>
+        </figure>
+        <p>
+            In the image on the left, the clipping path is positioned in the coordinate system established on the viewport of the SVG. When using <code>objectBoundingBox</code>, the bounding box of the image itself is used as the coordinate system of the clipping path.
+        </p>
+        <p>
+            One important thing to note here is that <strong>when you use the <code>objectBoundingBox</code> value, the coordinates specified for the contents of the <code>&lt;clipPath&gt;</code> must be in the range [0, 1]</strong>&mdash;the coordinate system becomes a unit system, and the coordinates of the shapes inside a <code>clipPath</code> have to be fractions in that range.
+        </p>
+        <figure>
+            <img src="../../images/clippathunits-system.jpg" alt="">
+            <figcaption>
+                The coordinate system used for the <code>objectBoundingBox</code> value on the right, versus that used for the <code>userSpaceOnuse</code> on the left.
+            </figcaption>
+        </figure>
+        <p>
+            For example, if the clip path being applied to an element contains a circle positioned so that its center lies at the center of the clipped element:
+        </p>
+        <pre class="brush:html">
+            &lt;clipPath&gt;
+                &lt;circle cx="350" cy="350" r="300" /&gt;
+            &lt;/clipPath&gt;
+        </pre>
+        <p>
+            the circle position (and radius) would be expressed in fractions like so:
+        </p>
+        <pre class="brush:html">
+            &lt;clipPath clipPathUnits="objectBoundingBox"&gt;
+                &lt;circle cx=".5" cy=".5" r=".45" /&gt;
+            &lt;/clipPath&gt;
+        </pre>
+        <p>
+            The fractions are like percentage values in this case.
+        </p>
+    </dd>
+</dl>
+
+<h3 class="deeplink" id="-svg-clippath-notes"><code>&lt;clipPath&gt;</code> Notes</h3>
+
+<p><code>clipPath</code> elements are never rendered directly; their only usage is as something that can be referenced using the <code>clip-path</code> property. The <code>display</code> property does not apply to the <code>clipPath</code> element; thus, <code>clipPath</code> elements are not directly rendered even if the <code>display</code> property is set to a value other than <code>none</code>, and <code>clipPath</code> elements are available for referencing even when the <code>display</code> property on the <code>clipPath</code> element or any of its ancestors is set to <code>none</code>.</p>
+
+<p>Remember what we said earlier about pointer events when an HTML element is clipped? The same standard behavior is defined in the SVG Clipping and Masking specification: By default, pointer-events must not be dispatched on the clipped (non-visible) regions of an SVG element. The spec then mentions that <q>later versions of SVG may define new properties to enable fine-grained control over the interactions between hit testing and clipping</q>.</p>
+
+<p>Firefox implements the same non-standard behavior we mentioned before&mdash;areas outside the clipping regions do not respond to pointer events.</p>
+
+<p>Even though Chrome implements the standard behavior for the <code>clip-path</code> property on HTML elements, when you apply a <code>&lt;clipPath&gt;</code> to an SVG element, the behavior is the same as the one implemented in Firefox&mdash;only the visible areas respond to pointer events. I&rsquo;m not sure if this is a feature or a bug.</p>
+
+<p>In the following example, an SVG <code>&lt;clipPath&gt;</code> is applied to an SVG <code>&lt;image&gt;</code>. The clip path is similar to the one we used before, where the image is clipped by a number of rectangles. The image becomes translucent when you hover over it.</p>
+
+<p><pre class="brush:css">
+image {
+    clip-path: url(#svgPath);
+}
+image:hover {
+    opacity: .5;
+}
+</pre>
+<a href="{{ site.url }}/demos/css-svg-clipping/svg-img-clipped-pointer-events/index.html" class="button">Try The Demo Out Live</a></p>
+
+<p>Also, note that an empty clipping path will completely clip away the element that had the <code>clip-path</code> property applied.</p>
+
+<h2 class="deeplink" id="final-words">Final Words</h2>
+
+<p>Clipping is one of those graphical operations that allow us to create irregular shapes in an otherwise rectangular web page. Indeed, clipping is a perfect companion to CSS shapes. If you&rsquo;ve read any of my <a href="http://alistapart.com/article/css-shapes-101">previous</a> <a href="http://sarasoueidan.com/blog/css-shapes/">articles</a> about CSS Shapes, then you already know that the <code>clip-path</code> property can be an indispensable companion to CSS Shapes in some use cases. And once CSS Shapes properties can <a href="http://dev.w3.org/csswg/css-shapes-2/#referencing-svg-shapes">reference SVG paths</a> (<a href="http://dev.w3.org/csswg/css-shapes-2/">CSS Shapes Module Level 2</a>), in addition to the basic CSS shapes, the combination of Shapes and Clipping will allow us to create visually compelling designs that break the norms of the rectangle.</p>
+
+<p>I hope you found this article useful. Thank you for reading!</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

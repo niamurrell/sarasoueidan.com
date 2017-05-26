@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CSS &amp; SVG Clipping Demo #2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+    </head>
+    <body>
+        <style>
+            .css-clipped {
+                width: 800px;
+                height: 500px;
+                -webkit-clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
+                clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
+            }
+        </style>
+        <img class="css-clipped" src="flowers.jpg" alt="Cherry Blossoms.">
+    </body>
+</html>

@@ -1,0 +1,61 @@
+---
+layout: default
+title: Articles written by Sara Soueidan &ndash; Freelance Front-end Web Developer
+name: writing
+---
+<div class="full-width">
+    <div class="container">
+        <div class="row">        
+            <section class="col-8" role="main">
+                <!-- <div id="search-container">
+                    <input type="text" id="search-input" placeholder="Looking for a particular article? Search for it...">
+                    <ul id="results-container"></ul>
+                </div> -->
+                <br>
+                <script type="text/javascript">
+                    var search_results = document.getElementById('results-container'),
+                        input = document.getElementById('search-input');
+
+                    document.body.onclick = function(e) {
+                        search_results.innerHTML = " ";
+                    }
+                    search_results.addEventListener('click', function(e){e.stopPropagation()}, false);
+                    input.addEventListener('click', function(e){e.stopPropagation()}, false);
+                </script>
+                <ul class="articles-list">
+                    {% for post in paginator.posts %}
+                    {% unless post.tags contains 'draft' %}
+                    <li>
+                        {% if post.external %}
+                        <a class="post-title" href="{{ post.external.url }}">{{ post.title }}</a> {% endif %} {% unless post.external or post.tags contains 'draft' %}
+                        <a class="post-title" href="{{ post.url }}">
+                            {{ post.title }}
+                            {% if post.subtitle %}<span class="subtitle">{{ post.subtitle }}</span>{% endif %}
+                        </a> {% endunless %}
+                        <span class="post-meta"><time>{{ post.date | date: "%B %-d, %Y" }}</time> {% if post.external %} &mdash; <span class="post-host">{{ post.external.host }}</span> {% endif %}</span>
+                        <!-- Jekyll Source modified from: http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ -->
+                        <ul class="tags">
+                            {% for tag in post.tags %} {% assign t = tag %}
+                            <li><a href='{{site.root}}/tags/{{t replace:" ","-" }}/index.html'>{{t | downcase | replace:" ","-" }}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {{ post.excerpt }}
+
+                        <p><small><a href="{{ post.url }}" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                    {% endunless %}
+                    {% endfor %}
+                    <div class="pagination">
+                        {% if paginator.previous_page %}
+                        <a href="{{ paginator.previous_page_path }}" class="button previous " title="Previous Page">Newer Articles</a> {% else %}
+                        <span class="button button--disabled">Newer Articles</span> {% endif %} {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path }}" class="button  next" title="Next Page">Older Articles</a> {% else %}
+                        <span class="button button--disabled">Older Articles</span> {% endif %}
+                    </div>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>

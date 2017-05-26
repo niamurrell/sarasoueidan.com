@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Review on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/review/</link>
+    <description>Recent content in Review on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Apr 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lessons from the “Seductive Interaction Design” Book</title>
+      <link>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</link>
+      <pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</guid>
+      <description>In this article today, I’m going to share with you some of the lessons I learned from one of the best books I’ve read: Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences. I believe that you should read this book yourselves to fully appreciate all the information and insight the writer has to share. I will cover only the first half of the book. I will be pasting some excerpts, because there are many things that the writer describes a lot better than I could ever do.</description>
+    </item>
+    
+  </channel>
+</rss>

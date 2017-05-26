@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/book/</link>
+    <description>Recent content in Book on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chapter 4, Smashing Book 5</title>
+      <link>https://sarasoueidan.com/2015/07/21/smashing-book-5/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/21/smashing-book-5/</guid>
+      <description>The new Smashing Book is out! It’s packed with a lot of time-saving, practical techniques for crafting fast, maintainable and scalable responsive websites. I wrote a chapter in the book—Chapter 4: Mastering SVG For Responsive Web Design. Here is an overview of what that chapter covers, and why I think you should buy the book. Photo credit: Mattia Compagnucci  I always get questions from my followers about a good place to start learning SVG.</description>
+    </item>
+    
+    <item>
+      <title>Lessons from the “Seductive Interaction Design” Book</title>
+      <link>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</link>
+      <pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</guid>
+      <description>In this article today, I’m going to share with you some of the lessons I learned from one of the best books I’ve read: Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences. I believe that you should read this book yourselves to fully appreciate all the information and insight the writer has to share. I will cover only the first half of the book. I will be pasting some excerpts, because there are many things that the writer describes a lot better than I could ever do.</description>
+    </item>
+    
+  </channel>
+</rss>

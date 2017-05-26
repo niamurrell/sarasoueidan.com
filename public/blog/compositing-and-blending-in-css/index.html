@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Compositing And Blending In CSS 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jan 27, 2015</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">15</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    <p>If you&rsquo;re a designer, then you&rsquo;ve probably already come across blending effects some time or the other. Blending is one of the most frequently used effects in graphic and print design. You can add texture to text by blending it with its textured backdrop, create an illusion of <em>merged</em> images by blending these images together, and create a wide range of colorful effects that would not be possible without that fine level of color blending control.</p>
+
+<figure>
+<img src="../../images/blending-examples.png" />
+<figcaption>Examples of typographic and image effects created using CSS blend modes. See following sections for live demos.</figcaption>
+</figure>
+
+<p>Graphics editors such as Photoshop or Illustrator come with a set of blending <em>modes</em>. <strong>Blend modes</strong> allow you to specify <em>how</em> you want your elements to blend together, thus changing the colors of the area where these elements intersect. Each mode uses a specific color formula to mix the colors of the <em>source</em> and the <em>destination</em>.</p>
+
+<p>Different modes give different end results. Before we talk about the different blend modes, and since we mentioned the <strong>source</strong> and <strong>destination</strong> elements, let&rsquo;s have a quick look at the concept of compositing, and how it is related to blending in CSS.</p>
+
+<h2 class="deeplink" id="compositing">What Is Compositing?</h2> 
+
+<p>Compositing is the combining of a graphic element with its <em>backdrop</em>.</p>
+
+<p>A <strong>backdrop</strong> is <strong>the content behind the element</strong> and is what the element is composited with.</p>
+
+<p><img src="../../images/backdrop.png" alt="Backdrop Visual Illustration" /></p>
+
+<p>Compositing defines how what you want to draw will be blended with what is already drawn on the canvas. The <strong>source</strong> is what you want to draw, and the <strong>destination</strong> is what is already drawn (the backdrop).</p>
+
+<p>So, if you have two elements, and these elements overlap, you can think of the element on top as being the source, and the parts of the element behind that lie beneath it, will be the destination.</p>
+
+<p>Using different composite operations (there are 16 operations), you can specify which parts of the two overlapping elements will be drawn, and which will not.</p>
+
+<p><br></p>
+
+<p><img src="../../images/porter-duff.png" alt="Porter Duff Compositing Operations Visual" /></p>
+
+<p><br></p>
+
+<p>These composite operations are known as <strong>Porter Duff compositing operations</strong>. These operations specify what portions of the source and destination will be drawn, and blend modes specify how how the colors from the graphic element (source) and the backdrop (destination) interact. The illustrations in the above image are from the Compositing and Blending spec.
+In HTML5 Canvas context, these oprations are specified using the <code>globalCompositeOperation</code> property, and can be used to clip backgrounds to specific shapes, such as text, thus creating the effect of texture-filled text in Canvas. I have written about this process in <a href="http://tympanus.net/codrops/2013/12/02/techniques-for-creating-textured-text/">this article</a> over at Codrops.</p>
+
+<p>Together, Porter Duff Compositing and blending form the overall compositing operation for intersecting elements. According to the specification, “typically, the blending step is performed first, followed by the Porter-Duff compositing step. In the blending step, the resultant color from the mix of the element and the the backdrop is calculated. The graphic element’s color is replaced with this resultant color. The graphic element is then composited with the backdrop using the specified compositing operator.”</p>
+
+<p>Therefore, the way two intersecting or overlapping elements are handled is by blending their colors based on a blend mode, and then drawing only the parts specified by the composite operation.</p>
+
+<hr>
+
+<p>In CSS, we have no way to specify a composite operation. The default composite operation used is <code>source-over</code>. Both the source and the destination elements remain, and the area where they intersect is blended using the blend mode specified.</p>
+
+<hr>
+
+<p>Before the <a href="http://www.w3.org/TR/compositing-1/">Compositing and Blending specification</a> was introduced, CSS allowed one type of composite operations: simple alpha compositing. This is what the <code>opacity</code> property is for. By changing an element&rsquo;s opacity, the browser makes it translucent so that the colors of its backdrop can show through.</p>
+
+<p>Today, two main properties exist that allow us to blend elements and backround images by specifying one of 16 available blend modes. These two properties are <code>background-blend-mode</code> and <code>mix-blend-mode</code>. Let&rsquo;s get to know each.</p>
+
+<h2 class="deeplink" id="background-blend-mode">Blending Background Layers: The <code>background-blend-mode</code> Property</h2> 
+
+<p>The <code>background-blend-mode</code> property, as its name suggests, is used to specify a blend mode for an element&rsquo;s background layer. A background layer can be an image, or the background color.</p>
+
+<p>In other words, <code>background-blend-mode</code> allows you to blend together an element&rsquo;s background image with the images and/or background color behind it.</p>
+
+<p>If the element has more than one background image, you can specify multiple blend modes—each blend mode will be used for a background image such that the first blend mode in the list corresponds to the first background image in the list of background images, and so on.</p>
+
+<p>Then, each background layer is blended with the element’s background layer that is below it and the element’s background color. Which means that, if you have two background images and a background color:</p>
+
+<pre class="brush:css">
+background-image: url(first-image.png), url(second-image.png);
+background-color: orange;
+background-blend-mode: screen, multiply;
+</pre>
+
+<p>The <code>second-image.png</code> background will blend with the background color using the <code>multiply</code> mode, and then the <code>first-image.png</code> background will blend with the second image and the background color using the <code>screen</code> blend mode. (Reminder: the first background image in the list is the one on top, and the ones following it are beneath it.)</p>
+
+<p>Note that an element&rsquo;s background layers must not blend with the content that is behind the element, instead they must act as if they are rendered into an <strong>isolated group</strong>.</p>
+
+<p>Also note that if the <code>background</code> shorthand is used, the <code>background-blend-mode</code> property for that element must be reset to its initial value.</p>
+
+<h3 class="deeplink" id="blend-modes">The Blend Modes</h3> 
+
+<p>Okay so we&rsquo;ve established that each background layer can get its own blend mode which specifies how it blends with the layers beneath it. But what blend mode options do we have?</p>
+
+<p><strong>There are 16 blend modes available in CSS</strong>: <code>normal</code> (which is the default blend mode and means that no blending is applied), <code>multiply</code>, <code>screen</code>, <code>overlay</code>, <code>darken</code>, <code>lighten</code>, <code>color-dodge</code>, <code>color-burn</code>, <code>hard-light</code>, <code>soft-light</code>, <code>difference</code>, <code>exclusion</code>, <code>hue</code>, <code>saturation</code>, <code>color</code> and <code>luminosity</code>.</p>
+
+<p>Each filter, when applied to an image, for example, will give a different end result—the colors of the image are going to be changed based on the mode you choose.</p>
+
+<dl>
+<dt><code>normal</code></dt> 
+<dd>This is the default mode which specifies no blending. The blending formula simply selects the source color.
+</dd>
+<dt><code>multiply</code></dt> 
+<dd>The source color is multiplied by the destination color and replaces the destination. The resultant color is always at least as dark as either the source or destination color. <strong>Multiplying any color with black results in black. Multiplying any color with white preserves the original color.</strong>
+</dd>
+<dt><code>screen</code></dt> 
+<dd>Multiplies the complements of the backdrop and source color values, then complements the result. The result color is always at least as light as either of the two constituent colors. <strong>Screening any color with white produces white; screening with black leaves the original color unchanged.</strong> The effect is similar to projecting multiple photographic slides simultaneously onto a single screen.
+</dd>
+<dt><code>overlay</code></dt> 
+<dd>Multiplies or screens the colors, depending on the backdrop color value. Source colors overlay the backdrop while preserving its highlights and shadows. The backdrop color is not replaced but is mixed with the source color to reflect the lightness or darkness of the backdrop.
+</dd>
+<dt><code>darken</code></dt> 
+<dd>Selects the darker of the backdrop and source colors. The backdrop is replaced with the source where the source is darker; otherwise, it is left unchanged.
+</dd>
+<dt><code>lighten</code></dt> 
+<dd>Selects the lighter of the backdrop and source colors. The backdrop is replaced with the source where the source is lighter; otherwise, it is left unchanged.
+</dd>
+<dt><code>color-dodge</code></dt> 
+<dd>Brightens the backdrop color to reflect the source color. Painting with black produces no changes.
+</dd>
+<dt><code>color-burn</code></dt> 
+<dd>Darkens the backdrop color to reflect the source color. Painting with white produces no change.
+</dd>
+<dt><code>hard-light</code></dt> 
+<dd>Multiplies or screens the colors, depending on the source color value. The effect is similar to shining a harsh spotlight on the backdrop.
+</dd>
+<dt><code>soft-light</code></dt> 
+<dd>Darkens or lightens the colors, depending on the source color value. The effect is similar to shining a diffused spotlight on the backdrop.
+</dd>
+<dt><code>difference</code></dt> 
+<dd>Subtracts the darker of the two constituent colors from the lighter color. Painting with white inverts the backdrop color; painting with black produces no change.
+</dd>
+<dt><code>exclusion</code></dt> 
+<dd>Produces an effect similar to that of the Difference mode but lower in contrast. Painting with white <strong>inverts the backdrop color</strong>; painting with black produces no change.
+</dd>
+<dt><code>hue</code></dt> 
+<dd>Creates a color with the hue of the source color and the saturation and luminosity of the backdrop color.
+</dd>
+<dt><code>saturation</code></dt> 
+<dd>Creates a color with the saturation of the source color and the hue and luminosity of the backdrop color. Painting with this mode in an area of the backdrop that is a pure gray (no saturation) produces no change.
+</dd>
+<dt><code>color</code></dt> 
+<dd>Creates a color with the hue and saturation of the source color and the luminosity of the backdrop color. This preserves the gray levels of the backdrop and is useful for coloring monochrome images or tinting color images.
+</dd>
+<dt><code>luminosity</code></dt> 
+<dd>Creates a color with the luminosity of the source color and the hue and saturation of the backdrop color. This produces an inverse effect to that of the Color mode.
+This mode is the one you can use to create monchrome "tinted" image effects like the ones you can see in different website headers.
+</dl>
+
+<p>The following image shows the result of applying the different blend modes to an image, in the same order mentioned above, starting from the top left corner.</p>
+
+<p><img src="../../images/background-blend-mode-examples.png" alt="The result of applying 16 blend modes applied to an image."></p>
+
+<p>For more information about these blend modes, I refer you to <a href="http://www.slrlounge.com/school/photoshop-blend-modes/">this article</a> on the SLR Lounge blog. It claims to be the ultimate visual guide to blend modes, and does include some nice explanations of the blend modes.</p>
+
+<p>Personally, I think that even with the definition for each mode at hand, it can be really hard (if not impossible) to predict the result of applying these modes to an image.</p>
+
+<p>Picking a suitable blend mode will be—in most cases—a case of trial and error. If you use Instagram you know that sometimes you just go over each of the available filters, applying them one after the other, till you get the effect you&rsquo;re after. (I know I do that!)
+With CSS blend modes, it&rsquo;s practically the same.</p>
+
+<p>For that reason, I&rsquo;ve created a simple interactive demo that you can use to pick the right blend mode for your effects.</p>
+
+<figure>
+<img src="../../images/css-blender-demo-screenshot.png" alt="Screenshot of the CSS Blender demo." />
+<figcaption>Screenshot of the CSS Blender demo.</figcaption>
+</figure>
+
+<p>You can upload an image, and choose a background color to blend it with. The background color of the live preview (thumbnails) will live-update as you make your way around the color picker. <strong>Clicking on a thumbnail will preview the selected blend mode in the larger preview area.</strong></p>
+
+<p><a href="http://sarasoueidan.com/demos/css-blender" class="button">Try the blend modes in the demo out.</a></p>
+
+<p><br></p>
+
+<p>Of course, the effects will be visible only in browsers that support the <code>background-blend-mode</code> property. <strong>For more information about browser support, refer to <a href="http://caniuse.com/#feat=css-backgroundblendmode">the compatibility table over at CanIUse.com</a>.</strong></p>
+
+<hr>
+
+<p>In addition to blending a background image with a background color in the interactive demo, you can also blend a piece of text with the element that has this background.</p>
+
+<p>But blending separate elements together requires a property other than the <code>background-blend-mode</code> property. Let&rsquo;s have a look at that next.</p>
+
+<h2 class="deeplink" id="mix-blend-mode">Blending An Element With Elements In Its Backdrop: The <code>mix-blend-mode</code> Property</h2> 
+
+<p>As we mentioned earlier, a <strong>backdrop</strong> is <strong>the content behind the element</strong> and is what the element is composited with.</p>
+
+<p>The content behind the element can be anything—including other elements. And this is where the interesting effects come in. Think fixed headers blending with the content as the page scrolls down, or text blended with an image in the background, or text blending with other text, etc.</p>
+
+<p>Blending elements together is done using the <code>mix-blend-mode</code> property.</p>
+
+<p>The <code>mix-blend-mode</code> property is similar to the <code>background-blend-mode</code> property, and takes the same blend mode values. So, you can specify any blend mode to get different blending effects.</p>
+
+<p>For example, the text in the following image blends with the image behind it using <code>mix-blend-mode: difference</code>, giving the illusion of the water bubbles passing through and in front of the text. The reason this effect is established is the color inversion process of the <code>difference</code> mode.</p>
+
+<p><img src="../../images/mix-blend-mode-example-1.png" alt="Example of text blending with an image." /></p>
+
+<p>The area of the image where it overlaps with the text is the text&rsquo;s backdrop, and that is where the blending happens. You can check the live demo out <a href="http://codepen.io/SaraSoueidan/pen/e90334f6ffdbb2a2cdd5604e769054e4?editors=110">here</a>.</p>
+
+<p>Using <code>mix-blend-mode</code>, you can create many creative effects—far more than I could list in this post. One particularly interesting effect you can create is see-through text. Without CSS blend modes, you would need CSS masking and/or background clipping, along with some CSS hackery to create this effect and make it work.</p>
+
+<p>With blend modes, and using the <code>difference</code> blend mode again, you can create this effect by—again—leveraging the color inversion process.</p>
+
+<p>The following image shows this effect in action. It is merely a piece of text, positioned on top of an image, and blended with it.</p>
+
+<p><img src="../../images/see-through-text-mix-blend-mode.png" alt="Example of see-through text effect created using CSS blending." /></p>
+
+<p>That&rsquo;s pretty cool, isn&rsquo;t it? You can check the live demo out <a href="http://codepen.io/SaraSoueidan/pen/887433527fac4e926e84b613be483bfc?editors=110">here</a>.</p>
+
+<p>It is worth noting here that the colors you choose strongly affect the end result. That being said, the interactive demo can make picking the right colors for such an effect easier and faster.</p>
+
+<p>In the interactive demo, you have an option to add editable text to the preview area, and then style that text and blend it with the preview image using <code>mix-blend-mode</code>. The following is a screenshot showing an example.</p>
+
+<figure>
+<img src="../../images/css-blender-demo-screenshot-with-text.png" alt="Screenshot of the CSS Blender demo." />
+<figcaption>Screenshot of the CSS Blender demo, with a piece of text blended into the preview image.</figcaption>
+</figure>
+
+<p><a href="http://sarasoueidan.com/demos/css-blender" class="button">Check the demo out.</a></p>
+
+<hr>
+
+<p>Since we&rsquo;re talking about blending elements together, it only makes sense that we mention stacking contexts, especially considering that they affect how and what elements can be blended together.</p>
+
+<p>According to the specification, applying a blend mode other than <code>normal</code> to the element must establish a new stacking context on that element, forming a <em>group</em>. This group must then be blended and composited with the stacking context that contains the element.</p>
+
+<p>Also, an element that has blending applied, must blend with all the underlying content <strong><em>of the stacking context that that element belongs to</em></strong>. It will not blend with contents outside that context.</p>
+
+<p>For example, the following image shows the result of mix-blending two images with the <code>overlay</code> mode. (<a href="http://codepen.io/SaraSoueidan/pen/09efabde7114d37a736525b5ab616bc5?editors=110">Live demo</a>)</p>
+
+<p><img src="../../images/mix-blend-mode-example-2.png" alt="Example of text blending with an image." /></p>
+
+<p>The code for the above simple example looks like so:</p>
+
+<pre class="brush:html">
+&lt;div class="container"&gt;
+  &lt;img src="path/to/destination.png" alt="" /&gt;
+  &lt;div class="img-wrapper"&gt;
+    &lt;img src="path/to/source.png" alt="" class="source"/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+<p>I&rsquo;ve wrapped the image on top (the <code>.source</code>) in a <code>div</code> that I&rsquo;m going to create a stacking context on. Since the <code>opacity</code> property leads to the creation of a new stacking context when given a value other than th default (<code>1</code>), I&rsquo;m going to use that.</p>
+
+<pre class="brush:css">
+.img-wrapper {
+  opacity: .99;
+}
+</pre>
+
+<p>(Try it in the <a href="http://codepen.io/SaraSoueidan/pen/09efabde7114d37a736525b5ab616bc5?editors=110">live demo</a>.)</p>
+
+<p>By creating a stacking context, the <code>.source</code> image no longer blends with the bottom image, because the latter lies outside the stacking context containing the former.</p>
+
+<p>This is because we have <strong><em>isolated</em></strong> the image (and any other contents of the <code>.img-wrapper</code> context) from the rest of the elements, and thus they don&rsquo;t blend with their backdrops anymore.</p>
+
+<p>This brings us to the <code>isolation</code> property. But before we move on, note that the <code>mix-blend-mode</code> property also applies to SVG elements, and can be used to blend overlapping SVG elements together as well. As a matter of fact, the logo for the CSS Blender demo is a result of applying a <code>mix-blend-mode</code> to the three squares that make the demo up. You can see how the areas where these squares overlap have different colors due to the color blending applied.</p>
+
+<p>Browser support for the <code>mix-blend-mode</code> property is not as wide as that of the <code>background-blend-mode</code> property. For details, refer to <a href="http://caniuse.com/#feat=css-mixblendmode">the browser compatibility table over at CanIUse.com</a>.</p>
+
+<h3 class="deeplink" id="isolation">Isolating Elements: The <code>isolation</code> Property</h3> 
+
+<p>When a property that leads to the creation of a stacking context is applied to an element, that element is said to be <strong>isolated</strong>. The last example in the previous section is an example of this happening.</p>
+
+<p>On the other hand, you can use the <code>isolation</code> property to isolate elements.</p>
+
+<p>In SVG, this property defines whether an element is isolated or not. For CSS, setting <code>isolation</code> to <code>isolate</code> will turn the element into a stacking context, and thus affect whether or not the element&rsquo;s contents can blend with their backdrop lying outside this context. By default, the <code>isolation</code> property is set to <code>auto</code>—which implies that they are not isolated.</p>
+
+<p>If we were to go back to the previous example with the two blended images, we can prevent the image on top from blending with the image behind it by using the <code>isolation</code> property instead of the <code>opacity</code> property.</p>
+
+<pre class="brush:css">
+.img-wrapper {
+  isolation: isolate;
+}
+</pre>
+
+<p>This has the same effect as using <code>opacity</code> in the previous example. If you use this rule instead of <code>opacity</code> in the live demo, you will get the same result.</p>
+
+<p>Note that by creating a stacking context on an element, you are isolating the content of that element and preventing them from blending with the backdrop of that element. However, you can still apply a blend mode to the entire context to blend it with its backdrop.</p>
+
+<p>Moreover, If you are using the<code>background-blend-mode</code> property, the <code>isolation</code> property is not needed since background layers must not blend with the content that is behind the element, instead they must act as if they are rendered into an isolated group (the element itself), as specified in the specification. This is why the <code>isolation</code> property will have an effect when used with the <code>mix-blend-mode</code> property, but not with the <code>background-blend-mode</code> property.</p>
+
+<h2 class="deeplink" id="order-of-operations">Note: Order Of Graphical Operations</h2> 
+
+<p>CSS blending modes, <a href="http://www.w3.org/TR/filter-effects-1/">filters</a> and <a href="http://www.w3.org/TR/css-masking-1/">masks</a>, can all be applied to the same element. But which effect is applied first?</p>
+
+<p>According to the specification, first any filter effect is applied, then any clipping, masking, blending and compositing.</p>
+
+<h2 class="deeplink" id="final-words">Final Words</h2> 
+
+<p>With all the graphical operations available to us via CSS, we are getting more possibilities for designing in the browsers—this is particularly interesting if you—like me—are not into graphics editors and don&rsquo;t know your way around them well.</p>
+
+<p>The web platform team at Adobe have been doing a tremendous job bringing many of their tools&rsquo; graphical capabilities to the web. From filters, to blend modes, clipping and masking, and even <a href="http://sarasoueidan.com/blog/css-shapes">CSS Shapes</a>, we are gaining more control over layout and graphics on the web.</p>
+
+<p>Many creative effects can be created using CSS blend modes, and when combined with other technologies, they open a door to endless creative possibilities.</p>
+
+<hr>
+
+<p>I hope you liked this article and found it useful.</p>
+
+<p>Thank you for reading!</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

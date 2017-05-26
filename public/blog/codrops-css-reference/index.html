@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>I Wrote A CSS &lt;del&gt;Book&lt;/del&gt; Reference. 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Feb 4, 2015</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">7</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">Yesterday, we finally released a long-awaited project over at Codrops: <a href="http://tympanus.net/codrops/css_reference/">Codrops' new <strong>CSS Reference</strong></a>, authored by yours truly. Even though
+I wrote <a href="">a post over at Codrops</a> introducing the reference and its features, I want to share a little bit more about my experience writing it.</p>
+
+<p class="note update--neutral">
+    Please note that as of January 2016, I am no longer the maintainer of the Codrops CSS Reference.
+</p>
+
+<p>Thus, unlike my usual highly-technical blog posts, this is a (possibly-boring, but short!) post sharing a little more about the CSS Reference and how it came to be, and answering a couple of questions I got via Twitter since the release.</p>
+
+<h2 class="deeplink" id="how-it-started">How It All Started</h2>
+
+<p>I started writing for Codrops in 2013. Some time at the end of the year, I was thinking to myself: &ldquo;Codrops would be an ultimate CSS reference if it had a CSS reference&rdquo; (no pun intended). I thought that it would be fantastic if we had a CSS reference at hand for when someone needs to learn more about a specific CSS property used in one of the many creative demos found there. This idea came to my mind since I used to google for some of the properties I saw in the Codrops demos when I first started learning CSS and checking Codrops out regularly.</p>
+
+<p>Around the same time that year, Manoela approached me with the same idea. It was an idea in my head, and part of a vision that Manoela and Pedro have for Codrops. It was only a few days later that I started digging into CSS specifications and writing the reference entries.</p>
+
+<p>It took around 7–8 months to finish all of the entries. During that time, I had little time for side projects, but I did keep writing—albeit sporadically—on my blog and other blogs such as A List Apart, among others.</p>
+
+<h2 class="deeplink" id="writing-the-entries">Writing The Reference Entries</h2>
+
+<p>One of the main reasons I looked forward to starting the journey of writing the reference was knowing how much I will learn in the process. For me, that was enough of a reason to instantly say yes when Manoela approached me with the idea.</p>
+
+<blockquote class="pull-quote">
+One of the main reasons I looked forward to starting the journey of writing the reference was knowing how much I will learn in the process.
+</blockquote>
+
+<p>I knew it was a chance for me to know much more about CSS than I would otherwise know in such a short period of time. In order to write the description and information about a specific CSS feature, I had to dig deeper than I usually do into the specification where that CSS feature is defined.</p>
+
+<p>As many of you may know, the specifications don&rsquo;t <em>always</em> contain everything you need to know about a property, and the writing style is not always the clearest (which is one of the reasons we wrote the reference, too!), so I had to do a lot of research for many of the entries, reading great resources here and there, picking up a lot of knowledge and getting a lot of &ldquo;ah-ha&rdquo; moments in the process. There was <em>a lot</em> about CSS that I didn&rsquo;t know, and that I <em>still</em> don&rsquo;t know.</p>
+
+<p>I wrote the CSS entries the same way and same style I usually write my articles. Now, some entries are exceptions because they don&rsquo;t require a lot of elaboration. For example, properties like <code>border-color</code> are self-explanatory, so the tone of those entries is more “official” and less “me”.
+<br>So, if you happen to enjoy my writing style, I can tell will enjoy reading the reference entries too.</p>
+
+<p>Manoela and Pedro gave me a lot of freedom and flexibility to write the reference at my own pace and my own schedule and time, making sure I still had the time to work on other things as well so that writing the reference does not limit my creativity, my other client work, my blog, and, of course, my life!</p>
+
+<h2 class="deeplink" id="releasing-the-reference">Releasing The Reference</h2>
+
+<p>I can&rsquo;t even begin to describe how excited I was to finally get to the point of releasing the reference! I usually get super nervous (read: almost get a heart attack) before publishing a blog post on my own low-profile blog, so publishing <strong>more than 300</strong> short to long articles on Codrops was extremely overwhelming and nerve-wrecking. I can always hear my heart beat when I tweet about a new blog post, and I certainly did when we finally got the word out about the reference.</p>
+
+<p>It took us a little over a year to release the reference because of the amount of work each of us at Codrops had, besides the reference. 2014 was the year I started speaking at conferences, and in the second half of it (i.e. after having finished writing the entries) I got my hands full with conference work, writing, and other stuff that took my attention away from the reference for some time. But we finally made it.</p>
+
+<h2 class="deeplink" id="questions">Questions</h2>
+
+<p>I got a few of questions from followers and commenters, and two of these questions kept popping up.</p>
+
+<h4 id="is-it-the-new-mdn">Is it “the new MDN”?</h4>
+
+<p>No, it&rsquo;s not. At least it wasn&rsquo;t our goal to make it so. It’s not even meant as competition to any other CSS Reference out there. It is simply another knowledge base added to what Codrops already offers on a regular basis.</p>
+
+<p>I write about CSS (and SVG) a lot—be it on my blog, on Codrops, or one of the several other places I write at. The CSS Reference is, for me, simply an archive where I collected <strong>blog posts</strong> about a specific topic (CSS, in this case), and organized them in a way that is easier to browse and simpler for my readers to find what they are looking for.</p>
+
+<blockquote class="pull-quote">
+The CSS Reference is, for me, simply an archive where I collected <strong>blog posts</strong> about a specific topic (CSS, in this case), and organized them in a way that is easier to browse and simpler for my readers to find what they are looking for.
+</blockquote>
+
+<p>I sometimes even think of it as a book! Instead of writing a printed CSS book, I wrote an online book, that is open to your contributions and suggestions via a Github repo that we shared on Codrops. So it has an advantage over a regular book in that you, my dear readers, get to pinpoint any miskates, errors, ask for additions and suggestions, etc.</p>
+
+<h4 id="why-didn-t-you-contribute-to-mdn-instead">Why didn&rsquo;t you contribute to MDN instead?</h4>
+
+<p>I honestly don&rsquo;t understand the reasoning behind this question. I mean, why would I <em>not</em> write the reference and choose to contribute to MDN <em>instead</em>?</p>
+
+<p>That being said, I did mention a few reasons earlier why I chose to write the reference. Add to those that I love Codrops, and Manoela and Pedro gave me a lot of freedom and flexibility to give the reference its own character and style. They asked me to write it <em>because</em> they liked my writing style, and thus gave me the freedom to structure the entries the way I wanted. We did have some specifics—for example, the sections for the official syntax, browser support, etc. that we needed to have in every entry, and the rest was all up to me to write my own way.</p>
+
+<p>Now, I don&rsquo;t know if MDN would have allowed me to do the same, but Manoela knows how much I value the freedom and flexibility of work in my work, and she gave me just that, making the experience much more enjoyable, and feeling a lot less as a task or job.</p>
+
+<h2 class="deeplink" id="final-words">Final Words</h2>
+
+<p>Writing the CSS reference has been a wonderful experience, and I am happy to have gotten the chance to do it. I know I haven&rsquo;t literally written a book here (as in: a <em>printed</em> book), but I like to think that I have—maybe because it makes me feel a <em>liiiitle bit</em> less guilty for not having started writing my SVG book yet!</p>
+
+<p>I wholeheartedly hope you like it, find it useful, and learn from it as much as I have learned from writing it. Your feedback on Twitter, in the comments and your contributions in the Github repo have been amazing—thank you so much for your support!</p>
+
+<p>And thank you for reading this post, <em>and</em> reading the reference entries in the future.</p>
+
+<p>–S</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

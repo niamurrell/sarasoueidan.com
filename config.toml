@@ -1,0 +1,13 @@
+baseURL= "https://sarasoueidan.com"
+disablePathToLower= "true"
+languageCode= "en-us"
+title= "Sara Soueidan"
+
+[permalinks]
+    post= "/blog/:filename/"
+
+SectionPagesMenu = "main"
+imageDir = "/images/"
+
+
+    

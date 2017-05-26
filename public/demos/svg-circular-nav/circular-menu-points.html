@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <style id="jsbin-css">
+        body {
+            background-color: #eee;
+        }
+
+        svg {
+            background-color: white;
+        }
+
+        .slice path {
+            stroke-dasharray: 650;
+            stroke-dashoffset: 650;
+        }
+
+        svg.animated .slice path {
+            -webkit-transform-origin: 250px 250px;
+            -ms-transform-origin: 250px 250px;
+            transform-origin: 250px 250px;
+            transition: fill .3s linear, transform;
+        }
+
+        svg.animated .slice-1 path {
+            stroke: #111;
+            -webkit-animation: draw 3s forwards 1.2s;
+            animation: draw 3s forwards 1.2s;
+        }
+
+        @-webkit-keyframes draw {
+            0% {
+                stroke-dashoffset: 650;
+                animation-timing-function: ease-out;
+            }
+            20%,
+            40% {
+                stroke-dashoffset: 400;
+                animation-timing-function: ease-out;
+            }
+            60%,
+            70% {
+                stroke-dashoffset: 250;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                stroke-dashoffset: 0;
+                animation-timing-function: ease-out;
+            }
+        }
+
+        @keyframes draw {
+            0% {
+                stroke-dashoffset: 650;
+                animation-timing-function: ease-out;
+            }
+            20%,
+            40% {
+                stroke-dashoffset: 400;
+                animation-timing-function: ease-out;
+            }
+            60%,
+            70% {
+                stroke-dashoffset: 270;
+                animation-timing-function: ease-out;
+            }
+            100% {
+                stroke-dashoffset: 0;
+                animation-timing-function: ease-out;
+            }
+        }
+
+        .dot {
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+
+        svg.animated .center {
+            transform-origin: 250px 250px;
+            stroke: #32BAFC;
+            fill: #32BAFC;
+            -webkit-animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) forwards;
+            animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) forwards;
+        }
+
+        svg.animated .line {
+            transform-origin: 500px 250px;
+            stroke: orange;
+            fill: orange;
+            -webkit-animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) .6s forwards;
+            animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) .6s forwards;
+        }
+
+        svg.animated .arc {
+            transform-origin: 466.5063509461097px 125px;
+            stroke: deepPink;
+            fill: deepPink;
+            -webkit-animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) 1.8s forwards;
+            animation: scaleUp .6s cubic-bezier(0, .85, 1, 1.58) 1.8s forwards;
+        }
+
+        @-webkit-keyframes scaleUp {
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scaleUp {
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button>Play Demonstration</button>
+    <button>Clear Canvas</button>
+    <svg width="501px" height="500px" viewBox="230 100 300 200" id="container">
+        <g id="slice-1" class="slice slice-1">
+            <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            <!-- <use xlink:href="#icon-photo" width="20" height="20"/> -->
+        </g>
+
+        <g>
+            <circle cx="250" cy="250" r="5" class="dot center"></circle>
+            <circle cx="500" cy="250" r="5" class="dot line"></circle>
+            <circle cx="466.5063509461097" cy="125" r="5" class="dot arc"></circle>
+        </g>
+    </svg>
+
+    <!--
+    <svg style="display: none;">
+      <symbol id="icon-photo" viewBox="0 0 1024 1024">
+            <title>photo</title>
+            <path class="path1" d="M864 0h-704c-70.688 0-128 57.312-128 128v768c0 70.688 57.312 128 128 128h704c70.688 0 128-57.312 128-128v-768c0-70.688-57.312-128-128-128zM928 896c0 35.264-28.736 64-64 64h-704c-35.296 0-64-28.736-64-64v-768c0-35.296 28.704-64 64-64h704c35.264 0 64 28.704 64 64v768zM832 128h-640c-17.696 0-32 14.304-32 32v576c0 17.696 14.304 32 32 32h640c17.696 0 32-14.304 32-32v-576c0-17.696-14.304-32-32-32zM832 160v443.808l-104-112.96c-6.112-6.912-14.816-10.848-24-10.848s-17.952 3.936-24 10.848l-83.328 94.4-252.672-286.4c-6.080-6.912-14.816-10.848-24-10.848s-17.92 3.936-24 10.848l-104 119.936v-258.784h640zM192 467.2l128-147.2 276.672 313.632 88.384 102.368h-493.056v-268.8zM727.68 736l-109.696-126.56 86.016-97.44 128 140.128v83.872h-104.32zM640 416c52.992 0 96-42.976 96-96s-43.008-96-96-96c-53.056 0-96 42.976-96 96s42.944 96 96 96zM640 256c35.264 0 64 28.704 64 64s-28.736 64-64 64c-35.328 0-64-28.704-64-64s28.672-64 64-64z"></path>
+        </symbol>
+    </svg>
+-->
+    <script>
+        var play = document.getElementsByTagName('button')[0],
+            restart = document.getElementsByTagName('button')[1],
+            svg = document.getElementsByTagName('svg')[0];
+
+        function drawItem() {
+            svg.classList.add('animated');
+        }
+
+        function clear() {
+            svg.classList.remove('animated');
+        }
+
+        play.addEventListener('click', drawItem, false);
+        restart.addEventListener('click', clear, false);
+    </script>
+</body>
+
+</html>

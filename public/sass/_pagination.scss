@@ -1,0 +1,27 @@
+.pagination {
+  font-size: .8em;
+  text-align: center;
+  margin: 2em 0;
+  overflow: hidden;
+  color: grey;
+}
+.pagination__button {
+  display: inline-block;
+  background-color: $red;
+  padding: .25em 1em;
+  margin: .25em;
+  color: #fff;
+  border-radius: 4px;
+  line-height: 1.6;
+
+  &.button--disabled {
+    background-color: #ddd;
+    color: #aaa;
+
+      &:hover, &:focus, &:active {
+          background-color: #ddd;
+          color: #aaa;
+      }
+  }
+}
+

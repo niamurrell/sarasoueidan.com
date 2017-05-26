@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rwd on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/rwd/</link>
+    <description>Recent content in Rwd on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/rwd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chapter 4, Smashing Book 5</title>
+      <link>https://sarasoueidan.com/2015/07/21/smashing-book-5/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/21/smashing-book-5/</guid>
+      <description>The new Smashing Book is out! It’s packed with a lot of time-saving, practical techniques for crafting fast, maintainable and scalable responsive websites. I wrote a chapter in the book—Chapter 4: Mastering SVG For Responsive Web Design. Here is an overview of what that chapter covers, and why I think you should buy the book. Photo credit: Mattia Compagnucci  I always get questions from my followers about a good place to start learning SVG.</description>
+    </item>
+    
+    <item>
+      <title>Art-Directing an SVG Embedded Using &amp;lt;object&amp;gt;</title>
+      <link>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/08/art-directing-svg-object/</guid>
+      <description>I have recently finished a front-end development project for Provata Health — a US-based health and wellness company specializing in health promotion and behavior change science. As part of their marketing website, I worked on an infographic that showcases the three major health results one can achieve by following their health program. The graphic is a perfect candidate for SVG and you’ll see why throughout this article. But even though almost all of the graphics on the site were vector (which made the entire project exciting to me), I want to focus on this particular graphic and how and why I made the development choices I made while embedding it.</description>
+    </item>
+    
+    <item>
+      <title>Art-Directing SVG Images With The viewBox Attribute: How-To, Notes, Tips and Why We Need A viewBox Property in CSS</title>
+      <link>https://sarasoueidan.com/2015/05/21/svg-art-direction-using-viewbox/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/05/21/svg-art-direction-using-viewbox/</guid>
+      <description>The SVG viewBox attribute is easily one of SVG&#39;s most powerful features. Mastering this attribute can take your SVG skills to the next level, especially considering that a couple of the main SVG spriting techniques rely on this attribute to work. Because the viewBox attribute can be used to crop and extend the SVG canvas, it can be used for art-directing SVGs—by using it to crop the SVG to the area that you want to display at a time.</description>
+    </item>
+    
+    <item>
+      <title>Better SVG Fallback and Art Direction With The &amp;lt;picture&amp;gt; Element</title>
+      <link>https://sarasoueidan.com/2015/02/15/svg-picture/</link>
+      <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/02/15/svg-picture/</guid>
+      <description>Besides using an SVG as a background image in CSS, you can serve SVG foreground images in HTML using one of several embedding techniques, each of which has its advantages and use cases. Unless you’re in need of interactivity or external styling, &amp;lt;img&amp;gt; is the standard way for loading an SVG image, but it has one disadvantage: you currently need JavaScript to provide fallback and/or change the image source for art direction.</description>
+    </item>
+    
+    <item>
+      <title>Styling and Animating SVGs with CSS</title>
+      <link>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</guid>
+      <description>CSS can be used to style and animate scalable vector graphics, much like it is used to style and animate HTML elements. In this article I wrote for Smashing Magazine, which is a modified transcript of a talk I recently gave at CSSconf EU and From the Front, I’ll go over the prerequisites and techniques for working with CSS in SVG. </description>
+    </item>
+    
+    <item>
+      <title>Making SVGs Responsive With CSS</title>
+      <link>https://sarasoueidan.com/2014/08/19/responsive-svgs/</link>
+      <pubDate>Tue, 19 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/08/19/responsive-svgs/</guid>
+      <description>An article on how to make embedded SVGs cross-browser responsive. We&#39;re going to cover embedding techniques, how to apply the &#34;Padding Hack&#34; and how to use inline media queries to make SVGs adaptive. </description>
+    </item>
+    
+    <item>
+      <title>Techniques For Responsive Typography</title>
+      <link>https://sarasoueidan.com/2013/11/11/responsive-typography-techniques/</link>
+      <pubDate>Mon, 11 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/11/responsive-typography-techniques/</guid>
+      <description>Text is the most important part of a website. Did you know that are several ways to make text responsive? Be it big headlines or body copy, the article will cover all those techniques, serving as an ultimate reference for making text responsive. We will cover accessibility, media queries, viewport units, and much more. </description>
+    </item>
+    
+  </channel>
+</rss>

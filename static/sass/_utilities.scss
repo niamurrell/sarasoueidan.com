@@ -1,0 +1,89 @@
+.green {
+  color: $green !important;
+}
+.blue {
+  color: $blue !important;
+}
+
+.highlight {
+  background-color: $yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.color-grey {
+	color: grey;
+}
+
+.serif {
+	font-family: Merriweather, Georgia, serif;
+}
+
+.small {
+	font-size: .75em;
+}
+
+.color--red {
+  color: $red;
+}
+
+.center {
+  text-align: center;
+}
+
+.smaller {
+	font-size: .5em;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.size-2x {
+  font-size: calc(1em + .5vw);
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+
+.size-1-5x {
+  font-size: calc(1em + .25vw);
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.x-large {
+  font-size: 10vw;
+  margin: 25vh 0;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.clear--left {
+  clear: left;
+}
+
+.desktop-only {
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ui on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/ui/</link>
+    <description>Recent content in Ui on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/ui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS vs. SVG: The Final Round(up)</title>
+      <link>https://sarasoueidan.com/2015/09/16/css-vs-svg-the-final-roundup/</link>
+      <pubDate>Wed, 16 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/09/16/css-vs-svg-the-final-roundup/</guid>
+      <description>This is the last article in the series of article comparing common CSS techniques to their SVG counterparts. This article is a roundup of several CSS and SVG solutions, as opposed to being an article comparing one solution that can be achieved using either CSS and SVG. There are already a bunch of excellent articles out there that cover the details for each of these solutions, so we will get an overview of each solution and link to those articles for each section as we go.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs. SVG: Shapes and Arbitrarily-Shaped UI Components</title>
+      <link>https://sarasoueidan.com/2015/09/01/css-vs-svg-arbitrarily-shaped-ui-components/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/09/01/css-vs-svg-arbitrarily-shaped-ui-components/</guid>
+      <description>This post is the third in the series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both.In this article, we are going to go over techniques for creating arbitrarily-shaped UI components using CSS properties and SVG’s capabilities, and a mix of both! Specifically, we will be talking about how to create circular menus, as these are the perfect example of usable non-rectangular UI elements.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs SVG: Styling Checkboxes and Radio Buttons</title>
+      <link>https://sarasoueidan.com/2015/08/26/css-vs-svg-styling-checkboxes-and-radio-buttons/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/08/26/css-vs-svg-styling-checkboxes-and-radio-buttons/</guid>
+      <description>This post is the second in the series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both. In this article, we’re going to look into ways to style checkboxes and radio buttons using both CSS and SVG. You will learn how you can create animated checkboxes using SVG&#39;s line drawing capabilities. </description>
+    </item>
+    
+    <item>
+      <title>Building A Circular Navigation with CSS Clip Paths</title>
+      <link>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</link>
+      <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</guid>
+      <description>The CSS clip-path property is one of the most underused and yet most interesting properties in CSS. It can be used in conjunction with CSS Shapes to create interesting layouts, and can be taken to the extreme to create some incredibly impressive layouts and animations like the Species in Pieces project. While exploring the creation of arbitrarily-shaped UI components using CSS and SVG, it occurred to me that the clip-path property, when combined with SVG paths, can be used to create circular menus fairly easily, especially considering the (expected) browser behaviour when handling pointer events on clipped regions as per the specification.</description>
+    </item>
+    
+    <item>
+      <title>Building a Circular Navigation with SVG</title>
+      <link>https://sarasoueidan.com/2015/03/09/building-a-circular-navigation-with-svg/</link>
+      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/03/09/building-a-circular-navigation-with-svg/</guid>
+      <description>Last week, I released CIRCULUS.SVG—the SVG circular menu generator. In this article I want to go over why SVG is better suited for creating this kind of UI element, and give you and overview of the SVG code for creating the menu items using SVG elements and transformations. Note that, unlike my usual tutorials, we will not be going over a detailed how-to, but only an overview of the concepts behind this.</description>
+    </item>
+    
+    <item>
+      <title>Using The CSS :target Selector To Create JavaScript-less UI Effects</title>
+      <link>https://sarasoueidan.com/2015/01/24/css-target-uses/</link>
+      <pubDate>Sat, 24 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/24/css-target-uses/</guid>
+      <description>You may or may not have used the :target selector before; and you may or may not have used it to show and hide elements without having to resort to JavaScript to handle this event for you. This article I wrote for the Adobe Dreamweaver team blog, serves as a short introduction to the :target selector, showing how you can use it to create JavaScript-less UI effects—for example, overlays, modals, etc.</description>
+    </item>
+    
+    <item>
+      <title>CSS Overlay Techniques</title>
+      <link>https://sarasoueidan.com/2013/11/07/css-overlay-techniques/</link>
+      <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/07/css-overlay-techniques/</guid>
+      <description>Overlays can sometimes be annoying, but also undoubtedly have their useful use cases. There are different approaches to creating overlays, some of them work better than others, and some of them come with gotchas that you need to be aware of, including performance implications. In HTML5, we also get a native way to create modals with less hassle and less code. In this article, we will cover all of that. </description>
+    </item>
+    
+    <item>
+      <title>Navicon Transformicons: Animated Navigation Icons with CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</guid>
+      <description>The following is a collaboration post between Bennett Feely and I. After seeing Bennett&#39;s impressive animated navigation icon transformations (or &#34;Navicon Transformicons&#34;) pens on Codepen, I asked him if he would like to write a tutorial on how he did them as a guest post on my blog. He kindly approved. And as he doesn&#39;t have a lot of free time to work the article, we decided to collaborate on it.</description>
+    </item>
+    
+    <item>
+      <title>Building A Circular Navigation With CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/08/09/circular-navigation/</link>
+      <pubDate>Fri, 09 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/08/09/circular-navigation/</guid>
+      <description>In this article, we will learn how to apply CSS transforms to fake a &#34;slice&#34; shape, creating a circular navigation using nothing but CSS (and some maths!). The article includes an interactive demo that explains visually and step by step how the technique works and the shapes are created. </description>
+    </item>
+    
+    <item>
+      <title>Creative Add/Remove Effects for List Items with CSS3 Animations</title>
+      <link>https://sarasoueidan.com/2013/06/27/creative-list-effects/</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/06/27/creative-list-effects/</guid>
+      <description>It&#39;s not enough to bring animations and visual transitions to an interface, they should serve a purpose and goal, and this goal should be improving the user&#39;s experience.  Transitions [&amp;hellip;] provide the grease that smoothes out what happens in the interface. Without transitional effects the user can be left to wonder what just occurred.
+ In today&amp;rsquo;s tutorial, we&amp;rsquo;ll be creating some creative animations and transitions for adding and removing items from a list, inspired by the concept from Pasquale D&amp;rsquo;Silva&amp;rsquo;s article on Medium.</description>
+    </item>
+    
+  </channel>
+</rss>

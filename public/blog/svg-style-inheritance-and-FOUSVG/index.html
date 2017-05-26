@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>SVG Style Inheritance and the ‘Flash Of Unstyled SVG’ 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Mar 1, 2016</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">10</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">There are too few things not to like about SVG, and I don’t mean the things that browsers cause by incomplete or lack of certain features or buggy implementations. Yet you might sometimes get some unpredictable results that might frustrate you when working with SVG, if you don’t know the details of <em>how</em> certain features <em>should</em> behave and what to expect from them, as per the specifications. SVG presentation attributes come with a bit of their own behavior which might sometimes surprise you.</p>
+
+<p>I’ve written and spoken quite a bit about styling and animating SVGs with CSS, and have included a list of resources to dive into the details at the end of the article. I’ve also touched on the subject of style inheritance and the CSS Cascade in SVG in both speaking and writing. However, the topic is worth its own blog post.</p>
+
+<p>I’ve been meaning to write this article for a while now but have been kept preoccupied. But what prompted me to finally write it today is this tweet I saw yesterday:</p>
+
+<blockquote><p>Issue: Oversized SVG icons when the page’s CSS fails to load <a href="https://t.co/FwkaBAzrAT">https://t.co/FwkaBAzrAT</a></p>&mdash; Web Platform Daily (@openwebdaily) <a href="https://twitter.com/openwebdaily/status/704380922892820481">February 29, 2016</a>
+</blockquote>
+
+<p>And I remembered that I have already mentioned the cause and solution to this issue in one of my talks as well as in the Smashing Book 5 chapter on SVG, but never in one of my articles, not even the article focused on making SVGs responsive with CSS. (See links at the bottom of the article.)</p>
+
+<h2 id="so-what-s-the-problem-again">So, what’s the problem again?</h2>
+
+<p>When CSS is disabled or fails to load for any reason—such as when you’re on lo-fi, most SVG images, especially inline ones, will scale and take up the entire viewport width, thus making the unstyled page look even more ‘broken’ than it already does.</p>
+
+<p>I’ve come across this scaling issue quite a few times in the past when I visited <a href="http://codepen.io">Codepen</a> on my fairly slow connection (which sometimes gets more than just ‘fairly’ slow). The responsive Codepen logo would take up the entire viewport area, thus blocking the content underneath it and forcing you to scroll down to read whatever comes after it.</p>
+
+<p class="size-2x">This—allow me to call it—<em>Flash of Unstyled SVGs (FOUSVG)</em> is caused by the lack of <code>width</code> and <code>height</code> attributes on the <code>&lt;svg&gt;</code> element. </p>
+
+<h2 id="but-the-svgs-are-meant-to-be-responsive">But the SVGs are meant to be responsive&hellip;</h2>
+
+<p>So why would you want to set explicit dimensions on your <code>&lt;svg&gt;</code>when what you’re really trying to do is make the SVG fluid, right?</p>
+
+<p>Right.</p>
+
+<p>Ideally, we should make our SVGs responsive while also catering for any worst case scenarios where our styles are ignored or simply not applied for any reason.</p>
+
+<p><strong>By taking advantage of the SVG style inheritance tree</strong>, we <em>can</em> make our SVGs responsive while simultaneously planning for worst case scenarios, and providing a decent, less broken, fallback.</p>
+
+<h2 id="the-how">The How</h2>
+
+<p>In order to avoid the no-CSS scaling issue, all you need to do is <em>not</em> remove the <code>width</code> and <code>height</code> attributes from the SVG.</p>
+
+<h3 id="1-keep-the-width-and-height-attributes">1. Keep the <code>width</code> and <code>height</code> attributes</h3>
+
+<p>This means that, if you’re creating the SVG yourself in, say, Adobe Illustrator, you should <strong>avoid checking the ‘Responsive’ option in the Export panel(s)</strong>.</p>
+
+<figure>
+    <img src="../../images/ai-new-export-panel.jpg">
+    <figcaption>
+        The ‘Responsive’ option in the new Illustrator SVG Export Options panel.
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="../../images/export-options-responsive.jpg">
+    <figcaption>
+        The ‘Responsive’ option in the older Illustrator SVG Export Options panel.
+    </figcaption>
+</figure>
+
+<p>It’s very tempting to check that option, because you do want your SVGs to be responsive, after all, but you shouldn’t check it unless what you need is for the SVG to simply occupy the entire width on the screen—like when it’s <em>supposed</em> to be viewport-width, for example. <small>(I’ve embedded an SVG in my current client project and I <em>wanted it</em> to occupy the full page width, so I safely removed the attributes.)</small></p>
+
+<p class="size-2x">Unchecking the ‘Responsive’ option will ensure that Illustrator will export the SVG and preserve the dimensions it has.</p>
+
+<h3 id="2-specify-your-desired-width-and-height-values-in-the-css">2. Specify your desired <code>width</code> and <code>height</code> values in the CSS</h3>
+
+<p>You want your SVG to scale—be fluid—and fill out its container’s width?</p>
+
+<p>No problem. Tell the browser you want that to happen by specifying the dimensions specified in the attributes above, using CSS properties:</p>
+
+<pre class="brush: css">
+svg {
+    width: 100%;
+    height: 100%;
+}
+</pre>
+
+<p>or maybe something like</p>
+
+<pre class="brush:css">
+svg {
+    width: 1em;
+    height: 1em;
+    /* maybe even... */
+    color: currentColor;
+}
+</pre>
+
+<p>which will restrict the dimensions of an SVG icon, for example, and <strong>scale it in proportion to the text</strong> it is inline with.</p>
+
+<p>Specifying your desired width and height in the CSS will make sure the width and height attributes no longer restrict the dimensions of the SVG when the CSS is successfully loaded and applied.</p>
+
+<p class="size-2x">If the CSS <em>does</em> fail to load, the browser will use the values provided in the attributes as fallback, thus preventing the excessive scaling of the SVG.</p>
+
+<h2 id="the-why-why-does-the-above-technique-work">The Why: Why does the above technique work?</h2>
+
+<p>SVG presentation attributes are special style properties—a shorthand for setting a CSS property on an SVG node. For this reason, it only makes sense that SVG presentation attributes would contribute to the style cascade.</p>
+
+<p>When I got started with SVG, I expected presentation attributes to be more specific than any other style declaration. It made sense to me that the &ldquo;closer&rdquo; a style is to a node, the more specific it is. For example, inline <code>&lt;style&gt;</code>s are more specific than external styles, an inline <code>style</code> attribute is more specific than <code>&lt;style&gt;</code> ‘islands’, so I thought it made sense for presentation attributes to be the most specific form of styles. But I was wrong.</p>
+
+<p><a href="https://twitter.com/tabatkins/status/704392579895263233">Just like HTML presentational attributes</a>, SVG attributes count as low-level author style sheets and are overridden by any other style definitions: external style sheets, document style sheets and inline styles.</p>
+
+<blockquote class="pull-quote">
+    SVG attributes count as low-level “author style sheets” and are overridden by any other style definitions: external style sheets, document style sheets and inline styles.
+</blockquote>
+
+<p>This makes it possible to provide a fallback for when the CSS styles are not available, so the SVGs still look good in their ‘worst’ case.</p>
+
+<figure>
+    <img src="../../images/svg-preso-attrs-cascade.jpg" alt="Table showing the position of presentation attributes in the CSS Cascade">
+    <figcaption>
+        The order of styles in the cascade. Styles lower in the diagram override those above them. Presentation attribute styles are overridden by all other styles except for those specific to the user agent.
+    </figcaption>
+</figure>
+
+<h3 id="tip-you-can-use-presentation-attributes-to-provide-fallback-for-more-than-svg-scaling">Tip: You can use presentation attributes to provide fallback for more than SVG scaling</h3>
+
+<p>If you have an SVG you&rsquo;re styling and animating using CSS properties, you may start by ditching the presentation attributes altogether—we do have an option to do just that in Illustrator’s Export panel, by choosing CSS Properties over Presentation Attributes. That will lead to all attributes being exported as CSS properties, if they <em>can</em> be set as CSS properties.</p>
+
+<p><small>You see, only a subset of all CSS properties may be set by SVG attributes, and vice versa. The SVG specification lists the <a href="https://www.w3.org/TR/SVG/propidx.html">SVG attributes that may be set as CSS properties</a>. Some of these attributes are shared with CSS, such as <code>opacity</code> and <code>transform</code>, among others, while some are not, such as <code>fill</code>, stroke and <code>stroke-width</code>, among others.</p>
+
+<p>In SVG 2, this list will include <code>x</code>, <code>y</code>, <code>width</code>, <code>height</code>, <code>cx</code>, <code>cy</code> and a few other presentation attributes that were not possible to set via CSS in SVG 1.1. The new list of attributes <a href="https://www.w3.org/TR/SVG2/styling.html#SVGStylingProperties">can be found in the SVG 2 specification</a>.</small></p>
+
+<p><small>Some of the ‘new’ CSS properties for SVG are already implemented and available in Chrome today!</small></p>
+
+<p>There is a benefit to keeping the presentation attributes inside the SVG as well, not just on the root element. These benefits are highlighted the most when you attempt to style the contents of <code>&lt;use&gt;</code>d elements in SVG.</p>
+
+<p>When you re-<code>use</code> an element, the contents of that element are copied, as is, into wherever you place the <code>&lt;use&gt;</code> in the page. But you may want to re-use an element mutliple times and style each occurance differently. You can do that by leveraging CSS Custom Properties (a.k.a. CSS Variables).</p>
+
+<p>When ‘theming’ multiple <code>&lt;use&gt;</code> elements with CSS custom properties, it is recommended to always keep the presentation attributes that provide the default styles for the reused SVG, so that the image is styled both when the CSS fails to load and/or when the SVG is viewed in browsers that don’t yet support custom properties. Without the presentation attributes, most styles—such as <code>fill</code> and <code>stroke</code>—will default to black, which is probably not what you want.</p>
+
+<h2 id="weird-svg-scaling-gotchas-to-be-aware-of">Weird SVG scaling gotchas to be aware of</h2>
+
+<p><strong>Depending on how you embed your SVG</strong>, browsers will generally default to a 300px by 150px size, which is <a href="https://www.w3.org/TR/CSS2/visudet.html#inline-replaced-width">the default size for replaced elements in CSS</a>. This is the default size you get for <code>&lt;iframe&gt;</code>s as well, for example.</p>
+
+<p>If the dimensions of the SVG are not specified, or if they are explicitly set to <code>auto</code>, the browsers will default to the 300 by 150 pixels dimension. If either dimension is set to <code>auto</code> (instead of 100% as mentioned earlier), the browser will cancel out the value set in the presentation attributes and will default to one of the default height and width values.</p>
+
+<p>Well, kind of..</p>
+
+<p>Again, It Depends™.</p>
+
+<p>You see, the browser behavior depends on how you embed your SVG. If you embed the SVG using <code>&lt;iframe&gt;</code>, you get the 300x150 as a default. If you embed the SVG inline in the document (using <code>&lt;svg&gt;</code>), most browsers will scale it to the width of its container and will scale the height proportionally to preserve the SVG’s aspect ratio, while Internet Explorer will scale the width <strong>but not the height</strong>, so you need to explicitly tell it to scale the height as well.</p>
+
+<p><small>Fun fact: IE will scale the height of the SVG if you give it an explicit <em>width</em> value of 100%. Crazy, but true.</small></p>
+
+<p>I’ve written more about the rendering of different SVG embed techniques in the ‘Making SVGs Responsive with CSS’ article linked at the bottom of the article, along with ways to ensure the SVG is ‘responsified’ across all browsers.</p>
+
+<p>Amelia Bellamy-Royds has also gotten into more detail about the browser scaling techniques in her article ‘How to Scale SVG’ on CSS-Tricks.</p>
+
+<h2 id="scaling-tip-never-drop-the-viewbox">Scaling Tip: Never drop the <code>viewBox</code></h2>
+
+<p>Ever.</p>
+
+<p>This is possibly the most important thing you need to be aware of when attempting to scale SVG: you <strong><em>need</em></strong> the SVG <code>viewBox</code> to properly scale SVG images.</p>
+
+<blockquote class="pull-quote">
+    you <em><strong>need</strong></em> the SVG <code>viewBox</code> to properly scale SVG images. 
+</blockquote>
+
+<p><strong>Do <em>not</em> remove it.</strong></p>
+
+<p class="note">
+    After reading this artilce, developer David Bushell shared his own experience highlighting the importance of the <code>viewBox</code> to make sure SVG images are rendered as expected. You can check his post out <a href="http://dbushell.com/2016/03/01/be-careful-with-your-viewbox/">here</a>.
+</p>
+
+<p><small></small></p>
+
+<h2 id="wrapping-up">Wrapping Up</h2>
+
+<p>Having explicit, non-percentage <code>width</code> and <code>height</code> values set on an SVG not only helps with fixing FOUSVG issues, but it also helps with other scaling problems, especially when the SVG is used as a background image in CSS. Internet Explorer sometimes refuses to scale the image properly if it doesn’t have its aspect ratio specified with the <code>width</code> and <code>height</code> attributes. I’ve had this happen even with non-background images recently as well. Quite honestly, I don’t know the details of why or when exactly this happens, but I do know that we can avoid it by having these attributes available anyway.</p>
+
+<p>The <code>viewBox</code> is even more important than the width and height, so always make sure you keep it there. You can learn all there is to know about how the <code>viewBox</code> works in <a href="{{site.url}}/blog/svg-coordinate-systems/">this article</a>. It is a very powerful attribute that is definitely worth taking the time to master.</p>
+
+<h2 id="further-reading">Further Reading</h2>
+
+<ul>
+<li>[Slides] <a href="http://slides.com/sarasoueidan/styling-animating-svgs-with-css#/">Styling and Animating SVGs with CSS</a> – my talk from 2014, given at CSSConf and CSSConf EU.</li>
+<li>[Article] <a href="https://www.smashingmagazine.com/2014/11/styling-and-animating-svgs-with-css/">Styling and Animating SVGs with CSS</a> — sort of a talk transcript, published on Smashing Magazine</li>
+<li><a href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">Making SVGs Responsive with CSS</a> — article published on Codrops</li>
+<li><a href="https://css-tricks.com/scale-svg/">How to Scale SVG</a> — by Amelia Bellamy-Royds</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Scaling_of_SVG_backgrounds">Scaling of SVG Backgrounds</a> on MDN</li>
+<li><a href="http://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/">Styling the Contents of SVG <code>&lt;use&gt;</code> with CSS</a> on Codrops</li>
+<li><a href="https://sarasoueidan.com/blog/svg-coordinate-systems/">Understanding SVG Coordinate Systems and Transformations (Part 1): The viewport, <code>viewBox</code> and <code>preserveAspectRatio</code> Attributes</a></li>
+</ul>
+
+<hr>
+
+<p>I hope you found this article useful. Thank you for reading!</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

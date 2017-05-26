@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ux on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/ux/</link>
+    <description>Recent content in Ux on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Dec 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using CSS Regions With CSS Shapes For A Better Reading Experience</title>
+      <link>https://sarasoueidan.com/2013/12/05/css-regions-with-shapes-for-readability/</link>
+      <pubDate>Thu, 05 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/12/05/css-regions-with-shapes-for-readability/</guid>
+      <description>Using CSS shapes we can flow our content in non-rectangular areas. And sometimes we want to be able to flow our content into multiple custom-shaped areas inside an element. If you&#39;ve read my previous article, you already know that this can be done with CSS Shapes, by using an image with alpha transparency with multiple shapes defined in it, and letting the browser extract the content&#39;s float areas from it. As appealing as this may sound and as creative as we can get with our shapes, flowing the text into multiple areas can easily make our content almost completely unreadable.</description>
+    </item>
+    
+    <item>
+      <title>Lessons from the “Seductive Interaction Design” Book</title>
+      <link>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</link>
+      <pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</guid>
+      <description>In this article today, I’m going to share with you some of the lessons I learned from one of the best books I’ve read: Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences. I believe that you should read this book yourselves to fully appreciate all the information and insight the writer has to share. I will cover only the first half of the book. I will be pasting some excerpts, because there are many things that the writer describes a lot better than I could ever do.</description>
+    </item>
+    
+  </channel>
+</rss>

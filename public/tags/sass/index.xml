@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sass on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/sass/</link>
+    <description>Recent content in Sass on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Navicon Transformicons: Animated Navigation Icons with CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</guid>
+      <description>The following is a collaboration post between Bennett Feely and I. After seeing Bennett&#39;s impressive animated navigation icon transformations (or &#34;Navicon Transformicons&#34;) pens on Codepen, I asked him if he would like to write a tutorial on how he did them as a guest post on my blog. He kindly approved. And as he doesn&#39;t have a lot of free time to work the article, we decided to collaborate on it.</description>
+    </item>
+    
+  </channel>
+</rss>

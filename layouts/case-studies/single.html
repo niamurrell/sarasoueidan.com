@@ -1,0 +1,106 @@
+{{ partial "header.html" . }}
+
+<div class="full-width case-study"> 
+	<div class="container">
+		<div class="row">
+			<div class="col col-12">
+				<h1 class="case-study__client-name">
+					<img src="../../images/case-studies/logos/{{ .Params.ClientLogo }}" alt="{{ .Params.ClientName }}">
+				</h1>
+			</div>
+			<div class="col-8">
+				<h3 style="margin-top: 0;">{{ .Params.clientTitle }}</h3>
+				<p class="case-study__client-description">
+					{{ .Params.ClientDescription }} 
+				</p>
+			</div>
+			<div class="col-4">
+				<ul class="case-study__nav">
+					<li class="col-2"><a href="#summary">Project Summary</a></li>
+					<li class="col-2"><a href="#background">Background</a></li>
+					<li class="col-2"><a href="#process">Process</a></li>
+					<li class="col-2"><a href="#testimonials">Testimonials</a></li>
+					<li class="col-2"><a href="#technical-details">Technical Details</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-width">
+	<div class="container">
+		<!-- <div class="row"> -->
+			<div class="col-12">
+				<h2 id="summary">Project Summary</h2>
+				<table class="case-study__details">
+					<tr>
+						<td>Client:</td>
+						<td>{{ .Params.ClientName }}, {{ .Params.ClientLocation }}</td>
+					</tr>
+					<tr>
+						<td>Project:</td>
+						<td>{{ .Params.ProjectDescription }}</td>
+					</tr>
+						<td>Project date:</td>
+						<td>{{ .Params.ProjectDate }}</td>
+					<tr>
+						<td>Project duration:</td>
+						<td>{{ .Params.ProjectDuration }}</td>
+					</tr>
+					<tr>
+						<td>Project URL:</td>
+						<td>
+							<a href="{{ .Params.ProjectURL }}">{{ .Params.ProjectURL }}</a> 
+						</td>
+					</tr>
+					<tr>
+						<td>Services:</td>
+						<td>{{ .Params.ProjectServices }}</td>
+					</tr>
+					<tr>
+						<td>Responsibilities:</td>
+						<td>{{ .Params.ProjectResponsibilities }} </td>
+					</tr>
+					<tr>
+						<td>Technologies used:</td>
+						<td>{{ .Params.ProjectTechnologies }}</td>
+					</tr>
+					<tr>
+						<td>Libraries/Frameworks:</td>
+						<td>{{ .Params.ProjectLibsFrameworks }}</td>
+					</tr>
+				</table>
+			</div>
+		<!-- </div> -->
+	</div>
+</div>
+
+{{ .Content }}
+
+
+<div class="full-width case-study grey"> 
+	<div class="container">
+		<div class="row">
+			<div class="col col-9 center">
+				<p class="size-2x">
+					Like what you read and think your next project could benefit from my skill set? Get in touch. Let’s build something great together!
+
+					<a href="mailto:contact@sarasoueidan.com" class="button button--full">Hire me</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../../js/syntaxhighlighter.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+{{ partial "footer.html" . }}

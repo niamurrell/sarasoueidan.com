@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/tools/</link>
+    <description>Recent content in Tools on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful SVGO[ptimization] Tools</title>
+      <link>https://sarasoueidan.com/2015/01/26/svgo-tools/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/26/svgo-tools/</guid>
+      <description>One of the steps you need to do when working with SVG is optimizing the SVG code after exporting it from the editor and before embedding in on your web page. For that, several standalone optimization tools exits. The two tools I usually mention in my articles and talks are Peter Collingridge&#39;s online editor, and SVGO. In this article, I&#39;m going to introduce you to a new SVGO Tool that provides us with everything Peter&#39;s tool does, and a bit more.</description>
+    </item>
+    
+  </channel>
+</rss>

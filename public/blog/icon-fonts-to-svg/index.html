@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Making the Switch Away from Icon Fonts to SVG: Converting Font Icons to SVG 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Apr 25, 2016</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">5</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">
+    If you’re reading this article, then I can probably assume you’ve already decided to switch from using fonts for icons to an SVG icon system. Or maybe you're pondering the idea and want to get an overview of how that would be done and whether or not it's worth it. Either way, this post is here to help you with that.
+</p>
+
+<p>If you&rsquo;re not already convinced as to why SVG is a better icon system, then I highly recommend reading <a href="https://css-tricks.com/icon-fonts-vs-svg/">this article</a>—a cagematch-style comparison between icon fonts and inline SVG for icon systems. Many companies and organizations including Github have already made the switch to SVG, and have written great articles explaining why they found SVG to be a better alternative. I&rsquo;ve listed some articles at the end of this post for further reading.</p>
+
+<h2 id="making-the-switch">Making the Switch</h2>
+
+<h3 id="1-grab-your-icon-fonts-files">1. Grab your icon fonts files.</h3>
+
+<p>Font icons are font glyphs. They&rsquo;re part of a web font and are thus defined in web font files and formats.</p>
+
+<p>I don&rsquo;t usually use icon fonts, so for the sake of demonstration, I headed to <a href="http://fontello.com/">Fontello.com</a>—an online icon font generator—to create an icon font that I can work with for this blog post. I picked a few icons and then generated an icon font and downloaded it.</p>
+
+<p><img src="../../images/fontello-icons.gif"></p>
+
+<p>Fontello generates a folder containing a demo page showing you how to display the icons on your own page and what class names to use.</p>
+
+<figure>
+    <img src="../../images/fontello-files.png">
+    <figcaption>The files generated by Fontello.</figcaption>
+</figure>
+
+<p>Among the generated files is the actual font used to define the icons. The font files are available inside a <code>font</code> folder.</p>
+
+<figure>
+    <img src="../../images/fontello-fonts.png">
+    <figcaption>The font file formats generated by Fontello.</figcaption>
+</figure>
+
+<p>These are the files you need to proceed. We&rsquo;re going to be using these files to “extract” the icons and convert them to SVG.</p>
+
+<h3 id="2-choose-your-tool">2. Choose your tool.</h3>
+
+<p>To convert the icons to SVG, we can use one of the following tools:</p>
+
+<ul>
+<li><strong><a href="https://github.com/bpierre/fontello-svg">fontello-svg</a></strong>: “a command-line tool to generate the SVG versions of a Fontello icon set, with a corresponding CSS file.”</li>
+<li><strong><a href="https://www.npmjs.com/package/font-blast">font-blast</a></strong>: “You can use font-blast to extract icons from any icon font - Font Awesome, Foundation, anything from Fontello etc.”</li>
+<li><strong><a href="https://icomoon.io/app/">Icomoon app</a></strong>: a web app for generating and creating icon sets in both SVG and icon font formats.</li>
+</ul>
+
+<p>I’m sure there might be more tools to do this, but these are the ones I know about.</p>
+
+<p>I&rsquo;m going to be using <strong>Icomoon</strong> and <strong>font-blast</strong> in this article because they&rsquo;re general tools that can be used with any font and are not restricted to just one. Both <strong>fontello-svg</strong> and <strong>font-blast</strong> are used pretty much the same way, and you can find extra information about <strong>fontello-svg</strong> in the Github repository’s Readme.</p>
+
+<h3 id="3-convert-the-font-icons-to-svg-icons">3. Convert the font icons to SVG icons.</h3>
+
+<h4 id="3-1-using-icomoon">3.1. Using Icomoon</h4>
+
+<p>To convert the font icons to SVG icons using Icomoon, we first need to upload them.</p>
+
+<p><img src="../../images/icomoon-upload.gif"></p>
+
+<p>Your font icons will be available as an icon set in the app. The next steps are the same steps you would take if you were choosing from the set of already-available icons on the page:</p>
+
+<ul>
+<li>Select the icons you want to download as SVG.</li>
+<li>Click the <strong><em>Generate SVG &amp; More</em></strong> button.</li>
+</ul>
+
+<p><img src="../../images/icomoon-download.gif"></p>
+
+<p>Like Fontello, Icomoon generates a folder containing the icons you generated, along with a demo page showing you how they can be used on your own pages.</p>
+
+<p><img src="../../images/icomoon-files.png"></p>
+
+<p>The icons you’ve converted to SVG are available in the <strong><em>SVG</em></strong> folder.</p>
+
+<p><img src="../../images/icomoon-svg-icons.png"></p>
+
+<p>There is one SVG file for every icon. The set is ready to be embedded in your page.</p>
+
+<p>But before embedding the icons, you might want to sprite them. That is, create one SVG sprite that contains all of the icons, and then use that sprite to display each icon at a time, wherever needed on the page. Icomoon conveniently generates an SVG sprite (<em><strong>symbol-defs.svg</strong></em>) for you along with a polyfill (<em><strong>svgxuse.js</strong></em>) for older browsers that don&rsquo;t support external sprite references.</p>
+
+<h4 id="3-2-using-font-blast">3.2. Using font-blast</h4>
+
+<p>To convert the font icons to SVG icons using <strong>font-blast</strong> you need to first install font-blast using npm via your terminal.</p>
+
+<pre class="brush:js">
+$ npm install font-blast -g
+</pre>
+
+<p>The <code>-g</code> flag (short for <code>global</code>) ensures that you can run the script anywhere on your computer, regardless of the installation root.</p>
+
+<p>As mentioned in the font-blast documentation, “You can generate icons from the command line by called the script with two parameters: the SVG file of the font, and the directory where inidivual icons should be placed”:</p>
+
+<pre class="brush:js">
+$ font-blast [svg-font-file] [destination-dir]
+</pre>
+
+<p>My command looked like this:</p>
+
+<pre class="brush:js">
+font-blast /Users/Sara/Downloads/fontello-08cdd41f/font/fontello.svg  /Users/Sara/Downloads/fontello-08cdd41f/svg-icons
+</pre>
+
+<p><small>Tip: You can drag your folder into the terminal, which will sort of drop the path to that folder into the terminal, so you don&rsquo;t have to manually write it or grab it and then copy-paste it.</small></p>
+
+<p>Running the above command, font-blast retrieves the icons from the font files and creates an SVG icon for each one, and saves the result to the folder you specify in the command line. My terminal then looks like this:</p>
+
+<figure>
+    <img src="../../images/font-blast-command-result.png">
+    <figcaption>The result of running the font-blast command in the terminal, letting us know how many icons were found and converted to SVG.</figcaption>
+</figure>
+
+<p>The <strong><em>svg-icons</em></strong> folder I chose for the generated files looks like this:</p>
+
+<figure>
+    <img src="../../images/font-blast-files.png">
+    <figcaption>The files generated by font-blast show the source font file used to extract the icons and include a folder containing the generated SVG icons.</figcaption>
+</figure>
+
+<p>As you have guessed, the <strong><em>SVG</em></strong> folder contains the generated SVG icons:</p>
+
+<figure>
+    <img src="../../images/font-blast-svg-icons.png">
+    <figcaption>The font-blast-generated SVG icons.</figcaption>
+</figure>
+
+<p>The icons are then ready to be embedded on your page.</p>
+
+<h3 id="4-sprite-embed-style-animate-have-fun">4. Sprite, Embed, Style, Animate, Have fun!</h3>
+
+<p>There are <strong>three</strong> main ways to create and use SVG sprites. I wrote an overview of these techniques <a href="https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/">here</a>. We will explore each of these techniques in more detail in an upcoming article (or a series of articles), show the pros and cons of each one, and how to create and use the SVG sprites, so stay tuned.</p>
+
+<p><small>You can <a href="https://sarasoueidan.com/rss.xml">subscribe to the RSS feed</a> of my blog to stay up-to-date with new articles. An e-mail newsletter is in the works too!</small></p>
+
+<h3 id="recommended-reading">Recommended Reading:</h3>
+
+<ul>
+<li><a href="https://css-tricks.com/icon-fonts-vs-svg/">Inline SVG vs Icon Fonts [CAGEMATCH]</a> — a <strong>must-read</strong> that clearly highlights the advantages of SVG and why it’s a superior icon system format.</li>
+<li><a href="http://blog.cloudfour.com/seriously-dont-use-icon-fonts/">Seriously, Don’t Use Icon Fonts</a></li>
+<li><a href="https://benfrain.com/seriously-use-icon-fonts/">Seriously, Use Icon Fonts</a> — I still recommend using SVG for icon systems, but it’s always good to read a different point of view.</li>
+<li><a href="https://github.com/blog/2112-delivering-octicons-with-svg">Delivering Octicons with SVG</a> on the Github blog</li>
+<li><a href="http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/">Ten reasons we switched from an icon font to SVG</a></li>
+</ul>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

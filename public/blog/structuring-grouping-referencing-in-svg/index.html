@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Structuring, Grouping, and Referencing in SVG — The &lt;code&gt;&amp;lt;g&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;defs&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;symbol&amp;gt;&lt;/code&gt; Elements 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jul 3, 2014</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">13</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    <p class="size-2x">SVG comes with its own ways for structuring a document by means of certain SVG elements that allow us to define, group, and reference objects within the document. These elements make reusing elements easy, while maintaining clean and readable code. In this article we'll go over these elements, highlighting the difference between them and the advantages of each one.</p>
+
+<h2 class="deeplink" id="the-g-element">Grouping with the <code>&lt;g&gt;</code> element</h2> 
+
+<p>The &lsquo;g&rsquo; in <code>&lt;g&gt;</code> stands for &lsquo;group&rsquo;. The group element is used for logically grouping together sets of related graphical elements. In terms of graphics editors, such as Adobe Illustrator, the <code>&lt;g&gt;</code> element serves a similar functionality as the <em>Group Objects</em> function. You can also think of a group as being similar to the concept of a <em>layer</em> in a graphics editor, since a layer is also a grouping of elements.</p>
+
+<blockquote class="pull-quote">
+    The group element is used for logically grouping together sets of related graphical elements.
+</blockquote>
+
+<p>The <code>&lt;g&gt;</code> element groups all of its descendants into one group. It usually has an <code>id</code> attribute to give that group a name. Any styles you apply to the <code>&lt;g&gt;</code> element will also be applied to all of its descendants. This makes it easy to add styles, transformations, interactivity, and even animations to entire groups of objects.</p>
+
+<p>For example, the following is an SVG bird. The bird is made up of several shapes such as circles and paths.</p>
+
+<figure>
+    <img src="../../images/grouping-bird.svg" alt="">
+</figure>
+
+<p>If you wanted to move the entire bird from one place to another in Illustrator, you will also want to group the elements together so that you wouldn&rsquo;t have to select each and every one of them every time you wanted to do so.</p>
+
+<figure>
+    <img src="../../images/grouping-in-illustrator.png" alt="">
+</figure>
+
+<p>Grouping in SVG using the <code>&lt;g&gt;</code> element works the same way. In this example we&rsquo;ve grouped the elements of the body together, the elements of the head together, and then we grouped the two groups into one group with an <code>id</code> of <code>bird</code>.</p>
+
+<pre class="brush:html">
+&lt;svg width="1144.12px" height="400px" viewBox="0 0 572.06 200"&gt;
+    &lt;style&gt;
+        svg{background-color:white;}
+        #wing{fill:#81CCAA;}
+        #body{fill:#B8E4C2;}
+        #pupil{fill:#1F2600;}
+        #beak{fill:#F69C0D;}
+        .eye-ball{fill:#F6FDC4;}
+    &lt;/style&gt;
+    &lt;g id="bird"&gt;
+        &lt;g id="body"&gt;
+            &lt;path d="M48.42,78.11c0-17.45,14.14-31.58,31.59-31.58s31.59,14.14,31.59,31.58c0,17.44-14.14,31.59-31.59,31.59
+            S48.42,95.56,48.42,78.11"/&gt;
+            &lt;path d="M109.19,69.88c0,0-8.5-27.33-42.51-18.53c-34.02,8.81-20.65,91.11,45.25,84.73
+            c40.39-3.65,48.59-24.6,48.59-24.6S124.68,106.02,109.19,69.88"/&gt;
+            &lt;path id="wing" d="M105.78,75.09c4.56,0,8.84,1.13,12.62,3.11c0,0,0.01-0.01,0.01-0.01l36.23,12.38c0,0-13.78,30.81-41.96,38.09
+            c-1.51,0.39-2.82,0.59-3.99,0.62c-0.96,0.1-1.92,0.16-2.9,0.16c-15.01,0-27.17-12.17-27.17-27.17
+            C78.61,87.26,90.78,75.09,105.78,75.09"/&gt;
+        &lt;/g&gt;
+        &lt;g id="head"&gt;
+            &lt;path id="beak" d="M50.43,68.52c0,0-8.81,2.58-10.93,4.86l9.12,9.87C48.61,83.24,48.76,74.28,50.43,68.52"/&gt;
+            &lt;path class="eye-ball" d="M60.53,71.68c0-6.33,5.13-11.46,11.46-11.46c6.33,0,11.46,5.13,11.46,11.46c0,6.33-5.13,11.46-11.46,11.46
+                C65.66,83.14,60.53,78.01,60.53,71.68"/&gt;
+            &lt;path id="pupil" d="M64.45,71.68c0-4.16,3.38-7.53,7.54-7.53c4.16,0,7.53,3.37,7.53,7.53c0,4.16-3.37,7.53-7.53,7.53
+                C67.82,79.22,64.45,75.84,64.45,71.68"/&gt;
+            &lt;path class="eye-ball" d="M72.39,74.39c0-2.73,2.22-4.95,4.95-4.95c2.73,0,4.95,2.21,4.95,4.95c0,2.74-2.22,4.95-4.95,4.95
+                C74.6,79.34,72.39,77.13,72.39,74.39"/&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>If you were to change the fill color of the <code>#body</code> group, the fill color of all the elements inside the group will change to the color you specify. This is very convenient.</p>
+
+<p>Grouping elements is very useful, not just for organizational and structural purposes. It&rsquo;s particularly useful for when you want to add interactivity or transformations to an SVG graphic that is made up of several items. You can associate those items together in a group and then define transformations to move, scale, or rotate all the items together so that their spatial relations to one another are maintained.</p>
+
+<p>If you wanted to scale the entire bird up and make it twice its size, you will be able to do it with one line of CSS if all the elements are grouped together.</p>
+
+<pre class="brush:css">
+#bird {
+    transform: scale(2);
+}
+</pre>
+
+<p>Grouping makes interactivity, in particular, more convenient. You can attach mouse events to the entire bird and have it respond to the events as a whole group, instead of having to apply the same interactions and/or transformations to every element in that group.</p>
+
+<p>The <code>&lt;g&gt;</code> element has one more important and great feature: it can have its own <code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code> tags that help make it more accessible to screen readers, and overall make the code more readable to humans as well. For example:</p>
+
+<pre class="brush:html">
+&lt;g id="bird"&gt;
+    &lt;title&gt;Bird&lt;/title&gt;
+    &lt;desc&gt;An image of a cute little green bird with an orange beak.&lt;/desc&gt;
+    &lt;!-- ... --&gt;
+&lt;/g&gt;
+</pre>
+
+<h2 class="deeplink" id="the-use-element"> Reusing elements with the <code>&lt;use&gt;</code> element</h2>
+
+<p>Often times, there are elements that are repeated in a graphic. If you&rsquo;re working in Illustrator and you want to repeat an element somewhere in the graphic, you would copy the element and then paste it and use it wherever it is you want to use it. Copying and then pasting an existing element is more convenient than having to recreate that element from scratch.</p>
+
+<p>The <code>&lt;use&gt;</code> element lets you reuse existing elements, giving you a similar functionality to the copy-paste functionality in a graphics editor. It can be used to reuse a single element, or a group of element defined with the <code>&lt;g&gt;</code> element.</p>
+
+<blockquote class="pull-quote">
+    The <code>&lt;use&gt;</code> element lets you reuse existing elements, giving you a similar functionality to the copy-paste functionality in a graphics editor.
+</blockquote>
+
+<p>The <code>&lt;use&gt;</code> element takes <code>x</code>, <code>y</code>, <code>height</code>, and <code>width</code> attributes, and it references other content using the <code>xlink:href</code> attribute. So if you have defined a group somewhere with a given <code>id</code>, and you want to reuse it somewhere else, you give its URI in an <code>xlink:href</code>
+attribute, and specify the <code>x</code> and <code>y</code> location where the group&rsquo;s <code>(0, 0)</code> point should be moved to.</p>
+
+<p>For example, if we were to create another bird in our SVG canvas, we could reuse the existing bird like so:</p>
+
+<pre class="brush:html">
+&lt;use x="100" y="100" xlink:href="#bird" /&gt;
+</pre>
+
+<p>Note that you can reference any SVG element inside the <code>xlink:href</code> attribute, even if that element is in an external file. The referenced element or group does not have to exist in the same file. This is great for organizing files (for example you could have a file for reusable components) and for caching the used files. If the bird in our example were created in a seperate file called <code>animals.svg</code> for example, we could have referenced it like so:</p>
+
+<pre class="brush:html">
+&lt;use x="100" y="100" xlink:href="path/to/animals.svg#bird" /&gt;
+</pre>
+
+<p>However, referencing external SVG in <code>&lt;use&gt;</code> doesn&rsquo;t work in most versions of IE (up to IE 11). I recommend you read <a href="http://css-tricks.com/svg-use-external-source/">this article</a> by Chris Coyier for details and fallback mechanisms.</p>
+
+<p>Now, those of you with a sharp bird&rsquo;s eye (pun not intended), may have noticed that I said that the <code>x</code> and <code>y</code> attributes of <code>&lt;use&gt;</code> specify the location where the group&rsquo;s upper left corner should be <strong>moved to</strong>. Moving an element means that you&rsquo;re starting from its current position and then changing it to another one. Had I said &ldquo;should be positioned at&rdquo;, it would have implied that the element will be positioned according to the coordinate system in use on the entire canvas, right?</p>
+
+<p>As it turns out, the <code>x</code> and <code>y</code> coordinates are <strong>a shorthand for translating an element using the <code>transform</code> attribute</strong>. More specifically, the above <code>&lt;use&gt;</code> use is equivalent to:</p>
+
+<pre class="brush:html">
+&lt;use xlink:href="#bird" transform="translate(100, 100)" /&gt;
+</pre> 
+
+<figure>
+    <img src="../../images/bird-reuse.jpg" alt="">
+</figure>
+
+<p>This fact means that <strong>the position of the new reused element is relative to the position of the original element that we&rsquo;re reusing</strong>. This isn&rsquo;t always optimal and can have some drawbacks.</p>
+
+<blockquote class="pull-quote">
+    The <code>x</code> and <code>y</code> coordinates are a shorthand for translating an element using the <code>transform</code> attribute.
+</blockquote>
+
+<p>Another drawback of the <code>&lt;use&gt;</code> element is that the &ldquo;copies&rdquo; of the original element will have the exact same styles as the original element. Whenever you apply any style or transformation changes to the <code>#bird</code> group in the above example, all the copies of the bird will get the same styles and transformations.</p>
+
+<p>You can <code>use</code> an element and apply an independent transformation to it. For example, the following line will reuse the bird, but it will make it half its original size using a scale transformation:</p>
+
+<pre class="brush:html">
+&lt;use x="100" y="100" xlink:href="#bird" transform="scale(0.5)" /&gt;
+</pre>
+
+<p>However, you <strong>cannot override the styles of the original element (such as fill and strokes) on the copy</strong>. This means that if you want to create multiple birds or multiple icons (if you&rsquo;re working with icons) and you want every icon to have a different color, this won&rsquo;t be possible with the <code>&lt;use&gt;</code> element (unless the original element is defined inside a <code>&lt;defs&gt;</code> element without these styles applied to it. See next section for more information).</p>
+
+<p>The <code>&lt;use&gt;</code> element allows you to reuse an element <strong>that is already rendered on the canvas</strong>. But what if you want to define an element <em>without</em> displaying it, and then draw it at specific positions when you need or want to? This is where the <code>&lt;defs&gt;</code> element comes in.</p>
+
+<h2 class="deeplink" id="the-defs-element">Reusing Stored elements with the <code>&lt;defs&gt;</code> element</h2> 
+
+<p>The <code>&lt;defs&gt;</code> element can be used to <strong>store</strong> content that will not be directly displayed. In other words, the <code>&lt;defs&gt;</code> element is used to <em>define</em> elements without directly rendering them. This stored hidden content can then be referenced and displayed by other SVG elements,
+which makes it ideal for things such as patterns that contain reusable graphics.</p>
+
+<blockquote class="pull-quote">
+    The <code>&lt;defs&gt;</code> element is used to <em>define</em> elements without directly rendering them [..] and that element will serve as a <strong>template</strong> for future use.
+</blockquote>
+
+<p>So, using <code>&lt;defs&gt;</code> we can define an element that we want to use. This element can be anything, ranging from a group of elements like the bird we saw earlier, to a clipping path, mask, or a linear gradient. Basically, anything that we want to define and store away for later use can be defined inside the <code>&lt;defs&gt;</code> element, and that element will serve as a <strong>template</strong> for future use, or as a tool that is available for use whenever needed. The template is never rendered, only instances of it are displayed.</p>
+
+<p>The following is an example defining an SVG gradient, and then uses it as a fill color for a simple SVG rectangle:</p>
+
+<pre class="brush:html">
+<svg>
+    <defs>
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color: deepPink" />
+            <stop offset="100%" style="stop-color: #009966" />
+        </linearGradient>
+    </defs>
+
+    <rect stroke="#eee" stroke-width="5" fill="url(#gradient)" />
+</svg>
+</pre>
+
+<p>Defining the linear gradient inside the <code>&lt;defs&gt;</code> element like that ensures that the gradient will not be rendered unless it is referenced somewhere it is needed.</p>
+
+<p>In the previous section we mentioned two drawbacks of the <code>&lt;use&gt;</code> element:</p>
+
+<ul>
+<li>The position of the new element is relative to the position of the original element.</li>
+<li>The styles of the original element cannot be overridden in the individual copies.</li>
+</ul>
+
+<p>That, in addition to the fact that the re<code>use</code>d element will be rendered on the canvas.</p>
+
+<p>All of these drawbacks can be avoided using the <code>&lt;defs&gt;</code> element. Not only is the original element not rendered, but when you want to reuse an element inside <code>&lt;defs&gt;</code>, the position you specify for each instance will be set relative to the origin of the user coordinate system, not relative to the position of the original element (which makes sense considering the original element is a template that&rsquo;s not even rendered on the canvas).</p>
+
+<p>In this example we have a tree. The tree is made up of a bark and a group of leaves. The leaves are grouped into a group with <code>id=&quot;leaves&quot;</code>, and then this group is grouped with the bark into the larger <code>tree</code> group.</p>
+
+<pre class="brush:html">
+&lt;svg width="500.79px" height="200px" viewBox="0 0 500.79 200"&gt;
+    &lt;style type="text/css"&gt;
+        #leaves{fill:#8CC63F;}
+        #bark{fill:#A27729;}
+    &lt;/style&gt;
+    &lt;g id="tree"&gt;
+        &lt;path id="bark" d="M91.33,165.51c0,0,4.18-27.65,1.73-35.82l-18.55-25.03l3.01-2.74l17.45,19.87l1.91-37.6h4.44l1.83,24.53
+        l15.26-16.35l3.27,4.36l-16.07,19.34c0,0-2.72,0-1.09,19.34c1.63,19.34,3,29.7,3,29.7L91.33,165.51z"/&gt;
+        &lt;g id="leaves"&gt;
+            &lt;path class="leaf" d="M96.97,79.07c0,0-14.92,4.34-23.52-14.05c0,0,19.4-7.98,24.37,11.9c0,0-9.68-3.57-13.07-6.73
+                C84.75,70.2,91.82,77.99,96.97,79.07z"/&gt;
+            &lt;path class="leaf" d="M74.07,100.91c0,0-15.94-1.51-17.2-22.39c0,0,21.62-0.27,18.83,20.66c0,0-7.92-7.1-9.97-11.41
+                C65.73,87.77,69.55,97.92,74.07,100.91z"/&gt;
+            &lt;!-- ... --&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>And this is how the tree looks like:</p>
+
+<figure>
+    <img src="../../images/defined-tree.jpg" alt="">
+</figure>
+
+<p>If we were to wrap the <code>#tree</code> group in a <code>&lt;defs&gt;</code> element, the tree would no longer be rendered on the canvas.</p>
+
+<pre class="brush:html">
+&lt;svg width="500.79px" height="200px" viewBox="0 0 500.79 200"&gt;
+    &lt;style type="text/css"&gt;
+        #leaves{fill:#8CC63F;}
+        #bark{fill:#A27729;}
+    &lt;/style&gt;
+    &lt;defs&gt;
+        &lt;g id="tree"&gt;
+            &lt;!-- ... --&gt;
+        &lt;/g&gt;
+    &lt;/defs&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>Now the tree serves as a template for use. We can use it using the <code>&lt;use&gt;</code> element just like we would <code>use</code> any other element. The only difference in this case is that the <code>x</code> and <code>y</code> attributes are now set relative to the user coordinate system, not relative to the position of the used element.</p>
+
+<p>For example, if we were to create three copies of the tree and position them on the SVG canvas, and assuming in this case that the user coordinate system matches the viewport&rsquo;s height and width with the origin being on the top left corner of the SVG viewport, we&rsquo;d get the following code with the following result:</p>
+
+<pre class="brush:css">
+&lt;use xlink:href="#tree" x="50" y="100" /&gt;
+&lt;use xlink:href="#tree" x="200" y="100" /&gt;
+&lt;use xlink:href="#tree" x="350" y="100" /&gt;
+</pre>
+
+<figure>
+    <img src="../../images/tree.svg" alt="">
+</figure>
+
+<p>As you can see in the image above, each of the trees was positioned relative to the origin of the coordinate system which in this case is the upper left corner of the SVG. So the upper left corner of each tree is positioned at its own (<code>x</code>, <code>y</code>) position in the user coordinate system, independent of the other trees and independent of the tree template defined inside <code>&lt;defs&gt;</code>.</p>
+
+<p>When you use <code>&lt;defs&gt;</code> to reuse an element, you can apply different styles and fill colors to each individual tree, <strong>as long as these styles are not defined on the original tree template</strong>. If the tree inside <code>&lt;defs&gt;</code> has styles applied to it, those styles still won&rsquo;t be overridden by any new ones. So <code>&lt;defs&gt;</code> is great for creating minimal templates and then styling the copies as needed. Without <code>&lt;defs&gt;</code>, this wouldn&rsquo;t be possible with <code>&lt;use&gt;</code> alone.</p>
+
+<p>Note that elements inside the <code>&lt;defs&gt;</code> element are prevented from becoming part of the rendering tree just as if the <code>defs</code> element were a <code>g</code> element and the <code>display</code> property were set to <code>none</code>. However, that the descendants of a <code>defs</code> are always present in the source tree and thus can always be referenced by other elements; thus, the value of the <code>display</code> property on the <code>defs</code> element or any of its descendants does not prevent those elements from being referenced by other elements, even if it is set to <code>none</code>.</p>
+
+<h2 class="deeplink" id="the-symbol-element">Grouping elements with the <code>&lt;symbol&gt;</code> element</h2> 
+
+<p>The <code>&lt;symbol&gt;</code> element is similar to the group element <code>&lt;g&gt;</code>&mdash;it provides a way to group elements together. However, it differs from the group element in two main things:</p>
+
+<ul>
+<li>The <code>&lt;symbol&gt;</code> element is not rendered. It is actually similar to <code>&lt;defs&gt;</code> in this manner. It is only displayed when it is <code>use</code>d.</li>
+<li>A <code>&lt;symbol&gt;</code> element can have its own <code>viewBox</code> and <code>preserveAspectRatio</code> attributes. This allows it to fit into the viewport it is rendered into any way you want it to, instead of fitting in the default way.</li>
+</ul>
+
+<p><code>&lt;symbol&gt;</code> is then mostly suitable for <strong>defining</strong> reusable elements (or <em>symbols</em>). It also serves as a template that is <strong>instantiated</strong> using the <code>&lt;use&gt;</code> element. And having <code>viewBox</code> and <code>preserveAspectRatio</code> attributes, it can scale-to-fit within a rectangular viewport defined by the referencing <code>&lt;use&gt;</code> element. Note that <code>symbol</code> elements define new viewports whenever they are instanced by a <code>use</code> element.</p>
+
+<blockquote class="pull-quote">
+    `symbol` elements define new viewports whenever they are instanced by a `use` element.
+</blockquote>
+
+<p>This feature is great because it allows you to define elements that are independent of the viewport they&rsquo;re rendered into, hence allowing you to make sure the symbol you&rsquo;re referencing will always display a certain way inside the viewport.</p>
+
+<p>You need to be familiar with the way the <code>viewBox</code> works, and the values of the <code>preserveAspectratio</code> attribute to make the best use of this feature. Chris Coyier wrote <a href="http://css-tricks.com/svg-symbol-good-choice-icons/">an article</a> explaining why the <code>&lt;symbol&gt;</code> element can be a good choice for icons, and how to use it.</p>
+
+<p><p class="note">I will also be writing an extensive article about the <code>viewport</code>, <code>viewBox</code>, and <code>preserveAspectRatio</code> attributes that explains how these attributes work together and how they can be used to control and scale graphics in SVG, so stay tuned for that if you&rsquo;re interested.</p>
+<div class="update note">
+    <strong>UPDATE:</strong> Article is live here: <a href="http://sarasoueidan.com/blog/svg-coordinate-systems">Understanding SVG Coordinate Systems and Transformations (Part 1) &ndash; The viewport, <code>viewBox</code>, and <code>preserveAspectRatio</code></a>
+</div></p>
+
+<p>Note that the <code>display</code> property does not apply to the <code>symbol</code> element; thus, <code>symbol</code> elements are not directly rendered even if the <code>display</code> property is set to a value other than <code>none</code>, and <code>symbol</code> elements are available for referencing even when the <code>display</code> property on the <code>symbol</code> element or any of its ancestors is set to <code>none</code>.</p>
+
+<h2 class="deeplink" id="wrapping-up">Wrapping up</h2> 
+
+<p>All of these elements are container structural elements in SVG that helps make reusing elements easier while keeping the code cleaner and more readable. And each of the elements we went over in this article has its own use cases. Now that you know what each one does and how they differ, you can decide for your own which one to use, depending on your needs. That said, don&rsquo;t forget to <a href="https://www.sitepoint.com/tips-accessible-svg/">keep your SVGs accessible</a> at all times.</p>
+
+<p>I hope you liked this article and found it useful. Thank you for reading!</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

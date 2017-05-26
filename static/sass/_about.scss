@@ -1,0 +1,12 @@
+.about__photo-container {
+	display: block; 
+
+	@media all and (max-width: 1024px) {
+		max-width: 600px;
+		margin: 0 auto 2em;
+	} 
+}
+
+	.about__photo {
+		width: 100%;
+	}

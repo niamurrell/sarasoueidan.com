@@ -1,0 +1,62 @@
+.green {
+  color: $green !important;
+}
+.blue {
+  color: $blue !important;
+}
+
+.highlight {
+  background-color: $yellow;
+}
+
+.color-grey {
+	color: grey;
+}
+
+.serif {
+	font-family: Merriweather, Georgia, serif;
+}
+
+.small {
+	font-size: .75em;
+}
+
+.color--red {
+  color: $red;
+}
+
+.center {
+  text-align: center;
+}
+
+.smaller {
+	font-size: .5em;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.size-2x {
+  font-size: calc(1em + .5vw);
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+
+.desktop-only {
+  @media all and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.x-large {
+  font-size: 15vw !important;
+}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}

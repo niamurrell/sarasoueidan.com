@@ -1,0 +1,12 @@
+<nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li class="main-nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} current{{end}}"><a  href="{{.URL}}">{{ .Name }}</a></li>
+        {{ end }}
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>

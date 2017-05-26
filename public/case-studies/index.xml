@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case Studies on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/case-studies/</link>
+    <description>Recent content in Case Studies on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://sarasoueidan.com/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://sarasoueidan.com/case-studies/cobi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/case-studies/cobi/</guid>
+      <description>The COBI Connect page I built. Click on the image to visit the page.     Background   COBI’s product manager Sebastian Frommherz contacted me in January 2016 because they were looking for a front-end developer to help them build a fast page for their current marketing web site which introduces COBI’s technical features to prospect clients and users, called the &#34;COBI Connect&#34; page (screenshotted above).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sarasoueidan.com/case-studies/provata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/case-studies/provata/</guid>
+      <description>The Provata Health Web site homepage.         Background   In March 2015, Alex Goldberg, Provata Health CEO, got in touch with me regarding building a marketing Web site for his startup. At that time, Alex was already determined to hire me for this job because he saw me as a perfect fit for it. (&amp;lt;3)  We jumped on a Skype call for the first time a few weeks after his initial e-mail because I had been touring the world at that time, giving talks at conferences.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://sarasoueidan.com/case-studies/smashing-magazine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/case-studies/smashing-magazine/</guid>
+      <description>Please note: the screenshots shown in this case study are screenshots of the UI I built and finished early December 2016. The UI or some of its component styles [may] have changed since then, as the Smashing team [may] have made some changes to it after my work with them was finished.  Please also note that the content in the screenshots is not the real content of the magazine. I was working with static pages and most of the content I used was placeholder content and images, so that is what is shown in the screenshots as well.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer on Sara sarasoueidan</title>
+    <link>http://sarasoueidan.com/tags/developer/</link>
+    <description>Recent content in Developer on Sara sarasoueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://sarasoueidan.com/tags/developer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/about/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/contact/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/hire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/hire/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/speaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/speaking/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+    <item>
+      <title>Sara Soueidan – Front-End Web Developer, Author, Speaker</title>
+      <link>http://sarasoueidan.com/workshops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sarasoueidan.com/workshops/</guid>
+      <description>{{ .Content }}</description>
+    </item>
+    
+  </channel>
+</rss>

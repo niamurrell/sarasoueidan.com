@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/design/</link>
+    <description>Recent content in Design on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Animated SVG vs GIF [CAGEMATCH]</title>
+      <link>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</guid>
+      <description>SVG can do much more than display static images. Its animation capabilities are one of its most powerful features, giving it a distinctive advantage over all other image formats. They are one of many reasons that make SVG images better than raster images, including GIFs. But this, of course, only applies to images that are good candidates for SVG, such as:
+ Logos, non-complex, vector-based illustrations, user interface controls,  infographics, and icons.</description>
+    </item>
+    
+    <item>
+      <title>Tips for Creating and Exporting Better SVGs for the Web</title>
+      <link>https://sarasoueidan.com/2015/11/16/svg-tips-for-designers/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/11/16/svg-tips-for-designers/</guid>
+      <description>Working with SVG in a RWD workflow usually involves a design phase and a development phase. The design phase is usually handled by designers who may or may not know how to code. And because of the nature of SVG as both an image format and a document format, every step taken in the graphics editor in the process of creating the SVG directly affects the resulting code and hence the work of the developer in charge of embedding, scripting or animating the SVG.</description>
+    </item>
+    
+    <item>
+      <title>Lessons from the “Seductive Interaction Design” Book</title>
+      <link>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</link>
+      <pubDate>Fri, 26 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/04/26/lessons-from-seductive-interaction-design-book/</guid>
+      <description>In this article today, I’m going to share with you some of the lessons I learned from one of the best books I’ve read: Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences. I believe that you should read this book yourselves to fully appreciate all the information and insight the writer has to share. I will cover only the first half of the book. I will be pasting some excerpts, because there are many things that the writer describes a lot better than I could ever do.</description>
+    </item>
+    
+  </channel>
+</rss>

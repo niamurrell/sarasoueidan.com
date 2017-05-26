@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, &lt;code&gt;viewBox&lt;/code&gt;, and &lt;code&gt;preserveAspectRatio&lt;/code&gt; 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jul 17, 2014</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">26</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    <p class="size-2x">SVG elements aren't governed by a CSS box model like HTML elements are. This makes positioning and transforming these elements trickier and may seem&mdash;at first glance&mdash;less intuitive. However, once you understand how SVG coordinate systems and transformations work, manipulating SVGs becomes a lot easier and makes a lot more sense. In this article we're going to go over three of the most important SVG attributes that control SVG coordinate systems: <code>viewport</code>, <code>viewBox</code>, and <code>preserveAspectRatio</code>.</p>
+
+<p>This is the first in a series of three articles covering the topic of coordinate systems and transformations in SVG.</p>
+
+<ul>
+<li>Understanding SVG Coordinate Systems &amp; Transformations (Part 1) &ndash; The viewport, <code>viewBox</code>, &amp; <code>preserveAspectRatio</code></li>
+<li><a href="http://sarasoueidan.com/blog/svg-transformations">Understanding SVG Coordinate Systems &amp; Transformations (Part 2) &ndash; The <code>transform</code> Attribute</a></li>
+<li><a href="http://sarasoueidan.com/blog/nesting-svgs">Understanding SVG Coordinate Systems &amp; Transformations (Part 3) &ndash; Establishing New Viewports</a></li>
+</ul>
+
+<p>For the sake of visualizing the concepts and explanations in the article even further, I created an interactive demo that allows you to play with the values of the <code>viewBox</code> and <code>preserveAspectRatio</code> attributes.</p>
+
+<p><br>
+<a class="button" href="{{ site.url }}/demos/interactive-svg-coordinate-system/index.html">Check the interactive demo out.</a></p>
+
+<p class="note">The demo is the cherry on top of the cake, so do make sure you come back to read the article if you check it out before you do!</p>
+
+<h2 class="deeplink" id="svg-canvas">The SVG Canvas</h2>
+
+<p>The <strong>canvas</strong> is the space or area where the SVG content is drawn. Conceptually, this canvas is infinite in both dimensions. The SVG can therefore be of any size. However, it is rendered on the screen relative to a <strong>finite region</strong> known as <em>the viewport</em>. Areas of the SVG that lie beyond the boundaries of the viewport are clipped off and not visible.</p>
+
+<h2 class="deeplink" id="svg-viewport">The viewport</h2>
+
+<p>The viewport is the viewing area where the SVG will be visible. You can think of the viewport as a window through which you can see a particular scene. The scene may be entirely or partially visible through that window.</p>
+
+<p>The SVG viewport is similar to the viewport of the browser you&rsquo;re viewing this page through. A web page can be of any size; it can be wider than the viewport&rsquo;s width, and is in most cases also longer than the viewport&rsquo;s length. However, only portions of a web page are visible through the viewport at a time.</p>
+
+<p class="note">Whether or not the entire SVG canvas or part of it is visible depends on the <strong>size of that canvas*</strong> and <strong>the value of the <code>preserveAspectRatio</code> attribute</strong>. You don't have to worry about these now; we'll talk about them further in more detail.</p>
+
+<p>You specify the size of the viewport using the <code>width</code> and <code>height</code> attributes on the outermost <code>&lt;svg&gt;</code> element.</p>
+
+<pre class="brush:html">
+&lt;!-- the viewport will be 800px by 600px --&gt;
+&lt;svg width="800" height="600"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>In SVG, values can be set with or without a unit identifier. A unitless value is said to be specified <em>in user space</em> using <em>user units</em>. If a value is specified in user units, then the value is assumed to be equivalent to the same number of &ldquo;px&rdquo; units. This means that the viewport in the above example will be rendered as a 800px by 600px viewport.</p>
+
+<p>You can also specify values using units. The supported length unit identifiers in SVG are: <code>em</code>, <code>ex</code>, <code>px</code>, <code>pt</code>, <code>pc</code>, <code>cm</code>, <code>mm</code>, <code>in</code>, and percentages.</p>
+
+<p>Once the width and height of the outermost SVG element are set, the browser establishes an initial <em>viewport coordinate system</em> and an initial <em>user coordinate system</em>.</p>
+
+<h3 class="deeplink" id="initial-coordinate-system">The initial coordinate system</h3>
+
+<p>The initial <strong>viewport coordinate system</strong> is a coordinate system established on the viewport, with the origin at the top left corner of the viewport at point (0, 0), the positive x-axis pointing towards the right, the positive y-axis pointing down, and one unit in the initial coordinate system equals one &ldquo;pixel&rdquo; in the viewport. This coordinate system is similar to the coordinate system established on an HTML element with a CSS box model.</p>
+
+<p>The initial <strong>user coordinate system</strong> is the coordinate system established on the SVG canvas. This coordinate system is initially identical to the viewport coordinate system&mdash;it has its origin at the top left corner of the viewport with the positive x-axis pointing towards the right, the positive y-axis pointing down. Using the <code>viewBox</code> attribute, the initial user coordinate system&mdash;also known as <strong>the current coordinate system</strong>, or <strong>user space in use</strong>&mdash;can be modified so that it is not identical to the viewport coordinate system anymore. We&rsquo;ll talk about modifying it in the next section.</p>
+
+<p>For now, we won&rsquo;t specify a <code>viewBox</code> attribute value. The user coordinate system of the SVG canvas is identical to that of the viewport.</p>
+
+<p>In the following image, the viewport coordinate system &ldquo;ruler&rdquo; is grey, and that of the user coordinate system (the <code>viewBox</code>) is blue. Since they are both identical at this point, the two coordinate systems overlap.</p>
+
+<figure>
+    <img src="../../images/initial-coordinate-systems.jpg" alt="Viewport Coordinate System">
+    <figcaption>
+        The initial coordinate systems established on the viewport and SVG canvas. Grey units represent the viewport coordinate system; blue units represent the user coordinate system. Both coordinate systems are identical and coincide.
+    </figcaption>
+</figure>
+
+<p>The parrot in the above SVG has a bounding box that is 200 units (200 pixels in this case) in width and 300 units in height. The parrot is drawn on the canvas based on the initial coordinate system.</p>
+
+<p class="note">A new user space (i.e., a new current coordinate system) can also be established by specifying <strong>transformations</strong> using the <code>transform</code> attribute on a container element or graphics element. We'll talk about transformations in the second part of this article, and then in more details in the third and last part.</p>
+
+<h2 class="deeplink" id="svg-viewbox">The <code>viewBox</code></h2>
+
+<p>I like to think of the <code>viewBox</code> as the &ldquo;real&rdquo; coordinate system. After all, it is <em>the</em> coordinate system used to draw the SVG graphics onto the canvas. This coordinate system can be smaller or bigger than the viewport, and it can be fully or partially visible inside the viewport too.</p>
+
+<p>In the previous section, this coordinate system&mdash;the user coordinate system&mdash;was identical to the viewport coordinate system. The reason for that is that we did not specify it to be otherwise. That&rsquo;s why all the positioning and drawing seemed to be done relative to the viewport coordinate system. Because once we created a viewport coordinate system (using <code>width</code> and <code>height</code>), the browser created a default user coordinate system that is identical to it.</p>
+
+<p>You specify your own user coordinate system using the <code>viewBox</code> attribute. If the user coordinate system you choose has the same aspect ratio (ratio of height to width) as the viewport coordinate system, it will stretch to fill the viewport area (we&rsquo;ll talk examples in a minute). However, if your user coordinate system does not have the same aspect ratio, you  can use the <code>preserveAspectRatio</code> attribute to specify whether or not the entire system will be visible inside the viewport or not, and you can also use it to specify how it is positioned inside the viewport. We&rsquo;ll get into details and lots of examples for this case in the next section. In this section, we&rsquo;ll stick to examples where the aspect ratio of the <code>viewBox</code> matches that of the viewport&mdash;in these examples, <code>preserveAspectRatio</code> has no effect.</p>
+
+<p>Before we get into the examples, we&rsquo;ll go over the syntax of <code>viewBox</code>.</p>
+
+<h3 class="deeplink" id="viewbox-syntax">The <code>viewBox</code> syntax</h3>
+
+<p>The <code>viewBox attribute</code> takes four parameters as a value: <code>&lt;min-x&gt;</code>, <code>&lt;min-y&gt;</code>, <code>width</code> and <code>height</code>.</p>
+
+<pre class="brush:html">
+viewBox = &lt;min-x&gt; &lt;min-y&gt; &lt;width&gt; &lt;height&gt;
+</pre>
+
+<p>The <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> values determine the upper left corner of the viewbox, and the <code>width</code> and <code>height</code> determine the width and height of that viewBox. Note here that the width and height of the viewBox need not be the same as the width and height set on the parent <code>&lt;svg&gt;</code> element. A negative value for <code>&lt;width&gt;</code> or <code>&lt;height&gt;</code> is invalid. A value of zero disables rendering of the element.</p>
+
+<p class="note">
+Note that the width of the viewport can also be set in CSS to any value. For example, setting <code>width: 100%</code> will make the SVG viewport fluid in a document. Whatever value of the <code>viewBox</code>, it will then be mapped to the computed width of the outer SVG element.
+</p>
+
+<p>An example of setting <code>viewBox</code> would look like the following:</p>
+
+<pre class="brush:html">
+&lt;!-- The viewbox in this example is equal to the viewport, but it can be different --&gt;
+&lt;svg width="800" height="600" viewbox="0 0 800 600"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>If you&rsquo;ve read about the <code>viewBox</code> somewhere before, you may have come across a few definitions saying that you can use the <code>viewBox</code> attribute to transform the SVG graphic by scaling or translating it. This is true. I&rsquo;m going to go further and say that you can even <em>crop</em> the SVG graphic using <code>viewBox</code>.</p>
+
+<p>The best way to understand the <code>viewBox</code> and differentiate it from the viewport is by visualizing it. So let&rsquo;s start with some examples. We&rsquo;ll start with examples where th aspect ratio of the viewbox is the same as the aspect ratio of the viewport, so we won&rsquo;t need to dig into <code>preserveAspectRatio</code> yet.</p>
+
+<h3 class="deeplink" id="viewbox-aspect-ratio"><code>viewBox</code> with aspect ratio equal to the viewport's aspect ratio</h3>
+
+<p>We&rsquo;ll start with a simple example. The <code>viewbox</code> in this example will be half the size of the viewport. We won&rsquo;t change the origin of the viewbox in this one, so both <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> will be set to zero. The width and height of the viewbox will be half the width and height of the viewport. This means that we&rsquo;re preserving the aspect ratio.</p>
+
+<pre class="brush:html">
+&lt;svg width="800" height="600" viewbox="0 0 400 300"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>So, what does <code>viewbox=&quot;0 0 400 300&quot;</code> exactly do?</p>
+
+<ul>
+<li>It specifies a specific region of the canvas spanning from a top left point at (0, 0) to a point at (400, 300).</li>
+<li>The SVG graphic is then <strong>cropped</strong> to that region.</li>
+<li>The region is <strong>scaled up</strong> (in a zoom-in-like effect) to fill the entire viewport.</li>
+<li>The user coordinate system is mapped to the viewport coordinate system so that&mdash;in this case&mdash;one user unit is equal to two viewport units.</li>
+</ul>
+
+<p>The following image shows the result of applying the above viewbox to the <code>&lt;svg&gt;</code> canvas in our example. The grey units represent the viewport coordinate system, and the blue coordinate system represents the user coordinate system established by the <code>viewBox</code>.</p>
+
+<figure>
+    <img src="../../images/viewbox-400-300-crop.jpg" alt="">
+    <figcaption>
+        Specifying a viewbox has a result similar to cropping the graphic to that viewbox and then zooming it in so that it fills the entire viewport area. Remember that we're still maintaining the same aspect ratio as the viewport in this case.
+    </figcaption>
+</figure>
+
+<p>Anything you draw on the SVG canvas will be drawn relative to the new user coordinate system.</p>
+
+<p class="note">I like to visualize the SVG canvas with a <code>viewBox</code> the same way as Google maps. You can zoom in to a specific region or area in Google maps; that area will be the only area visible, scaled up, inside the viewport of the browser. However, you know that the rest of the map is still there, but it's not visible because it extends beyond the boundaries of the viewport&mdash;it's being clipped out.</p>
+
+<p>Now let&rsquo;s try changing the <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> values. We&rsquo;ll set both to <code>100</code>. They can be any number you want. The width and height ratio will also be the same as width and height ratio of the viewport.</p>
+
+<pre class="brush:html">
+&lt;svg width="800" height="600" viewbox="100 100 200 150"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>The effect of applying <code>viewBox=&quot;100 100 200 150&quot;</code> is also a crop effect like the one in the previous example. The graphic is cropped and scaled up to fill the entire viewport area.</p>
+
+<figure>
+    <img src="../../images/viewbox-200-150-crop.jpg" alt="">
+    <figcaption>
+        The result of "cropping" the graphic to a viewbox with an origin at (100, 100) and width 200 and height 150.
+    </figcaption>
+</figure>
+
+<p>Again, the user coordinate system is mapped to the viewport coordinate system&mdash;200 user units are mapped to 800 viewport units so that every user unit is equal to four viewport units. This results in a zoom-in effect like the one you can see in the above screenshot.</p>
+
+<p>Also note, at this point, that specifying non-zero values for the <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> values has a transformation effect on the graphic; more specifically, it is as though the SVG canvas was translated by 100 units to the top and 100 units to the left (<code>transform=&quot;translate(-100 -100)&quot;</code>).</p>
+
+<p>Indeed, as the specification states, <q>the effect of the <code>viewBox</code> attribute is that the user agent automatically supplies the appropriate transformation matrix to map the specified rectangle in user space to the bounds of a designated region (often, the viewport)</q>.</p>
+
+<p>This is just a fancy way of saying what we already mentioned before: the graphic is cropped and then <strong>scaled</strong> to fit into the viewport. The spec then goes on to add a note: <q>in some cases the user agent will need to supply a <strong>translate transformation</strong> in addition to a scale transformation. For example, on an outermost svg element, <strong>a translate transformation will be needed if the <code>viewBox</code> attributes specifies values other than zero for <code>&lt;min-x&gt;</code> or <code>&lt;min-y&gt;</code></strong>.)</q></p>
+
+<p>To demonstrate the translation transformation even better, let&rsquo;s try applying negative values (-100) to <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code>. The translation effect would be then similar to <code>transform=&quot;translate(100 100)&quot;</code>; meaning that the graphic will be translated to the bottom and to the right after being cropped and scaled. If were to revisit the second to last example with a crop size of 400 by 300, and then add the new negative <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> values, this would be our new code:</p>
+
+<pre class="brush:html">
+&lt;svg width="800" height="600" viewbox="-100 -100 400 300"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>The result of applying the above <code>viewBox</code> transformation to the graphic is shown in the following image:</p>
+
+<figure>
+    <img src="../../images/viewbox-400-300-crop-translate.jpg" alt="">
+    <figcaption>
+
+    </figcaption>
+</figure>
+
+<p>Note that, unlike the <code>transform</code> attribute, the automatic transformation that is created due to a <code>viewBox</code> does not affect the <code>x</code>, <code>y</code>, <code>width</code> and <code>height</code> attributes on the element with the <code>viewBox</code> attribute. Thus, in the example above which shows an <code>svg</code> element which has attributes <code>width</code>, <code>height</code> and <code>viewBox</code>, the <code>width</code> and <code>height</code> attributes represent values in the coordinate system that exists before the <code>viewBox</code> transformation is applied. You can see this in the above examples as the initial (grey) viewport coordinate system remains unaffected even after using the <code>viewBox</code> attribute on the <code>&lt;svg&gt;</code>.</p>
+
+<p>On the other hand, like the <code>transform</code> attribute, it does establish a new coordinate system for all other attributes and for descendant elements. You can also see that in the above examples as the user coordinate system established is a new one&mdash;it does not remain as the initial user coordinate system which was identical to the viewport coordinate system before the <code>viewBox</code> was used. And any descendants of the <code>&lt;svg&gt;</code> will be positioned and sized in the <strong>new</strong> user coordinate system, not the initial one.</p>
+
+<p>Our last <code>viewBox</code> example is similar to the previous ones, but instead of cropping the canvas, we&rsquo;re going to <em>extend</em> it inside the viewport and see how it affects the graphic. We&rsquo;re going to specify a viewbox with a width and height that are larger than those of the viewport, while also maintaining the aspect ratio of the viewport. We&rsquo;ll deal with different aspect ratios in the next section.</p>
+
+<p>In this example, we&rsquo;ll make the viewbox 1.5 times the size of the viewport.</p>
+
+<pre class="brush:html">
+&lt;svg width="800" height="600" viewbox="0 0 1200 900"&gt;
+    &lt;!-- SVG content drawn onto the SVG canvas --&gt;
+&lt;/svg&gt;
+</pre>
+
+<p>What will happen now is that the user coordinate system is going to be scaled up to 1200x900. It will then be mapped to the viewport coordinate system so that every 1 unit in the user coordinate system is equal to <code>viewport-width / viewBox-width</code> horizontally, and <code>viewport-height / viewBox-height</code> units vertically in the viewport coordinate system. This means that, in this case, every one x-unit in the user coordinate system is equal to 0.66 x-units in the viewport coordinate system, and every one user y-unit is mapped to 0.66 viewport y-units.</p>
+
+<p>Of course, the best way to understand this is to visualize the result. The viewbox is scaled so that it fits inside the viewport as shown in the following image. And because the graphic is drawn on the canvas based on the new user coordinate system, not the viewport coordinate system, it will look smaller inside the viewport.</p>
+
+<figure>
+    <img src="../../images/viewbox-1200-900.jpg" alt="">
+    <figcaption>
+        A 1200x900 user coordinate system mapped into the 800x600 viewport coordinate system. The grey units represent the viewport coordinate system; the blue units represent the system established from the <code>viewBox</code>.
+    </figcaption>
+</figure>
+
+<p>So far, all of our examples have been in conformity with the viewport&rsquo;s height to width aspect ratio. But what happens if the height and width specified in the <code>viewBox</code> have a different aspect ratio than that of the viewport&rsquo;s? For example, suppose we set the dimensions of the viewbox to be 1000x500. The aspect ratio of height to width is no longer the same as that of the viewport. The result of using <code>viewBox = &quot;0 0 1000 500&quot;</code> in our example looks like the following:</p>
+
+<figure>
+    <img src="../../images/viewbox-1000-500.jpg" alt="">
+    <figcaption>
+        The result of defining a 1000x500 user coordinate system in a 800x600 viewport.
+    </figcaption>
+</figure>
+
+<p>The user coordinate system and hence the graphic is positioned inside the viewport so that:</p>
+
+<ul>
+<li>The entire viewbox fits inside the viewport.</li>
+<li>The aspect ratio of the viewbox is preserved. The viewbox was <em>not</em> stretched to cover the viewport area.</li>
+<li>THe viewbox is centered inside the viewport both vertically and horizontally.</li>
+</ul>
+
+<p>This is the default behavior. What controls this behavior? And what if we want to change the position of the viewbox inside the viewport? This is where the <code>preserveAspectRatio</code> attribute comes in.</p>
+
+<h2 class="deeplink" id="preserveaspectratio">The <code>preserveAspectRatio</code> Attribute</h2>
+
+<p>The <code>preserveAspectRatio</code> attribute is used to force a uniform scaling for the purposes of preserving the aspect ratio of a graphic.</p>
+
+<p>If you define a user coordinate system with an aspect ratio different from that of the viewport&rsquo;s, and if the browser were to stretch the viewbox to fit into the viewport as we&rsquo;ve seen in previous examples, the difference in aspect ratios will cause the graphic to be distorted in either direction. So if the viewbox in the last example were to be stretched to fill the viewport in both directions, the graphic would look like so:</p>
+
+<figure>
+    <img src="../../images/viewbox-1000-500-stretched.jpg" alt="">
+    <figcaption>
+        The result of mapping the user coordinate system to the viewport without preserving its aspect ratio. The graphic is distorted and looks shrunk horizontally while also being stretched vertically.
+    </figcaption>
+</figure>
+
+<p>The distortion is also clearly visible (and unwanted, of course) when using a viewbox value of <code>0 0 200 300</code>, which would be smaller than the dimensions of the viewport. I chose this value in particular so that the viewbox matches the size of the bounding box of the parrot. If the browser were to stretch the graphic to fill the entire viewport, it would look like the so:</p>
+
+<figure>
+    <img src="../../images/viewbox-200-300-stretched.jpg" alt="">
+    <figcaption>
+        The result of mapping the user coordinate system to the viewport without preserving its aspect ratio. The graphic is distorted.
+    </figcaption>
+</figure>
+
+<p>The <code>preserveAspectRatio</code> attribute allows you to force uniform scaling of the viewbox, while maintaining the aspect ratio, and it allows you to specify how to position the viewbox inside the viewport if you don&rsquo;t want it to be centered by default.</p>
+
+<h3 class="deeplink" id="preserveAspectRatio-syntax">The <code>preserveAspectRatio</code> syntax</h3>
+
+<p>The official syntax for <code>preserveAspectRatio</code> is:</p>
+
+<pre class="brush:html">
+preserveAspectRatio = defer? &lt;align&gt; &lt;meetOrSlice&gt;?
+</pre>
+
+<p>It is usable on any element that establishes a new viewport (we&rsquo;ll get into these in the next parts of the series).</p>
+
+<p>The <code>defer</code> argument is optional, and is used only when you&rsquo;re applying <code>preserveAspectRatio</code> to an <code>&lt;image&gt;</code>. It is ignored when used on any other element. Since <code>&lt;image&gt;</code> it outside the scope of this article, we&rsquo;ll skip the <code>defer</code> option for now.</p>
+
+<p>The <code>align</code> parameter indicates whether to force uniform scaling and, if so, the alignment method to use in case the aspect ratio of the <code>viewBox</code> doesn&rsquo;t match the aspect ratio of the viewport.</p>
+
+<p>If the <code>align</code> value is set to <code>none</code>, for example:</p>
+
+<pre class="brush:html">
+preserveAspectRatio = "none"
+</pre>
+
+<p>The graphic will be scaled to fit inside the viewport without maintaining the aspect ratio, just like we saw in the last two examples.</p>
+
+<p>All other values of <code>preserveAspectRatio</code> force uniform scaling while preserving the viewbox&rsquo;s aspect ratio, and specify how to align the viewbox inside the viewport. We&rsquo;ll get into the values of <code>align</code> shortly.</p>
+
+<p>The last argument, <code>meetOrSlice</code> is also optional, and it defaults to <code>meet</code>. This argument specifies whether or not the entire <code>viewBox</code> should be visible inside the viewport. If provided, it is separated from the <code>align</code> parameter by one or more spaces. For example:</p>
+
+<pre class="brush:html">
+preserveAspectRatio = "xMinYMin slice"
+</pre>
+
+<p>These values may seem foreign at first. To make understanding them easier and make them more familiar, you can think of the <code>meetOrSlice</code> value as being similar to the <code>background-size</code> values <code>contain</code> and <code>cover</code>; they work pretty much the same. <code>meet</code> is similar to <code>contain</code>, and <code>slice</code> is similar to <code>cover</code>. Here are the definitions and meaning of each value:</p>
+
+<dl>
+    <dt>meet (The default value)</dt>
+    <dd>
+        Scale the graphic as much as possible while maintaining the following two criteria:
+        <ul>
+            <li>aspect ratio is preserved</li>
+            <li>the entire <code>viewBox</code> is visible within the viewport</li>
+        </ul>
+        <p>
+            In this case, if the aspect ratio of the graphic does not match the viewport, some of the viewport will extend beyond the bounds of the <code>viewBox</code> (i.e., the area into which the <code>viewBox</code> will draw will be smaller than the viewport). (See the last example of The viewBox section.) In this case, the boundaries of the `viewBox` are contained inside the viewport such that the boundaries *meet*.
+        </p>
+        <p class="note">
+            This value is similar to  <code>background-size: contain</code>. The background image is scaled as much as possible while preserving its aspect ratio and making sure it fits entirely into the background painting area. If the aspect ratio of the background is not the same as that of the element it is being applied to, parts of the background painting area will not be covered by the background image.
+        </p>
+    </dd>
+    <dt>slice</dt>
+    <dd>
+        Scale the graphic so that the <code>viewBox</code> covers the entire viewport area, while maintaining its aspect ratio. The <code>viewBox</code> is scaled <strong>just enough</strong> to cover the viewport area (in both dimensions), but it is not scaled any more than needed to achieve that. In other words, it is scaled to the smallest size such that the width and height of the <code>viewBox</code> can completely cover the viewport.
+        <p>
+            In this case, if the aspect ratio of the <code>viewBox</code> does not match the viewport, some of the <code>viewBox</code> will extend beyond the bounds of the viewport (i.e., the area into which the <code>viewBox</code> will draw is larger than the viewport). This will result in part of the `viewBox` being *sliced off*.
+        </p>
+        <p class="note">
+            You can think of this as being similar to <code>background-size: cover</code>. In the case of a background image, the image is scaled while preserving its intrinsic aspect ratio (if any), to the smallest size such that both its width and its height can completely cover the background positioning area.
+        </p>
+    </dd>
+</dl>
+
+<p>So, <code>meetOrSlice</code> is used to specify whether or not the <code>viewBox</code> will be completely contained inside the viewport, or if it should be scaled as much as needed to cover the entire viewport, even if this means that a part of the viewbox will be &ldquo;sliced off&rdquo;.</p>
+
+<p>For example, if we were to apply <code>viewBox</code> size of 200x300, and using both the <code>meet</code> and <code>slice</code> values, keeping the <code>align</code> value set to the default by the browser, the result for each value will look like the following:</p>
+
+<figure>
+    <img src="../../images/viewbox-200-300-meet-vs-slice.jpg" alt="">
+    <figcaption>
+        The result of applying the <code>meet</code> parameter vs the <code>slice</code> parameter on a <code>viewBox</code> with an aspect ratio different from that of the viewport's aspect ratio.
+        <br>
+        <br>
+        The default value for <code>align</code> is <code>xMidYMid</code>, so, in both cases, the graphic is scaled so that its mid axes align with the mid axes of the viewport.
+    </figcaption>
+</figure>
+
+<p>The <code>align</code> parameter takes one of nine values, or the <code>none</code> value. Any value other than <code>none</code> is used to uniformly scale the image preserving its aspect ratio, <em><strong>and</strong></em> it is also used to <em>align</em> the <code>viewBox</code> inside the viewport.</p>
+
+<p>The <code>align</code> values works similar to the way <code>background-position</code> works when used with percentage values. You can think of the <code>viewBox</code> as being the background image. The way the positioning with <code>align</code> differs from <code>background-position</code> is that instead of positioning a specific point of the viewbox over a corresponding point of the viewport, it <em>aligns</em> specific &ldquo;axes&rdquo; of the viewBox with corresponding &ldquo;axes&rdquo; of the viewport.</p>
+
+<p>In order to understand the meaning of each of the <code>align</code> values, we&rsquo;re going to first introduce each of the &ldquo;axes&rdquo;.</p>
+
+<p>Remember the <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> values of the <code>viewBox</code>? We&rsquo;re going to use each of these to define the &ldquo;min-x&rdquo; axis and &ldquo;min-y&rdquo; axis on the <code>viewBox</code>. Additionally, we&rsquo;re going to define two axes &ldquo;max-x&rdquo; and &ldquo;max-y&rdquo;, which will be positioned at <code>&lt;min-x&gt; + &lt;width&gt;</code> and <code>&lt;min-y&gt; + &lt;height&gt;</code>, respectively. And last but not least, we&rsquo;ll define two axes &ldquo;mid-x&rdquo; and &ldquo;mid-y&rdquo;, which are positioned at <code>&lt;min-x&gt; + (&lt;width&gt;/2)</code> and <code>&lt;min-y&gt; + (&lt;height&gt;/2)</code>, respectively.</p>
+
+<p>Did that make things more confusing? If so, have a look at the following image to see what each of those axes represents. In the image, both <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> are set to their default <code>0</code> values. The <code>viewBox</code> is set to <code>viewBox = &quot;0 0 300 300&quot;</code>.</p>
+
+<figure>
+    <img src="../../images/viewbox-x-y-axes.jpg" alt="">
+    <figcaption>
+        The pink and orange solid lines represent the min-y and min-x values respectively. The dashed pink and orange lines represent the mid and max x and y values.
+    </figcaption>
+</figure>
+
+<p>The dashed grey lines in the above image represent the mid-x and mid-y axes of the viewport. We&rsquo;re going to use those to align the mid-x and mid-y of axes of the <code>viewBox</code> for some values. For the viewport, the min-x value is equal to 0, the min-y value is also 0, the max-x value is equal to the width of the <code>viewBox</code>, the max-y value is equal to its height, and the mid-x and mid-y represent the middle values of the width and height, respectively.</p>
+
+<p>The alignment values are:</p>
+
+<dl>
+                <dt>none</dt>
+                <dd>
+                    Do not force uniform scaling. Scale the graphic content of the given element non-uniformly (without preserving aspect ratio) if necessary such that the element's bounding box exactly matches the viewport rectangle.
+                    <p class="note">
+                        In other words, the <code>viewBox</code> is stretched or shrunk as necssary so that it fills the entire viewport exactly, disregarding the aspect ratio. The graphic may be distorted.
+                    </p>
+                    <p>
+                        (Note: if <code>&lt;align&gt;</code> is none, then the optional <code>&lt;meetOrSlice&gt;</code> value is ignored.)
+                    </p>
+                </dd>
+                <dt>xMinYMin</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code> of the element's <code>viewBox</code> with the smallest X value of the viewport.
+                    <br>
+                    Align the <code>&lt;min-y&gt;</code> of the element's <code>viewBox</code> with the smallest Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 0% 0%;</code>.
+                    </div>
+                </dd>
+                <dt>xMinYMid</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code> of the element's <code>viewBox</code> with the smallest X value of the viewport.
+                    <br>
+                    Align the midpoint Y value of the element's <code>viewBox</code> with the midpoint Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 0% 50%;</code>.
+                    </div>
+                </dd>
+                <dt>xMinYMax</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code> of the element's <code>viewBox</code> with the smallest X value of the viewport.
+                    <br>
+                    Align the <code>&lt;min-y&gt;</code>+<code>&lt;height&gt;</code> of the element's <code>viewBox</code> with the maximum Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 0% 100%;</code>.
+                    </div>
+                </dd>
+                <dt>xMidYMin</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the midpoint X value of the element's <code>viewBox</code> with the midpoint X value of the viewport.
+                    <br>
+                    Align the <code>&lt;min-y&gt;</code> of the element's <code>viewBox</code> with the smallest Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 50% 0%;</code>.
+                    </div>
+                </dd>
+                <dt>xMidYMid (The default value)</dt>
+                <dd>                        
+                    Force uniform scaling.
+                    <br>
+                    Align the midpoint X value of the element's <code>viewBox</code> with the midpoint X value of the viewport.
+                    <br>
+                    Align the midpoint Y value of the element's <code>viewBox</code> with the midpoint Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 50% 50%;</code>.
+                    </div>
+                </dd>
+                <dt>xMidYMax</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the midpoint X value of the element's <code>viewBox</code> with the midpoint X value of the viewport.
+                    <br>
+                    Align the <codE>&lt;min-y&gt;</code>+<code>&lt;height&gt;</code> of the element's <code>viewBox</code> with the maximum Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 50% 100%;</code>.
+                    </div>
+                </dd>
+                <dt>xMaxYMin</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code>+<code>&lt;width&gt;</code> of the element's <code>viewBox</code> with the maximum X value of the viewport.
+                    <br>
+                    Align the <code>&lt;min-y&gt;</code> of the element's <code>viewBox</code> with the smallest Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 100% 0%;</code>.
+                    </div>
+                </dd>
+                <dt>xMaxYMid</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code>+<code>&lt;width&gt;</code> of the element's <code>viewBox</code> with the maximum X value of the viewport.
+                    <br>
+                    Align the midpoint Y value of the element's <code>viewBox</code> with the midpoint Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 100% 50%;</code>.
+                    </div>
+                </dd>
+                <dt>xMaxYMax</dt>
+                <dd>
+                    Force uniform scaling.
+                    <br>
+                    Align the <code>&lt;min-x&gt;</code>+<code>&lt;width&gt;</code> of the element's <code>viewBox</code> with the maximum X value of the viewport.
+                    <br>
+                    Align the <code>&lt;min-y&gt;</code>+<code>&lt;height&gt;</code> of the element's <code>viewBox</code> with the maximum Y value of the viewport.
+                    <div class="note">
+                        Think of this as being similar to <code>background-position: 100% 100%;</code>.
+                    </div>
+                </dd>
+            </dl>
+
+<p>So, using the <code>align</code> and <code>meetOrSlice</code> values of the <code>preserveAspectRatio</code> attribute, you can specify whether or not to scale the <code>viewBox</code> uniformly, how to align it inside the viewport, and whether or not it should be entirely visible inside the viewport.</p>
+
+<p>Sometimes, and depending on the size of the <code>viewBox</code>, some values may have similar results. For example, in the <code>viewBox=&quot;0 0 200 300&quot;</code> example from earlier, some alignments are identical using different <code>align</code> values. The value of <code>meetOrSlice</code> is set to <code>meet</code> in this case so that the entire <code>viewBox</code> is contained inside the viewport.</p>
+
+<figure>
+    <img src="../../images/viewbox-meet-align-same.jpg" alt="">
+    <figcaption>
+        The result of aligning the <code>viewBox</code> using different align values. <strong>The <code>meetOrSlice</code> value is set to <code>meet</code></strong>.
+    </figcaption>
+</figure>
+
+<p>If we were to change the <code>meetOrSlice</code> value to <code>slice</code>, we&rsquo;d get different results for different values. Notice how the <code>viewBox</code> is stretched so that it covers the entire viewport. The x-axis is stretched so that the 200 units cover the viewport&rsquo;s 800 units. In order for this to happen, and to maintain the aspect ratio of the viewbox, the y-axis gets &ldquo;sliced off&rdquo; at the bottom, but you can image it extending below the viewport&rsquo;s height.</p>
+
+<figure>
+    <img src="../../images/viewbox-slice-align-same.jpg" alt="">
+    <figcaption>
+        The result of aligning the <code>viewBox</code> using different align values. <strong>The <code>meetOrSlice</code> value is set to <code>slice</code></strong>.
+    </figcaption>
+</figure>
+
+<p>Of course, different <code>viewBox</code> values will also look different from the 200x300 we&rsquo;re using here. For the sake of brevity, I won&rsquo;t get into more examples, and I&rsquo;ll leave you to play with an interactive demo I created to help you better visualize how the <code>viewBox</code> and different <code>preserveAspectRatio</code> values work together when different values are used. You can check the interactive demo out by visiting the link in the next section.</p>
+
+<p>But before we move to that, I just want to note that the mid-x, mid-y, max-x, and max-y values <em>change if the values of the <code>&lt;min-x&gt;</code> and <code>&lt;min-y&gt;</code> change</em>. You can play with the interactive demo and change these values to see how the axes and thus the alignment of the <code>viewBox</code> changes accordingly.</p>
+
+<p>The following image shows the effect of using <code>viewBox = &quot;100 0 200 300&quot;</code> on the position of the alignment axes. We&rsquo;re using the same example as earlier, but instead of having the <code>&lt;min-x&gt;</code> value be set to zero, we&rsquo;re setting it to 100. You can set them to any number value you want. Notice how the min-x, mid-x, and max-x axes change. The <code>preserveAspectRatio</code> used here is the default <code>xMidYMid meet</code>, which means that the mid-* axes are aligned with the middle axes of the viewport.</p>
+
+<figure>
+    <img src="../../images/viewbox-axes-changed-min-x-min-y.jpg" alt="">
+    <figcaption>
+        The effect of changing the value of <code>&lt;min-x&gt;</code> on the position of the x-axes. <strong>The translucent blue area shows the area which is considered to be the <code>viewBox</code> area after changing the value of <code>&lt;min-x&gt;</code></strong>.
+    </figcaption>
+</figure>
+
+<h2 class="deeplink" id="interactive-demo">The Interactive Demo</h2>
+
+<p>The best way to understand how the viewport, <code>viewBox</code>, and different <code>preserveAspectRatio</code> values work and interact together is by visualizing them.</p>
+
+<p>For that purpose, I created a simple interactive demo that allows you to change the values of these attributes and see the result of the new values live.
+<figure>
+    <img src="../../images/viewbox-demo-screenshot.jpg" alt="">
+    <figcaption>
+        Screenshot of the interactive demo.
+    </figcaption>
+</figure></p>
+
+<p><a class="button" href="{{ site.url }}/demos/interactive-svg-coordinate-system/index.html">Check the interactive demo out.</a></p>
+
+<p>I hope you found this article useful in understanding the SVG viewport, <code>viewBox</code>, and <code>preserveAspectRatio</code> concepts. If you&rsquo;d like to learn more about SVG coordinate systems, like nesting coordinate systems, establishing new ones, and transformations in SVG, stay tuned for the remaining parts of this series. You can subscribe to the RSS (link below) or follow me on Twitter to stay updated. Thank you very much for reading!</p>
+
+<p class="note">
+    The SVG parrot illustration used is a freebie from <a href="http://freepik.com">Freepik.com</a>.
+</p>
+
+<p>If you enjoyed this article you may also be interested in:
+<ul>
+    <li><a href="http://sarasoueidan.com/blog/structuring-grouping-referencing-in-svg/">Structuring, Grouping, and Referencing in SVG – The <code>&lt;g&gt;</code>, <code>&lt;use&gt;</code>, <code>&lt;defs&gt;</code> and <code>&lt;symbol&gt;</code> Elements</a></li>
+    <li><a href="http://sarasoueidan.com/blog/css-svg-clipping">Clipping in CSS and SVG – The <code>clip-path</code> Property and <code>&lt;clipPath&gt;</code> Element</a></li>
+</ul></p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

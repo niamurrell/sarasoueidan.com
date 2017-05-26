@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+
+
+<div class="full-width"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="case-studies-intro">
+                    A non-chronological list of select case studies covering front-end development client work.
+                </p>
+            </div>
+            <div class="case-studies-container center">
+
+                {{ range .Pages }}  
+
+                <div class="col-6">
+                    <a href="{{.RelPermalink}}"  class="case-study__thumb">
+                        <figure>
+                            <img src="../images/case-studies/previews/{{ .Params.ProjectPreviewImage }}" alt="">
+                        </figure>
+                        <figcaption>
+                            {{ .Params.ProjectDescription }}
+                        </figcaption>
+                    </a>
+                </div> 
+
+                {{ end }} 
+
+                <div class="col-6">
+                    <div class="case-study__thumb case-study--wip">
+                        <p>This Project is Work In Progress. This case study is pending...</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width grey">    
+    <div class="clearfix container">
+        <section class="col-12">
+            <blockquote class="testimonial standalone" style="margin: 100px auto;">
+                <p>
+                    Sara doesn’t come without a price tag. But it's worth it. Up to date I have not worked with a freelancer so open-minded, innovative and not afraid to challenge client’s work as Sara. And best of all, its not just “talk”… but also “walk”.
+                </p>
+                <cite class="cite-with-image">
+                    <figure>
+                        <img src="../images/sebastian-frommherz.png" alt="Photo of Sebastian Frommherz">
+                        <figcaption>
+                            <p>Sebastian Frommherz</p>
+                            <p>Project Manager, COBI</p>
+                            <p><a href="http://cobi.bike">http://cobi.bike</a></p>
+                        </figcaption>
+                    </figure>
+                </cite>
+            </blockquote>
+            <a href="mailto:contact@sarasoueidan.com" class="button button--full">Let’s work together!</a>
+        </section>
+    </div>
+</div>
+
+
+{{ partial "footer.html" . }}

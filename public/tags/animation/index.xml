@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Animation on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/animation/</link>
+    <description>Recent content in Animation on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Nov 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/animation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Animated SVG vs GIF [CAGEMATCH]</title>
+      <link>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</link>
+      <pubDate>Tue, 24 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/11/24/svg-vs-gif/</guid>
+      <description>SVG can do much more than display static images. Its animation capabilities are one of its most powerful features, giving it a distinctive advantage over all other image formats. They are one of many reasons that make SVG images better than raster images, including GIFs. But this, of course, only applies to images that are good candidates for SVG, such as:
+ Logos, non-complex, vector-based illustrations, user interface controls,  infographics, and icons.</description>
+    </item>
+    
+    <item>
+      <title>The State of SVG Animation</title>
+      <link>https://sarasoueidan.com/2015/06/05/state-of-svg-animation/</link>
+      <pubDate>Fri, 05 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/06/05/state-of-svg-animation/</guid>
+      <description>The state of SVG animation is changing. CSS, SMIL and JavaScript can be used to animate SVGs. However, SMIL is soon to be deprecated and was never supported in Internet Explorer. CSS animations on SVG elements don’t have the best browser support (yet), not to mention are quite buggy in some browsers. JavaScript is currently the best SVG animation tool. In this article, we&#39;ll go over the current and future state of SVG animation, giving you an overview of what you can and can&#39;t do, and some advice on what to choose for your specific animation needs.</description>
+    </item>
+    
+    <item>
+      <title>Styling and Animating SVGs with CSS</title>
+      <link>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</link>
+      <pubDate>Mon, 03 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/11/03/styling-and-animating-svgs-with-css/</guid>
+      <description>CSS can be used to style and animate scalable vector graphics, much like it is used to style and animate HTML elements. In this article I wrote for Smashing Magazine, which is a modified transcript of a talk I recently gave at CSSconf EU and From the Front, I’ll go over the prerequisites and techniques for working with CSS in SVG. </description>
+    </item>
+    
+    <item>
+      <title>A Guide to SVG Animations (SMIL)</title>
+      <link>https://sarasoueidan.com/2014/10/13/guide-svg-animations-smil/</link>
+      <pubDate>Mon, 13 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/10/13/guide-svg-animations-smil/</guid>
+      <description>What the title says: a complete guide to SVG animations derived from the SMIl specification. The extensive guide features a lot of demos and goes over the animations syntax, covering almost everything you need to know to get started with SVG Animations today. </description>
+    </item>
+    
+    <item>
+      <title>Animating CSS Shapes with CSS Animations and Transitions</title>
+      <link>https://sarasoueidan.com/2014/01/14/animating-css-shapes/</link>
+      <pubDate>Tue, 14 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/01/14/animating-css-shapes/</guid>
+      <description>Today we&#39;re going to be talking about animating CSS shapes with CSS animations. We&#39;ll be creating very basic &#34;shape-shifting&#34; layouts of sort. There are also many considerations to take when animating CSS shapes, so we&#39;ll go over all points in this article. This is the third article in a series of articles I&amp;rsquo;m writing about CSS shapes, so in this article I&amp;rsquo;m assuming you have a basic understanding of how CSS shapes are created.</description>
+    </item>
+    
+    <item>
+      <title>Navicon Transformicons: Animated Navigation Icons with CSS Transforms</title>
+      <link>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</link>
+      <pubDate>Sun, 20 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/10/20/navicon-transformicons/</guid>
+      <description>The following is a collaboration post between Bennett Feely and I. After seeing Bennett&#39;s impressive animated navigation icon transformations (or &#34;Navicon Transformicons&#34;) pens on Codepen, I asked him if he would like to write a tutorial on how he did them as a guest post on my blog. He kindly approved. And as he doesn&#39;t have a lot of free time to work the article, we decided to collaborate on it.</description>
+    </item>
+    
+    <item>
+      <title>S Gallery: A Responsive jQuery Gallery Plugin with CSS3 Animations</title>
+      <link>https://sarasoueidan.com/2013/07/12/s-gallery/</link>
+      <pubDate>Fri, 12 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/07/12/s-gallery/</guid>
+      <description>Today I&#39;m going to share with you a gallery plugin I built (yeah, like the world needs another gallery plugin, right?) after having stumbled upon SONY&#39;s products gallery while I was browsing their website a while ago. Their products&#39; image gallery is a simple one, but two things grabbed my attention about the gallery: It&#39;s made with Flash when it can totally be created with HTML, CSS3 and Javascript. It has a neat feature: exiting the slideshow mode back to the grid view mode, the last image which was active in the slideshow mode &#34;</description>
+    </item>
+    
+    <item>
+      <title>Creative Add/Remove Effects for List Items with CSS3 Animations</title>
+      <link>https://sarasoueidan.com/2013/06/27/creative-list-effects/</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/06/27/creative-list-effects/</guid>
+      <description>It&#39;s not enough to bring animations and visual transitions to an interface, they should serve a purpose and goal, and this goal should be improving the user&#39;s experience.  Transitions [&amp;hellip;] provide the grease that smoothes out what happens in the interface. Without transitional effects the user can be left to wonder what just occurred.
+ In today&amp;rsquo;s tutorial, we&amp;rsquo;ll be creating some creative animations and transitions for adding and removing items from a list, inspired by the concept from Pasquale D&amp;rsquo;Silva&amp;rsquo;s article on Medium.</description>
+    </item>
+    
+    <item>
+      <title>Horizontal Portfolio Layout with CSS3 Animations and jQuery</title>
+      <link>https://sarasoueidan.com/2013/06/15/horizontal-portfolio-layout/</link>
+      <pubDate>Sat, 15 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/06/15/horizontal-portfolio-layout/</guid>
+      <description>In this tutorial today we&#39;re going to create a horizontal portfolio layout with cool hover effects inspired by those on Guillaume Tomasi&#39;s personal website. The website is made in Flash, so I thought it would be nice to recreate the flash hover effect of the portfolio items using CSS3 animations and transitions, and some jQuery to replicate the image pan effect on hover.
+I&#39;ve also added a simple falling down effect on scroll, where the portfolio items fall down as soon as they enter the visible area of the viewport.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Windows-8-like animations with CSS3 and jQuery</title>
+      <link>https://sarasoueidan.com/2013/02/11/windows8-animations/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/02/11/windows8-animations/</guid>
+      <description>I have recently realized that CSS3 3D transforms have been out there for quite a long time now and yet I haven&#39;t experimented with them yet. I have also been using Windows 8 for a while now, and the first thing that struck me as impressive about it was the transitions and animations built into the dashboard, so I thought it would be really cool if my first experiment with CSS 3D transforms would be to recreate those animations and effects.</description>
+    </item>
+    
+  </channel>
+</rss>

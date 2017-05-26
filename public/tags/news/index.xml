@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/news/</link>
+    <description>Recent content in News on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Developer of the Year 2015 net Award</title>
+      <link>https://sarasoueidan.com/2015/09/22/developer-of-the-year-2-15-net-award/</link>
+      <pubDate>Tue, 22 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/09/22/developer-of-the-year-2-15-net-award/</guid>
+      <description>Last Friday, I gave my first keynote in the UK at Generate Conf. That same day, the net awards were announced. On Saturday, I came back home with an award: the Developer of the Year award. This is a short thank you post to everyone involved.   Photo by net magazine. All rights reserved. (Original Photo)   A few months ago, many fellow designers and developers nominated me for two net awards: Outstanding Contribution and Developer of the Year.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 4, Smashing Book 5</title>
+      <link>https://sarasoueidan.com/2015/07/21/smashing-book-5/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/21/smashing-book-5/</guid>
+      <description>The new Smashing Book is out! It’s packed with a lot of time-saving, practical techniques for crafting fast, maintainable and scalable responsive websites. I wrote a chapter in the book—Chapter 4: Mastering SVG For Responsive Web Design. Here is an overview of what that chapter covers, and why I think you should buy the book. Photo credit: Mattia Compagnucci  I always get questions from my followers about a good place to start learning SVG.</description>
+    </item>
+    
+    <item>
+      <title>I Won A Web Platform Award</title>
+      <link>https://sarasoueidan.com/2015/04/22/oreilly-web-platform-award/</link>
+      <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/04/22/oreilly-web-platform-award/</guid>
+      <description>Today, O&amp;rsquo;Reilly&amp;rsquo;s Fluent Conf is taking place in San Francisco, California. And as part of the conference, the O&amp;rsquo;Reilly Web Platform Awards were announced. Apparently, I was nominated for an award and, according to the co-chairs of the conference, I got the most amount of nominations and eventually won an award.
+   O’Reilly Web Platform Awards recognize individual contributors who have demonstrated exceptional leadership, creativity, and collaboration in the development of JavaScript, HTML, CSS, and the supporting Web ecosystem.</description>
+    </item>
+    
+    <item>
+      <title>I Wrote A CSS &lt;del&gt;Book&lt;/del&gt; Reference.</title>
+      <link>https://sarasoueidan.com/2015/02/04/codrops-css-reference/</link>
+      <pubDate>Wed, 04 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/02/04/codrops-css-reference/</guid>
+      <description>Yesterday, we finally released a long-awaited project over at Codrops: Codrops&#39; new CSS Reference, authored by yours truly. Even though I wrote a post over at Codrops introducing the reference and its features, I want to share a little bit more about my experience writing it.
+Please note that as of January 2016, I am no longer the maintainer of the Codrops CSS Reference. Thus, unlike my usual highly-technical blog posts, this is a (possibly-boring, but short!</description>
+    </item>
+    
+  </channel>
+</rss>

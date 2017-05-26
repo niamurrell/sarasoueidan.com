@@ -1,0 +1,39 @@
+.main-footer {
+  clear: both;
+  width: 100%;
+  padding: 2em 0;
+  font-size: 14px;
+
+  a {
+    border-color: currentColor;
+    font-weight: normal;
+  }
+}
+
+.main-footer__left {
+	float: left;
+	width: 50%;
+
+	@media all and (max-width: 1024px) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.main-footer__right {
+	width: 50%;
+	float: right;
+
+	@media all and (max-width: 1024px) {
+		float: none;
+		width: 100%;
+	}
+}
+
+.twitter {
+	float: right;
+
+	@media all and (max-width: 1024px) {
+		float: left;
+	}
+}

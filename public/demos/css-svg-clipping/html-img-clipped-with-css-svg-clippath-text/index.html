@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CSS &amp; SVG Clipping Demo #5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Vollkorn:700italic' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <style>
+            .svg-clipped {
+                -webkit-clip-path: url(#svgPath);
+                clip-path: url(#svgPath);
+            }
+        </style>
+        <img class="svg-clipped" src="flowers.jpg" alt="Cherry Blossoms.">
+        <svg height="0" width="0">
+            <defs>
+                <clipPath id="svgPath">
+                    <text x="0" y="300" textLength="800" lengthAdjust="spacing" font-family="Vollkorn" font-size="230px" font-weight="700" font-style="italic"> Blossom </text>
+                </clipPath>
+            </defs>
+        </svg>
+    </body>
+</html>

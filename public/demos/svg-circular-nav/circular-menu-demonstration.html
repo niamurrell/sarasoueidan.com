@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CM</title>
+    <style id="jsbin-css">
+        body {
+            background-color: #eee;
+        }
+
+        svg {
+            background-color: white;
+        }
+
+        .slice path {
+            transform-origin: 250px 250px;
+            stroke-dasharray: 650;
+            stroke-dashoffset: 650;
+            transition: fill .3s linear;
+        }
+
+        .slice-1 path.animate {
+            stroke: #32BAFC;
+            animation: draw 1s ease forwards;
+        }
+
+        .slice-1 path.animate:hover {
+            fill: #32BAFC;
+        }
+
+        .slice-2 path.animate {
+            stroke: deepPink;
+            animation: draw 1s ease 1s forwards, rotate-2 .5s ease 2s forwards;
+        }
+
+        .slice-2 path.animate:hover {
+            fill: deepPink;
+        }
+
+        .slice-3 path.animate {
+            stroke: orange;
+            animation: draw 1s ease 2s forwards, rotate-3 .5s ease 3s forwards;
+        }
+
+        .slice-3 path.animate:hover {
+            fill: orange;
+        }
+
+        .slice-4 path.animate {
+            stroke: #9A63FC;
+            animation: draw 1s ease 3s forwards, rotate-4 .5s ease 4s forwards;
+        }
+
+        .slice-4 path.animate:hover {
+            fill: #9A63FC;
+        }
+
+        .slice-5 path.animate {
+            stroke: #69B62F;
+            animation: draw 1s ease 4s forwards, rotate-5 .5s ease 5s forwards;
+        }
+
+        .slice-5 path.animate:hover {
+            fill: #69B62F;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes rotate-2 {
+            to {
+                transform: rotate(-37.5deg);
+            }
+        }
+
+        @keyframes rotate-3 {
+            to {
+                transform: rotate(-75deg);
+            }
+        }
+
+        @keyframes rotate-4 {
+            to {
+                transform: rotate(-112.5deg);
+            }
+        }
+
+        @keyframes rotate-5 {
+            to {
+                transform: rotate(-150deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button>Play Demonstration</button>
+    <button>Clear Canvas</button>
+    <svg width="501px" height="500px" viewBox="0 0 501 500" id="container">
+        <g id="slice-1" class="slice slice-1" style="background: yellow">
+            <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            <!--             <use xlink:href="#icon-photo" width="20" height="20"/> -->
+        </g>
+        <g id="slice-2" class="slice slice-2">
+            <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            <g id="slice-3" class="slice slice-3">
+                <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            </g>
+            <g id="slice-4" class="slice slice-4">
+                <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            </g>
+            <g id="slice-5" class="slice slice-5">
+                <path fill="transparent" stroke="#111" stroke-width="2" d="M250,250 l250,0 A250,250 0 0,0 466.5063509461097,125 z" />
+            </g>
+        </g>
+    </svg>
+
+
+
+
+
+
+
+
+
+
+    <svg style="display: none;">
+        <symbol id="icon-photo" viewBox="0 0 1024 1024">
+            <title>photo</title>
+            <path class="path1" d="M864 0h-704c-70.688 0-128 57.312-128 128v768c0 70.688 57.312 128 128 128h704c70.688 0 128-57.312 128-128v-768c0-70.688-57.312-128-128-128zM928 896c0 35.264-28.736 64-64 64h-704c-35.296 0-64-28.736-64-64v-768c0-35.296 28.704-64 64-64h704c35.264 0 64 28.704 64 64v768zM832 128h-640c-17.696 0-32 14.304-32 32v576c0 17.696 14.304 32 32 32h640c17.696 0 32-14.304 32-32v-576c0-17.696-14.304-32-32-32zM832 160v443.808l-104-112.96c-6.112-6.912-14.816-10.848-24-10.848s-17.952 3.936-24 10.848l-83.328 94.4-252.672-286.4c-6.080-6.912-14.816-10.848-24-10.848s-17.92 3.936-24 10.848l-104 119.936v-258.784h640zM192 467.2l128-147.2 276.672 313.632 88.384 102.368h-493.056v-268.8zM727.68 736l-109.696-126.56 86.016-97.44 128 140.128v83.872h-104.32zM640 416c52.992 0 96-42.976 96-96s-43.008-96-96-96c-53.056 0-96 42.976-96 96s42.944 96 96 96zM640 256c35.264 0 64 28.704 64 64s-28.736 64-64 64c-35.328 0-64-28.704-64-64s28.672-64 64-64z"></path>
+        </symbol>
+    </svg>
+    <script id="jsbin-javascript">
+        var play = document.getElementsByTagName('button')[0],
+            restart = document.getElementsByTagName('button')[1],
+            paths = document.querySelectorAll('.slice path');
+
+        function drawItems() {
+            for (var i = 0; i < paths.length; i++) {
+                paths[i].classList.add('animate');
+            }
+        }
+
+        function clear() {
+            for (var i = 0; i < paths.length; i++) {
+                paths[i].classList.remove('animate');
+            }
+        }
+
+        play.addEventListener('click', drawItems, false);
+        restart.addEventListener('click', clear, false);
+    </script>
+</body>
+
+</html>

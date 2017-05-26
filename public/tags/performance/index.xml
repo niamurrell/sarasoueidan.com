@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performance on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/performance/</link>
+    <description>Recent content in Performance on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Useful SVGO[ptimization] Tools</title>
+      <link>https://sarasoueidan.com/2015/01/26/svgo-tools/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/26/svgo-tools/</guid>
+      <description>One of the steps you need to do when working with SVG is optimizing the SVG code after exporting it from the editor and before embedding in on your web page. For that, several standalone optimization tools exits. The two tools I usually mention in my articles and talks are Peter Collingridge&#39;s online editor, and SVGO. In this article, I&#39;m going to introduce you to a new SVGO Tool that provides us with everything Peter&#39;s tool does, and a bit more.</description>
+    </item>
+    
+    <item>
+      <title>Tips For Optimizing SVG Delivery For The Web</title>
+      <link>https://sarasoueidan.com/2014/12/19/svg-optimization/</link>
+      <pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/12/19/svg-optimization/</guid>
+      <description>SVGs are a great asset in our responsive web design toolkit. But just like any other image format, there are certain steps you should take to make sure you’re delivering optimised resources that don’t have a negative impact on your page’s performance. Here are some things that you can do to make sure you’re delivering better SVGs for the web. </description>
+    </item>
+    
+    <item>
+      <title>Everything You Need To Know About The CSS &lt;code&gt;will-change&lt;/code&gt; Property</title>
+      <link>https://sarasoueidan.com/2014/06/10/css-will-change-property/</link>
+      <pubDate>Tue, 10 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/06/10/css-will-change-property/</guid>
+      <description>What the title says! I wrote this article for the Opera Developers&#39; blog, and it literally contains everything you need to know about the new CSS will-change property, including but not limited to: how to use it, when to use it, when not to use it, performance considerations, and more. </description>
+    </item>
+    
+  </channel>
+</rss>

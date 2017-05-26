@@ -1,0 +1,65 @@
+{{ partial "header.html" . }}
+
+{{ .Content }}
+
+<div class="full-width workshops__container">
+	<div class="container">
+		<div class="row">
+			<h2 class="h1 mt0 center">The Workshops</h2>
+			<ul class="workshops__list clearfix">
+				{{ range .Pages }}  
+
+				<li class="workshops__item">
+					<a href="{{.RelPermalink}}">
+						<h3>{{ .Params.WorkshopTitle }}</h3>
+						<p>
+							{{ .Params.WorkshopDescription }}
+						</p>
+
+						<p>
+							<span class="color--red bold">Learn more about the workshop</span>
+							<svg aria-hidden="true" width="32" height="32" viewBox="0 0 32 32" style="width: 1.2em; height: 1.2em; vertical-align: middle; position: relative;">
+								<!-- <path fill="currentColor" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path> -->
+								<path fill="#D2273A" d="M11.086 22.086l2.829 2.829 8.914-8.914-8.914-8.914-2.828 2.828 6.086 6.086z"></path>
+							</svg>
+						</p>
+					</a>
+				</li> 
+
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="full-width grey"> 
+	<div class="container">
+		<div class="row">
+			<div class="col-6"> 
+				<blockquote class="testimonial standalone">
+					<p>
+						[Sara’s Workshops] are concise, heavily practical, hands-on and very, very useful. The feedback from attendees has been tremendous — due to Sara’s engagement and knowledge but also the level of depth covered in the SVG workshop she’s been running with us at SmashingConf LA. Highly recommended — exclamation mark!
+					</p>
+					<cite>—<a href="http://twitter.com/smashingmag">Vitaly Friedman, Editor in Chief, Smashing Magazine</a> <br><em>(Workshop Client)</em></cite>
+				</blockquote>
+			</div>
+			<div class="col-5 col--right"> 
+				<blockquote class="testimonial standalone">
+					<p>
+						Sara is an encyclopedia. Be ready to take notes and do exercises like crazy. Don't be afraid to ask, you'll get the right answers from her.
+					</p>
+					<cite>—Workshop attendee, SmashingConf LA</cite>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="full-width">
+	<div class="clearfix container">
+		<section class="col-12">
+			<a href="mailto:contact@sarasoueidan.com" class="button button--full">Invite Me To Run A Workshop At Your Event</a>
+		</section>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

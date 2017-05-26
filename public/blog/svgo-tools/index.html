@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Useful SVGO[ptimization] Tools 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jan 26, 2015</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">6</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">One of the steps you need to do when working with SVG is optimizing the SVG code after exporting it from the editor and before embedding in on your web page. For that, several standalone optimization tools exits. The two tools I usually mention in my <a href="http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/">articles</a> and <a href="http://slides.com/sarasoueidan/working-with-svg-a-primer#/">talks</a> are <a href="http://petercollingridge.appspot.com/svg-editor">Peter Collingridge's online editor</a>, and <a href="https://github.com/svg/svgo">SVGO</a>. In this article, I'm going to introduce you to a new SVGO Tool that provides us with everything Peter's tool does, and a bit more.</p>
+
+<p>This is not to say that peter&rsquo;s tool is no longer useful—it certainly is. But if you use SVGO, then you know how convenient it is with all the available tools it comes with.</p>
+
+<h2 class="deeplink" id="what-is-svgo">What is SVGO?</h2>
+
+<p>For those of you who are not familiar with SVGO: it is a node-js based SVG optimization tool. (SVGO is an abbreviation for <strong>SVG Optimization</strong>). It comes with a set of tools and plugins that make it a great tool that you can integrate into almost any kind of workflow. (We&rsquo;ll go over these tools shortly.)</p>
+
+<p>However, SVGO has one disadvantage: it can easily break your SVG—especially if it is animated or scripted, the document structure will change and eventually break any animations or scripting applied.</p>
+
+<p>Even with the many SVGO tools and plugins available, unfortunately, we had no way to preview the result of applying SVGO optimizations to an SVG, to tell whether they will break it or not.. until now.</p>
+
+<h2 class="deeplink" id="introducing-svgomg">Introducing SVGOMG</h2>
+
+<p>Last month, when I wrote the <a href="http://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/">SVG performance article</a> for Perf Calendar, Google&rsquo;s <a href="http://twitter.com/jaffathecake">Jake Archibald</a> tech-reviewed the article. And while discussing the code optimization section, I mentioned how SVGO lacks a GUI that allows us to preview the result of running the optimizations on our SVGs, and  how it should be used with caution because of that.</p>
+
+<p>A week or two later, Jake made the <a href="http://jakearchibald.github.io/svgomg/">SVGOMG GUI</a>—an interface that allows you to optimize SVGs by selecting your optimizations, and getting a live preview of how your SVG looks with these optimizations applied.</p>
+
+<figure>
+<img src="../../images/svgomg.png" alt="Screenshot of the SVGOMG GUI." />
+<figcaption>Screenshot of the SVGOMG GUI.</figcaption>
+</figure>
+
+<p>If you&rsquo;ve used Peter&rsquo;s tool before, you can expect the same from SVGOMG, and <em>more</em>.</p>
+
+<p>You can upload an SVG file, paste SVG code in, or load the default demo SVG—if you&rsquo;re just trying the app out. A set of options will then be revealed on the right side of the screen (see screenshot above). These options represent the optimizations built into SVGO. The SVGO optimizations are plugins that you can enable and disable as needed, and SVGOMG offers you a visual way of doing so.</p>
+
+<p>The live preview section will update as you choose your optimizations, allowing you to detect and disable any optimizations that would break your SVG.</p>
+
+<p>In the top right corner, you can see the current file size and the optimization percentage. You also have an option to show the original SVG—which will also display the original file size, to compare your it to your optimized version.</p>
+
+<p>SVGOMG is an online tool. But if you know Jake then you&rsquo;ll probably expect it to also work offline, considering that he might just be the biggest proponent of ServiceWorker and offline-first out there. He has written about it a lot <a href="http://jakearchibald.com/">on his blog</a>. Thus—expectedly—<strong>the GUI works offline too</strong> in any browser that&rsquo;s got ServiceWorker. (For an overview of the state of ServiceWorker, refer to <a href="https://jakearchibald.github.io/isserviceworkerready/">this browser compatibility page</a>.) Once you&rsquo;ve opened the app (try it in Chrome, for example), you will get a notification a couple of seconds later telling you that the GUI is ready to work offline.</p>
+
+<figure>
+<img src="../../images/svgomg-offline.png" alt="Screenshot of SVGOMG showing the notification that the GUI works offline." />
+<figcaption>Screenshot of SVGOMG showing the notification that the GUI works offline.</figcaption>
+</figure>
+
+<p><em>Very</em> useful, isn&rsquo;t it?</p>
+
+<h2 class="deeplink" id="other-svgo-tools">Other SVGO Tools</h2>
+
+<p>There are quite a few SVGO plugins available that can be used in a variety of ways, depending on your preferred workflow:</p>
+
+<h4 class="deeplink" id="adobe-illustrator-plugin">Adobe Illustrator Plugin</h4>
+
+<p>A GUI allowing you to select the optimizations you want to apply also exists in another SVGO tool called <a href="https://github.com/davidderaedt/SVG-NOW"><strong>SVG NOW</strong></a>.</p>
+
+<p><img src="../../images/svgnow.png" alt="SVG NOW plugin logo." /></p>
+
+<p>SVG NOW is an Illustrator plugin that brings SVGO&rsquo;s optimizations into Illustrator. It is an alternative SVG exporter for AI, aimed at optimizing SVG files by post-processing the generated SVG code using SVGO. This is useful for sure, <strong>but SVG NOW does not show you a live preview of how the SVG is affected by the optimizations you choose</strong>.</p>
+
+<h4 class="deeplink" id="inkscape-plugin">Inkscape Plugin</h4>
+
+<p>Similar to SVG NOW, <a href="https://github.com/juanfran/svgo-inkscape"><strong>SVGO-Inkscape</strong></a> is an Inkscape plugin that allows you to remove a lot of redundant and useless information such as editor metadata, comments, hidden elements, default or non-optimal values and other stuff generated by Inkscape and that can be safely removed or converted without affecting SVG rendering result.</p>
+
+<h4 class="deeplink" id="sketch-plugin">Sketch Plugin</h4>
+
+<p><a href="https://github.com/BohemianCoding/svgo-compressor">SVGO Compressor</a> is the Sketch version of the SVGO plugin, which compresses SVG assets using SVGO, right when you export them. As with other SVGO tools, there’s no way of telling how the exported SVG will be affected by the optimizations applied.</p>
+
+<p>From my personal experience I’ve found that SVGs exported using Sketch were more likely to break when optimized with SVGO, because of how Sketch exports certain SVG shapes using clip paths and masks. So it’s useful to remember that you might need to re-export and re-optimize the SVG another way if and when this happens.</p>
+
+<p>Note that the plugin <em>requires</em> Sketch 3.8, and so it won’t work with older versions of the application.</p>
+
+<h4 class="deeplink" id="drag-n-drop-gui">Drag'n'Drop GUI</h4>
+
+<p>Another kind of GUI for SVGO exists — called <a href="https://github.com/svg/svgo-gui"><strong>SVGO GUI</strong></a> — that allows you to drag-and-drop your SVGs and then optimizes those SVG on-the-fly, replacing your original ones with the optimized versions.</p>
+
+<p><img src="../../images/svgogui.png" alt="Screenshot of the SVGO GUI." /></p>
+
+<p>This GUI is useful for quick bulk optimizations, but it risky considering that 1) you cannot preview the optimized SVG 2) your original SVGs are instantly replaced by the optimized versions, which means that your SVGs might break, and the broken ones will replace the original ones. If you&rsquo;re going to use this GUI, make sure you have a backup before you optmize.</p>
+
+<h4 class="deeplink" id="grunt-and-gulp-plugins">Grunt and Gulp Plugins</h4> 
+
+<p>SVGO is probably mostly known for its <a href="https://github.com/sindresorhus/grunt-svgmin"><strong>Grunt plugin</strong></a>, and its sister the <a href="https://github.com/ben-eb/gulp-svgmin"><strong>Gulp plugin</strong></a>. Both of these plugins allow you to enable and disable SVGO optimizations as needed.
+For example, a default SVGO optimization will remove the <code>viewBox</code> attribute from your SVG. This is something you should completely avoid, because, without the <code>viewBox</code> attribute, the SVG cannot be <a href="http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/">made responsive</a>. (For more information about the <code>viewBox</code> attribute, refer to my tutorial <a href="http://sarasoueidan.com/blog/svg-coordinate-systems">here</a>.)</p>
+
+<p>When you set up SVGO in Grunt, for example, you can disable any plugins you want. For example, to disable removing the <code>viewBox</code>, add <code>removeViewBox: false</code> to the <code>Plugins</code> object in your configuration file.</p>
+
+<pre class="brush:js">
+// Source: https://github.com/sindresorhus/grunt-svgmin
+grunt.initConfig({
+    svgmin: {
+        options: {
+            plugins: [
+                {
+                    removeViewBox: false
+                }, {
+                    removeUselessStrokeAndFill: false
+                }
+            ]
+        },
+        dist: {
+            files: {
+                'dist/unicorn.svg': 'app/unicorn.svg'
+            }
+        }
+    }
+});
+</pre>
+
+<p>You can refer to the plugin&rsquo;s Github repo for more information.</p>
+
+<h4 class="deeplink" id="osx-folder-action">OS X Folder Action</h4> 
+
+<p>SVGO also comes with an <a href="https://github.com/svg/svgo-osx-folder-action"><strong>OS X folder action</strong></a> that you can attach to any folder, and then have your SVGs optimized on-the-fly as soon as you place them in that folder. Again, optmized versions will replace the original ones, so be careful.</p>
+
+<h2 id="final-words">Final Words</h2>
+
+<p>No matter what your workflow is, SVGO can probably fit into it, one way or another.</p>
+
+<p>I&rsquo;m sure other SVG optimization tools exits, but with all the options SVGO comes with, if you ask me, this is the tool I would recommend.</p>
+
+<p>Optimize those SVGs, build something beautiful, and share it with the world.</p>
+
+<p>Thank you for reading.</p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

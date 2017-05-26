@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+
+
+
+<div class="full-width">
+	<div class="container clearfix">
+		<h1 class="workshop-title">{{ .Params.WorkshopTitle }}</h1>
+	</div>
+</div>
+
+
+<div class="full-width">
+	<div class="container">
+		<div class="row">
+			<div class="col-7">
+				{{ .Content }}
+			</div>
+
+			<div class="col-4 col--right">
+				<h3 class="mt0">Target audience:</h3>
+				{{ .Params.TargetAudience }}
+
+				<h3>Workshop duration:</h3>
+				{{ .Params.workshopDuration }}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="full-width">
+    <div class="clearfix container">
+        <section class="col-12">
+            <a href="mailto:contact@sarasoueidan.com" class="button button--full">Request this workshop</a>
+        </section>
+    </div>
+</div>
+
+
+
+{{ partial "footer.html" . }}

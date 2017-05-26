@@ -1,0 +1,1 @@
+var search_results=document.getElementById("results_container"),closeSearchResults=function e(){search_results.innerHtml=" ",console.log("clicked body")};document.body.addEventListener("click",closeSearchResults),search_results.addEventListener("click",this.stopPropagation(),!1);

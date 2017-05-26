@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Building a fully-accessible help tooltip 
+                        <span class="subtitle">...is harder than I thought.</span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Jan 24, 2017</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">10</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">
+    Today is one of those days that started out with a Google search for yet another accessibility question/concern. I’m working on a new project for my client <a href="https://sarasoueidan.com/case-studies/provata-health/">Provata</a> and part of that project is to build a sweet and seemingly simple help tooltip which explains to the reader/user what the <a href="https://www.cvdriskchecksecure.com/framinghamriskscore.aspx">Framingham calculator</a> is.
+</p>
+
+<p>The tooltip is triggered by a small help icon like the one shown in the top right corner of this screenshot:</p>
+
+<p><img src="../../images/provata-tooltip.png" alt="The tooltip trigger as provided in the project mockup" /></p>
+
+<p>As with every project, starting out by thinking about what HTML element to use to mark up a component was the first thing I did. But it turned out there is no HTML element to mark up a tooltip like this. And when we have no semantic elements to mark up our components, we are faced with the challenge to make sure that assistive technologies (ATs)—which are usually capable of understanding and conveying meaning via semantics—are able to understand what our elements really are and what they do.</p>
+
+<h2 id="aria-attributes-to-the-rescue">ARIA attributes to the rescue?</h2>
+
+<p>Making elements more readable by ATs when HTML isn’t enough is possible using ARIA attributes. For example, you can get by creating a progress bar without actually using the not-too-well-supported HTML <code>&lt;progess&gt;</code> element. Making that bar look and behave like a bar is straightforward using some CSS, but if you’re using <code>div</code>s and <code>span</code>s to build it, you need to give ATs something more to make something of those non-semantic elements. This is where ARIA attributes like <code>role=&quot;progressbar&quot;</code> and its companions, the helpful <code>aria-valuenow</code>, <code>aria-valuemin</code> and <code>aria-valuemax</code> (among others), come in handy. Sprinkling in some simple JavaScript, you upate the value inside <code>aria-valuenow</code> as the user progresses through whatever steps you provided them with and you’re generally good to go. You can read more about this <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role">on MDN</a> if you’re curious or unfamilir with this.</p>
+
+<p>Great.</p>
+
+<p>We have an ARIA attribute value to help us indicate that a certain element is a tooltip: <code>tooltip</code>. Using <code>role=&quot;tooltip&quot;</code> ATs know that this element is indeed a tooltip.</p>
+
+<p>But tooltips are usually triggered by an action performed on another element.</p>
+
+<p>Let’s first get back to the basics. According to Wikipedia:</p>
+
+<blockquote>
+<p>The tooltip or infotip or a hint is a common graphical user interface element. It is used in conjunction with a cursor, usually a pointer. The user hovers the pointer over an item, without clicking it, and a tooltip may appear—a small &ldquo;hover box&rdquo; with information about the item being hovered over. Tooltips do not usually appear on mobile operating systems, because there is no cursor (though tooltips may be displayed when using a mouse).</p>
+</blockquote>
+
+<p>I have a problem with the “Tooltips do not usually appear on mobile operating systems, because there is no cursor” part because mobile users have just as much right to get information on a page as non-mobile users. Whether you’re using a mouse or your finger, you should be able to understand what the Framingham score is, so this tooltip should be accessible in all contexts. And this is exactly where the fun starts.</p>
+
+<h2 id="triggering-the-opening-closing-of-the-tooltip">Triggering the opening/closing of the tooltip</h2>
+
+<p>I knew I couldn’t rely on hover alone (even though my client only requested hover) because, unless you have a touch screen with a fancy digital pen which allows for hover to be triggered, you won’t be able to see the hint inside the tooltip, and that is unacceptable.</p>
+
+<p>I set out to make the tooltip show when the help icon is both hovered and clicked.</p>
+
+<p>It is worth noting at this point that sometimes tooltips work on both touch and pointer screens without having to do any extra work, such as those that are shown as help labels on <code>input</code> fields, like <a href="http://heydonworks.com/practical_aria_examples/#input-tooltip">this example</a> by Heydon Pickering. In scenarios like this one, <code>role=&quot;tooltip&quot;</code> in combination with <code>aria-describedby</code> are enough to indicate to ATs that this piece of text is indeed a tooltip which describes the content or functionality of the input field. Marking the tooltip up in this case is very easy because it’s already clear enough what it is. All that remains is for you to show/hide the text when the <code>input</code> field is focused, and this can be done using a couple of lines of CSS alone. The experience is great on mouse and touch screens, and everyone gets to experience it the same way.</p>
+
+<p>However, things aren’t so straightforward when you have an example like the one in my project. And apparently I’m not the only one who’s been here and has been just as confused as to how to approach this.</p>
+
+<p>Here are a few of the ideas that crossed my mind as I was thinking about the implementation of this:</p>
+
+<ul>
+<li>Use a <code>&lt;button&gt;</code> to trigger the opening and closing of the tooltip. Tooltip would initially be hidden so that ATs won’t read it out loud as the user moves down the page. The tooltip interrupts the flow of the content in our project’s case and so should only be shown on demand.</li>
+<li>“on demand” means when the user hovers/clicks/taps/focuses the trigger.</li>
+<li>The tooltip would initially be hidden using <code>display: none</code> and only shown on demand.</li>
+<li>Since semantics and “how machines would read this” is how I start all of my HTML code, I thought:
+
+<ul>
+<li>if I use <code>&lt;button&gt;</code> I’ll have to use <code>aria-controls</code> to indicate what that button controls and that it will show/hide some element when it is clicked. All good.</li>
+</ul></li>
+<li>Speaking of semantics, I could also use a link (<code>&lt;a&gt;</code>) that links to a specific section on the page, which in my case is the element containing the hint.</li>
+<li>When using a link, the user will <em>jump</em> to the section on the page to which they’re being taken. I hate page jumps. I avoid them like the plague unless the decision to jump is intentional. (For example, a “Back to top” link on a very long page.)</li>
+<li>In order to avoid the jump when using <code>&lt;a&gt;</code>, <em>and</em> in order to make the <code>&lt;button&gt;</code> open <em>and</em> close the tooltip, I need JavaScript.</li>
+<li>For some holistic reason, I wanna avoid JavaScript and use it only when necessary. What if the user is a senior using some very old machine that has JS disabled?</li>
+</ul>
+
+<p>Usually, when I’m torn between two solutions and when the JS-no-JS thoughts start floating in my mind, I look for second opinions. My first source of a second opinion is Google. I thought: “someone else must have built one of these before, and so must have somebody else too, so let’s see how they approached it and solved these issues”.</p>
+
+<p>At this point I was still on the “I want to do this without JS if possible” boat, but believe it or not I love JS and was completely open to using it if the JS-based solution is better than all of the others.</p>
+
+<p>Googling got me to land on a question that was exactly the same as mine. I found a lot of similar questions but all of them were more like the tooltip-on-input example. I found <a href="http://webaim.org/discussion/mail_thread?thread=5041">a very old thread</a> started by <a href="http://twitter.com/zomigi">Zoe Gillenwater</a> who had the same question back in 2011 that I had today. I am aware that some technical details in there would/could be invalid today but the general principles are still valid. I highly recommend you read through that thread before continuing to read this article because everything else in here is based on some of the insights I got from that thread. Main points mentioned in the thread included:</p>
+
+<ul>
+<li>Avoid using <code>&lt;button&gt;</code> and stick to <code>&lt;a&gt;</code> because links can be used to practically anything whereas buttons should be left for using in forms. I have to say <strong>I disagree here</strong>. If you know a very good reason to avoid using <code>&lt;button&gt;</code>, please <a href="https://twitter.com/SaraSoueidan">let me know</a>.</li>
+<li>Using <code>&lt;a&gt;</code> you have to consider/remember:
+
+<ul>
+<li>If you use <code>&lt;a&gt;</code> and have the hint be included inside of it:</li>
+<li>The code looks like this:
+<code>
+    &lt;a href=&quot;#&quot; aria-describedby=&quot;#tip&quot;&gt;
+        &lt;!-- your icon here, img or svg --&gt;
+        &lt;span id=&quot;tip&quot;&gt; Your hint text here &lt;/span&gt;
+    &lt;/a&gt;
+</code></li>
+<li>The text will be readable with the flow (which is <em>not</em> favorable in my case) because the content of the hint interrupts the flow of the information and data displayed in the main content.</li>
+<li>Using CSS only, you can hide and show the text with <code>display: none</code> and <code>display: block</code> respectively when the link is hovered. This is good for sighted users using a mouse. However,&hellip;</li>
+<li>If you hide the text using <code>display: none</code> inside the <code>&lt;a&gt;</code> and show it on focus, ATs won’t be able to read the shown text because the contents of the link are announced on initial <code>focus</code> only and won’t be re-announced when the text is displayed inside the link with <code>display: block</code>.</li>
+<li>Testing this out I noticed that since the link doesn’t really link to anywhere, the user will jump to the top of the page when they tap the link on a touch screen. This is particularly horrible in our case because we have a long page and jumping up will only confuse the users. <strong>This can be solved using JavaScript to <code>preventDefault</code> on click.</strong></li>
+<li><em>(My opinion: I really dislike the fact that the link doesn’t really link anywhere. It’s a self-containing link, if that makes any sense, which negates the role of the link to begin with, in my opinion. So even though I tested it out of curiosity, I knew I didn&rsquo;t want to use this.)</em></li>
+<li>If you use <code>&lt;a&gt;</code> and have it link to a separate piece of text (not a descendant of the link itself):</li>
+<li>The code would be along the lines of: <code>&lt;a href=&quot;#tip&quot;&gt;&lt;!-- icon here --&gt;&lt;/a&gt;&lt;div id=&quot;tip&quot;&gt; &lt;!-- tooltip text here --&gt; &lt;/div&gt;</code></li>
+<li>The link still causes a page jump unless using JavaScript.</li>
+<li>On touch screens, tapping the link focuses it which in turn opens the tooltip, but the link image remains the same and there is no way to close the tooltip unless the user clicks anywhere outside it to remove its focus, which is not intuitive because there’s a lot of cognitive effort and guesswork and “how do I close this” guesswork and frustration involved, especially since the tooltip covers the content when open.</li>
+</ul></li>
+</ul>
+
+<p>Every single no-JS solution came with a very bad downside that negatively affected the user experience. JavaScript is the way to make this work properly for every user in every context. It solves every one of those problems mentioned, except for the “this link doesn’t link anywhere” problem which can only be solved by, well, not using a link that links nowhere. :D (Some may disagree that a link not linking anywhere is not particularly wrong or invalid, but it’s not something I’d personally do.) I ended up choosing a solution that works, using JavaScript, and has a not-too-bad fallback as well. This pretty much covers the main thoughts and considerations I had throughout this. <strong>I will post the markup and functionality I ended up using in this project’s case study.</strong></p>
+
+<h2 id="conclusion-s">Conclusion(s)?</h2>
+
+<p><strong>JavaScript is imperative to make fully-accessible interactive components.</strong> Sure, you can get away without using it in some cases, but a lot of accessibility requires JavaScript. Some ARIA roles and attributes are absolutely necessary to make components accessible, and many of those will simply not behave as they need to unless you make them work with JavaScript. Since my client is a health company, it is more likely that their users have one form of disability or the other than it is that they have JS disabled, so it&rsquo;s safe to worry about not implementing JavaScript than about it not running.</p>
+
+<p>If you’re interested in learning more about which attributes require what, I highly recommend checking out the <a href="http://whatsock.com/training/matrices/">ARIA Role Matrices</a> from WhatSock. It provides and easy-to-scan and read overview.</p>
+
+<p>Paul J Adam has also created <a href="http://pauljadam.com/demos/aria-role-tooltip.html">a demo</a> to show the different ways to show tooltips on hover. His examples still use JavaScript to make the components more accessible by toggling ARIA attributes as the tooltips open/close. This one is also definitely worth checking out.</p>
+
+<p><em>Did I miss something? <a href="https://twitter.com/SaraSoueidan">Let me know on in a tweet</a>.</em></p>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
+    <meta name="language" content="en" />
+    <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, user-scalable=1" />
+    <meta name="keywords" content="freelancer, front-end web developer, HTML5, CSS3, Lebanon" />
+    <link href="//plus.google.com/+SaraSoueidan" rel="author" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="Sara Soueidan: Articles Feed" href="/rss.xml" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@SaraSoueidan">
+    <meta property="og:type" content="website" />
+    <meta content="https://sarasoueidan.com" property="og:url" />
+    <meta content="https://sarasoueidan.com" property="twitter:url" />
+
+    <meta name="twitter:title" property="og:title" content="Sara Soueidan – Freelance front-end Web developer, author & speaker" />
+    <meta property="og:image" content="https://sarasoueidan.com/images/me.png" />
+    <meta name="twitter:image" content="https://sarasoueidan.com/images/me.png" />
+
+
+    <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
+    <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/screen.css">
+
+    
+
+</head>
+
+<body>
+    <header class="main-header full-width">
+        <div class="container clearfix">
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
+
+                <br>
+                <br>
+
+                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
+            
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
+	<a href="#menu" class="menu-trigger">Menu</a>
+    <ul class="main-nav__list clearfix" id="menu">
+        
+        
+        <li class="main-nav__item "><a  href="/hire/">Hire Me</a></li>
+        
+        <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
+        
+        <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
+        
+        <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
+        
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
+        <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
+        
+        <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__close-button">
+        	<a href="#" class="menu-close-button">×</a>
+        </li>
+    </ul>
+</nav>
+
+            </div>
+        </div>
+    </header>
+
+
+<div class="full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Better SVG Fallback and Art Direction With The &amp;lt;picture&amp;gt; Element 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-3">
+                <aside class="left-sidebar twenty">
+                    <div class="post-meta">
+                        <p>
+                            Published <time pubdate>Feb 15, 2015</time>
+                             |
+                            Estimated Reading Time: <time id="estimated_reading_time">11</time>
+                        </p>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <section class="main post" role="main">
+
+                    
+
+
+                    <div class="buttons clearfix">
+                         
+                        
+                    </div>
+
+
+                    
+
+<p class="size-2x">Besides using an SVG as a background image in CSS, you can serve SVG foreground images in HTML using  one of several embedding techniques, each of which has its advantages and use cases. Unless you’re in need of interactivity or external styling, <code>&lt;img&gt;</code> is the standard way for loading an SVG image, but it has one disadvantage: you currently need JavaScript to provide fallback and/or change the image source for art direction. In this post, I’ll talk about a better way to do that, using the <code>&lt;picture&gt;</code> element.</p>
+
+<p>This is not a primer to using <code>&lt;picture&gt;</code>. There are a lot of great resources in the wild that contain everything you need to know about the <code>&lt;picture&gt;</code> element, so if you’re not familiar with it, refer to the last section of the article for a list of resources to learn all about it. That being said, the article does not require any special or strong <code>&lt;picture&gt;</code> skills, as the examples are mostly self-explanatory as you will see.</p>
+
+<p class="note">
+  This article is also <a href="http://css-live.ru/articles/obespechenie-luchshej-rezervnoj-podderzhki-svg-i-upravlenie-oformleniem-s-pomoshhyu-elementa-picture.html">available in Russian</a>.
+</p>
+
+<h2 class="deeplink" id="the-current-img">The Current <code>&lt;img&gt;</code></h2> 
+
+<p>Before getting into why <code>&lt;picture&gt;</code> is a great option for SVG, let&rsquo;s lay down (an overview of) the limitations and disadvantages of using <code>&lt;img&gt;</code> for responsive SVG work.</p>
+
+<p>Normally, if you load an SVG using an <code>&lt;img&gt;</code> tag, you can provide fallback and change the source of the image on different viewport sizes using feature detection and media queries in JavaScript. My choice for both would be to use <a href="http://modernizr.com/">Modernizr</a> for both; that is, unless you&rsquo;re only serving one image, in which case adding Modernizr might be overwork, and something like this:</p>
+
+<pre class="brush:html">
+&lt;img src="logo.svg" onerror="this.src=logo-fallback.png;this.onerror=null;" /&gt;
+</pre>
+
+<p>..would be simpler and faster.</p>
+
+<p>Using Modernizr, you can detect browser support for SVG, and provide an alternative image <code>src</code> for when SVG is not supported. The alternative image URL can be stored in a custom data attribute. This approach is particularly useful for when you have multiple images on the page whose <code>src</code> you need to switch.</p>
+
+<pre class="brush:html">
+&lt;img src="logo.svg" data-fallback="logo.png" /&gt;
+</pre>
+
+<p>Using Modernizr, you can detect whether or not the browser supports SVG and then take necessary steps to provide the fallback based on the test result:</p>
+
+<pre class="brush:js">
+if (!Modernizr.svg) {
+  // fetch fallback and replace img src with it
+}
+</pre>
+
+<p>You can also use Modernizr&rsquo;s media query detection to change the img src on based on viewport width for when you want to do art direction and not load the same big SVG on smaller screens:</p>
+
+<pre class="brush:js">
+if (Modernizr.mq('(max-width: 640px)')) {
+  // replace image source with the smaller SVG source
+}
+</pre>
+
+<p>You don&rsquo;t need to store any URLs in data attributes in this case if you are following a specific naming convention for your images. For example, if your images are named <code>view-small.svg</code>, <code>view-big.svg</code>, you can just replace the <code>view-*</code> part with the appropriate one in the JavaScript and be done with it.</p>
+
+<p>Now, if you want to provide a PNG or JPEG fallback for your SVG <em>and</em> also provide different sizes of that fallback image to match the viewport size, Modernizr will also do, but it will get slightly more complicated. And the most important part is: you need JavaScript to do it.</p>
+
+<p>With the <code>&lt;picture&gt;</code> element, we can do all that and more, without JavaScript. Well, kind of. Read on.</p>
+
+<h2 class="deeplink" id="the-bigger-picture">The Bigger <code>&lt;picture&gt;</code></h2> 
+
+<p>The <code>&lt;picture&gt;</code> element provides us with a better JavaScript-less way to change the image we are serving based on different media queries <em>and</em> a for providing fallback for non-supporting browsers (or browsers that can&rsquo;t load the SVG for any reason).</p>
+
+<h3 class="deeplink" id="loading-and-providing-fallback">Loading An SVG and Providing Fallback For Non-Supporting Browsers</h3> 
+
+<p>Let’s start with fallback first. Providing fallback for browsers that can’t load the SVG is as simple as wrapping your <code>&lt;img&gt;</code> fallback in a <code>&lt;picture&gt;</code> element, and referencing your SVG in a <code>&lt;source&gt;</code> element:</p>
+
+<pre class="brush:html">
+&lt;picture&gt;
+    &lt;source type="image/svg+xml" srcset="path/to/image.svg"&gt;
+    &lt;img src="path/to/fallback.png" alt="Image description"&gt;
+&lt;/picture&gt;
+</pre>
+
+<p>The <code>&lt;picture&gt;</code> element is just a wrapper for the elements used to load the image(s) you want and for the fallback provided with the <code>&lt;img&gt;</code> element. The <code>&lt;img&gt;</code> element is <em>required</em> for <code>&lt;picture&gt;</code> to work and is used to provide backwards compatibility for browsers that don’t support <code>&lt;picture&gt;</code> or, like our case here, browsers that can’t load or don&rsquo;t support the the image(s) [type] you load in the <code>&lt;source&gt;</code> element.</p>
+
+<p>The <code>&lt;source&gt;</code> element is where we specify the image(s) we want. We’re specifying the type of the image we want (SVG) in the <code>type</code> attribute, and providing the URL to that image in the <code>srcset</code> attribute.
+And that&rsquo;s all there really is to it; this is how simple it is to provide fallback for an SVG image using <code>&lt;picture&gt;</code>—no JavaScript is needed.</p>
+
+<p>You can take this even further and provide multiple fallback images that take screen resolution into account; to do that you can specify those images using the <code>srcset</code> attribute on the <code>&lt;img&gt;</code>. For example:</p>
+
+<pre class="brush:html">
+&lt;picture&gt;
+    &lt;source type="image/svg+xml" srcset="path/to/logo.svg"&gt;
+    &lt;img src="path/to/logo-1x.png" srcset="path/to/logo-2x.png 2x, path/to/logo-3x.png 3x" alt="Logo description"&gt;
+&lt;/picture&gt;
+</pre>
+
+<p>The browser can then choose the image it finds appropriate based on the screen resolution. This is useful for when you are serving the same image size (for example, a one-size logo) but want to provide 2x and 3x versions for higher resolutions.</p>
+
+<p>But if you want you can take it even <em>further</em>. With the help of the <code>sizes</code> attribute, you can use media queries on the <code>&lt;img&gt;</code> to change the fallback image size on different screen sizes, providing a bigger image for bigger screens and a smaller one for small screens.</p>
+
+<pre class="brush:html">
+&lt;picture&gt;
+    &lt;source type="image/svg+xml" srcset="path/to/banner.svg"&gt;
+    &lt;img
+      sizes="(min-width: 640px) 80vw, 100vw"
+      srcset="banner-300.jpg 300w,
+              banner-400.jpg 400w,
+              banner-700.jpg 700w,
+              banner-1200.jpg 1200w,
+              banner-1600.jpg 1600w,
+              banner-2000.jpg 2000w"
+      src="banner-default-fallback.jpg"
+      alt="Banner description"&gt;
+&lt;/picture&gt;
+</pre>
+
+<p>What we&rsquo;ve done here is we told the browser in the <code>sizes</code> attribute what size our image will occupy on the page. In this case, if the width of the viewport is 640px or more, the image will be 80% the width of the viewport, and 100% the width otherwise.</p>
+
+<p>Then, in the <code>srcset</code> attribute, we provided the browser with a list of images—they are all the same image, but in different sizes. Based on the sizes specified in <code>sizes</code>, the browser will pick the best fit among these images and display it.</p>
+
+<p>If a browser does not support <code>srcset</code> on <code>&lt;img&gt;</code>, it will simply display the fallback specified in the <code>src</code> attribute. For a detailed explanation of how this works, refer to <a href="http://alistapart.com/article/responsive-images-in-practice">this article</a> over at A List Apart.</p>
+
+<h3 class="deeplink" id="art-direction">Art Direction: Loading a Different SVG on Different Screen Sizes</h3> 
+
+<p>The <code>&lt;source&gt;</code> element we use to specify the image(s) we want comes with another attribute: <code>media</code>. This attribute provides us with the same flexibility we have for changing background images in CSS using CSS media queries, by allowing us to pair image sources with layout conditions (the media queries) right in the source code.</p>
+
+<p>Since we&rsquo;re serving an SVG image, we don&rsquo;t need to serve multiple versions of the image for different screen resolutions because of the infinitely scalable nature of SVG which makes it look great on any resolution. (Yay!)</p>
+
+<p>But if we have an SVG that we&rsquo;re serving on desktop—for example, a wide header image, this image could be hundreds of kilobytes in size. Serving the same big image for small screens might not be the best idea if you look at it from a performance angle. Moreover, maybe you just <em>don&rsquo;t want</em> to serve the same image on smaller sizes, but a &ldquo;cropped&rdquo; version of that image. I recently worked on a client project that required just that. Not only did my client want different images on smaller sizes, but the full composition was more than 100KB in size, which is obviously too much to serve on mobile devices, so we served cropped versions of that image.</p>
+
+<p>In such a case, you can specify different SVGs to load on different media conditions using the <code>media</code> attribute on the <code>&lt;source&gt;</code>. In the <code>media</code> attribute, you specify the media conditions similar to how you do it in CSS media queries.</p>
+
+<pre class="brush:html">
+&lt;picture&gt;
+    &lt;source
+        media="(max-width: 640px)"
+        srcset="header--small.svg"
+        type="image/svg+xml"&gt;
+    &lt;source
+        media="(max-width: 1024px)"
+        srcset="header--medium.svg"
+        type="image/svg+xml"&gt;
+    &lt;source
+        srcset="header--full.svg"
+        type="image/svg+xml"&gt;
+
+    &lt;img src="header--default-fallback.jpg" alt="Header description.."&gt;
+&lt;/picture&gt;
+
+</pre>
+
+<p>Of course, you can specify different fallback images for different resolutions and sizes, similar to what we did in the previous section. For the sake of brevity, I&rsquo;m going to skip that step in this section, but you get the picture. (See what I did there?)</p>
+
+<p>You can also specify multiple sizes of each SVG image and let the browser pick the one it finds best, like we did for the fallback image before. However, due to the scalable nature of SVG, this might not be necessary.</p>
+
+<p>As a matter of fact, the options the <code>&lt;picture&gt;</code> element comes with cover practically any scenario. <a href="https://dev.opera.com/articles/responsive-images/">This article</a> on the dev.opera blog covers a lot of these use cases with practical examples and snippets to help you get started.</p>
+
+<hr>
+
+<p>So, you see, with the <code>&lt;picture&gt;</code> element, we no longer need to use JavaScript to provide fallback and/or change the image based on different media conditions. Well, kind of…</p>
+
+<h2 class="deeplink" id="browser-support-and-polyfilling">Browser Support and Polyfilling</h2> 
+
+<p>At the time of writing of this article, browser support for <code>&lt;picture&gt;</code> isn&rsquo;t at its best, but it is getting better. A lot of smart people are working on <code>&lt;picture&gt;</code> implementation across browsers. Keep an eye on <a href="http://caniuse.com/#feat=picture">the compatibility table over at CanIUse.com</a> to stay up-to-date on browser support in the future.</p>
+
+<p>In the meantime, and until browser support becomes more decent, you can use a JavaScript polyfill for non-supporting browsers. So yes, we do need JavaScript at the moment, but the code you write will be future-proof and all you need to do in the future when support gets better is to remove the polyfill, and your code will work without it as expected. Using <code>&lt;img&gt;</code> you&rsquo;d need to do much more, or, at least, just keep using Javacript.</p>
+
+<p>The <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> polyfill by the folks at the Filament Group is the current de facto for cross-browser <code>&lt;picture&gt;</code> support today. The polyfill homepage contains extensive documentation on how to use the polyfill and tips on using <code>&lt;picture&gt;</code> in general along with general patterns.</p>
+
+<p>Using the polyfill is as simple as including the script in your page&rsquo;s <code>head</code>:</p>
+
+<pre class="brush:html">
+&lt;script src="picturefill.js" async&gt;&lt;/script&gt;
+</pre>
+
+<p>The <code>async</code> attribute tells the browser that it can load picturefill asynchronously, without waiting for it to finish before loading the rest of the document. According to the Picturefill documentation, If you add this attribute, you&rsquo;ll need to add a line of script before the script tag as well to allow older browsers to recognize <code>picture</code> elements if it encounters them in the page before Picturefill has finished loading.</p>
+
+<pre class="brush:html">
+&lt;script&gt;
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+&lt;/script&gt;
+&lt;script src="picturefill.js" async&gt;&lt;/script&gt;
+</pre>
+
+<p>If you are <a href="http://www.paulirish.com/2011/the-history-of-the-html5-shiv/">familiar with HTML5 Shiv</a>, then you already know what this line is needed for. As a matter of fact, if you are already including a recent version of the HTML5 Shiv (sometimes packaged with Modernizr), you may not need this line as it is included there as well.</p>
+
+<h3 class="deeplink" id="fixing-ie9">Fixing IE9</h3> 
+
+<blockquote>
+<p>While most versions of IE (even older ones!) are supported [by Picturefill] well, IE9 has a little conflict to work around. To support IE9, you will need to wrap a <code>video</code> element wrapper around the <code>source</code> elements in your <code>picture</code> tag. You can do this using conditional comments.
+— <a href="http://scottjehl.github.io/picturefill/">Picturefill homepage</a></p>
+</blockquote>
+
+<p>As the documentation says, the polyfill provides support for <code>&lt;picture&gt;</code> across browsers, but IE9 requires that you wrap your <code>source</code> elements in a <code>video</code> tag. And since this fix is only required for IE9, you can place it in IE9-targeting conditional comments:</p>
+
+<pre class="brush:html">
+&lt;picture&gt;
+&lt;!--[if IE 9]&gt;&lt;video style="display: none;"&gt;&lt;![endif]--&gt;
+    &lt;source srcset=".." type=".." &gt;
+    &lt;source srcset=".." type=".." &gt;
+    &lt;source srcset=".." type=".." &gt;
+&lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;
+    &lt;img src=".." alt=".." /&gt;
+&lt;/picture&gt;
+</pre>
+
+<h2 class="deeplink" id="foreground-svg-images">Foreground SVG Images with Interactivity and Styleability</h2> 
+
+<p>As mentioned at the beginning of the article, the <code>&lt;img&gt;</code> element, and naturally the <code>&lt;picture&gt;</code> element, only allow you to load a static SVG image, or an SVG with animations defined internally. If you need to load a foreground image and you want that image to be interactive and styleable, you can use one of four available ways: <code>&lt;object&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code> and inline <code>&lt;svg&gt;</code>.</p>
+
+<p>Both the <code>&lt;iframe&gt;</code> and <code>&lt;object&gt;</code> come with a default fallback mechanism.</p>
+
+<pre class="brush:html">
+&lt;object data="image.svg" type="image/svg+xml"&gt;
+    &lt;!-- fallback here --&gt;
+&lt;/object&gt;
+
+&lt;iframe src="image.svg"&gt;
+    &lt;!-- fallback here --&gt;
+&lt;/iframe&gt;
+</pre>
+
+<p>An inline <code>&lt;svg&gt;</code> requires a different approach to provide fallbacks; one such approach uses the <code>&lt;foreignObject&gt;</code> element. You can read all about it <a href="http://www.kaizou.org/2009/03/inline-svg-fallback/">here</a>. Chris has also written about providing fallback for SVG <a href="http://css-tricks.com/svg-fallbacks/#the-fallbacks">here</a>.</p>
+
+<h2 class="deeplink" id="final-words">Final Words</h2> 
+
+<p>While using <code>&lt;picture&gt;</code> currently does require adding a JavaScript polyfill, using standard HTML5 markup and getting the flexibility of switching images using native elements is extremely powerful, and plugging the polyfill in is as easy as 1. download it, 2. add script to page, 3. you&rsquo;re done. It&rsquo;s absolutely worth it if you are doing art direction or providing fallback for multiple foreground SVG images.</p>
+
+<p><code>&lt;picture&gt;</code> is more likely to become the standard way for art-directing SVG and providing <code>img</code> fallback in the future, so why start using it today? Both <code>img</code> way and the new <code>picture</code> require some JavaScript—for now, but the latter is definitely cleaner and more future-proof. Yes, <code>img</code> is also future-proof, but at some point, you get to ditch the polyfill and keep your code unchanged if you use <code>picture</code>, while <code>img</code> will either require you to keep using JavaScript <em>or</em> refactor your markup to make the switch to JavaScript-less <code>picture</code>.</p>
+
+<p>Whether you decide to start using <code>&lt;picture&gt;</code> for SVG today or not, it is definitely worth getting to know better and using it for serving other responsive image formats. So here is a list of recommended articles to get you up and running:</p>
+
+<h3 id="recommended-reading-on-picture">Recommended Reading on <code>&lt;picture&gt;</code></h3>
+
+<ul>
+<li><a href="http://www.html5rocks.com/en/tutorials/responsive/picture-element/">Introducing the <code>&lt;picture&gt;</code> element</a></li>
+<li><a href="https://dev.opera.com/articles/native-responsive-images/">Native Responsive Images</a></li>
+<li><a href="http://alistapart.com/article/responsive-images-in-practice">Responsive Images in Practice</a></li>
+<li><a href="https://dev.opera.com/articles/responsive-images/">Responsive Images: Use Cases and Documented Code Snippets to Get You Started</a></li>
+<li><a href="http://demosthenes.info/blog/936/Responsive-Images-For-Designers-The-HTML5-picture-element">Responsive Images For Designers: The HTML5 picture element</a></li>
+</ul>
+
+
+
+
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+    </div>
+</div>
+            
+
+            
+
+    <script type="text/javascript" src="../../js/syntaxhighlighter-min.js" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+    <script>
+        anchors.options = {
+          placement: 'left',
+          visible: 'always',
+          icon: '#'
+        };
+        anchors.add('.deeplink');
+    </script>
+
+
+
+
+<footer class="copyright full-width">
+    <div class="container clearfix">
+        <div class="row">
+            <p style="float: left;">                    
+                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+            </p>
+
+            <div class="twitter" style="float: right;">
+                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    ! function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "twitter-wjs");
+</script>
+</body>
+
+</html>

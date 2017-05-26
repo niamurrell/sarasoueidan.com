@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Effects on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/effects/</link>
+    <description>Recent content in Effects on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/effects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building A Circular Navigation with CSS Clip Paths</title>
+      <link>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</link>
+      <pubDate>Mon, 17 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/08/17/building-a-circular-navigation-with-css-clip-paths/</guid>
+      <description>The CSS clip-path property is one of the most underused and yet most interesting properties in CSS. It can be used in conjunction with CSS Shapes to create interesting layouts, and can be taken to the extreme to create some incredibly impressive layouts and animations like the Species in Pieces project. While exploring the creation of arbitrarily-shaped UI components using CSS and SVG, it occurred to me that the clip-path property, when combined with SVG paths, can be used to create circular menus fairly easily, especially considering the (expected) browser behaviour when handling pointer events on clipped regions as per the specification.</description>
+    </item>
+    
+    <item>
+      <title>CSS vs. SVG: Graphical Text Effects</title>
+      <link>https://sarasoueidan.com/2015/07/31/css-vs-svg-graphical-text/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/07/31/css-vs-svg-graphical-text/</guid>
+      <description>This post is the first in a series of posts exploring techniques and examples that can be achieved using both CSS and SVG, and compares them both. Since I am biased to SVG, this series is really intended to prove that SVG — because of its nature as both an image and a document format — is simply better than CSS when it comes to solving certain design problems on the web.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction To Graphical Effects in CSS</title>
+      <link>https://sarasoueidan.com/2015/04/29/css-graphics/</link>
+      <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/04/29/css-graphics/</guid>
+      <description>In this article, we will take a deep introduction into CSS’s graphical effects—specifically, CSS Filters and Compositing and Blending capabilities. We will go over the properties for each, their different values, and usage examples and some of the graphial effects that can be created using nothing but a few lines of CSS. </description>
+    </item>
+    
+    <item>
+      <title>Compositing And Blending In CSS</title>
+      <link>https://sarasoueidan.com/2015/01/27/compositing-and-blending-in-css/</link>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2015/01/27/compositing-and-blending-in-css/</guid>
+      <description>If you&amp;rsquo;re a designer, then you&amp;rsquo;ve probably already come across blending effects some time or the other. Blending is one of the most frequently used effects in graphic and print design. You can add texture to text by blending it with its textured backdrop, create an illusion of merged images by blending these images together, and create a wide range of colorful effects that would not be possible without that fine level of color blending control.</description>
+    </item>
+    
+    <item>
+      <title>Clipping in CSS and SVG — The &lt;code&gt;clip-path&lt;/code&gt; Property and &lt;code&gt;&amp;lt;clipPath&amp;gt;&lt;/code&gt; Element</title>
+      <link>https://sarasoueidan.com/2014/07/08/css-svg-clipping/</link>
+      <pubDate>Tue, 08 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/07/08/css-svg-clipping/</guid>
+      <description>CSS and SVG have a lot in common. A lot of the features that we have in CSS today were imported from SVG. One of these features is the Clipping operation. Both CSS and SVG allow us to &#34;clip&#34; elements into custom non-rectangular shapes. In this article we will go over the clipping techniques in both CSS and SVG, covering everything you need to know to get started.
+Please note that the demos in this article may not work in your browser.</description>
+    </item>
+    
+    <item>
+      <title>Moving Forward With CSS Shapes</title>
+      <link>https://sarasoueidan.com/2014/05/05/moving-forward-with-css-shapes/</link>
+      <pubDate>Mon, 05 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/05/05/moving-forward-with-css-shapes/</guid>
+      <description>Following up with the CSS Shapes 101 article, I share a list of great resources to learn more about CSS Shapes, including tutorials, examples, and developer tools. </description>
+    </item>
+    
+    <item>
+      <title>CSS Shapes 101</title>
+      <link>https://sarasoueidan.com/2014/04/29/css-shapes-101/</link>
+      <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2014/04/29/css-shapes-101/</guid>
+      <description>In this article, you&#39;ll learn everything you need to know to get started using CSS Shapes today. We will cover all the prerequisites: establishing a coordinate system, conditions for elements to be eligible for shapes, and more, then moving on to the properties used, their values and how each one affects the shape created, with lots of visual explanations and examples. </description>
+    </item>
+    
+    <item>
+      <title>Techniques For Creating Textured Text</title>
+      <link>https://sarasoueidan.com/2013/12/02/textured-text-techniques/</link>
+      <pubDate>Mon, 02 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/12/02/textured-text-techniques/</guid>
+      <description>For too long, we&#39;ve resorted to graphics editors to create images of text that has nice effects such as creative fills or that blends with its background in a nice subtle way. We used those images as a replacement for text on our pages, which made that text unaccessible and un-selectable.. But with all the advances in web design today, we can now create textured text effects using CSS, using SVG, and using HTML5 Canvas.</description>
+    </item>
+    
+    <item>
+      <title>Creating Non-Rectangular Layouts With CSS Shapes</title>
+      <link>https://sarasoueidan.com/2013/11/05/css-shapes/</link>
+      <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2013/11/05/css-shapes/</guid>
+      <description>Today we can create all kinds of shapes with CSS using CSS transforms, but all these shapes do not affect the flow of the content inside or around them. That is, if you create a triangle or a trapezoid with CSS, for example, the shape created does not define or affect the way the text inside it flows, or the way inline text around it does.
+With the introduction of CSS Shapes into the web, wrapping content in custom non-rectangular shapes, and recreating print designs and layouts on the web becomes a piece of cake!</description>
+    </item>
+    
+  </channel>
+</rss>

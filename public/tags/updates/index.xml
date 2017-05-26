@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updates on Sara Soueidan</title>
+    <link>https://sarasoueidan.com/tags/updates/</link>
+    <description>Recent content in Updates on Sara Soueidan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sarasoueidan.com/tags/updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2015 In Review</title>
+      <link>https://sarasoueidan.com/2016/01/06/2015-in-review/</link>
+      <pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/2016/01/06/2015-in-review/</guid>
+      <description>Happy new year! 🌟
+OK, I felt awkward starting a blog post that way—I confess. ☺️ But this is also an unusual post—not an article about CSS or SVG, and not a lengthy tutorial about web development. It is also the quickest post I ever wrote.
+This is my first time writing a year in review kind of post. A lot of great stuff has happened in 2015 that I thought are worth documenting and have a look back at a few years from now.</description>
+    </item>
+    
+  </channel>
+</rss>
