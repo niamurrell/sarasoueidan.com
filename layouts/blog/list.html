@@ -12,7 +12,7 @@
                 <ul class="articles-list">
                     <br>
                     <!-- Ranges through content/blog/*.md -->
-                    {{ range (.Paginator 7).Pages }}  
+                    {{ range (.Paginator 5).Pages }}  
                     <li>
                         <a class="post-title" href="{{.RelPermalink}}">{{ .Title }}</a>
                         <span class="post-meta"><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} &mdash; <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
@@ -27,8 +27,6 @@
                    {{ end }}
 
                    {{ partial "pagination.html" . }}
-
-                   <a href="../article-archives/" class="button">See all articles</a>
 
                 </ul>
             </section>
