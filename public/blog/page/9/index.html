@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Articles by Sara Soueidan — Front-end web developer, author and speaker</title>
     <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
     <meta name="language" content="en" />
     <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
@@ -31,8 +31,8 @@
     <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
     <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,700,700i" rel="stylesheet"> 
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/screen.css">
 
     
@@ -44,17 +44,14 @@
         <div class="container clearfix">
             <div class="col-5 logo">
                 <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
-                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
-
-                <br>
-                <br>
-
-                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                
+                <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
 
                 <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
             </div>
             
-            <nav class="col-6 col--right main-nav" id="main-nav">
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
 	<a href="#menu" class="menu-trigger">Menu</a>
     <ul class="main-nav__list clearfix" id="menu">
         
@@ -63,15 +60,17 @@
         
         <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
         
-        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
-        
         <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
         
         <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
         
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
         <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
         
         <li class="main-nav__item  current"><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__item "><a  href="/desk/">From My Desk</a></li>
         
         <li class="main-nav__close-button">
         	<a href="#" class="menu-close-button">×</a>
@@ -79,6 +78,7 @@
     </ul>
 </nav>
 
+            </div>
         </div>
     </header>
 
@@ -87,43 +87,21 @@
 <div class="full-width">
     <div class="container">
         <div class="row">  
-            <div class="col-12">
                 
-                 <!-- Any content that goes here will be displayed in the .Content section of the section.html _default layout -->
-
-            </div>      
-            <section class="col-8" role="main">
+            <section class="col-7" role="main">
                 <ul class="articles-list">
+                    <br>
                     
                       
                     <li>
-                        <a class="post-title" href="/blog/svg-picture/">Better SVG Fallback and Art Direction With The &amp;lt;picture&amp;gt; Element</a>
-                        <span class="post-meta"><time>February 15, 2015</time> </span>
+                        <a class="post-title" href="/blog/windows8-animations/">How to Create Windows-8-like animations with CSS3 and jQuery</a>
+                        <span class="post-meta"><time>February 11, 2013</time> </span>
                         
-                        Besides using an SVG as a background image in CSS, you can serve SVG foreground images in HTML using one of several embedding techniques, each of which has its advantages and use cases. Unless you’re in need of interactivity or external styling, &lt;img&gt; is the standard way for loading an SVG image, but it has one disadvantage: you currently need JavaScript to provide fallback and/or change the image source for art direction. 
+                        <div class="post-summary">
+                            I have recently realized that CSS3 3D transforms have been out there for quite a long time now and yet I haven't experimented with them yet. I have also been using Windows 8 for a while now, and the first thing that struck me as impressive about it was the transitions and animations built into the dashboard, so I thought it would be really cool if my first experiment with CSS 3D transforms would be to recreate those animations and effects. 
+                        </div>
 
-                        <p><small><a href="/blog/svg-picture/" class="read-more-link">Read more ››</a></small></p>
-                    </li>
-
-                     
-                    <li>
-                        <a class="post-title" href="/blog/codrops-css-reference/">I Wrote A CSS &lt;del&gt;Book&lt;/del&gt; Reference.</a>
-                        <span class="post-meta"><time>February 4, 2015</time> </span>
-                        
-                        Yesterday, we finally released a long-awaited project over at Codrops: Codrops' new CSS Reference, authored by yours truly. Even though I wrote a post over at Codrops introducing the reference and its features, I want to share a little bit more about my experience writing it.
-Please note that as of January 2016, I am no longer the maintainer of the Codrops CSS Reference. Thus, unlike my usual highly-technical blog posts, this is a (possibly-boring, but short! 
-
-                        <p><small><a href="/blog/codrops-css-reference/" class="read-more-link">Read more ››</a></small></p>
-                    </li>
-
-                     
-                    <li>
-                        <a class="post-title" href="/blog/compositing-and-blending-in-css/">Compositing And Blending In CSS</a>
-                        <span class="post-meta"><time>January 27, 2015</time> </span>
-                        
-                        If you&rsquo;re a designer, then you&rsquo;ve probably already come across blending effects some time or the other. Blending is one of the most frequently used effects in graphic and print design. You can add texture to text by blending it with its textured backdrop, create an illusion of merged images by blending these images together, and create a wide range of colorful effects that would not be possible without that fine level of color blending control. 
-
-                        <p><small><a href="/blog/compositing-and-blending-in-css/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/windows8-animations/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                    
@@ -131,41 +109,92 @@ Please note that as of January 2016, I am no longer the maintainer of the Codrop
                    
 
 
-<nav class="center">
-    <div class="pagination">
-        <div class="row">
-
-<a class="prev page-numbers" href="https://sarasoueidan.com/blog/page/8/"><span class="glyphicon  glyphicon-chevron-left"></span></a>
-
-    <div class="pagination__page-numbers"><a class='page-numbers' href='https://sarasoueidan.com/blog/'>1</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/2/'>2</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/3/'>3</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/4/'>4</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/5/'>5</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/6/'>6</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/7/'>7</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/8/'>8</a><span class='page-numbers current'>9</span><a class='page-numbers' href='https://sarasoueidan.com/blog/page/10/'>10</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/11/'>11</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/12/'>12</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/13/'>13</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/14/'>14</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/15/'>15</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/16/'>16</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/17/'>17</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/18/'>18</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/19/'>19</a></div>
-
-                <a class="next page-numbers" href="https://sarasoueidan.com/blog/page/10/"><span class="glyphicon  glyphicon-chevron-right"></span></a>
-
-            </div>
-        </div>
+<nav class="center pagination">
+    
+    <a class="pagination__button pagination__button--previous" title="Previous Page" href="/blog/page/8/">
+        Newer Articles
+    </a>
+    
+    <a class="pagination__button" href='https://sarasoueidan.com/blog/'>1</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/2/'>2</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/3/'>3</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/4/'>4</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/5/'>5</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/6/'>6</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/7/'>7</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/8/'>8</a><span class="pagination__button button--disabled">9</span>
+    
+    <span class="pagination__button pagination__button--next button--disabled">Older Articles</span>
+    
 </nav>
 
 
 
+                   <a href="../article-archives/" class="button">See all articles</a>
+
                 </ul>
+            </section>
+
+            <section class="col-4 col--right">
+                <h3 class="educational-tools__heading">Useful tools:</h3>
+                <ul class="educational-tools__list">
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../tools/circulus"><img src="../images/educational-tools/circulus.png" alt="Screenshot of the Circulus.svg app"></a>
+                            <figcaption>
+                                <h4>Circulus.svg</h4>
+                                <p>
+                                    An interactive tool that allows you to customize and download an SVG circular/pie menu. The tool includes a complete guide on using the generated code, animating the menu (with examples) and UX consideration tips.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../demos/css-blender"><img src="../images/educational-tools/css-blender.png" alt="Screenshot of the CSS Blender app"></a>
+                            <figcaption>
+                                <h4>The CSS Blender</h4>
+                                <p>
+                                    An interactive tool that allows you upload an image and apply the different CSS background blend modes and preview the result live. It also comes with an option to add text and blend that text with the background image you provide.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="https://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html"><img src="../images/educational-tools/svg-coordinate-systems-visualizer.jpg" alt="Screenshot of the SVG Coordinate System Visualizer app"></a>
+                            <figcaption>
+                                <h4>The SVG Coordinate Systems Visualizer</h4>
+                                <p>
+                                    <a href="http://www.creativebloq.com/web-design/10-best-new-web-design-tools-july-71515764">Featured by netmag’s Creative Bloq blog</a> as one of the top 10 best web design tools of July 2015, this is an interactive tool that allows you to visualize how the SVG attributes: viewBox and preserveAspectRatio work and interact with each other, providing a better understanding of how SVG coordinate systems work. The tool also comes with a cheat sheet for quick reference and easier understanding.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>           
             </section>
         </div>
     </div>
 </div>
 
 
-
-<footer class="copyright full-width">
-    <div class="container clearfix">
-        <div class="row">
-            <p style="float: left;">                    
-                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+<div class="full-width newsletter-container">
+    <div class="container newsletter">
+        <div class="newsletter__wrapper">
+            <h3>From my desk.. to yours.</h3>
+            <p>
+                Infrequent updates, thoughts and ideas, latest articles, useful resources, workshop announcements and members-only discounts, among other inspirational content—straight into your inbox. No fuss. No spam.
             </p>
-
-            <div class="twitter" style="float: right;">
-                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
-            </div>
         </div>
+    </div>
+</div>
+
+<footer class="main-footer full-width">
+    <div class="container clearfix">
+            <div class="main-footer__left">
+                <p>                    
+                    © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+                </p>
+            </div>
+
+            <div class="main-footer__right">
+                <div class="twitter">
+                     <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                </div>
+            </div>
     </div>
 </footer>
 

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-03-09T00:00:00Z
 title: Building a Circular Navigation with SVG
 subtitle: ""

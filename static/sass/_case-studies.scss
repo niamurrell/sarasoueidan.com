@@ -76,20 +76,25 @@
   }
 }
 
-.case-study__details {
+table.case-study__details {
   font-size: 18px;
   background: #fff;
   color: #111;
   margin-bottom: 70px;
   table-layout: fixed;
   width: 100%;
+  padding: 1em;
 
   td {
-    padding: 5px 10px;
+    padding: .5em 1em;
+    border-bottom: 1px solid #eee;
+  }
+
+  tr {
   }
 
   tr:nth-of-type(odd) {
-    background-color: #f5f5f5;
+    // background-color: #f5f5f5;
   }
 
   td:first-of-type {
@@ -129,7 +134,7 @@
   border: none;
   overflow: hidden;
   color: inherit;
-  font-size: calc(1em + .25vw);
+  font-size: calc(1em + .1vw);
   background-color: #fff;
 
 

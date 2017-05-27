@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Articles by Sara Soueidan — Front-end web developer, author and speaker</title>
     <meta name="google-site-verification" content="yIFeaDSsvI7qzx8DTtQ7CBx3ZaZwD7vX_7F0yhrs_IY" />
     <meta name="language" content="en" />
     <meta name="description" content="Freelance Front-End Web Developer - Lebanon" />
@@ -31,8 +31,8 @@
     <meta content="Welcome to Sara Soueidan’s Web site." name="description" />
     <meta content="Welcome to Sara Soueidan’s Web site." name="twitter:description" property="og:description" />
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,700,700i" rel="stylesheet"> 
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/screen.css">
 
     
@@ -44,17 +44,14 @@
         <div class="container clearfix">
             <div class="col-5 logo">
                 <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
-                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
-
-                <br>
-                <br>
-
-                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                
+                <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
 
                 <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
             </div>
             
-            <nav class="col-6 col--right main-nav" id="main-nav">
+            <div class="col-6 col--right">
+                <nav class="main-nav" id="main-nav">
 	<a href="#menu" class="menu-trigger">Menu</a>
     <ul class="main-nav__list clearfix" id="menu">
         
@@ -63,15 +60,17 @@
         
         <li class="main-nav__item "><a  href="/contact/">Contact</a></li>
         
-        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
-        
         <li class="main-nav__item "><a  href="/speaking/">Speaking &amp; Podcasts</a></li>
         
         <li class="main-nav__item "><a  href="/case-studies/">Case Studies</a></li>
         
+        <li class="main-nav__item "><a  href="/workshops/">Workshops</a></li>
+        
         <li class="main-nav__item "><a  href="/about/">About &amp; Interviews</a></li>
         
         <li class="main-nav__item  current"><a  href="/blog/">Articles</a></li>
+        
+        <li class="main-nav__item "><a  href="/desk/">From My Desk</a></li>
         
         <li class="main-nav__close-button">
         	<a href="#" class="menu-close-button">×</a>
@@ -79,6 +78,7 @@
     </ul>
 </nav>
 
+            </div>
         </div>
     </header>
 
@@ -87,42 +87,96 @@
 <div class="full-width">
     <div class="container">
         <div class="row">  
-            <div class="col-12">
                 
-                 <!-- Any content that goes here will be displayed in the .Content section of the section.html _default layout -->
-
-            </div>      
-            <section class="col-8" role="main">
+            <section class="col-7" role="main">
                 <ul class="articles-list">
+                    <br>
                     
                       
                     <li>
-                        <a class="post-title" href="/blog/css-background-positioning/">A Primer To Background Positioning In CSS</a>
-                        <span class="post-meta"><time>March 24, 2015</time>  &mdash; <span class="post-host">for Adobe Dreamweaver Team Blog</span> </span>
+                        <a class="post-title" href="/blog/navicon-transformicons/">Navicon Transformicons: Animated Navigation Icons with CSS Transforms</a>
+                        <span class="post-meta"><time>October 20, 2013</time> </span>
                         
-                        An article in which we take a deep dive into CSS’s background positioning properties with visual explanations and examples. Did you know that the CSS background-position property accepts edge offset values? That is, you can position a background image relative to any edge—not just top and left—and specify the offset relative to that edge using a length value. In this article, we will learn all about that, and more.  
+                        <div class="post-summary">
+                            The following is a collaboration post between Bennett Feely and I. After seeing Bennett's impressive animated navigation icon transformations (or "Navicon Transformicons") pens on Codepen, I asked him if he would like to write a tutorial on how he did them as a guest post on my blog. He kindly approved. And as he doesn't have a lot of free time to work the article, we decided to collaborate on it. 
+                        </div>
 
-                        <p><small><a href="/blog/css-background-positioning/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/navicon-transformicons/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/building-a-circular-navigation-with-svg/">Building a Circular Navigation with SVG</a>
-                        <span class="post-meta"><time>March 9, 2015</time> </span>
+                        <a class="post-title" href="/blog/draggable-metro-app-showcase/">Draggable Metro App Showcase</a>
+                        <span class="post-meta"><time>August 20, 2013</time> </span>
                         
-                        Last week, I released CIRCULUS.SVG—the SVG circular menu generator. In this article I want to go over why SVG is better suited for creating this kind of UI element, and give you and overview of the SVG code for creating the menu items using SVG elements and transformations. Note that, unlike my usual tutorials, we will not be going over a detailed how-to, but only an overview of the concepts behind this. 
+                        <div class="post-summary">
+                            Today I'd like to share with you an interactive and touch-optimized metro app showcase concept for showcasing a metro (probably a Windows Phone) app screenshot. The screenshot will be draggable and swipable, and you'll have a couple of extra options to view how the app would look like in a mobile phone frame.
+Please note that this demo works only in browsers that support the Javascript objects and APIs used. I provided a couple of polyfills but the demo will only work in browsers that these polyfills provide fallback for. 
+                        </div>
 
-                        <p><small><a href="/blog/building-a-circular-navigation-with-svg/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/draggable-metro-app-showcase/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/currentcolor/">Extending the Color Cascade with the CSS currentColor Variable</a>
-                        <span class="post-meta"><time>February 24, 2015</time>  &mdash; <span class="post-host">for Adobe Dreamweaver Team Blog</span> </span>
+                        <a class="post-title" href="/blog/circular-navigation/">Building A Circular Navigation With CSS Transforms</a>
+                        <span class="post-meta"><time>August 9, 2013</time>  &mdash; <span class="post-host">for Codrops</span> </span>
                         
-                        If you use Sass or LESS, then you probably already use variables in your style sheets and know how useful they are. If you don’t use a preprocessor, then you might be curious what the fuss is all about and why variables are so popular and how they can be useful. In this article, we’re going to get an overview of why variables are useful, and get acquainted with one particular variable: currentColor. 
+                        <div class="post-summary">
+                            In this article, we will learn how to apply CSS transforms to fake a "slice" shape, creating a circular navigation using nothing but CSS (and some maths!). The article includes an interactive demo that explains visually and step by step how the technique works and the shapes are created.  
+                        </div>
 
-                        <p><small><a href="/blog/currentcolor/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/circular-navigation/" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                     
+                    <li>
+                        <a class="post-title" href="/blog/s-gallery/">S Gallery: A Responsive jQuery Gallery Plugin with CSS3 Animations</a>
+                        <span class="post-meta"><time>July 12, 2013</time> </span>
+                        
+                        <div class="post-summary">
+                            Today I'm going to share with you a gallery plugin I built (yeah, like the world needs another gallery plugin, right?) after having stumbled upon SONY's products gallery while I was browsing their website a while ago. Their products' image gallery is a simple one, but two things grabbed my attention about the gallery: It's made with Flash when it can totally be created with HTML, CSS3 and Javascript. It has a neat feature: exiting the slideshow mode back to the grid view mode, the last image which was active in the slideshow mode " 
+                        </div>
+
+                        <p><small><a href="/blog/s-gallery/" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                     
+                    <li>
+                        <a class="post-title" href="/blog/creative-list-effects/">Creative Add/Remove Effects for List Items with CSS3 Animations</a>
+                        <span class="post-meta"><time>June 27, 2013</time> </span>
+                        
+                        <div class="post-summary">
+                            It's not enough to bring animations and visual transitions to an interface, they should serve a purpose and goal, and this goal should be improving the user's experience.  Transitions [&hellip;] provide the grease that smoothes out what happens in the interface. Without transitional effects the user can be left to wonder what just occurred.
+ In today&rsquo;s tutorial, we&rsquo;ll be creating some creative animations and transitions for adding and removing items from a list, inspired by the concept from Pasquale D&rsquo;Silva&rsquo;s article on Medium. 
+                        </div>
+
+                        <p><small><a href="/blog/creative-list-effects/" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                     
+                    <li>
+                        <a class="post-title" href="/blog/horizontal-portfolio-layout/">Horizontal Portfolio Layout with CSS3 Animations and jQuery</a>
+                        <span class="post-meta"><time>June 15, 2013</time> </span>
+                        
+                        <div class="post-summary">
+                            In this tutorial today we're going to create a horizontal portfolio layout with cool hover effects inspired by those on Guillaume Tomasi's personal website. The website is made in Flash, so I thought it would be nice to recreate the flash hover effect of the portfolio items using CSS3 animations and transitions, and some jQuery to replicate the image pan effect on hover.
+I've also added a simple falling down effect on scroll, where the portfolio items fall down as soon as they enter the visible area of the viewport. 
+                        </div>
+
+                        <p><small><a href="/blog/horizontal-portfolio-layout/" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                     
+                    <li>
+                        <a class="post-title" href="/blog/lessons-from-seductive-interaction-design-book/">Lessons from the “Seductive Interaction Design” Book</a>
+                        <span class="post-meta"><time>April 26, 2013</time> </span>
+                        
+                        <div class="post-summary">
+                            In this article today, I’m going to share with you some of the lessons I learned from one of the best books I’ve read: Seductive Interaction Design: Creating Playful, Fun, and Effective User Experiences. I believe that you should read this book yourselves to fully appreciate all the information and insight the writer has to share. I will cover only the first half of the book. I will be pasting some excerpts, because there are many things that the writer describes a lot better than I could ever do. 
+                        </div>
+
+                        <p><small><a href="/blog/lessons-from-seductive-interaction-design-book/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                    
@@ -130,41 +184,94 @@
                    
 
 
-<nav class="center">
-    <div class="pagination">
-        <div class="row">
-
-<a class="prev page-numbers" href="https://sarasoueidan.com/blog/page/7/"><span class="glyphicon  glyphicon-chevron-left"></span></a>
-
-    <div class="pagination__page-numbers"><a class='page-numbers' href='https://sarasoueidan.com/blog/'>1</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/2/'>2</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/3/'>3</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/4/'>4</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/5/'>5</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/6/'>6</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/7/'>7</a><span class='page-numbers current'>8</span><a class='page-numbers' href='https://sarasoueidan.com/blog/page/9/'>9</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/10/'>10</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/11/'>11</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/12/'>12</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/13/'>13</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/14/'>14</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/15/'>15</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/16/'>16</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/17/'>17</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/18/'>18</a><a class='page-numbers' href='https://sarasoueidan.com/blog/page/19/'>19</a></div>
-
-                <a class="next page-numbers" href="https://sarasoueidan.com/blog/page/9/"><span class="glyphicon  glyphicon-chevron-right"></span></a>
-
-            </div>
-        </div>
+<nav class="center pagination">
+    
+    <a class="pagination__button pagination__button--previous" title="Previous Page" href="/blog/page/7/">
+        Newer Articles
+    </a>
+    
+    <a class="pagination__button" href='https://sarasoueidan.com/blog/'>1</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/2/'>2</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/3/'>3</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/4/'>4</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/5/'>5</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/6/'>6</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/7/'>7</a><span class="pagination__button button--disabled">8</span><a class="pagination__button" href='https://sarasoueidan.com/blog/page/9/'>9</a>
+    
+    <a class="pagination__button pagination__button--next" title="Next Page" href="/blog/page/9/">
+        Older Articles
+    </a>
+    
 </nav>
 
 
 
+                   <a href="../article-archives/" class="button">See all articles</a>
+
                 </ul>
+            </section>
+
+            <section class="col-4 col--right">
+                <h3 class="educational-tools__heading">Useful tools:</h3>
+                <ul class="educational-tools__list">
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../tools/circulus"><img src="../images/educational-tools/circulus.png" alt="Screenshot of the Circulus.svg app"></a>
+                            <figcaption>
+                                <h4>Circulus.svg</h4>
+                                <p>
+                                    An interactive tool that allows you to customize and download an SVG circular/pie menu. The tool includes a complete guide on using the generated code, animating the menu (with examples) and UX consideration tips.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../demos/css-blender"><img src="../images/educational-tools/css-blender.png" alt="Screenshot of the CSS Blender app"></a>
+                            <figcaption>
+                                <h4>The CSS Blender</h4>
+                                <p>
+                                    An interactive tool that allows you upload an image and apply the different CSS background blend modes and preview the result live. It also comes with an option to add text and blend that text with the background image you provide.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="https://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html"><img src="../images/educational-tools/svg-coordinate-systems-visualizer.jpg" alt="Screenshot of the SVG Coordinate System Visualizer app"></a>
+                            <figcaption>
+                                <h4>The SVG Coordinate Systems Visualizer</h4>
+                                <p>
+                                    <a href="http://www.creativebloq.com/web-design/10-best-new-web-design-tools-july-71515764">Featured by netmag’s Creative Bloq blog</a> as one of the top 10 best web design tools of July 2015, this is an interactive tool that allows you to visualize how the SVG attributes: viewBox and preserveAspectRatio work and interact with each other, providing a better understanding of how SVG coordinate systems work. The tool also comes with a cheat sheet for quick reference and easier understanding.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>           
             </section>
         </div>
     </div>
 </div>
 
 
-
-<footer class="copyright full-width">
-    <div class="container clearfix">
-        <div class="row">
-            <p style="float: left;">                    
-                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+<div class="full-width newsletter-container">
+    <div class="container newsletter">
+        <div class="newsletter__wrapper">
+            <h3>From my desk.. to yours.</h3>
+            <p>
+                Infrequent updates, thoughts and ideas, latest articles, useful resources, workshop announcements and members-only discounts, among other inspirational content—straight into your inbox. No fuss. No spam.
             </p>
-
-            <div class="twitter" style="float: right;">
-                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
-            </div>
         </div>
+    </div>
+</div>
+
+<footer class="main-footer full-width">
+    <div class="container clearfix">
+            <div class="main-footer__left">
+                <p>                    
+                    © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+                </p>
+            </div>
+
+            <div class="main-footer__right">
+                <div class="twitter">
+                     <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                </div>
+            </div>
     </div>
 </footer>
 

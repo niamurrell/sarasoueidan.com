@@ -1,0 +1,38 @@
+{{ partial "header.html" . }}
+
+<div class="full-width">
+	<div class="container clearfix">
+		<div class="col-12 center">
+			<h1 class="h0">All Articles</h1>
+			<p>
+				The following is a list of all articles I’ve written (on my blog and for other blogs/magazines). Feel free to browse through them or use the browser’s built in Search functionality to find a specific article or topic.
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="full-width">
+	<div class="container clearfix">
+		<div class="col-7 col--center">
+                <ul class="articles-list">
+                    <br>
+                    <!-- Ranges through content/blog/*.md -->
+                    {{ range where .Site.Pages "Type" "article" }}  
+                    <li>
+                        <a class="post-title" href="{{.RelPermalink}}">{{ .Title }}</a>
+                        <span class="post-meta"><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} &mdash; <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
+                        
+                        <div class="post-summary">
+                            {{ .Summary }} <!-- automatically takes the first paragraph in the .md article -->
+                        </div>
+
+                        <p><small><a href="{{.RelPermalink}}" class="read-more-link">Read more ››</a></small></p>
+                    </li>
+
+                   {{ end }}
+                </ul>
+		</div>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-09-22T00:00:00Z
 title: Developer of the Year 2015 net Award
 subtitle: ""

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-09-16T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2016-11-02T00:00:00Z
 external:
   host: Knomo London

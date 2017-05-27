@@ -1,4 +1,5 @@
 ---
+type: "article"
 Case-Study: true
 date: 2015-07-08T00:00:00Z
 subtitle: A Mini Case Study of Embedding, Art-Directing and Providing Accessible Fallback

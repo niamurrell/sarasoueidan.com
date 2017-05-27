@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-06-27T00:00:00Z
 title: Creative Add/Remove Effects for List Items with CSS3 Animations
 subtitle: ""

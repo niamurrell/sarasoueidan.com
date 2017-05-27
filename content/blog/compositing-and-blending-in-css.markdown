@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-01-27T00:00:00Z
 title: Compositing And Blending In CSS
 subtitle: ""

@@ -1,4 +1,5 @@
 +++
+type = "case-study"
 projectPreviewImage = "smashing_magazine.png"
 projectDescription = "In addition to running workshops and giving talks at their conference SmashingConf multiple times, Smashing Magazine hired me to build a strong, scalable, semantic, repsonsive and accessible front-end foundation for their 10th anniversary Web site redesign."
 

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-07-21T00:00:00Z
 subtitle: “Mastering SVG for Responsive Web Design”
 title: Chapter 4, Smashing Book 5

@@ -1,4 +1,5 @@
 ---
+type: "article"
 comments: true
 date: 2015-11-16T00:00:00Z
 title: Tips for Creating and Exporting Better SVGs for the Web

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-07-08T00:00:00Z
 title: Clipping in CSS and SVG — The <code>clip-path</code> Property and <code>&lt;clipPath&gt;</code>
   Element

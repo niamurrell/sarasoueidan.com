@@ -1,4 +1,5 @@
 +++
+type = "workshop"
 description = "The SVG Coffee Cup Workshop by Sara Soueidan"
 workshopTitle = "The SVG Coffee Cup"
 workshopDescription = "Like a cup of coffee on a busy morning, this workshop will kickstart & rocket up your SVG skillset and get you up and running using this powerful image (and document) format in your responsive Web design workflow. Using SVG, you can create accessible, semantic images, icons, and animated documents. In this workshop, we'll go over everything you need to know to start using SVG today: design, export and optimization, implementation (icon systems, images, and interactive documents) and animation."

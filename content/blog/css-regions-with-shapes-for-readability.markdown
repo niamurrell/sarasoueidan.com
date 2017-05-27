@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-12-05T00:00:00Z
 publish-date: December 5<sup>th</sup>, 2013
 title: Using CSS Regions With CSS Shapes For A Better Reading Experience

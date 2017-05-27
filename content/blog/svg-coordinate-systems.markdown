@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-07-17T00:00:00Z
 title: Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport,
   <code>viewBox</code>, and <code>preserveAspectRatio</code>

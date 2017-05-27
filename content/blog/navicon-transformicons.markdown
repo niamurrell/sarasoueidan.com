@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-10-20T00:00:00Z
 title: 'Navicon Transformicons: Animated Navigation Icons with CSS Transforms'
 subtitle: ""

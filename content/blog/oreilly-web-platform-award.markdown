@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-04-22T00:00:00Z
 title: I Won A Web Platform Award
 subtitle: ""

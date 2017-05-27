@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-02-04T00:00:00Z
 title: I Wrote A CSS <del>Book</del> Reference.
 subtitle: ""

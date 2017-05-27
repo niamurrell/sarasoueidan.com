@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-02-11T00:00:00Z
 title: How to Create Windows-8-like animations with CSS3 and jQuery
 subtitle: ""

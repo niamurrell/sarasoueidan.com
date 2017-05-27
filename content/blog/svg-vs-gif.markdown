@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2015-11-24T00:00:00Z
 title: Animated SVG vs GIF [CAGEMATCH]
 subtitle: ""

@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-08-05T00:00:00Z
 title: Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing
   New Viewports

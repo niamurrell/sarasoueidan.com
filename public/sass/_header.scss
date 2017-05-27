@@ -1,13 +1,18 @@
 .main-header {
 	padding: 1.5em 0;
+	margin-bottom: 2em;
 	position: relative;
 	z-index: 1;
-	margin-bottom: 50px;
+	background-image: linear-gradient(#eee, #fff);
+
+	.homepage & {
+		margin-bottom: 1em;
+	}
 }
 
 /*------------------------------------*\
     #LOGO
-    \*------------------------------------*/
+\*------------------------------------*/
 
     .logo {
     	display: block;
@@ -26,7 +31,11 @@
 
 			img {
 				width: 100%;
-				max-width: 320px;
+				max-width: 280px;
+
+				@media all and (max-width: 400px) {
+					max-width: 240px;
+				}
 			}
 		}
 	}
@@ -34,15 +43,16 @@
 
 a.availability-indicator-wrapper {
 	position: absolute;
-	top: 10%;
-	right: 30%;
+	top: 30px;
+	left: 330px;
 	width: 10px;
 	height: 10px;
 	z-index: 100;
 	border: none !important;
 }
+
+
 .availability-indicator {
-	
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -79,7 +89,11 @@ a.availability-indicator-wrapper {
 
 
 .header-bio {
-	font-size: .95em;
+	font-size: calc(.75em + .2vw);
 	font-family: $sans-serif;
-	font-weight: 300;
+	font-weight: 400;
+
+	.homepage & {
+		// color: #fff;
+	}
 }

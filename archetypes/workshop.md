@@ -1,4 +1,5 @@
 +++
+type = "workshop"
 workshopTitle = ""
 workshopDescription = ""
 +++

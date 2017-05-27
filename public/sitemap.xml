@@ -324,23 +324,19 @@
   </url>
   
   <url>
-    <loc>https://sarasoueidan.com/desk/</loc>
+    <loc>https://sarasoueidan.com/workshops/front-end-espresso-shot/</loc>
   </url>
   
   <url>
-    <loc>https://sarasoueidan.com/workshops/cobi/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/workshops/provata/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/workshops/smashing-magazine/</loc>
+    <loc>https://sarasoueidan.com/workshops/svg-coffee-cup/</loc>
   </url>
   
   <url>
     <loc>https://sarasoueidan.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/article-archives/</loc>
   </url>
   
   <url>
@@ -358,11 +354,15 @@
   </url>
   
   <url>
+    <loc>https://sarasoueidan.com/desk/</loc>
+  </url>
+  
+  <url>
     <loc>https://sarasoueidan.com/press-kit/</loc>
   </url>
   
   <url>
-    <loc>https://sarasoueidan.com/workshops/workshops/</loc>
+    <loc>https://sarasoueidan.com/request-a-talk/</loc>
   </url>
   
 </urlset>

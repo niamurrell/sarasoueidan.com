@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-10-13T00:00:00Z
 external:
   host: CSS-Tricks

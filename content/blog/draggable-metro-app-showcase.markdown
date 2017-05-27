@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-08-20T00:00:00Z
 title: Draggable Metro App Showcase
 subtitle: ""

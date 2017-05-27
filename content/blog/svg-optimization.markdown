@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-12-19T00:00:00Z
 external:
   host: Performance calendar

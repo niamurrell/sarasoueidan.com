@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sarasoueidan.com/hire/</guid>
-      <description>I&#39;m currently considering new projects for Summer–Fall 2017.      There is something magical when you work with somebody knowledgeable, passionate, smart and extremely reliable. When working with Sara, that’s exactly the feeling you get — Sara is very professional with a keen eye for detail, knowing how to work around pitfalls and working hard to get to the best possible solution every single time.   Vitaly Friedman</description>
+      <description>Let’s build something great together. I&#39;m currently considering new projects for Summer–Fall 2017.     I work with small and medium-sized businesses, design teams and agencies, building fast, responsive and inclusive web site front-end foundations, with strong focus on HTML5, SVG, CSS, JavaScript, responsive design and performance.  If you’re a company that cares about providing great user experiences to all users—regardless of their context or abilities, and are willing to invest in a great user experience established by a fast, inclusive web site or application, and you embrace the ever-changing nature of the Web and are willing to cater for it, then I&#39;d love to help you with it.</description>
     </item>
     
     <item>
@@ -26,7 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sarasoueidan.com/contact/</guid>
-      <description>Client Work If you are a potential client and want to inquire about front-end development work, please refer to the Hire Me page for more details, or send me an email now. You’ll hear back from me within 2–4 days.  Speaking Requests  To inquire about having me speak at your event, please see the Speaking &amp;amp; Podcasts page. I’ve prepared everything you need to know before and when you invite me to speak to your event in that page, including a press kit.</description>
+      <description>contact@sarasoueidan.com
+ Client Work If you are a potential client and want to inquire about front-end development work, please refer to the Hire Me page for more details, or send me an email now. You’ll hear back from me within 2–4 days.  Speaking Requests  To inquire about having me speak at your event, please see the Speaking &amp;amp; Podcasts page. I’ve prepared everything you need to know before and when you invite me to speak to your event in that page, including a press kit.</description>
     </item>
     
     <item>
@@ -35,9 +36,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sarasoueidan.com/speaking/</guid>
-      <description>Upcoming Talks Past Appearances Podcasts Request A Talk Press Kit    Due to low capacity, I am not currently accepting more speaking engagements for 2017. I’ve got a few unannounced ones, in addition to the ones listed below, that I hope I will be adding to this list soon. Got plans for 2018? Get in touch! Talk + Workshop
+      <description>Upcoming Talks Past Appearances Podcasts Request A Talk Press Kit    Due to low capacity, I am not currently accepting more speaking engagements for 2017. Got plans for 2018? Get in touch! Talk + Workshop
 13–14 June, 2017 New York City, USA
-SmashingConf   Watch Video.</description>
+SmashingConf   Watch Video.  Read Feedback.     Talk + Workshop
+18–20 September, 2017 Johannesburg, South Africa
+Pixel Up!   Watch Video.</description>
     </item>
     
     <item>
@@ -594,29 +597,20 @@ I&#39;ve also added a simple falling down effect on scroll, where the portfolio 
     
     <item>
       <title></title>
-      <link>https://sarasoueidan.com/workshops/cobi/</link>
+      <link>https://sarasoueidan.com/workshops/front-end-espresso-shot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sarasoueidan.com/workshops/cobi/</guid>
-      <description>The COBI Connect page I built. Click on the image to visit the page.     Background   COBI’s product manager Sebastian Frommherz contacted me in January 2016 because they were looking for a front-end developer to help them build a fast page for their current marketing web site which introduces COBI’s technical features to prospect clients and users, called the &#34;COBI Connect&#34; page (screenshotted above).</description>
+      <guid>https://sarasoueidan.com/workshops/front-end-espresso-shot/</guid>
+      <description>CSS has seen a lot of new feature releases in the last few years. Keeping up with everything can sometimes be overwhelming. It’s even harder for many designers and developers to ditch the tools and frameworks they’re already familiar with and relying on, in favor of new, native “frameworks” with a less than familiar syntax. But doing so is the way forward. CSS’s native features like Flexbox and Grid as well as CSS Variables provide a lot more power and flexibility than any previous frameworks or tools did—power than we should embrace and put to good use today moving forward.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://sarasoueidan.com/workshops/provata/</link>
+      <link>https://sarasoueidan.com/workshops/svg-coffee-cup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sarasoueidan.com/workshops/provata/</guid>
-      <description>The Provata Health Web site homepage.         Background   In March 2015, Alex Goldberg, Provata Health CEO, got in touch with me regarding building a marketing Web site for his startup. At that time, Alex was already determined to hire me for this job because he saw me as a perfect fit for it. (&amp;lt;3)  We jumped on a Skype call for the first time a few weeks after his initial e-mail because I had been touring the world at that time, giving talks at conferences.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sarasoueidan.com/workshops/smashing-magazine/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sarasoueidan.com/workshops/smashing-magazine/</guid>
-      <description>Please note: the screenshots shown in this case study are screenshots of the UI I built and finished early December 2016. The UI or some of its component styles [may] have changed since then, as the Smashing team [may] have made some changes to it after my work with them was finished.  Please also note that the content in the screenshots is not the real content of the magazine. I was working with static pages and most of the content I used was placeholder content and images, so that is what is shown in the screenshots as well.</description>
+      <guid>https://sarasoueidan.com/workshops/svg-coffee-cup/</guid>
+      <description>Scalable Vector Graphics (SVG) are one of the most powerful tools in our front-end development arsenal. Using SVG, you can create accessible, semantic images, icons, and animated documents. But because of the nature of SVG as both an image format and a document format, it can sometimes be overwhelming because there are so many ways to do things that it can be hard to decide which to use when.  Though not new—SVG is more than 15 years old—browser support is still not optimal, and so SVG might—at first glance—seem not worth the trouble.</description>
     </item>
     
     <item>
@@ -630,21 +624,30 @@ I&#39;ve also added a simple falling down effect on scroll, where the portfolio 
     </item>
     
     <item>
+      <title>Article Archives</title>
+      <link>https://sarasoueidan.com/article-archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sarasoueidan.com/article-archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Press Kit</title>
       <link>https://sarasoueidan.com/press-kit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sarasoueidan.com/press-kit/</guid>
-      <description>PRESS KIT  The following information is provided as a copy-and-paste resource for media publishers and conference organizers. Please feel free to use it as-is without checking with me first. If you have additional questions, you can contact me directly.     Speaker Information:  Name: Sara Soueidan   Company: N/A (Freelance)   Job Title: Front-End Web Developer   Location: Lebanon   Web Site / Blog: https://sarasoueidan.</description>
+      <description>Press Kit  The following information is provided as a copy-and-paste resource for media publishers and conference organizers. Please feel free to use it as-is without checking with me first. If you have additional questions, you can contact me directly.    Speaker Information:  Name: Sara Soueidan   Company: N/A (Freelance)   Job Title: Front-End Web Developer   Location: Lebanon   Web Site / Blog: https://sarasoueidan.</description>
     </item>
     
     <item>
-      <title>Workshops</title>
-      <link>https://sarasoueidan.com/workshops/workshops/</link>
+      <title>Request a talk</title>
+      <link>https://sarasoueidan.com/request-a-talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sarasoueidan.com/workshops/workshops/</guid>
-      <description>Want to level up your or your team’s front-end development skills, but are overwhelmed by the sheer amount of resources on different topics and don’t have enough time to read the never-ending amount of articles &amp;amp; books available? Want to get up and running fast, learning the most recent and relevant skills to get the job done? I can help.   I am currently running front-end development workshops focusing on CSS and SVG.</description>
+      <guid>https://sarasoueidan.com/request-a-talk/</guid>
+      <description>Invite me to speak at your event  Thank you very much for intending to invite me to speak at your event. Here is what you need to know.     I love speaking about Web standards, particularly CSS, SVG, RWD and accessibility. I love talking not only about the what and why, but specifically the how technologies are used, from the basics all the way to using them to solve common design problems.</description>
     </item>
     
   </channel>

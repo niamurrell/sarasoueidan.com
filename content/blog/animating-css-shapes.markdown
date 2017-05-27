@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-01-14T00:00:00Z
 title: Animating CSS Shapes with CSS Animations and Transitions
 subtitle: ""

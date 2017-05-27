@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-11-05T00:00:00Z
 title: Creating Non-Rectangular Layouts With CSS Shapes
 subtitle: ""

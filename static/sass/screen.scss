@@ -57,7 +57,7 @@ abbr {
 
 html {
   position: relative;
-  background-color: #333;
+  background-color: #eee;
 }
 
 html, body {
@@ -66,20 +66,19 @@ html, body {
 
 body {
   font-family: $sans-serif;
-  line-height: 1.7;
+  line-height: 1.6;
   color: #111;
   background: #fff;
+  background-image: linear-gradient(to left, #eee, #fff 50%, #fff);
   position: relative;
   overflow-x: hidden;
   font-size: calc(14px + .3vw);
   font-weight: 400;
 
+  margin: 1.5em 1em;
+  box-shadow: 0 100px 20px rgba(0,0,0,0.001);
+
   &.homepage {
-    // background-size: cover;
-    // background: linear-gradient(to bottom, #0e0e0e, #0e0e0e 38%, darken($red, 10%) 75%, $red);
-    // color: #fff;
-    // background-color: #111;
-    // padding: 1em;
 
     &::before {
       // content: "";
@@ -107,10 +106,6 @@ body {
 
       @media all and (max-width: 640px) {
         // background-image: url('../images/netmag-photoshoot/grinning--tall.png');
-      }
-
-      @media all and (max-width: 768px) {
-        transform: none;
       }
     }
   }

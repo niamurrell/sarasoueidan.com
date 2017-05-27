@@ -1,0 +1,20 @@
+.podcasts__heading {
+	margin-top: 0;
+	text-align: center;
+}
+
+.podcasts__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+.podcasts__item {
+	padding: .75em 1em;
+	margin: 0;
+	background-color: #222;
+	margin-bottom: 1em;
+	border-left: 5px solid $red;
+	color: #fff;
+}

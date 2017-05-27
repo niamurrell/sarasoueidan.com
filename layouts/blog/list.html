@@ -12,7 +12,7 @@
                 <ul class="articles-list">
                     <br>
                     <!-- Ranges through content/blog/*.md -->
-                    {{ range (.Paginator 10).Pages }}  
+                    {{ range (.Paginator 7).Pages }}  
                     <li>
                         <a class="post-title" href="{{.RelPermalink}}">{{ .Title }}</a>
                         <span class="post-meta"><time>{{ .Date.Format "January 2, 2006" }}</time> {{ if .Params.External }} &mdash; <span class="post-host">for {{ .Params.External.Host }}</span> {{ end }}</span>
@@ -28,17 +28,22 @@
 
                    {{ partial "pagination.html" . }}
 
+                   <a href="../article-archives/" class="button">See all articles</a>
+
                 </ul>
             </section>
 
             <section class="col-4 col--right">
-                <h3 class="educational-tools__heading">Useful tools I made:</h3>
+                <h3 class="educational-tools__heading">Useful tools:</h3>
                 <ul class="educational-tools__list">
                     <li class="educational-tools__item">
                         <figure>
                             <a href="../tools/circulus"><img src="../images/educational-tools/circulus.png" alt="Screenshot of the Circulus.svg app"></a>
                             <figcaption>
-                                An interactive tool that allows you to customize and download an SVG circular/pie menu. The tool includes a complete guide on using the generated code, animating the menu (with examples) and UX consideration tips.
+                                <h4>Circulus.svg</h4>
+                                <p>
+                                    An interactive tool that allows you to customize and download an SVG circular/pie menu. The tool includes a complete guide on using the generated code, animating the menu (with examples) and UX consideration tips.
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
@@ -46,7 +51,10 @@
                         <figure>
                             <a href="../demos/css-blender"><img src="../images/educational-tools/css-blender.png" alt="Screenshot of the CSS Blender app"></a>
                             <figcaption>
-                                An interactive tool that allows you upload an image and apply the different CSS background blend modes and preview the result live. It also comes with an option to add text and blend that text with the background image you provide.
+                                <h4>The CSS Blender</h4>
+                                <p>
+                                    An interactive tool that allows you upload an image and apply the different CSS background blend modes and preview the result live. It also comes with an option to add text and blend that text with the background image you provide.
+                                </p>
                             </figcaption>
                         </figure>
                     </li>
@@ -54,7 +62,10 @@
                         <figure>
                             <a href="https://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html"><img src="../images/educational-tools/svg-coordinate-systems-visualizer.jpg" alt="Screenshot of the SVG Coordinate System Visualizer app"></a>
                             <figcaption>
-                                <a href="http://www.creativebloq.com/web-design/10-best-new-web-design-tools-july-71515764">Featured by netmag’s Creative Bloq blog</a> as one of the top 10 best web design tools of July 2015, this is an interactive tool that allows you to visualize how the SVG attributes: viewBox and preserveAspectRatio work and interact with each other, providing a better understanding of how SVG coordinate systems work. The tool also comes with a cheat sheet for quick reference and easier understanding.
+                                <h4>The SVG Coordinate Systems Visualizer</h4>
+                                <p>
+                                    <a href="http://www.creativebloq.com/web-design/10-best-new-web-design-tools-july-71515764">Featured by netmag’s Creative Bloq blog</a> as one of the top 10 best web design tools of July 2015, this is an interactive tool that allows you to visualize how the SVG attributes: viewBox and preserveAspectRatio work and interact with each other, providing a better understanding of how SVG coordinate systems work. The tool also comes with a cheat sheet for quick reference and easier understanding.
+                                </p>
                             </figcaption>
                         </figure>
                     </li>

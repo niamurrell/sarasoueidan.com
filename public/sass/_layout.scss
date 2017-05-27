@@ -37,7 +37,7 @@
   margin-right: -$gutter;
   padding: 3em 0;
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1024px) {
     padding: 1em 0;
   }
 
@@ -94,7 +94,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   [class *= "col-"] {
     width: 100%;
   }

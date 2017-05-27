@@ -1,4 +1,5 @@
 ---
+type = "article"
 date: 2016-07-04T00:00:00Z
 draft: true
 tags:

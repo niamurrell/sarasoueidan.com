@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-06-15T00:00:00Z
 title: Horizontal Portfolio Layout with CSS3 Animations and jQuery
 subtitle: ""

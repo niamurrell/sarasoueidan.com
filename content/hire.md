@@ -128,19 +128,7 @@ weight = "-6"
 <li><strong>If you think my website could use some “expert SEO and design services”.</strong> Thanks. But no, thanks.</li>
 </ul>
 <p class="size-2x">
-If you’re still with me, then I’d love to hear from you. The more details you include about your project, the faster I can get back to you. <!-- Some information of interest will be:
-</p>
-<ul>
-	<li>
-		What’s the project time frame? When’s the nearest you need to start the project?
-	</li>
-	<li>
-		
-	</li>
-	<li>
-		
-	</li>
-</ul> -->
+If you’re still with me, then I’d love to hear from you. The more details you include about your project, the faster I can get back to you.
 </div>
  
 </div>

@@ -44,12 +44,8 @@
         <div class="container clearfix">
             <div class="col-5 logo">
                 <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
-                <span class="header-bio">is an award-winning freelance front-end Web developer, author &amp; speaker from Lebanon, working with clients across the globe, building fast, responsive &amp; accessible Web sites &amp; applications.</span>
-
-                <br>
-                <br>
-
-                <a style="display: block; " href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                
+                <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
 
                 <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
             </div>
@@ -74,6 +70,8 @@
         
         <li class="main-nav__item  current"><a  href="/blog/">Articles</a></li>
         
+        <li class="main-nav__item "><a  href="/desk/">From My Desk</a></li>
+        
         <li class="main-nav__close-button">
         	<a href="#" class="menu-close-button">×</a>
         </li>
@@ -89,134 +87,94 @@
 <div class="full-width">
     <div class="container">
         <div class="row">  
-            <div class="col-12">
                 
-                 <!-- Any content that goes here will be displayed in the .Content section of the section.html _default layout -->
-
-            </div>      
-            <section class="col-7 col--center" role="main">
+            <section class="col-7" role="main">
                 <ul class="articles-list">
+                    <br>
                     
                       
                     <li>
-                        <a class="post-title" href="/blog/overview-of-svg-sprite-creation-techniques/">An Overview Of SVG Sprite Creation Techniques</a>
-                        <span class="post-meta"><time>December 16, 2014</time>  &mdash; <span class="post-host">for 24 Ways</span> </span>
+                        <a class="post-title" href="/blog/css-background-positioning/">A Primer To Background Positioning In CSS</a>
+                        <span class="post-meta"><time>March 24, 2015</time>  &mdash; <span class="post-host">for Adobe Dreamweaver Team Blog</span> </span>
                         
                         <div class="post-summary">
-                            SVG can be used as an icon system to replace icon fonts, and there are several ways to create SVG sprites. This article I wrote for this year's 24Ways will give you an overview of three of them. While we’re at it, we’re going to take a look at some of the available tools used to automate sprite creation and fallback for us.  
+                            An article in which we take a deep dive into CSS’s background positioning properties with visual explanations and examples. Did you know that the CSS background-position property accepts edge offset values? That is, you can position a background image relative to any edge—not just top and left—and specify the offset relative to that edge using a length value. In this article, we will learn all about that, and more.  
                         </div>
 
-                        <p><small><a href="/blog/overview-of-svg-sprite-creation-techniques/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/css-background-positioning/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/styling-and-animating-svgs-with-css/">Styling and Animating SVGs with CSS</a>
-                        <span class="post-meta"><time>November 3, 2014</time>  &mdash; <span class="post-host">for Smashing Magazine</span> </span>
+                        <a class="post-title" href="/blog/building-a-circular-navigation-with-svg/">Building a Circular Navigation with SVG</a>
+                        <span class="post-meta"><time>March 9, 2015</time> </span>
                         
                         <div class="post-summary">
-                            CSS can be used to style and animate scalable vector graphics, much like it is used to style and animate HTML elements. In this article I wrote for Smashing Magazine, which is a modified transcript of a talk I recently gave at CSSconf EU and From the Front, I’ll go over the prerequisites and techniques for working with CSS in SVG.  
+                            Last week, I released CIRCULUS.SVG—the SVG circular menu generator. In this article I want to go over why SVG is better suited for creating this kind of UI element, and give you and overview of the SVG code for creating the menu items using SVG elements and transformations. Note that, unlike my usual tutorials, we will not be going over a detailed how-to, but only an overview of the concepts behind this. 
                         </div>
 
-                        <p><small><a href="/blog/styling-and-animating-svgs-with-css/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/building-a-circular-navigation-with-svg/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/guide-svg-animations-smil/">A Guide to SVG Animations (SMIL)</a>
-                        <span class="post-meta"><time>October 13, 2014</time>  &mdash; <span class="post-host">for CSS-Tricks</span> </span>
+                        <a class="post-title" href="/blog/currentcolor/">Extending the Color Cascade with the CSS currentColor Variable</a>
+                        <span class="post-meta"><time>February 24, 2015</time>  &mdash; <span class="post-host">for Adobe Dreamweaver Team Blog</span> </span>
                         
                         <div class="post-summary">
-                            What the title says: a complete guide to SVG animations derived from the SMIl specification. The extensive guide features a lot of demos and goes over the animations syntax, covering almost everything you need to know to get started with SVG Animations today.  
+                            If you use Sass or LESS, then you probably already use variables in your style sheets and know how useful they are. If you don’t use a preprocessor, then you might be curious what the fuss is all about and why variables are so popular and how they can be useful. In this article, we’re going to get an overview of why variables are useful, and get acquainted with one particular variable: currentColor. 
                         </div>
 
-                        <p><small><a href="/blog/guide-svg-animations-smil/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/currentcolor/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/responsive-svgs/">Making SVGs Responsive With CSS</a>
-                        <span class="post-meta"><time>August 19, 2014</time>  &mdash; <span class="post-host">for Codrops</span> </span>
+                        <a class="post-title" href="/blog/svg-picture/">Better SVG Fallback and Art Direction With The &amp;lt;picture&amp;gt; Element</a>
+                        <span class="post-meta"><time>February 15, 2015</time> </span>
                         
                         <div class="post-summary">
-                            An article on how to make embedded SVGs cross-browser responsive. We're going to cover embedding techniques, how to apply the "Padding Hack" and how to use inline media queries to make SVGs adaptive.  
+                            Besides using an SVG as a background image in CSS, you can serve SVG foreground images in HTML using one of several embedding techniques, each of which has its advantages and use cases. Unless you’re in need of interactivity or external styling, &lt;img&gt; is the standard way for loading an SVG image, but it has one disadvantage: you currently need JavaScript to provide fallback and/or change the image source for art direction. 
                         </div>
 
-                        <p><small><a href="/blog/responsive-svgs/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/svg-picture/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/nesting-svgs/">Understanding SVG Coordinate Systems and Transformations (Part 3) — Establishing New Viewports</a>
-                        <span class="post-meta"><time>August 5, 2014</time> </span>
+                        <a class="post-title" href="/blog/codrops-css-reference/">I Wrote A CSS &lt;del&gt;Book&lt;/del&gt; Reference.</a>
+                        <span class="post-meta"><time>February 4, 2015</time> </span>
                         
                         <div class="post-summary">
-                            At any point in an SVG drawing, you can establish new viewports and user coordinate systems by either nesting &lt;svg&gt;s or using elements such as the &lt;symbol&gt; element, among others. In this article we're going to have a look at how we can do that and how this can be useful for controlling SVG elements and making them more flexible (and/or fluid). This is the third and last article in a series of articles about SVG coordinate systems and transformations. 
+                            Yesterday, we finally released a long-awaited project over at Codrops: Codrops' new CSS Reference, authored by yours truly. Even though I wrote a post over at Codrops introducing the reference and its features, I want to share a little bit more about my experience writing it.
+Please note that as of January 2016, I am no longer the maintainer of the Codrops CSS Reference. Thus, unlike my usual highly-technical blog posts, this is a (possibly-boring, but short! 
                         </div>
 
-                        <p><small><a href="/blog/nesting-svgs/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/codrops-css-reference/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/svg-transformations/">Understanding SVG Coordinate Systems and Transformations (Part 2) — The &lt;code&gt;transform&lt;/code&gt; Attribute</a>
-                        <span class="post-meta"><time>July 30, 2014</time> </span>
+                        <a class="post-title" href="/blog/compositing-and-blending-in-css/">Compositing And Blending In CSS</a>
+                        <span class="post-meta"><time>January 27, 2015</time> </span>
                         
                         <div class="post-summary">
-                            SVG elements can be transformed by scaling, translating, skewing, and rotating&mdash;much like HTML elements can be transformed using CSS Transforms. However, there are certain inevitable differences when it comes to the coordinate systems used and affected by these transformations. In this article we'll go over the SVG transform attribute and CSS property, covering how to use it, and things you should know about SVG coordinate system transformations. This is the second article in a series I&rsquo;m writing about SVG coordinate systems and transformations. 
+                            If you&rsquo;re a designer, then you&rsquo;ve probably already come across blending effects some time or the other. Blending is one of the most frequently used effects in graphic and print design. You can add texture to text by blending it with its textured backdrop, create an illusion of merged images by blending these images together, and create a wide range of colorful effects that would not be possible without that fine level of color blending control. 
                         </div>
 
-                        <p><small><a href="/blog/svg-transformations/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/compositing-and-blending-in-css/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                      
                     <li>
-                        <a class="post-title" href="/blog/svg-coordinate-systems/">Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, &lt;code&gt;viewBox&lt;/code&gt;, and &lt;code&gt;preserveAspectRatio&lt;/code&gt;</a>
-                        <span class="post-meta"><time>July 17, 2014</time> </span>
+                        <a class="post-title" href="/blog/svgo-tools/">Useful SVGO[ptimization] Tools</a>
+                        <span class="post-meta"><time>January 26, 2015</time> </span>
                         
                         <div class="post-summary">
-                            SVG elements aren't governed by a CSS box model like HTML elements are. This makes positioning and transforming these elements trickier and may seem&mdash;at first glance&mdash;less intuitive. However, once you understand how SVG coordinate systems and transformations work, manipulating SVGs becomes a lot easier and makes a lot more sense. In this article we're going to go over three of the most important SVG attributes that control SVG coordinate systems: viewport, viewBox, and preserveAspectRatio. 
+                            One of the steps you need to do when working with SVG is optimizing the SVG code after exporting it from the editor and before embedding in on your web page. For that, several standalone optimization tools exits. The two tools I usually mention in my articles and talks are Peter Collingridge's online editor, and SVGO. In this article, I'm going to introduce you to a new SVGO Tool that provides us with everything Peter's tool does, and a bit more. 
                         </div>
 
-                        <p><small><a href="/blog/svg-coordinate-systems/" class="read-more-link">Read more ››</a></small></p>
-                    </li>
-
-                     
-                    <li>
-                        <a class="post-title" href="/blog/css-svg-clipping/">Clipping in CSS and SVG — The &lt;code&gt;clip-path&lt;/code&gt; Property and &lt;code&gt;&amp;lt;clipPath&amp;gt;&lt;/code&gt; Element</a>
-                        <span class="post-meta"><time>July 8, 2014</time> </span>
-                        
-                        <div class="post-summary">
-                            CSS and SVG have a lot in common. A lot of the features that we have in CSS today were imported from SVG. One of these features is the Clipping operation. Both CSS and SVG allow us to "clip" elements into custom non-rectangular shapes. In this article we will go over the clipping techniques in both CSS and SVG, covering everything you need to know to get started.
-Please note that the demos in this article may not work in your browser. 
-                        </div>
-
-                        <p><small><a href="/blog/css-svg-clipping/" class="read-more-link">Read more ››</a></small></p>
-                    </li>
-
-                     
-                    <li>
-                        <a class="post-title" href="/blog/structuring-grouping-referencing-in-svg/">Structuring, Grouping, and Referencing in SVG — The &lt;code&gt;&amp;lt;g&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;use&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;defs&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;symbol&amp;gt;&lt;/code&gt; Elements</a>
-                        <span class="post-meta"><time>July 3, 2014</time> </span>
-                        
-                        <div class="post-summary">
-                            SVG comes with its own ways for structuring a document by means of certain SVG elements that allow us to define, group, and reference objects within the document. These elements make reusing elements easy, while maintaining clean and readable code. In this article we'll go over these elements, highlighting the difference between them and the advantages of each one.
-Grouping with the &lt;g&gt; element The &lsquo;g&rsquo; in &lt;g&gt; stands for &lsquo;group&rsquo;. 
-                        </div>
-
-                        <p><small><a href="/blog/structuring-grouping-referencing-in-svg/" class="read-more-link">Read more ››</a></small></p>
-                    </li>
-
-                     
-                    <li>
-                        <a class="post-title" href="/blog/css-will-change-property/">Everything You Need To Know About The CSS &lt;code&gt;will-change&lt;/code&gt; Property</a>
-                        <span class="post-meta"><time>June 10, 2014</time>  &mdash; <span class="post-host">for Dev.Opera</span> </span>
-                        
-                        <div class="post-summary">
-                            What the title says! I wrote this article for the Opera Developers' blog, and it literally contains everything you need to know about the new CSS will-change property, including but not limited to: how to use it, when to use it, when not to use it, performance considerations, and more.  
-                        </div>
-
-                        <p><small><a href="/blog/css-will-change-property/" class="read-more-link">Read more ››</a></small></p>
+                        <p><small><a href="/blog/svgo-tools/" class="read-more-link">Read more ››</a></small></p>
                     </li>
 
                    
@@ -230,7 +188,7 @@ Grouping with the &lt;g&gt; element The &lsquo;g&rsquo; in &lt;g&gt; stands for 
         Newer Articles
     </a>
     
-    <a class="pagination__button" href='https://sarasoueidan.com/blog/'>1</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/2/'>2</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/3/'>3</a><span class="pagination__button button--disabled">4</span><a class="pagination__button" href='https://sarasoueidan.com/blog/page/5/'>5</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/6/'>6</a>
+    <a class="pagination__button" href='https://sarasoueidan.com/blog/'>1</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/2/'>2</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/3/'>3</a><span class="pagination__button button--disabled">4</span><a class="pagination__button" href='https://sarasoueidan.com/blog/page/5/'>5</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/6/'>6</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/7/'>7</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/8/'>8</a><a class="pagination__button" href='https://sarasoueidan.com/blog/page/9/'>9</a>
     
     <a class="pagination__button pagination__button--next" title="Next Page" href="/blog/page/5/">
         Older Articles
@@ -240,25 +198,78 @@ Grouping with the &lt;g&gt; element The &lsquo;g&rsquo; in &lt;g&gt; stands for 
 
 
 
+                   <a href="../article-archives/" class="button">See all articles</a>
+
                 </ul>
+            </section>
+
+            <section class="col-4 col--right">
+                <h3 class="educational-tools__heading">Useful tools:</h3>
+                <ul class="educational-tools__list">
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../tools/circulus"><img src="../images/educational-tools/circulus.png" alt="Screenshot of the Circulus.svg app"></a>
+                            <figcaption>
+                                <h4>Circulus.svg</h4>
+                                <p>
+                                    An interactive tool that allows you to customize and download an SVG circular/pie menu. The tool includes a complete guide on using the generated code, animating the menu (with examples) and UX consideration tips.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="../demos/css-blender"><img src="../images/educational-tools/css-blender.png" alt="Screenshot of the CSS Blender app"></a>
+                            <figcaption>
+                                <h4>The CSS Blender</h4>
+                                <p>
+                                    An interactive tool that allows you upload an image and apply the different CSS background blend modes and preview the result live. It also comes with an option to add text and blend that text with the background image you provide.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="educational-tools__item">
+                        <figure>
+                            <a href="https://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html"><img src="../images/educational-tools/svg-coordinate-systems-visualizer.jpg" alt="Screenshot of the SVG Coordinate System Visualizer app"></a>
+                            <figcaption>
+                                <h4>The SVG Coordinate Systems Visualizer</h4>
+                                <p>
+                                    <a href="http://www.creativebloq.com/web-design/10-best-new-web-design-tools-july-71515764">Featured by netmag’s Creative Bloq blog</a> as one of the top 10 best web design tools of July 2015, this is an interactive tool that allows you to visualize how the SVG attributes: viewBox and preserveAspectRatio work and interact with each other, providing a better understanding of how SVG coordinate systems work. The tool also comes with a cheat sheet for quick reference and easier understanding.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>           
             </section>
         </div>
     </div>
 </div>
 
 
-
-<footer class="copyright full-width">
-    <div class="container clearfix">
-        <div class="row">
-            <p style="float: left;">                    
-                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+<div class="full-width newsletter-container">
+    <div class="container newsletter">
+        <div class="newsletter__wrapper">
+            <h3>From my desk.. to yours.</h3>
+            <p>
+                Infrequent updates, thoughts and ideas, latest articles, useful resources, workshop announcements and members-only discounts, among other inspirational content—straight into your inbox. No fuss. No spam.
             </p>
-
-            <div class="twitter" style="float: right;">
-                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
-            </div>
         </div>
+    </div>
+</div>
+
+<footer class="main-footer full-width">
+    <div class="container clearfix">
+            <div class="main-footer__left">
+                <p>                    
+                    © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+                </p>
+            </div>
+
+            <div class="main-footer__right">
+                <div class="twitter">
+                     <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                </div>
+            </div>
     </div>
 </footer>
 

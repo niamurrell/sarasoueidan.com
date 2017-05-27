@@ -43,7 +43,12 @@
 <body class="homepage">
     <header class="main-header full-width">
         <div class="container clearfix">
-            
+            <div class="col-5 logo">
+                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+                <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
+
+                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+            </div>
             
             <div class="col-6 col--right">
                 <nav class="main-nav" id="main-nav">
@@ -65,6 +70,8 @@
         
         <li class="main-nav__item "><a  href="/blog/">Articles</a></li>
         
+        <li class="main-nav__item "><a  href="/desk/">From My Desk</a></li>
+        
         <li class="main-nav__close-button">
         	<a href="#" class="menu-close-button">×</a>
         </li>
@@ -76,99 +83,39 @@
     </header>
 
 
-<style>
-.card {
-	padding: 1.5em 1em .5em;
-	 
-	position: relative;
-	font-size: 1.1em;
-	z-index: 1;
-}
-
-.cards-col {
-	margin-top: -125px;
-}
-.award-card {
-	padding-top: 75px;
-}
-
-.overlapper {
-	margin-top: -400px;
-}
-
-@media all and (max-width: 1024px) {
-	.card  { top: 0; z-index: 0; }
-	.overlapper {
-		margin-top: 0;
-	}
-}
-
-.card.red {
-	background: #D2273A;
-}
-.card.black {
-	background: #111;
-	color: #fff;
-}
-
-.card.white {
-	background: #fff;
-	color: #111;
-}
-.card.grey {
-	background: #f8f8f8;
-	color: #000;
-}
-
-.card blockquote {
-	font-size: .9em;
-	border: none;
-	font-family: Quicksand;
-	font-weight: 400;
-}
-
-.card.red blockquote {
-	color: #fff;
-}
-.card.white blockquote {
-	color: #000;
-}
-</style>
 <div class="full-width" > 
 	<div class="container clearfix">
 		<div class="row">
-			<div class="col-12 center">
-				<h1>Hi there! And welcome.</h1>
-				<p class="size-2x">I’m Sara Soueidan,
-					an independent front-end developer from Lebanon.</p>
+			<div class="col-12 homepage__welcome">
+				<h2 class="h1">Hi there! And welcome.</h2>
+				<p>I’m Sara Soueidan, an independent front-end developer from Lebanon.</p>
 			</div>
-			
-				<div class="col-7">
-					<img src="/images/sara-1.jpg" alt="Sara speaking at btconf stage in Duesseldorf, Germany" style="display: block;">
+			<div class="col-7">
+				
+				<div class="homepage__photo-container">
+					<img src="/images/sara-1.jpg" alt="Sara speaking at btconf stage in Duesseldorf, Germany" class="homepage__photo">
 				</div>
-				<div class="col-5">
-					<p class="">I work with design &amp; UX teams in companies and agencies around the globe, building a strong front-end foundation for fast, accessible and inclusive Web interfaces and experiences, with a strong focus on responsive design, accessibility and performance.
-					</p>
-
-					<div class="award-card">
-						<div class="col-5">
-							<figure class="award award--net">
-								<div class="award__icon">
-									<img src="images/net_awards-logo15.svg" alt="net awards logo" style="max-width: 250px; width: 100%;">
-								</div>
-							</figure>
-						</div>
-						<div class="col-6 small">
-							<br>
-							<p>
-								Named <strong>Developer of the Year</strong> and short-listed for <em>Outstanding Contribution of the Year</em> in the 2015 <a href="https://thenetawards.com/"><em>net</em> awards</a>, and awarded an O’Reilly Web Platform award for “exceptional leadership, creativity, and collaboration in the development of JavaScript, HTML, CSS, and the supporting Web ecosystem.” Microsoft also named me an Open Web Evangelist in 2015.
-							</p>
-						</div>
+				
+			</div>
+			<div class="col-5">
+				<p class="homepage__intro">I work with design &amp; UX teams in companies and agencies around the globe, building a strong front-end foundation for fast, accessible and inclusive Web interfaces and experiences, with a strong focus on responsive design, accessibility and performance.
+				</p>
+			</div>
+			<div class="col-5">
+				<div class="award-card">
+					<figure class="award__figure">
+						<img src="images/net_awards-logo15.svg" alt="net awards logo" >
+					</figure>
+					<div class="award__info">
+						<p>
+							Named <strong>Developer of the Year</strong> and short-listed for <em>Outstanding Contribution of the Year</em> in the 2015 <a href="https://thenetawards.com/"><em>net</em> awards</a>, and awarded an O’Reilly Web Platform award for “exceptional leadership, creativity, and collaboration in the development of JavaScript, HTML, CSS, and the supporting Web ecosystem.” Microsoft also named me an Open Web Evangelist in 2015.
+						</p>
 					</div>
 				</div>
+			</div>
 
-			
 
+			<div class="clearfix">
 				<div class="col-7 clearfix">
 					<br>
 					<br>
@@ -179,7 +126,7 @@
 						<a href="https://shop.smashingmagazine.com/products/smashing-book-5-real-life-responsive-web-design">Smashing Book 5: Real-Life Responsive Web Design</a> is a book that covers time-saving, practical techniques for crafting fast, maintainable and scalable responsive websites. I wrote an 80-pages long chapter about using SVG images in a Resposive Web Design workflow, including everything you need to know to get you up and running using SVG.
 					</p>
 					
-					<img src="/images/smashing-book-5.jpg" alt="Smashing Book 5" style="width: 100%;">
+					<img src="/images/smashing-book-5.jpg" alt="Smashing Book 5" class="homepage__smb-photo">
 
 					<p style="max-width: 75%; float: right;">
 						I also wrote 300+ entry-level articles in the <a href="http://tympanus.net/codrops/css_reference">Codrops CSS Reference</a>—an extensive list of CSS articles—alphabetisized, categorized, structured and detailed. This is an extensive reference to the most important CSS properties and concepts, available for free, for all skills levels—beginner to advanced.
@@ -187,7 +134,7 @@
 
 				</div>
 				<div class="col-5 col--right cards-col">
-					<div class="card grey">
+					<div class="card">
 						<blockquote class="testimonial">
 							<p>
 								“When you work with Sara, you get her vast knowledge of coding best practices, accessibility expertise, and cutting edge approaches. But you also get someone who cares about the overall health and quality of the work from every angle: user experience, visual design, usability, and much more. Sara’s the real deal.”
@@ -201,7 +148,7 @@
 							</cite>
 						</blockquote>	
 					</div>
-					<div class="card grey">
+					<div class="card">
 						<blockquote class="testimonial">
 							<p>
 								“There is something magical when you work with somebody knowledgeable, passionate, smart and extremely reliable. When working with Sara, that’s exactly the feeling you get — Sara is very professional with a keen eye for detail, knowing how to work around pitfalls and working hard to get to the best possible solution every single time.”
@@ -215,7 +162,7 @@
 							</cite>
 						</blockquote>
 					</div>
-					<div class="card grey">
+					<div class="card">
 						<blockquote class="testimonial">
 							<p>
 								“[Sara] is an incredibly knowledgeable and diligent developer. She captured the spirit of our company brilliantly. Anyone would be fortunate to work with her.” 
@@ -229,10 +176,10 @@
 							</cite>
 						</blockquote>
 					</div>
-					<div class="card grey">
+					<div class="card">
 						<blockquote class="testimonial">
 							<p>
-								“Up to date I have not worked with a freelancer so open-minded, innovative and not afraid to challenge client’s work as Sara. And best of all, its not just “talk”… but also “walk”.”
+								“Sara doesn’t come without a price tag. But it's worth it.Up to date I have not worked with a freelancer so open-minded, innovative and not afraid to challenge client’s work as Sara. And best of all, its not just “talk”… but also “walk”.”
 							</p>
 							<cite class="cite-with-image">
 								<figure>
@@ -244,23 +191,46 @@
 						</blockquote>	
 					</div>
 				</div>
-			</div>			
-		</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-7 col--right">
+					<br>
+					<p class="h1">I also <a href="../speaking" class="">speak</a>, <a href="../workshops" class="">run workshops</a>, and <a href="../blog" class="">write articles</a> on front-end development.</p>
+
+					<p class="h1">
+						You can <a href="../hire/" class="">hire me</a>.
+					</p>
+				</div>
+			</div>
+		</div>			
 	</div>
+</div>
 
 
-	
-<footer class="copyright full-width">
-    <div class="container clearfix">
-        <div class="row">
-            <p style="float: left;">                    
-                © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+<div class="full-width newsletter-container">
+    <div class="container newsletter">
+        <div class="newsletter__wrapper">
+            <h3>From my desk.. to yours.</h3>
+            <p>
+                Infrequent updates, thoughts and ideas, latest articles, useful resources, workshop announcements and members-only discounts, among other inspirational content—straight into your inbox. No fuss. No spam.
             </p>
-
-            <div class="twitter" style="float: right;">
-                 <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
-            </div>
         </div>
+    </div>
+</div>
+
+<footer class="main-footer full-width">
+    <div class="container clearfix">
+            <div class="main-footer__left">
+                <p>                    
+                    © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+                </p>
+            </div>
+
+            <div class="main-footer__right">
+                <div class="twitter">
+                     <a style="display: block;" href="https://twitter.com/SaraSoueidan" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @SaraSoueidan</a>
+                </div>
+            </div>
     </div>
 </footer>
 

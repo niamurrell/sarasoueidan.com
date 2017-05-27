@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2016-03-01T00:00:00Z
 subtitle: On Using SVG Presentation Attributes To Provide Style Fallback for CSS Failure
   Scenarios

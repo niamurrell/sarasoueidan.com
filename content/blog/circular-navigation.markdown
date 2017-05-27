@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2013-08-09T00:00:00Z
 external:
   host: Codrops

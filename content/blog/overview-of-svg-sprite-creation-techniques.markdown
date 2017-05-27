@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2014-12-16T00:00:00Z
 external:
   host: 24 Ways

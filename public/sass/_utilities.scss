@@ -1,3 +1,40 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.slash {
+  color: $red;
+  font-weight: bold;
+
+  .main-footer & {
+    margin: 0 10px;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bar {
+  background-color: #333;
+  color: #fff;
+  padding: .5em;
+}
+
+.underlined {
+  padding: .25em 0;
+  border-bottom: 5px solid;
+}
+
 .green {
   color: $green !important;
 }
@@ -7,6 +44,10 @@
 
 .highlight {
   background-color: $yellow;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .color-grey {
@@ -43,14 +84,37 @@
   font-weight: 400;
 }
 
+.size-1-5x {
+  font-size: calc(1em + .25vw);
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.x-large {
+  font-size: 10vw;
+  margin: 25vh 0;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+.clear--left {
+  clear: left;
+}
+
 .desktop-only {
   @media all and (max-width: 768px) {
     display: none;
   }
 }
 
-.x-large {
-  font-size: 15vw !important;
+.uppercase {
+  text-transform: uppercase;
 }
 
 .sr-only {

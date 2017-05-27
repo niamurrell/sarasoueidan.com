@@ -1,4 +1,5 @@
 ---
+type: "article"
 date: 2017-01-24T00:00:00Z
 title: Building a fully-accessible help tooltip
 subtitle: "...is harder than I thought."
