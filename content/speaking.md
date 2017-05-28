@@ -145,6 +145,30 @@ weight = "-2"
                         </footer>
                     </li>
 
+                    <li class="conference vancouver" data-workshop="true">
+                        <header class="conference__header">
+                            <p class="conference__type">Talk <span>+</span> Workshop</p>
+                            <p class="conference__date">
+                                <span class="conference__days">Feb 31—Jan 1</span>
+                                <span class="conference__month-and-year">2018</span>
+
+                            </p>
+                            <p class="conference__location">Vancouver, Canada</p>
+                            <p class="conference__name">
+                                <a href="https://experiencecode.com/">Experience Code</a>
+                            </p>
+                            
+                        </header>
+                        <footer class="conference__links">
+                            <ul>
+                                <li><span>Watch Video.</span>
+                                </li>
+                                <li><span>Read Feedback.</span>
+                                </li>
+                            </ul>
+                        </footer>
+                    </li>
+
                     <div class="conference conference-cta">
                         <a href="../request-a-talk">
                             <span class="h2">Want me to speak at your event?</span>

@@ -29,8 +29,9 @@
 
 .upcoming-workshops__list {
 	list-style: none;
-	padding: 0;
-	background: #eee;
+	margin: 0;
+	background: $red;
+	color: #fff;
 	padding: 0.1em .5em;
 	-ms-transform: rotate(3deg);
 	-webkit-transform: rotate(3deg);
@@ -47,11 +48,19 @@
 
 .upcoming-workshops__item {
 	padding: 1em;
-	// background: #fff;
-	border-bottom: 3px solid #fff;
+	border-bottom: 3px solid darken($red, 5%);
 
 	&:last-of-type {
 		border: none;
+	}
+
+	a {
+		border-color: #fff;
+
+		&:hover, &:focus {
+			color: #fff;
+			border-color: #fff;
+		}
 	}
 }
 
@@ -116,6 +125,7 @@
 		clear: right;
 	}
 }
+
 
 
 
