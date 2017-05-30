@@ -35,6 +35,8 @@
 
     <link rel="stylesheet" href="/css/screen.css">
 
+    <script src="/js/classList.min.js"></script>
+
     
 
 </head>
@@ -42,17 +44,19 @@
 <body>
     <header class="main-header full-width">
         <div class="container clearfix">
-            <div class="col-5 logo">
-                <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
+            <div class="col-5">
+               <div class="logo">
+                    <a class="logo__image" href="https://sarasoueidan.com"><img src="/images/logo.svg" alt="Sara Soueidan"></a> 
                 
-                <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
+                    <span class="header-bio uppercase">Front-end developer / Author / Speaker.</span>
 
-                <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+                    <a href="/hire/" class="availability-indicator-wrapper"><span class="availability-indicator"></span><span class="sr-only">Available for hire</span></a>
+                </div>
             </div>
             
             <div class="col-6 col--right">
-                <nav class="main-nav" id="main-nav">
-	<a href="#menu" class="menu-trigger">Menu</a>
+                <button class="menu-trigger" aria-controls="main-nav" id="js-menu-trigger"><span class="sr-only" id="sr-only">Open</span> Menu <span class="menu-trigger__icon" id="js-menu-trigger__icon" aria-hidden="true">+</span></button>
+<nav class="main-nav" id="main-nav">
     <ul class="main-nav__list clearfix" id="menu">
         
         
@@ -72,11 +76,32 @@
         
         <li class="main-nav__item  current"><a  href="/desk/">From My Desk</a></li>
         
-        <li class="main-nav__close-button">
-        	<a href="#" class="menu-close-button">×</a>
-        </li>
     </ul>
 </nav>
+
+<script>
+    var menu_trigger = document.getElementById('js-menu-trigger'),
+        icon         = document.getElementById('js-menu-trigger__icon'),
+        nav          = document.getElementById('main-nav'),
+        open         = false;
+
+    menu_trigger.addEventListener('click', toggleMenu, false);
+
+    function toggleMenu(e) {
+        if(!open) {
+            open = true;
+            nav.classList.add('open');
+            this.classList.add('active');
+            icon.innerHTML = "×";
+        }
+        else {
+            nav.classList.remove('open');
+            this.classList.remove('active');
+            icon.innerHTML = "+";
+            open = false;
+        }
+    }
+</script>
 
             </div>
         </div>

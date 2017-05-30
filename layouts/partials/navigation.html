@@ -1,12 +1,33 @@
+<button class="menu-trigger" aria-controls="main-nav" id="js-menu-trigger"><span class="sr-only" id="sr-only">Open</span> Menu <span class="menu-trigger__icon" id="js-menu-trigger__icon" aria-hidden="true">+</span></button>
 <nav class="main-nav" id="main-nav">
-	<a href="#menu" class="menu-trigger">Menu</a>
     <ul class="main-nav__list clearfix" id="menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="main-nav__item {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} current{{end}}"><a  href="{{.URL}}">{{ .Name }}</a></li>
         {{ end }}
-        <li class="main-nav__close-button">
-        	<a href="#" class="menu-close-button">×</a>
-        </li>
     </ul>
 </nav>
+
+<script>
+    var menu_trigger = document.getElementById('js-menu-trigger'),
+        icon         = document.getElementById('js-menu-trigger__icon'),
+        nav          = document.getElementById('main-nav'),
+        open         = false;
+
+    menu_trigger.addEventListener('click', toggleMenu, false);
+
+    function toggleMenu(e) {
+        if(!open) {
+            open = true;
+            nav.classList.add('open');
+            this.classList.add('active');
+            icon.innerHTML = "×";
+        }
+        else {
+            nav.classList.remove('open');
+            this.classList.remove('active');
+            icon.innerHTML = "+";
+            open = false;
+        }
+    }
+</script>

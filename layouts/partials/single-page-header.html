@@ -34,6 +34,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900,900i|Quicksand:300,400,500,700|Rock+Salt" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/screen.css">
+    <script src="/js/classList.min.js"></script>
+
+    <script>
+        if('querySelector' in document
+             && 'localStorage' in window
+             && 'addEventListener' in window) {
+             // Modern browser. Let's add JavaScript functionality
+            var root = document.getElementsByTagName( 'html' )[0]; // '0' to assign the first (and only `HTML` tag)
+
+            root.classList.add('enhanced');
+        }
+    </script>
 
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

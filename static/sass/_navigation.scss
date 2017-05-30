@@ -1,6 +1,6 @@
 /*------------------------------------*\
     #SITE-NAVIGATION
-\*------------------------------------*/
+    \*------------------------------------*/
 
     .main-nav {
       font-size: calc(10px + .25vw);
@@ -13,6 +13,29 @@
         text-align: left;
         font-size: calc(.8em + .2vh);
       }
+
+      .enhanced & {
+        @media all and (max-width: 1150px) {
+          position: fixed;
+          margin: 0;
+          z-index: 9;
+          background: $red;
+          color: #fff;
+          padding: 4em 2em;
+          top: -500vh;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          height: 100vh;
+          overflow-y: auto;
+          width: 100%;
+          transition: all .2s ease-out;
+
+          &.open {
+            top: 0;
+          }
+        } 
+      } 
     }
 
     .main-nav__list {
@@ -23,25 +46,7 @@
       background-color: inherit;
       overflow: hidden;  
 
-      @media all and (max-width: 1150px) {
-          position: fixed;
-          margin: 0;
-          z-index: 20;
-          background: $red;
-          color: #fff;
-          padding: 4em 2em;
-          top: -150vh;
-          right: 0;
-          left: 0;
-          bottom: 0;
-          height: 100vh;
-          width: 100%;
-          transition: all .2s ease-out;
-
-          &:target {
-            top: 0;
-          }
-      }  
+      
     }
 
     .main-nav__item {
@@ -79,9 +84,9 @@
 
       &:hover a, &:focus a, &:active a {
         
-          color: #000;
-          background: #eee;
-          border-color: #ccc;
+        color: #000;
+        background: #eee;
+        border-color: #ccc;
 
         .homepage & {
           color: #000;
@@ -123,68 +128,70 @@
             background-color: darken($red, 10%);
           }
         }
+
+        &.current a {
+          background: #fff;
+          color: $red;
+
+          &:hover, &:focus, &:active {
+            background: #fff;
+            color: $red;
+          }
+        }
       }
     }
 
     .menu-trigger {
       display: none;
+      background: none;
+      outline: none;
       transition: all .2s linear;
+      font-size: 1em;
+      font-family: $sans-serif;
+      cursor: pointer;
+      line-height: 1.3;
 
-      @media all and (max-width: 1150px) {
-        display: block;
-        margin-top: 1em;
-        position: fixed;
-        box-shadow: $shadow;
-        z-index: 10;
-        top: 1em;
-        right: 3.5em;
-        border: none !important;
-        background: $red;
-        color: #fff;
-        padding: .5em 1em;
+      .enhanced & {
+        @media all and (max-width: 1150px) {
+          display: block;
+          margin-top: 1em;
+          position: fixed;
+          box-shadow: $shadow;
+          z-index: 10;
+          top: 1em;
+          right: 3.5em;
+          border: none !important;
+          background: $red;
+          color: #fff;
+          padding: .5em 1em;
+        }
+
+        @media all and (max-width: 640px) {
+          top: auto;
+          bottom: 2em;
+        }
+
+        &:hover, &:active {
+          border: none;
+          background: #000;
+          color: #fff;
+        }
       }
 
-      @media all and (max-width: 640px) {
-        top: auto;
-        bottom: 2em;
+      &.active {
+        background: #fff;
+        color: #000;
       }
 
-      &:hover, &:active {
-        border: none;
-        background: $red;
-        color: #fff;
-      }
+
     }
 
-    .main-nav__close-button {
-      padding: 0;
-      margin-top: 5em;
-      text-align: center;
-      display: none;
-
-      @media all and (max-width: 1150px) {
-        display: block;
-      }
+    .menu-trigger__icon {
+      font-size: 1.2em;
+      display: inline-block;
+      font-weight: bold;
+      margin-left: .35em;
+      position: relative;
+      top: 2px;
     }
 
-    .menu-close-button {
-      display: none;
-      border: none !important;
-      color: #fff;
-      padding: 0;
-      width: 40px;
-      height: 40px;
-
-      &:hover, &:focus, &:active {
-        border: none;
-        color: #fff;
-      }
-
-
-
-      @media all and (max-width: 1150px) {
-        display: inline-block;
-        font-size: 4em;
-        font-weight: bold;
-      }
-    }

@@ -13,20 +13,11 @@
         text-align: left;
         font-size: calc(.8em + .2vh);
       }
-    }
-
-    .main-nav__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      margin-top: 10px;
-      background-color: inherit;
-      overflow: hidden;  
 
       @media all and (max-width: 1150px) {
           position: fixed;
           margin: 0;
-          z-index: 20;
+          z-index: 9;
           background: $red;
           color: #fff;
           padding: 4em 2em;
@@ -38,10 +29,21 @@
           width: 100%;
           transition: all .2s ease-out;
 
-          &:target {
+          &.open {
             top: 0;
           }
       }  
+    }
+
+    .main-nav__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 10px;
+      background-color: inherit;
+      overflow: hidden;  
+
+      
     }
 
     .main-nav__item {
@@ -123,12 +125,28 @@
             background-color: darken($red, 10%);
           }
         }
+
+        &.current a {
+          background: #fff;
+          color: $red;
+
+          &:hover, &:focus, &:active {
+            background: #fff;
+            color: $red;
+          }
+        }
       }
     }
 
     .menu-trigger {
       display: none;
+      background: none;
+      outline: none;
       transition: all .2s linear;
+      font-size: 1em;
+      font-family: $sans-serif;
+      cursor: pointer;
+      line-height: 1.3;
 
       @media all and (max-width: 1150px) {
         display: block;
@@ -151,40 +169,26 @@
 
       &:hover, &:active {
         border: none;
-        background: $red;
-        color: #fff;
-      }
-    }
-
-    .main-nav__close-button {
-      padding: 0;
-      margin-top: 5em;
-      text-align: center;
-      display: none;
-
-      @media all and (max-width: 1150px) {
-        display: block;
-      }
-    }
-
-    .menu-close-button {
-      display: none;
-      border: none !important;
-      color: #fff;
-      padding: 0;
-      width: 40px;
-      height: 40px;
-
-      &:hover, &:focus, &:active {
-        border: none;
+        background: #000;
         color: #fff;
       }
 
+      
+
+      &.active {
+        background: #fff;
+        color: #000;
+      }
 
 
-      @media all and (max-width: 1150px) {
+    }
+
+    .menu-trigger__icon {
+        font-size: 1.2em;
         display: inline-block;
-        font-size: 4em;
         font-weight: bold;
+        margin-left: .35em;
+        position: relative;
+        top: 2px;
       }
-    }
+
