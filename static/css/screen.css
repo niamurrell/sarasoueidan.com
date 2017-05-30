@@ -1000,7 +1000,6 @@ table.case-study__details {
   position: relative; }
   @media all and (max-width: 1024px) {
     .homepage__photo-container {
-      max-width: 600px;
       margin: 0 auto 2em; } }
 
 .homepage__photo {
