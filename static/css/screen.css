@@ -1015,12 +1015,11 @@ table.case-study__details {
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   border: 1px solid #f2f2f2;
-  box-shadow: 10px 15px 0 rgba(0, 0, 0, 0.1);
   padding: 0; }
 
-@media all and (max-width: 1230px) {
+@media all and (max-width: 1300px) {
   .homepage .cards-col {
-    margin-top: 1em; } }
+    margin-top: 0; } }
 
 @media all and (max-width: 1024px) {
   .homepage .cards-col {
