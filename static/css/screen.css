@@ -443,11 +443,11 @@ a.availability-indicator-wrapper {
     transition: color .2s linear; }
     .main-nav__item a:hover {
       border-width: 1px !important; }
-  .main-nav__item:hover a, .main-nav__item:focus a, .main-nav__item:active a {
+  .main-nav__item:hover a, .main-nav__item:focus a {
     color: #000;
     background: #eee;
     border-color: #ccc; }
-    .homepage .main-nav__item:hover a, .homepage .main-nav__item:focus a, .homepage .main-nav__item:active a {
+    .homepage .main-nav__item:hover a, .homepage .main-nav__item:focus a {
       color: #000;
       background: #eee; }
   .main-nav__item.current a {
@@ -470,14 +470,14 @@ a.availability-indicator-wrapper {
         transition: all .2s linear; }
         .homepage .main-nav__item a {
           border-bottom: 1px solid #a71f2e; }
-        .main-nav__item a:hover, .main-nav__item a:focus, .main-nav__item a:active {
+        .main-nav__item a:hover, .main-nav__item a:focus {
           color: #fff;
           border-bottom: 1px solid #a71f2e;
           background-color: #a71f2e; }
       .main-nav__item.current a {
         background: #fff;
         color: #D2273A; }
-        .main-nav__item.current a:hover, .main-nav__item.current a:focus, .main-nav__item.current a:active {
+        .main-nav__item.current a:hover, .main-nav__item.current a:focus {
           background: #fff;
           color: #D2273A; } }
 
@@ -507,7 +507,7 @@ a.availability-indicator-wrapper {
     .enhanced .menu-trigger {
       top: auto;
       bottom: 2em; } }
-  .enhanced .menu-trigger:hover, .enhanced .menu-trigger:active {
+  .enhanced .menu-trigger:hover {
     border: none;
     background: #000;
     color: #fff; }
@@ -993,14 +993,22 @@ table.case-study__details {
   max-width: 500px; }
 
 .homepage__photo-container {
-  display: block; }
+  display: block;
+  height: 0;
+  width: 100%;
+  padding-top: 110.5%;
+  position: relative; }
   @media all and (max-width: 1024px) {
     .homepage__photo-container {
       max-width: 600px;
       margin: 0 auto 2em; } }
 
 .homepage__photo {
-  width: 100%; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .homepage .card {
   padding: 1.5em 1em .5em;
