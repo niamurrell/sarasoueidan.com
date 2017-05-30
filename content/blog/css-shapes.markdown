@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Creating Non-Rectangular Layouts with CSS Shapes — article by Sara Soueidan"
 date: 2013-11-05T00:00:00Z
 title: Creating Non-Rectangular Layouts With CSS Shapes
 subtitle: ""

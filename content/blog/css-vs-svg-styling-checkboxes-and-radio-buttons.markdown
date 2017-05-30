@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "CSS vs. SVG: Styling Checkboxes and Radio Buttons — article by Sara Soueidan"
 date: 2015-08-26T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

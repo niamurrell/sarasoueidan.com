@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Everything You Need To Know About the CSS <code>will-change</code> Property — article by Sara Soueidan"
 date: 2014-06-10T00:00:00Z
 external:
   host: Dev.Opera

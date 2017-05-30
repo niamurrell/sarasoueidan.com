@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "I Wrote A CSS <del>Book</del> Reference. — article by Sara Soueidan"
 date: 2015-02-04T00:00:00Z
 title: I Wrote A CSS <del>Book</del> Reference.
 subtitle: ""

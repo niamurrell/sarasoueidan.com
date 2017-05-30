@@ -2,7 +2,6 @@
 type: "article"
 date: 2016-01-06T00:00:00Z
 title: 2015 In Review
-description: "2015 In Review — article by Sara Soueidan"
 subtitle: ""
 ---
 

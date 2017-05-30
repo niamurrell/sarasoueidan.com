@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "CSS vs SVG: Shapes and Arbitrarily-Shaped UI Components — article by Sara Soueidan"
 date: 2015-09-01T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Using the CSS :target Selector to Create JavaScript-less UI Effects — article by Sara Soueidan"
 date: 2015-01-24T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

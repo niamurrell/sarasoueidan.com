@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Making SVGs Responsive with CSS — article by Sara Soueidan"
 date: 2014-08-19T00:00:00Z
 external:
   host: Codrops

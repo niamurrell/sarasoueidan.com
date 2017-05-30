@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Styling the Contents of SVG <code>use</code> with CSS — article by Sara Soueidan"
 date: 2015-07-16T00:00:00Z
 external:
   host: Codrops

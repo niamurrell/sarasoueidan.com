@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "An Overview of SVG Sprite Creation Techniques — article by Sara Soueidan"
 date: 2014-12-16T00:00:00Z
 external:
   host: 24 Ways

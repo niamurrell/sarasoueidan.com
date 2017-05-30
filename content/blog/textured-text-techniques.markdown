@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Techniques for Creating Textured Text — article by Sara Soueidan"
 date: 2013-12-02T00:00:00Z
 external:
   host: Codrops

@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "CSS vs. SVG: Graphical Text Effects — article by Sara Soueidan"
 date: 2015-07-31T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

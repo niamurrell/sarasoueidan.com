@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Structuring, Grouping & Referencing in SVG — article by Sara Soueidan"
 date: 2014-07-03T00:00:00Z
 title: Structuring, Grouping, and Referencing in SVG — The <code>&lt;g&gt;</code>,
   <code>&lt;use&gt;</code>, <code>&lt;defs&gt;</code> and <code>&lt;symbol&gt;</code>

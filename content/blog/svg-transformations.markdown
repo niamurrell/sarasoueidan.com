@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Understanding SVG Coordinate Systems and Transformations (Part 2) — The <code>transform</code> Attribute — article by Sara Soueidan"
 date: 2014-07-30T00:00:00Z
 title: Understanding SVG Coordinate Systems and Transformations (Part 2) — The <code>transform</code> Attribute
 subtitle: ""

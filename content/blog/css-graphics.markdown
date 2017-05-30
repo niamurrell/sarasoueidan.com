@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "An Introduction to Graphical Effects in CSS — article by Sara Soueidan"
 date: 2015-04-29T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

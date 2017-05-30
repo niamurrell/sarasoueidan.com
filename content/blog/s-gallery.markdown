@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "S Gallery: A Responsive jQuery Gallery Plugin with CSS3 Animations — article by Sara Soueidan"
 date: 2013-07-12T00:00:00Z
 title: 'S Gallery: A Responsive jQuery Gallery Plugin with CSS3 Animations'
 subtitle: ""

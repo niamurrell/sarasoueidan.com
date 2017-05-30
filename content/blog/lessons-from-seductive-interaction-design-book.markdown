@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Lessons from the Seductive Interaction Design Book — article by Sara Soueidan"
 date: 2013-04-26T00:00:00Z
 title: Lessons from the “Seductive Interaction Design” Book
 subtitle: ""

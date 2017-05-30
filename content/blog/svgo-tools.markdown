@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Useful SVGO[ptimization] Tools — article by Sara Soueidan"
 date: 2015-01-26T00:00:00Z
 title: Useful SVGO[ptimization] Tools
 subtitle: ""

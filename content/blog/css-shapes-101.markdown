@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "CSS Shapes 101 — article by Sara Soueidan"
 date: 2014-04-29T00:00:00Z
 external:
   host: A List Apart

@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Art-Directing an SVG Embedded Using &lt;object&gt; — article by Sara Soueidan"
 Case-Study: true
 date: 2015-07-08T00:00:00Z
 title: Art-Directing an SVG Embedded Using &lt;object&gt;

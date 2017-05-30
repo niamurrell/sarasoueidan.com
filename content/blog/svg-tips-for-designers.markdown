@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Tips For Creating and Exporting Better SVGs for the Web — article by Sara Soueidan"
 comments: true
 date: 2015-11-16T00:00:00Z
 title: Tips for Creating and Exporting Better SVGs for the Web

@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "Animated SVG vs GIF [CAGEMATCH] — article by Sara Soueidan"
 date: 2015-11-24T00:00:00Z
 title: Animated SVG vs GIF [CAGEMATCH]
 subtitle: ""

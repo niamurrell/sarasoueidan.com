@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "CSS Overlay Techniques — article by Sara Soueidan"
 date: 2013-11-07T00:00:00Z
 external:
   host: Codrops

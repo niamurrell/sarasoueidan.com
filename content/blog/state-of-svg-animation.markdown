@@ -1,6 +1,5 @@
 ---
 type: "article"
-description: "The State of SVG Animation — article by Sara Soueidan"
 date: 2015-06-05T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog
