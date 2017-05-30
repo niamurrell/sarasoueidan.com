@@ -1354,10 +1354,10 @@ abbr {
   text-decoration: none; }
 
 ::-moz-selection {
-  background: #D2273A; }
+  background: #FFE400; }
 
 ::selection {
-  background: #D2273A; }
+  background: #FFE400; }
 
 * {
   margin: 0;

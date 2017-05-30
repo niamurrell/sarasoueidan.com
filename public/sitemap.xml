@@ -312,26 +312,6 @@
   </url>
   
   <url>
-    <loc>https://sarasoueidan.com/case-studies/cobi/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/case-studies/provata/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/case-studies/smashing-magazine/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/workshops/front-end-espresso-shot/</loc>
-  </url>
-  
-  <url>
-    <loc>https://sarasoueidan.com/workshops/svg-coffee-cup/</loc>
-  </url>
-  
-  <url>
     <loc>https://sarasoueidan.com/about/</loc>
   </url>
   
@@ -363,6 +343,26 @@
   
   <url>
     <loc>https://sarasoueidan.com/request-a-talk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/case-studies/cobi/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/workshops/front-end-espresso-shot/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/case-studies/provata/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/workshops/svg-coffee-cup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sarasoueidan.com/case-studies/smashing-magazine/</loc>
   </url>
   
 </urlset>
