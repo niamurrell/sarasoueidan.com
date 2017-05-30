@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Making the Switch Away from Icon Fonts to SVG — article by Sara Soueidan"
 date: 2016-04-25T00:00:00Z
 title: 'Making the Switch Away from Icon Fonts to SVG: Converting Font Icons to SVG'
 subtitle: ""

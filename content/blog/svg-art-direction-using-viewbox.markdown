@@ -1,8 +1,8 @@
 ---
 type: "article"
+description: "Art-Directing SVG Images With The viewBox Attribute: How-To, Notes, Tips and Why We Need A viewBox Property in CSS — article by Sara Soueidan"
 date: 2015-05-21T00:00:00Z
-title: 'Art-Directing SVG Images With The viewBox Attribute: How-To, Notes, Tips and
-  Why We Need A viewBox Property in CSS'
+title: 'Art-Directing SVG Images With The viewBox Attribute: How-To, Notes, Tips and Why We Need A viewBox Property in CSS'
 subtitle: ""
 ---
 

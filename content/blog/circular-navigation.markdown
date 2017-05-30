@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Building a Circular Navigation with CSS Transforms — article by Sara Soueidan"
 date: 2013-08-09T00:00:00Z
 external:
   host: Codrops

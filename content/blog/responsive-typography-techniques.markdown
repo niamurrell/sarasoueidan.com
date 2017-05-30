@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Techniques for Responsive Typography — article by Sara Soueidan"
 date: 2013-11-11T00:00:00Z
 external:
   host: Codrops

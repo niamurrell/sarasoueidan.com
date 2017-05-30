@@ -83,7 +83,39 @@
     </header>
 
 
-<p class="size-2x">In this tutorial today we're going to create a horizontal portfolio layout with cool hover effects inspired by those on <a href="http://www.guitouxx.com/#/en/home">Guillaume Tomasi's personal website</a>. The website is made in Flash, so I thought it would be nice to recreate the flash hover effect of the portfolio items using CSS3 animations and transitions, and some jQuery to replicate the image pan effect on hover.</p>
+<div class="full-width article">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-12">
+                <header class="compound-title">
+                    <h1>Horizontal Portfolio Layout with CSS3 Animations and jQuery 
+                        <span class="subtitle"></span>
+                    </h1>
+                </header>
+
+                <div class="post-meta center">
+                    <p>
+                        Published <time pubdate>Jun 15, 2013</time>
+                        |
+                        Estimated Reading Time: <time id="estimated_reading_time">8 mins</time>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="col-7 col--center">
+                <section class="main post" role="main">
+
+                    <div class="buttons clearfix">
+                        
+                        <a href="../../demos/horizontal-portfolio-layout" class="button">View Live Demo</a>  
+                        
+                        <a href="http://github.com/sarasoueidan/horizontal-portfolio-layout" class="button">Find Project on Github</a> 
+                        
+                    </div>
+
+
+                    <p class="size-2x">In this tutorial today we're going to create a horizontal portfolio layout with cool hover effects inspired by those on <a href="http://www.guitouxx.com/#/en/home">Guillaume Tomasi's personal website</a>. The website is made in Flash, so I thought it would be nice to recreate the flash hover effect of the portfolio items using CSS3 animations and transitions, and some jQuery to replicate the image pan effect on hover.</p>
 
 <p>I've also added a simple falling down effect on scroll, where the portfolio items fall down as soon as they enter the visible area of the viewport.</p>
 
@@ -432,11 +464,43 @@
 
 
 
+                    
+
+
+                    
+                </section>
+            </div> 
+        </div>
+        
+</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="../../js/syntaxhighlighter.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+<script>
+anchors.options = {
+  placement: 'left',
+  visible: 'always',
+  icon: '#'
+};
+anchors.add('.deeplink');
+</script>
+
+
+
+
+
 <footer class="main-footer full-width">
     <div class="container clearfix">
             <div class="main-footer__left">
                 <p>                    
-                    © 2013–2017 Copyright Sara Soueidan. All rights reserved.
+                    <strong>© 2013–2017 Copyright Sara Soueidan. All rights reserved.</strong>
+                </p>
+                <p class="mt0">
+                    This site is built with <a href="https://gohugo.io">Hugo</a> and hosted on <a href="https://netlify.com">Netlify</a>. The source code is hosted on <a href="https://github.com">Github</a>.
                 </p>
             </div>
 

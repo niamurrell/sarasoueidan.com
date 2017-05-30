@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "SVG Style Inheritance and the 'Flash of Unstyled SVG' — article by Sara Soueidan"
 date: 2016-03-01T00:00:00Z
 subtitle: On Using SVG Presentation Attributes To Provide Style Fallback for CSS Failure
   Scenarios

@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "I Won a Web Platform Award — article by Sara Soueidan"
 date: 2015-04-22T00:00:00Z
 title: I Won A Web Platform Award
 subtitle: ""

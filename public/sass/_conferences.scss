@@ -106,17 +106,17 @@
 
 
 .conference__date {
-  display: block;
-  width: 100%;
   font-size: 2.75em;
   margin: 0;
   font-weight: 700;
+  text-shadow: 0 0 1px #000;
 
   .past-conferences & {
     font-size: .8em;
     color: #888;
     font-weight: 400;
     margin-top: 1em;
+    text-shadow: none;
   }
 }
 
@@ -209,9 +209,11 @@
   color: $red;
   font-family: $sans-serif;
   color: #fff;
+  text-shadow: 0 0 1px #000;
 
   .past-conferences & {
     margin-top: 0;
+    text-shadow: none;
     color: #000;
     font-size: 1.3em;
   }
@@ -262,7 +264,7 @@
       -ms-transform: scale(1.2); // to hide the blurred border effect created by the blur filter
       -webkit-transform: scale(1.2); // to hide the blurred border effect created by the blur filter
       transform: scale(1.2); // to hide the blurred border effect created by the blur filter
-      filter: grayscale(85%) blur(3px);
+      filter: grayscale(85%) blur(2px);
       background-blend-mode: multiply;
       background-size: cover;
       background-position: center center;
@@ -291,7 +293,7 @@
     }
 
     &.vancouver::before {
-      background-image: url('../images/cities/vancouver.png');
+      background-image: url('../images/cities/vancouver.jpg');
     }
   }
   

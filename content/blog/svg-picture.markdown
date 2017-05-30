@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Better SVG Fallback and Art Direction with the <code>picture</code> Element — article by Sara Soueidan"
 date: 2015-02-15T00:00:00Z
 title: Better SVG Fallback and Art Direction With The &lt;picture&gt; Element
 subtitle: ""

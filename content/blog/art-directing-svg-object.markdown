@@ -1,11 +1,10 @@
 ---
 type: "article"
+description: "Art-Directing an SVG Embedded Using &lt;object&gt; — article by Sara Soueidan"
 Case-Study: true
 date: 2015-07-08T00:00:00Z
-subtitle: A Mini Case Study of Embedding, Art-Directing and Providing Accessible Fallback
-  For The <em>Provata Health</em> Results Infographic
 title: Art-Directing an SVG Embedded Using &lt;object&gt;
-subtitle: ""
+subtitle: "A Mini Case Study of Embedding, Art-Directing and Providing Accessible Fallback For The <em>Provata Health</em> Results Infographic"
 ---
 
 <p class="size-2x">I have recently finished a front-end development project for <em>Provata Health</em> — a US-based health and wellness company specializing in health promotion and behavior change science. As part of their <a href="http://provatahealth.com">marketing website</a>, I worked on an infographic that showcases the three major health results one can achieve by following their health program. The graphic is a perfect candidate for SVG and you’ll see why throughout this article. But even though almost all of the graphics on the site were vector (which made the entire project exciting to me), I want to focus on this particular graphic and how and why I made the development choices I made while embedding it.</p>

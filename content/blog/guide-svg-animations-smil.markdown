@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "A Guide to SVG Animations— article by Sara Soueidan"
 date: 2014-10-13T00:00:00Z
 external:
   host: CSS-Tricks

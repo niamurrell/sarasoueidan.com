@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "CSS vs. SVG: The Final Round(up) — article by Sara Soueidan"
 date: 2015-09-16T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

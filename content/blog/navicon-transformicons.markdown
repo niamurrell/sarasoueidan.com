@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Navicon Transformicons: Animated Navigation Icons with CSS Transforms — article by Sara Soueidan"
 date: 2013-10-20T00:00:00Z
 title: 'Navicon Transformicons: Animated Navigation Icons with CSS Transforms'
 subtitle: ""

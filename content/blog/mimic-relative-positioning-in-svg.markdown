@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Mimic Relative Positioning Inside an SVG with Nested SVGs — article by Sara Soueidan"
 date: 2016-06-27T00:00:00Z
 title: Mimic Relative Positioning Inside an SVG with Nested SVGs
 subtitle: ""

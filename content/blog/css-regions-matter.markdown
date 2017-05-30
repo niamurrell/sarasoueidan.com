@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "CSS Regions Matter — article by Sara Soueidan"
 date: 2014-02-15T00:00:00Z
 title: CSS Regions Matter
 subtitle: ""

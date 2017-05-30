@@ -733,16 +733,16 @@ table.case-study__details {
     min-height: auto; } }
 
 .conference__date {
-  display: block;
-  width: 100%;
   font-size: 2.75em;
   margin: 0;
-  font-weight: 700; }
+  font-weight: 700;
+  text-shadow: 0 0 1px #000; }
   .past-conferences .conference__date {
     font-size: .8em;
     color: #888;
     font-weight: 400;
-    margin-top: 1em; }
+    margin-top: 1em;
+    text-shadow: none; }
 
 .conference__month-and-year {
   font-size: .4em; }
@@ -802,9 +802,11 @@ table.case-study__details {
   font-weight: bold;
   color: #D2273A;
   font-family: "Quicksand", Arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 0 0 1px #000; }
   .past-conferences .conference__name {
     margin-top: 0;
+    text-shadow: none;
     color: #000;
     font-size: 1.3em; }
 
@@ -838,7 +840,7 @@ table.case-study__details {
         -ms-transform: scale(1.2);
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
-        filter: grayscale(85%) blur(3px);
+        filter: grayscale(85%) blur(2px);
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center center; } }
@@ -854,7 +856,7 @@ table.case-study__details {
     .future-conferences .conference.braga::before {
       background-image: url("../images/cities/braga.jpg"); }
     .future-conferences .conference.vancouver::before {
-      background-image: url("../images/cities/vancouver.png"); } }
+      background-image: url("../images/cities/vancouver.jpg"); } }
 
 .podcasts__heading {
   margin-top: 0;
@@ -984,8 +986,7 @@ table.case-study__details {
     margin-bottom: .25em; }
   .homepage__welcome p {
     font-size: 1.3em;
-    margin: 0 0 1.5em;
-    font-weight: 300; }
+    margin: 0 0 1.5em; }
 
 .homepage__intro {
   font-size: 1.2em;
@@ -1014,12 +1015,11 @@ table.case-study__details {
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   border: 1px solid #f2f2f2;
-  box-shadow: 10px 15px 0 rgba(0, 0, 0, 0.1);
   padding: 0; }
 
-@media all and (max-width: 1230px) {
+@media all and (max-width: 1300px) {
   .homepage .cards-col {
-    margin-top: 1em; } }
+    margin-top: 0; } }
 
 @media all and (max-width: 1024px) {
   .homepage .cards-col {
@@ -1424,10 +1424,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.5em 0 .75em; }
 
 .h0 {
-  font-size: 4em;
+  font-size: calc(2em + 2.5vw);
   font-weight: 900;
   margin-top: 0;
-  letter-spacing: -3px; }
+  letter-spacing: -1px; }
 
 h1, .h1 {
   font-size: calc(1.25em + 2vw);

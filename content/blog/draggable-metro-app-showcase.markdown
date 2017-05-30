@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Draggable Metro App Showcase — article by Sara Soueidan"
 date: 2013-08-20T00:00:00Z
 title: Draggable Metro App Showcase
 subtitle: ""

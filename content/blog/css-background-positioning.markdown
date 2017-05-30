@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "A Primer to Background Positioning in CSS — article by Sara Soueidan"
 date: 2015-03-24T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog

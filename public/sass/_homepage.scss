@@ -19,7 +19,7 @@
 	p {
 		font-size: 1.3em;
 		margin: 0 0 1.5em;
-		font-weight: 300;
+		// font-weight: 300;
 	}
 }
 
@@ -66,13 +66,12 @@
 		-webkit-transform: rotate(3deg);
 		transform: rotate(3deg);
 		border: 1px solid darken(#f5f5f5, 1%);
-		box-shadow: 10px 15px 0 rgba(0,0,0,0.1);
 		padding: 0;
 	}
 
-	@media all and (max-width: 1230px) {
+	@media all and (max-width: 1300px) { // macbook 13" size
 		.cards-col {
-			margin-top: 1em;
+			margin-top: 0;
 		}
 	}
 	

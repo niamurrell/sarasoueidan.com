@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Tips For Optimizing SVG Delivery For The Web — article by Sara Soueidan"
 date: 2014-12-19T00:00:00Z
 external:
   host: Performance calendar

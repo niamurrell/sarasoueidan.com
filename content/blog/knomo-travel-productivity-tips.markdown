@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Four Tips for Getting More Work Done While Traveling — article by Sara Soueidan"
 date: 2016-11-02T00:00:00Z
 external:
   host: Knomo London

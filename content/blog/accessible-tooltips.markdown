@@ -2,6 +2,7 @@
 type: "article"
 date: 2017-01-24T00:00:00Z
 title: Building a fully-accessible help tooltip
+description: "Building a fully-accessible help tooltip — article by Sara Soueidan"
 subtitle: "...is harder than I thought."
 ---
 

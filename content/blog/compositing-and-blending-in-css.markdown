@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Compositing and Blending in CSS — article by Sara Soueidan"
 date: 2015-01-27T00:00:00Z
 title: Compositing And Blending In CSS
 subtitle: ""

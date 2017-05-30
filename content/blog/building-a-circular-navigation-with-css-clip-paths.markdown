@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Building A Circular Navigation with CSS Clip Paths — article by Sara Soueidan"
 date: 2015-08-17T00:00:00Z
 external:
   host: CSS-Tricks

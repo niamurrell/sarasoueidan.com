@@ -1,5 +1,6 @@
 ---
 type: "article"
+description: "Extending the Color Cascade with the CSS <code>currentColor</code> Variable — article by Sara Soueidan"
 date: 2015-02-24T00:00:00Z
 external:
   host: Adobe Dreamweaver Team Blog
