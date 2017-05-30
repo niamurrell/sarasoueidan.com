@@ -1,5 +1,6 @@
 +++
 type = "case-study"
+title = "The Provata Case Study by Sara Soueidan"
 projectPreviewImage = "provata_health.png"
 projectDescription = "A returning client, I’ve worked with Provata—a US-based health company—more than four times, building and expanding their marketing Web site, as well as building the graphical user interface for one of the company’s internal Web application."
 

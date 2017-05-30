@@ -1,5 +1,6 @@
 +++
 type = "case-study"
+title = "The Smashing Magazine Case Study by Sara Soueidan"
 projectPreviewImage = "smashing_magazine.png"
 projectDescription = "In addition to running workshops and giving talks at their conference SmashingConf multiple times, Smashing Magazine hired me to build a strong, scalable, semantic, repsonsive and accessible front-end foundation for their 10th anniversary Web site redesign."
 

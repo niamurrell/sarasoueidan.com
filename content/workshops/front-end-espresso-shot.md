@@ -1,6 +1,6 @@
 +++
 type = "workshop"
-description = "The Front-End Espresso Shot Workshop by Sara Soueidan"
+title = "The Front-End Espresso Shot Workshop by Sara Soueidan"
 workshopTitle = "The Front-End Espresso Shot"
 workshopDescription = "An intense (as intense as an Espresso shot!), very technical full-day workshop covering a vast range of front-end topics from SVG to CSS: layout techniques with Grid and Flexbox, blend modes, shapes, custom properties a.k.a CSS variables, native feature detection, and responsive typography techniques, building a progressively enhanced and accessible front-end foundation from the ground up."
 targetAudience = "Beginner to advanced front-end designers and developers."

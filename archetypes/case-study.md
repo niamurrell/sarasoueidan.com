@@ -1,5 +1,6 @@
 +++
 type = "case-study"
+title = ""
 projectPreviewImage = ""
 projectDescription = ""
 
