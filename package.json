@@ -4,7 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:SaraSoueidan/sarasoueidan.com.git"
+  }
   },
   "author": "Sara Soueidan",
   "license": "ISC",
@@ -19,5 +23,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-stylelint": "^3.9.0",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "uuid": "^3.0.1"
   }
 }
